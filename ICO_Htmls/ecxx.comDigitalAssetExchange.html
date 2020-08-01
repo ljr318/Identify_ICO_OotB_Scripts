@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   The Independent | Online Edition
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="The Independent Online and Print Version" name="Author"/>
+  <meta content="Prince Mahmud Arnab" name="Developer"/>
+  <meta content="Frog Hosting" name="Developed By"/>
+  <meta content="600" http-equiv="refresh"/>
+  <meta content="ALL" name="robots"/>
+  <meta content="Global" name="distribution"/>
+  <meta content="© The Independent 2015 (www.theindependentbd.com)" name="copyright"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="1 days" name="revisit-after"/>
+  <meta content="The Independent | Online Edition" name="title"/>
+  <meta content="The latest in Bangladesh News and World News from The Independent, Bangladesh." name="description"/>
+  <meta content="theindependentbd, theindependentbd.com, Bangladesh News, News Bangladesh, Bangladesh Newspaper, Newspaper Bangladesh, Newspaper in Bangladesh, English Newspaper in Bangladesh, theindependentbd news, the independent bangladesh, the independent bd, independent bd, daily independent bangladesh, independent bangladesh, independent newspaper bangladesh, independent bangladesh newspaper, the independent newspaper bangladesh, The Independent, Independent, News, Bangladesh, Dhaka, Beximco, Bangladesh Online" name="keywords"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <link href="https://m.theindependentbd.com/assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://m.theindependentbd.com/assets/importent_images/main_logo.gif" rel="image_src"/>
+  <!-- Google Plus -->
+  <meta content="The Independent" itemprop="name"/>
+  <meta content="The latest in Bangladesh News and World News from The Independent, Bangladesh." itemprop="description"/>
+  <meta content="http://m.theindependentbd.com/assets/importent_images/main_logo.gif" itemprop="image"/>
+  <!-- Twitter -->
+  <meta content="summary" name="twitter:card"/>
+  <!-- Card type -->
+  <meta content="The Independent (www.theindependentbd.com)" name="twitter:site"/>
+  <meta content="The Independent | Online Edition" name="twitter:title"/>
+  <meta content="The latest in Bangladesh News and World News from The Independent, Bangladesh." name="twitter:description"/>
+  <meta content="The Independent" name="twitter:creator"/>
+  <meta content="http://m.theindependentbd.com/assets/importent_images/main_logo.gif" name="twitter:image:src"/>
+  <meta content="http://www.theindependentbd.com/" name="twitter:domain"/>
+  <meta content="article" property="og:type"/>
+  <meta content="The Independent Online and Print Version" property="og:site_name"/>
+  <meta content="http://m.theindependentbd.com/" property="og:url"/>
+  <meta content="The Independent | Online Edition" property="og:title"/>
+  <meta content="The latest in Bangladesh News and World News from The Independent, Bangladesh." property="og:description"/>
+  <meta content="http://m.theindependentbd.com/assets/importent_images/main_logo.gif" property="og:image"/>
+  <link href="https://m.theindependentbd.com/" rel="canonical"/>
+  <base href="http://m.theindependentbd.com/"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/docs.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/base.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/bootstrap-responsive.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/jquery.smarticker.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/initcarousel-1.css" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/owl.carousel.css" rel="stylesheet"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/owl.theme.css" rel="stylesheet"/>
+  <!-- owl.carousel -->
+  <link href="https://www.theindependentbd.com/assets/site/css/responsiveslides.css" rel="stylesheet"/>
+  <!-- responsive slides -->
+  <link href="https://www.theindependentbd.com/assets/site/css/theme.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="https://www.theindependentbd.com/assets/site/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://www.theindependentbd.com/assets/site/js/jquery-1.8.1.min.js" type="text/javascript">
+  </script>
+  <script src="https://www.theindependentbd.com/assets/site/js/responsiveslides.min.js">
+  </script>
+  <script src="https://www.theindependentbd.com/assets/site/js/clock.js">
+  </script>
+  <script>
+   // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+            auto: true,
+            pager: false,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+  </script>
+  <script src="https://www.theindependentbd.com/assets/site/js/owl.carousel.js">
+  </script>
+  <script>
+   ///Search Keyword
+    function autocomplet() {
+        var keyword = $('#search_box').val();
+        if(keyword != ''){
+            $.ajax({
+                url: './home/search_refreash/'+ keyword,            
+                type: 'POST',
+                data: {
+                    keyword:keyword
+                },            
+                success:function(data){                       
+                    $('#headline_list').show();
+                    $('#headline_list').html(data);
+                }
+            });
+        }else{
+            $('#headline_list').hide();            
+        }
+    }
+  </script>
+  <link href="https://m.theindependentbd.com/assets/images/favicon.ico" rel="shortcut icon"/>
+ </head>
+ <body style="margin:0 !important;">
+  <div class="row-fluid">
+   <div class="container wrapper" style="padding:0">
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17205243-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+    <!-- For Phone -->
+    <div class="row-fluid visible-phone visible-tablet">
+     <div class="span12">
+      <div class="row-fluid text-center" style="padding-top: 9px;">
+       <a href="">
+        <img src="http://www.theindependentbd.com/assets/importent_images/main_logo.gif"/>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="row-fluid divbordertopbottom visible-phone visible-tablet space-bottom">
+     <div class="span12" style="color: #FFFFFF; text-align: center;">
+      Wednesday 29 July 2020 ,
+      <span id="curTime">
+      </span>
+     </div>
+    </div>
+    <div class="row-fluid visible-phone visible-tablet space-bottom">
+     <div class="row-fluid pull-right">
+      <div class="span12 input_container">
+       <form action="http://www.theindependentbd.com/home/keywordsearch/" id="cse-search-box" style="margin-bottom:0px;">
+        <input name="cx" type="hidden" value="partner-pub-0600503450204720:3814655659"/>
+        <input name="cof" type="hidden" value="FORID:10"/>
+        <input name="ie" type="hidden" value="UTF-8"/>
+        <input class="searchtextbox" name="q" placeholder="Site Search...." style="width:213px !important;" type="text"/>
+        <input class="btnsearch" name="sa" type="submit" value="Search"/>
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="row-fluid text-center" style="margin-bottom: 15px;">
+     <div class="row-fluid">
+      <span class="span12">
+       <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+       </script>
+       <!-- Ad-320x100 -->
+       <ins class="adsbygoogle" data-ad-client="ca-pub-2779657702599345" data-ad-slot="5363281125" style="display:inline-block;width:320px;height:100px">
+       </ins>
+       <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
+      </span>
+     </div>
+    </div>
+    <div class="row-fluid">
+     <div class="span12" id="main_menu">
+      <div class="navbar">
+       <div class="navbar-inner">
+        <div class="container">
+         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+         <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+          <span class="icon-bar">
+          </span>
+         </a>
+         <!-- Everything you want hidden at 940px or less, place within here -->
+         <div class="nav-collapse collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav">
+           <li style="margin: 0">
+            <a href="" style="padding: 0 !important;">
+             <img alt="Menu title" border="0" src="http://www.theindependentbd.com/assets/importent_images/menu-title.png"/>
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/politics">
+             Politics
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/bangladesh">
+             Bangladesh
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/world-news">
+             World News
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/business">
+             Business
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/sports">
+             Sports
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/entertainment">
+             Entertainment
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/art-culture">
+             Art &amp; Culture
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/science-tech">
+             Science &amp; Tech
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/travel-tourism">
+             Travel &amp; Tourism
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/dhaka-metro">
+             Metro
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/opinion">
+             Opinion
+            </a>
+           </li>
+           <li>
+            <a class="" href="online/environment">
+             Environment
+            </a>
+           </li>
+           <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+             Health &amp; Life Style
+             <b class="caret">
+             </b>
+            </a>
+            <ul class="dropdown-menu" id="menu1" style="">
+             <li>
+              <a href="online/health">
+               Health
+              </a>
+             </li>
+             <li>
+              <a href="online/cuisine">
+               Cuisine
+              </a>
+             </li>
+             <li>
+              <a href="online/beauty">
+               Beauty
+              </a>
+             </li>
+             <li>
+              <a href="online/fashion">
+               Fashion
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script>
+     $(function () {
+        $(window).scroll(function () {
+            $('.main_nav_fixed_mobile').css('width', $('header').width());
+            if ($(this).scrollTop() > 100) {
+                $('#main_menu').addClass('main_nav_fixed_mobile');
+            } else {
+                $('#main_menu').removeClass('main_nav_fixed_mobile');
+            }
+        });
+    });
+    </script>
+    <div style="width:30%; float:left; font-size:14px !important; background-color:#00ABBF; padding:5px 0; color:#FFFFFF;text-align: center;">
+     Latest News
+    </div>
+    <div style="width:70%; float:right;padding:5px 0;">
+     <marquee>
+      Covid-19: Bangladesh records 35 deaths, 2,960 new cases |                                         People suffer as flood situation shows no sign of improvement |                                         Rainfall likely to continue for 72hrs: Met office  |                                         Maintain growth in agriculture to ensure food security: PM
+ |                                         Jashore hospital owner ‘played with people’s lives’ at his illegal clinics
+
+
+ |                                         Coronavirus Hotline Numbers: 01944333222, 16263, 333; website: www.corona.gov.bd |
+     </marquee>
+    </div>
+    <div class="row-fluid">
+     <div class="span12 space-top">
+      <div class="row-fluid">
+       <div class="visible-phone">
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div>
+            <img alt="Coronavirus: Bangladesh's death toll reaches 3,000
+
+
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/mediam/COVID-1922124.jpg"/>
+           </div>
+           <h5 style="margin: 5px;">
+            <a href="./post/250965">
+             Coronavirus: Bangladesh's death toll reaches 3,000
+            </a>
+           </h5>
+           Bangladesh saw its officially confirmed coronavirus death tally hitting the 3,000-mark on Tuesday in the 21st…
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Bangabandhu birth centenary: Law Thinkers Society to hold online event in 100 countries in September  " class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/B354678798.gif"/>
+           </div>
+           <a href="./post/250985">
+            Bangabandhu birth centenary: Law Thinkers Society to hold online event in 100 countries in September
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Foreign reserves crosses $37 billion for first time" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/1335657576868.gif"/>
+           </div>
+           <a href="./post/250986">
+            Foreign reserves crosses $37 billion for first time
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Ecnec clears seven projects involving Tk 3,075 crore" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/ecenec.jpg"/>
+           </div>
+           <a href="./post/250976">
+            Ecnec clears seven projects involving Tk 3,075 crore
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Bank branches at RMG industrial areas open on Friday" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Bangladesh-bank_Latest-1024x5761222.jpg"/>
+           </div>
+           <a href="./post/250980">
+            Bank branches at RMG industrial areas open on Friday
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="toptitle visible-phone" style="margin-top:10px">
+        In Focus
+       </div>
+       <div class="spotlightbody visible-phone" style="margin-bottom:17px">
+        <div class="row-fluid">
+         <div class="span12">
+          <a href="./post/250974">
+           <img alt="Plastic face masks, hand sanitizer bottles trigger pollution" src="http://www.theindependentbd.com/assets/news_images/mediam/mmmask.jpg"/>
+          </a>
+         </div>
+        </div>
+        <div class="spotlight-head">
+         <a href="./post/250974">
+          Plastic face masks, hand sanitizer bottles trigger pollution
+         </a>
+        </div>
+       </div>
+       <div class="space_bottom">
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Bangladesh
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Bomb blast at Cg traffic police box: Another Neo-JMB man held" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/ctg7.jpg"/>
+            </div>
+            <a href="./post/250979">
+             Bomb blast at Cg traffic police box: Another Neo-JMB man held
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="5 bullet-hit bodies recovered from Cox’s Bazar" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Bazar24.jpg"/>
+            </div>
+            <a href="./post/250969">
+             5 bullet-hit bodies recovered from Cox’s Bazar
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="No shortage of salt in country: BSCIC" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/BSCIC21.jpg"/>
+            </div>
+            <a href="./post/250971">
+             No shortage of salt in country: BSCIC
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/bangladesh" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          World News
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Najib Razak: Former Malaysian PM guilty on all charges in corruption trial" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/NAjib-n-a.jpg"/>
+            </div>
+            <a href="./post/250958">
+             Najib Razak: Former Malaysian PM guilty on all charges in corruption trial
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="At least 11 die in lightning strikes in India's West Bengal
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/lightning61.jpg"/>
+            </div>
+            <a href="./post/250961">
+             At least 11 die in lightning strikes in India's West Bengal
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Global coronavirus death toll passes 6,50,000" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/rsz_Coronavirus-world-map12115.jpg"/>
+            </div>
+            <a href="./post/250953">
+             Global coronavirus death toll passes 6,50,000
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/world-news" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Politics
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="AL leaders leading a ‘happy life’ despite pandemic: BNP" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/RUHUL-KOBIR2163.jpg"/>
+            </div>
+            <a href="./post/250983">
+             AL leaders leading a ‘happy life’ despite pandemic: BNP
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Swechchasebak Dal president Shafiul Bari Babu passes away" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Babu-sl-l.jpg"/>
+            </div>
+            <a href="./post/250950">
+             Swechchasebak Dal president Shafiul Bari Babu passes away
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Plight of flood victims worsened, alleges BNP  " class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Fakhrul72.jpg"/>
+            </div>
+            <a href="./post/250938">
+             Plight of flood victims worsened, alleges BNP
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/politics" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="">
+        <div style="float:left; width: 47%; margin-right: 10px">
+         <div class="row-fluid">
+          <div class="toptitle">
+           Editor's Choice
+          </div>
+          <div class="row-fluid">
+           <div class="row-fluid">
+            <div class="span12">
+             <img alt="Hepatitis B spread in children lowest in decades: WHO" class="pull-left space-right" src="http://www.theindependentbd.com/assets/news_images/thumbs/health-sector51.jpg"/>
+            </div>
+           </div>
+           <div class="span12">
+            <div class="news-head-home">
+             <a href="./post/250947">
+              Hepatitis B spread in children lowest in decades: WHO
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div style="width: 48%; float:right;">
+         <div class="row-fluid visible-phone">
+          <div class="span12">
+           <div class="readerschoice-head" style="padding: 5px;margin-bottom: 5px;">
+            <div class="readerschoice-headlinetext" style="font-size:14px !important">
+             Reader's Favourite
+            </div>
+           </div>
+           <div class="row-fluid">
+            <div class="span12 spotlight-img">
+             <a href="./post/250982">
+              <img alt="Online Education and the Challenges" src="http://www.theindependentbd.com/assets/news_images/thumbs/Education321.jpg"/>
+             </a>
+            </div>
+           </div>
+           <div class="readerschoice-head">
+            <div>
+             Online Education and the Challenges
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid">
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Sports
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div>
+             <img alt="Oditi’s odyssey in coaching career" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/mediam/46355577757575.gif"/>
+            </div>
+            <h5 style="margin: 5px;">
+             <a href="./post/250988">
+              Oditi’s odyssey in coaching career
+             </a>
+            </h5>
+            Mahmuda Sharifa Oditi, one of the women football coaches having AFC ‘B’ coaching license, is dreaming…
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Liverpool's Jurgen Klopp named manager of the year" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Jurgen-Klopp-corona_-_Copy.gif"/>
+            </div>
+            <a href="./post/250946">
+             Liverpool's Jurgen Klopp named manager of the year
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="WC, Asia Cup qualifying round: Hectic schedules of some players worry Jamie Day  " class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Jamie-Day3.jpg"/>
+            </div>
+            <a href="./post/250939">
+             WC, Asia Cup qualifying round: Hectic schedules of some players worry Jamie Day
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/sports" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Opinions
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div>
+             <img alt="Sajeeb Wazed Joy and Digital Bangladesh" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/mediam/sajib1.jpg"/>
+            </div>
+            <h5 style="margin: 5px;">
+             <a href="./post/250907">
+              Sajeeb Wazed Joy and Digital Bangladesh
+             </a>
+            </h5>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Visionary Leader for Building a Digital Bangladesh " class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/joy12.jpg"/>
+            </div>
+            <a href="./post/250896">
+             Visionary Leader for Building a Digital Bangladesh
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="What moves the gold price?" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/gold9.jpg"/>
+            </div>
+            <a href="./post/250737">
+             What moves the gold price?
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/opinion" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Business
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Community Bank inaugurates 4 branches in Dhaka" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/SGHGJHJ.gif"/>
+            </div>
+            <a href="./post/250984">
+             Community Bank inaugurates 4 branches in Dhaka
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Chevron provides relief for underprivileged school children" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/aids.jpg"/>
+            </div>
+            <a href="./post/250975">
+             Chevron provides relief for underprivileged school children
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="FSIBL inaugurates a sub-branch at Uttar Khan of Dhaka" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/FSIBL.jpg"/>
+            </div>
+            <a href="./post/250970">
+             FSIBL inaugurates a sub-branch at Uttar Khan of Dhaka
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/business" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Metro
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Naval chief calls on president" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/4535455556.gif"/>
+            </div>
+            <a href="./post/250987">
+             Naval chief calls on president
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Coronavirus cases reach 11,070 in Khulna 
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/coronavirus-n425.jpg"/>
+            </div>
+            <a href="./post/250967">
+             Coronavirus cases reach 11,070 in Khulna
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/dhaka-metro" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid visible-phone space-top">
+        <div class="toptitle text-center">
+         Today's Print Edition
+        </div>
+        <div class="zooo" style="background-image: url('http://www.theindependentbd.com/assets/importent_images/paper-bg.png'); height: 255px; padding-top: 10px">
+         <div class="span12">
+          <a href="http://m.theindependentbd.com/printversion">
+           <div class="mz_box">
+            <img alt="Print-Edition: 07-04-2020 " class="" id="img-zoom" src="http://www.theindependentbd.com/assets/images/screen-shot/5239.jpg" style="width:160px; height: 245px;"/>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="visible-phone">
+        <div class="video_section">
+         <div class="toptitle">
+          Video
+         </div>
+         <div id="amazingcarousel-container-1">
+          <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:270px;margin:0px auto 0px;">
+           <div class="amazingcarousel-list-container">
+            <ul class="amazingcarousel-list">
+             <li class="amazingcarousel-item">
+              <div class="amazingcarousel-item-container">
+               <div class="amazingcarousel-image">
+                <a class="html5lightbox" data-group="amazingcarousel-1" href="https://www.youtube.com/embed/rB0UejT0gI4" title="ICC Super League will act as a selection for 2023 World Cup (28-07-2020) Courtesy: Independent TV">
+                 <img alt="ICC Super League will act as a selection for 2023 World Cup (28-07-2020) Courtesy: Independent TV" src="https://img.youtube.com/vi/rB0UejT0gI4/0.jpg"/>
+                </a>
+               </div>
+               <div class="amazingcarousel-text">
+                <div class="amazingcarousel-title">
+                 ICC Super League will act as a selection for 2023 World Cup (28-07-2020) Courtesy: Independent TV
+                </div>
+               </div>
+              </div>
+             </li>
+             <li class="amazingcarousel-item">
+              <div class="amazingcarousel-item-container">
+               <div class="amazingcarousel-image">
+                <a class="html5lightbox" data-group="amazingcarousel-1" href="https://www.youtube.com/embed/pX-Z2GRBIYg" title="Process started of re-opening the closed jute mill through PPP (28-07-2020) Courtesy: Independent TV">
+                 <img alt="Process started of re-opening the closed jute mill through PPP (28-07-2020) Courtesy: Independent TV" src="https://img.youtube.com/vi/pX-Z2GRBIYg/0.jpg"/>
+                </a>
+               </div>
+               <div class="amazingcarousel-text">
+                <div class="amazingcarousel-title">
+                 Process started of re-opening the closed jute mill through PPP (28-07-2020) Courtesy: Independent TV
+                </div>
+               </div>
+              </div>
+             </li>
+             <li class="amazingcarousel-item">
+              <div class="amazingcarousel-item-container">
+               <div class="amazingcarousel-image">
+                <a class="html5lightbox" data-group="amazingcarousel-1" href="https://www.youtube.com/embed/YStBv-yznT0" title="Fear of traffic jam on Dhaka-Tangail highway (27-07-2020) Courtesy: Independent TV">
+                 <img alt="Fear of traffic jam on Dhaka-Tangail highway (27-07-2020) Courtesy: Independent TV" src="https://img.youtube.com/vi/YStBv-yznT0/0.jpg"/>
+                </a>
+               </div>
+               <div class="amazingcarousel-text">
+                <div class="amazingcarousel-title">
+                 Fear of traffic jam on Dhaka-Tangail highway (27-07-2020) Courtesy: Independent TV
+                </div>
+               </div>
+              </div>
+             </li>
+             <li class="amazingcarousel-item">
+              <div class="amazingcarousel-item-container">
+               <div class="amazingcarousel-image">
+                <a class="html5lightbox" data-group="amazingcarousel-1" href="https://www.youtube.com/embed/8GtXyuRtSxg" title="Foreign tourist attraction is gaining importance in tourism (27-07-2020) Courtesy: Independent TV">
+                 <img alt="Foreign tourist attraction is gaining importance in tourism (27-07-2020) Courtesy: Independent TV" src="https://img.youtube.com/vi/8GtXyuRtSxg/0.jpg"/>
+                </a>
+               </div>
+               <div class="amazingcarousel-text">
+                <div class="amazingcarousel-title">
+                 Foreign tourist attraction is gaining importance in tourism (27-07-2020) Courtesy: Independent TV
+                </div>
+               </div>
+              </div>
+             </li>
+             <li class="amazingcarousel-item">
+              <div class="amazingcarousel-item-container">
+               <div class="amazingcarousel-image">
+                <a class="html5lightbox" data-group="amazingcarousel-1" href="https://www.youtube.com/embed/IByymJneeMA" title="Two rivers around Dhaka are overflowing (26-07-2020) Courtesy: Independent TV">
+                 <img alt="Two rivers around Dhaka are overflowing (26-07-2020) Courtesy: Independent TV" src="https://img.youtube.com/vi/IByymJneeMA/0.jpg"/>
+                </a>
+               </div>
+               <div class="amazingcarousel-text">
+                <div class="amazingcarousel-title">
+                 Two rivers around Dhaka are overflowing (26-07-2020) Courtesy: Independent TV
+                </div>
+               </div>
+              </div>
+             </li>
+            </ul>
+            <div class="amazingcarousel-prev">
+            </div>
+            <div class="amazingcarousel-next">
+            </div>
+           </div>
+           <div class="amazingcarousel-nav">
+           </div>
+          </div>
+         </div>
+        </div>
+        <!--end accordion_menu-->
+       </div>
+       <div class="row-fluid space-top visible-phone">
+        <div class="toptitle-photogallery">
+         <div>
+          Photo Gallery
+         </div>
+        </div>
+        <div id="amazingcarousel-container-0">
+         <div id="amazingcarousel-0" style="display:block;position:relative;width:100%;max-width:665px;margin:0px auto 0px;">
+          <div class="amazingcarousel-list-container" style="overflow:hidden;">
+           <ul class="amazingcarousel-list">
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4517.jpg" title="Dubai : A worker feeds ostriches at a zoo in Dubai's al-Awir town, on July 27, 2020. AFP PHOTO ">
+                <img alt="Dubai : A worker feeds ostriches at a zoo in Dubai's al-Awir town, on July 27, 2020. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4517.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Dubai : A worker feeds ostriches at a zoo in Dubai's al-Awir town, on July 27, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4516.jpg" title="Iraq : Fishing boats are moored on the banks of the Shatt Al-Arab river at sunset, in the southern Iraqi city of Basra, on July 24, 2020. AFP PHOTO">
+                <img alt="Iraq : Fishing boats are moored on the banks of the Shatt Al-Arab river at sunset, in the southern Iraqi city of Basra, on July 24, 2020. AFP PHOTO" src="http://www.theindependentbd.com/assets/images/photo_gallery/4516.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Iraq : Fishing boats are moored on the banks of the Shatt Al-Arab river at sunset, in the southern Iraqi city of Basra, on July 24, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a afp="" class="html5lightbox-1" data-group="amazingcarousel-1" hope="" href="http://www.theindependentbd.com/assets/images/photo_gallery/4515.jpg" july="" mars="" on="" photo="" probe="" title="Dubai : Dubai's Burj Khalifa, the tallest structure and building in the world since 2009 (total heigh with antenna of 829.8 metres), ahead of the expected launch of the United Arab Emirates ">
+                <img afp="" alt="Dubai : Dubai's Burj Khalifa, the tallest structure and building in the world since 2009 (total heigh with antenna of 829.8 metres), ahead of the expected launch of the United Arab Emirates " hope="" july="" mars="" on="" photo="" probe="" src="http://www.theindependentbd.com/assets/images/photo_gallery/4515.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Dubai : Dubai's Burj Khalifa, the tallest structure and building in the world since 2009 (total heigh with antenna of 829.8 metres), ahead of the expected launch of the United Arab Emirates "Hope" Mars probe on July 19, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4514.jpg" title="Hong Kong : People watch the sunset as a fishing boat sails past in Hong Kong on July 21, 2020. AFP PHOTO ">
+                <img alt="Hong Kong : People watch the sunset as a fishing boat sails past in Hong Kong on July 21, 2020. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4514.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Hong Kong : People watch the sunset as a fishing boat sails past in Hong Kong on July 21, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4513.jpg" title="France : A deer hunts a fox in a harvested wheat field on July 20, 2020 near Chinon, central France. AFP PHOTO ">
+                <img alt="France : A deer hunts a fox in a harvested wheat field on July 20, 2020 near Chinon, central France. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4513.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               France : A deer hunts a fox in a harvested wheat field on July 20, 2020 near Chinon, central France. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4512.jpg" title="Dubai : This picture taken on July 8, 2020 shows an aerial view of the Burj al-Arab hotel in the Gulf emirate of Dubai, during a government-organised helicopter tour. AFP PHOTO ">
+                <img alt="Dubai : This picture taken on July 8, 2020 shows an aerial view of the Burj al-Arab hotel in the Gulf emirate of Dubai, during a government-organised helicopter tour. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4512.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Dubai : This picture taken on July 8, 2020 shows an aerial view of the Burj al-Arab hotel in the Gulf emirate of Dubai, during a government-organised helicopter tour. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4511.jpg" title="Germany : A bumblebee collects pollen from the flower of a thistle in Unna, western Germany on July 8, 2020.AFP PHOTO">
+                <img alt="Germany : A bumblebee collects pollen from the flower of a thistle in Unna, western Germany on July 8, 2020.AFP PHOTO" src="http://www.theindependentbd.com/assets/images/photo_gallery/4511.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Germany : A bumblebee collects pollen from the flower of a thistle in Unna, western Germany on July 8, 2020.AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4510.jpg" title="Germany : A flower is seen at a cloudy sky at a field in Unna, western Germany on July 8, 2020. AFP PHOTO ">
+                <img alt="Germany : A flower is seen at a cloudy sky at a field in Unna, western Germany on July 8, 2020. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4510.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Germany : A flower is seen at a cloudy sky at a field in Unna, western Germany on July 8, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4509.jpg" title="Gaza City: A Palestinian girl attends a Koran memorization class while respecting social distancing due to the COVID-19 pandemic, at a mosque in Gaza City, on June 29, 2020. AFP PHOTO ">
+                <img alt="Gaza City: A Palestinian girl attends a Koran memorization class while respecting social distancing due to the COVID-19 pandemic, at a mosque in Gaza City, on June 29, 2020. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4509.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Gaza City: A Palestinian girl attends a Koran memorization class while respecting social distancing due to the COVID-19 pandemic, at a mosque in Gaza City, on June 29, 2020. AFP PHOTO
+              </div>
+             </div>
+            </li>
+            <li class="amazingcarousel-item">
+             <div class="amazingcarousel-item-container">
+              <div class="amazingcarousel-image">
+               <a class="html5lightbox-1" data-group="amazingcarousel-1" href="http://www.theindependentbd.com/assets/images/photo_gallery/4508.jpg" title="Istanbul : This picture taken on June 26, 2020 in Istanbul shows Hagia Sophia museum in Istanbul. AFP PHOTO ">
+                <img alt="Istanbul : This picture taken on June 26, 2020 in Istanbul shows Hagia Sophia museum in Istanbul. AFP PHOTO " src="http://www.theindependentbd.com/assets/images/photo_gallery/4508.jpg"/>
+               </a>
+              </div>
+              <div class="amazingcarousel-title">
+               Istanbul : This picture taken on June 26, 2020 in Istanbul shows Hagia Sophia museum in Istanbul. AFP PHOTO
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div class="amazingcarousel-prev">
+          </div>
+          <div class="amazingcarousel-next">
+          </div>
+          <div class="amazingcarousel-nav">
+          </div>
+          <div class="amazingcarousel-engine" style="display:none;">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Entertainment
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div>
+             <img alt="Taking the fight to Trump: documentary follows rights lawyers
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/mediam/Documentary-nm-k.jpg"/>
+            </div>
+            <h5 style="margin: 5px;">
+             <a href="./post/250956">
+              Taking the fight to Trump: documentary follows rights lawyers
+             </a>
+            </h5>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Aishwarya Rai, daughter Aaradhya discharged from hospital" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Aishya.jpg"/>
+            </div>
+            <a href="./post/250917">
+             Aishwarya Rai, daughter Aaradhya discharged from hospital
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Bongo wins CJFB Performance Award" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/gb.png"/>
+            </div>
+            <a href="./post/250914">
+             Bongo wins CJFB Performance Award
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/entertainment" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div style="float:left; width: 47%; margin-right: 10px">
+         <div class="row-fluid">
+          <div class="toptitle" style="font-size:15px !important;">
+           Travel &amp; Tourism
+          </div>
+          <div class="row-fluid">
+           <div class="row-fluid">
+            <div class="span12">
+             <img alt="Reopening plan brings hope for Cox's Bazar tourism" class="pull-left space-right" src="http://www.theindependentbd.com/assets/news_images/thumbs/cox-s-bazaar-syed-zakir-hossain-1584366863439.jpg"/>
+            </div>
+           </div>
+           <div class="span12">
+            <div class="news-head-home">
+             <a href="./post/250930">
+              Reopening plan brings hope for Cox's Bazar tourism
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/travel-tourism" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+        <div style="width: 48%; float:right;">
+         <div class="row-fluid">
+          <div class="toptitle" style="font-size:15px !important;">
+           Environment
+          </div>
+          <div class="row-fluid">
+           <div class="row-fluid">
+            <div class="span12">
+             <img alt="World Tiger Day Wednesday
+" class="pull-left space-right" src="http://www.theindependentbd.com/assets/news_images/thumbs/Tiger-b-nm.jpg"/>
+            </div>
+           </div>
+           <div class="span12">
+            <div class="news-head-home">
+             <a href="./post/250964">
+              World Tiger Day Wednesday
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/environment" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid">
+       </div>
+       <div class="row-fluid space-bottom">
+        <div class="toptitle">
+         Art &amp; Culture
+        </div>
+        <div class="span12">
+         <div class="row-fluid">
+          <div class="row-fluid">
+           <div class="span12">
+            <div class="row-fluid">
+             <div class="span7">
+              <img alt="Event titled ‘Famous Russian Scientists and their Discoveries’ organized virtually" src="http://www.theindependentbd.com/assets/news_images/Rssc-dhaka-m.jpg"/>
+             </div>
+             <div class="span5" style="text-align: justify;">
+              <div class="span12">
+               <div class="news-head-home">
+                <a href="./post/250858">
+                 Event titled ‘Famous Russian Scientists and their Discoveries’ organized virtually
+                </a>
+               </div>
+              </div>
+              The Russian Center for Science and Culture (RCSC), Dhaka and Bangladesh Astronomical Association (BAA)…
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/art-culture" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid visible-phone">
+        <div class="span12 lifestyle-text totitle-body" style="padding-top:5px">
+         Health &amp; Life Style
+        </div>
+       </div>
+       <div class="row-fluid visible-phone">
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Patients with liver aliments more vulnerable to coronavirus: Experts" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/rsz_coronavirus_213.jpg"/>
+           </div>
+           <a href="./post/250945">
+            Patients with liver aliments more vulnerable to coronavirus: Experts
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="'Maskne' and bold makeup: How masks are changing how we look" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/make-up-m.jpg"/>
+           </div>
+           <a href="./post/250767">
+            'Maskne' and bold makeup: How masks are changing how we look
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Boohoo: Five things you may not know about the fashion firm" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/fashion-m20.jpg"/>
+           </div>
+           <a href="./post/250768">
+            Boohoo: Five things you may not know about the fashion firm
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="row-fluid space_bottom10">
+         <div class="span12">
+          <div class="leadnews_mobile">
+           <div class="rig_img">
+            <img alt="Green tea: Immunity booster, good for health " class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/tea-vb-n.jpg"/>
+           </div>
+           <a href="./post/250256">
+            Green tea: Immunity booster, good for health
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid space-top">
+        <div class="span12 top_right_content resBCol">
+         <div class="row-fluid">
+          <div class="tabs-container">
+           <ul class="tabs">
+            <li>
+             <div class="tab selected">
+              <span>
+               <b>
+                Most Viewed
+               </b>
+              </span>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div class="tabs-content-wrap divScroll mCustomScrollbar _mCS_1">
+           <div class="mCustomScrollBox mCS-light" id="mCSB_1">
+            <div class="mCSB_container">
+             <ul class="tabs-content">
+              <li class="selected">
+               <ul>
+                <li>
+                 <div class="tab_img_hl">
+                  <div id="img" style="float:left">
+                   <img border="0" height="60" src="http://www.theindependentbd.com/assets/news_images/thumbs/joy12.jpg" width="90"/>
+                  </div>
+                  <a href="./post/250896" rel="tab">
+                   <div id="hl2">
+                    <font style="color:#16387c">
+                     Visionary Leader for Building a Digital Bangladesh
+                    </font>
+                   </div>
+                  </a>
+                  <div style="clear:both; height:1px; font-size:1px">
+                  </div>
+                 </div>
+                </li>
+                <li>
+                 <div class="tab_img_hl">
+                  <a href="./post/250871" rel="tab">
+                   <div id="hl2">
+                    <font style="color:#16387c">
+                     Fahim Saleh, a short-lived visionary entrepreneur in tech world
+                    </font>
+                   </div>
+                  </a>
+                  <div style="clear:both; height:1px; font-size:1px">
+                  </div>
+                 </div>
+                </li>
+                <li>
+                 <div class="tab_img_hl">
+                  <a href="./post/250872" rel="tab">
+                   <div id="hl2">
+                    <font style="color:#16387c">
+                     Year of coronavirus pandemic: When the stars fell out of the sky
+                    </font>
+                   </div>
+                  </a>
+                  <div style="clear:both; height:1px; font-size:1px">
+                  </div>
+                 </div>
+                </li>
+                <li>
+                 <div class="tab_img_hl">
+                  <a href="./post/250929" rel="tab">
+                   <div id="hl2">
+                    <font style="color:#16387c">
+                     OIC Youth Capital: PM urges global youths to build a strong future
+                    </font>
+                   </div>
+                  </a>
+                  <div style="clear:both; height:1px; font-size:1px">
+                  </div>
+                 </div>
+                </li>
+                <li>
+                 <div class="tab_img_hl">
+                  <a href="./post/250907" rel="tab">
+                   <div id="hl2">
+                    <font style="color:#16387c">
+                     Sajeeb Wazed Joy and Digital Bangladesh
+                    </font>
+                   </div>
+                  </a>
+                  <div style="clear:both; height:1px; font-size:1px">
+                  </div>
+                 </div>
+                </li>
+               </ul>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+         <script type="text/javascript">
+          $(function () {
+                $('div.tabs-container ul.tabs li').click(function () {
+                    var curTabIndex = $(this).index() + 1;
+                    $('div.tabs-container ul.tabs li div.tab, div.tabs-content-wrap ul.tabs-content li').removeClass('selected');
+                    $('div.tabs-container ul.tabs li:nth-child(' + curTabIndex + ') div.tab, div.tabs-content-wrap ul.tabs-content li:nth-child(' + curTabIndex + ')').addClass('selected');
+                });
+            });
+         </script>
+        </div>
+       </div>
+       <div class="row-fluid space-top space-bottom visible-phone">
+        <div class="span12">
+         <div class="toptitle">
+          Science &amp; Tech
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="EU antitrust probe invades employee privacy: Facebook
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/facebook-anti-trust-n-mk.jpg"/>
+            </div>
+            <a href="./post/250957">
+             EU antitrust probe invades employee privacy: Facebook
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="NASA’s Perseverance Mars rover set to launch next week
+" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Nasa-n-m.jpg"/>
+            </div>
+            <a href="./post/250887">
+             NASA’s Perseverance Mars rover set to launch next week
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="row-fluid space_bottom10">
+          <div class="span12">
+           <div class="leadnews_mobile">
+            <div class="rig_img">
+             <img alt="Fahim Saleh, a short-lived visionary entrepreneur in tech world" class="img-responsive" src="http://www.theindependentbd.com/assets/news_images/thumbs/Fahim-saleh-n.jpg"/>
+            </div>
+            <a href="./post/250871">
+             Fahim Saleh, a short-lived visionary entrepreneur in tech world
+            </a>
+           </div>
+          </div>
+         </div>
+         <div style="margin-top:5px;">
+          <a href="http://m.theindependentbd.com/online/science-tech" style="color:#F00;background-color:#fff;float:right;border-bottom:0px;font-size:14px;">
+           More »
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="row-fluid">
+        <div class="span12">
+         <div class="toptitle text-center">
+          E-Paper
+         </div>
+         <div class="magazine_bg">
+          <div class="span12">
+           <a href="http://www.eindependentbd.com/" target="_blank">
+            <div class="mz_box">
+             <img alt="Digital-Edition: 07-04-2020 " class="" id="img-zoom" src="http://www.theindependentbd.com/assets/images/screen-shot/5237.jpg" style="width:160px; height: 215px;"/>
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="space-top" style="background-color: #EDEDED; padding: 5px;">
+     <div class="row-fluid space-top">
+      <div class="span2 text-left editorsline">
+       <img src="http://www.theindependentbd.com/assets//importent_images/footer-logo.png" width="100%"/>
+       <br/>
+       Copyright © All right reserved.
+      </div>
+      <div class="span5 editorsline visible-desktop visible-tablet">
+       <div class="text-left">
+       </div>
+      </div>
+      <div class="span5 editorsline visible-phone">
+       <div class="text-center">
+        <p>
+         <strong>
+          Editor : M. Shamsur Rahman
+         </strong>
+         <br/>
+         Published by the Editor on behalf of Independent Publications Limited at Media Printers, 446/H, Tejgaon I/A, Dhaka-1215.
+         <br/>
+         Editorial, News &amp; Commercial Offices : Beximco Media Complex, 149-150 Tejgaon I/A, Dhaka-1208, Bangladesh. GPO Box No. 934, Dhaka-1000.
+        </p>
+       </div>
+      </div>
+      <div class="span2 text-center visible-desktop visible-tablet" style="font-size: 12px;">
+       <a href="./home/service/disclaimer">
+        Disclaimer &amp; Privacy Policy
+       </a>
+       <div>
+        ....................................................
+       </div>
+       <a href="./home/service/about">
+        About Us
+       </a>
+       <div>
+        ....................................................
+       </div>
+       <a href="./home/service/contact">
+        Contact Us
+       </a>
+       <div>
+        ....................................................
+       </div>
+       <a href="./home/service/advertisement">
+        Advertisement
+       </a>
+       <div>
+        ....................................................
+       </div>
+       <a href="./home/service/subscription">
+        Subscription
+       </a>
+      </div>
+      <div class="span3 text-right">
+       <ul class="social-icons">
+        <li class="stumbleupon-icon">
+         <a href="#">
+          <img alt="StumbleUpon" height="24" src="http://www.theindependentbd.com/assets/importent_images/stumbleupon-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="instagram-icon">
+         <a href="#">
+          <img alt="Instagram" height="24" src="http://www.theindependentbd.com/assets/importent_images/instagram-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="youtube-icon">
+         <a href="#">
+          <img alt="YouTube" height="24" src="http://www.theindependentbd.com/assets/importent_images/youtube-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="twitter-icon">
+         <a href="#">
+          <img alt="Twitter" height="24" src="http://www.theindependentbd.com/assets/importent_images/twitter-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="facebook-icon">
+         <a href="https://www.facebook.com/theindependentbd">
+          <img alt="Facebook" height="24" src="http://www.theindependentbd.com/assets/importent_images/facebook-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="linkedin-icon">
+         <a href="#">
+          <img alt="LinkedIn" height="24" src="http://www.theindependentbd.com/assets/importent_images/linkedin-icon.png" width="24"/>
+         </a>
+        </li>
+        <li class="rss-icon">
+         <a href="./rss.xml">
+          <img alt="RSS Feed" height="24" src="http://www.theindependentbd.com/assets/importent_images/rss-icon.png" width="24"/>
+         </a>
+        </li>
+       </ul>
+       <br/>
+       <div class="editorsline text-center">
+        Powered by : Frog Hosting
+       </div>
+      </div>
+     </div>
+    </div>
+    <script>
+     $(document).ready(function($) {
+           //click counter
+              $('body').on('click','.ad_cl', function() {
+                var ad_id = $(this).attr('data-id');
+                $.ajax({
+                  url: 'http://m.theindependentbd.com/home/click_counter/'+ad_id,
+                })
+              })
+              
+              // impression
+            $( ".ad_cl" ).each(function() {
+                var ad_id = $(this).attr('data-id');
+                // console.log( "ad id : " + ad_id );
+                if (ad_id!='') {
+                    $.ajax({
+                      url: 'http://m.theindependentbd.com/home/impression/'+ad_id,
+                    })
+                }
+            });
+    });
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/amazingcarousel.js">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/initcarousel-1.js">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/initcarousel-0.js">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/jquery.accessible-news-slider.js">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/bootstrap.min.js">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/DateCalender.js" type="text/javascript">
+    </script>
+    <script src="https://www.theindependentbd.com/assets/site/js/jquery.smarticker.js">
+    </script>
+    <script type="text/javascript">
+     jQuery(document).ready(function() {
+            jQuery('#newsslider').accessNews({
+
+            });
+    });
+    </script>
+    <!--Fixed Menu-->
+    <script>
+     $(function () {
+    $(window).scroll(function () {
+        $('.main_nav_fixed').css('width', $('header').width());
+        if ($(this).scrollTop() > 100) {
+            $('#main_menu').addClass('main_nav_fixed');
+        } else {
+            $('#main_menu').removeClass('main_nav_fixed');
+        }
+    });
+});
+    </script>
+    <script type="text/javascript">
+     //Poll Message               
+    $("#pollMessage").hide(); //hide the ajax loader
+    $("#pool_vote").click(function() {
+        // var pollAnswerVal = $('input:radio[name=answer]:checked').val();//Getting the value of a selected radio element.
+        if ($('input:radio[name=pollAnswer]:checked').length == '') {
+            $("#pollMessage").html("please select an answer.").fadeTo("slow", 1, function(){
+                setTimeout(function() {
+                    $("#pollMessage").fadeOut("slow");
+                }, 3000);																		 
+            });
+            return false;			
+        } 	
+    });
+                
+    ///Epaper Zoom
+    $('.magazine_bg img#img-zoom').hover(function() {
+        $(this).addClass('transition');
+
+    }, function() {
+        $(this).removeClass('transition'); 
+    });
+    
+    $('.zooo img#img-zoom').hover(function() {
+        $(this).addClass('transition');
+
+    }, function() {
+        $(this).removeClass('transition'); 
+    });
+                
+                                                        
+    ///Epaper Zoom
+    $('.magazine_inner img#img-zoom').hover(function() {
+        $(this).addClass('transition');
+
+    }, function() {
+        $(this).removeClass('transition'); 
+    });
+                                                        
+    ///Tricker
+                                                                            
+    $('.smarticker1').smarticker({
+        controllerType: 1
+    }); 
+                                                                                        
+                                                                                        
+                                 
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+            autoPlay: 6000,
+            items : 4,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+        });
+    });
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+    $(document).ready(function(){
+        $('div#hotBar').hover(function(){
+            $(this).find('div.featured-title').css('display','block');
+        },function(){$(this).find('div.featured-title').css('display','none');
+        });
+    });
+    </script>
+   </div>
+  </div>
+  <!--FB Left bar-->
+  <table class="only-large visible-desktop" id="slideleft" style=" overflow:auto; position:fixed; top:25%; z-index: 111">
+   <tr class="slideLeftItem" style="position:fixed;left:-320px;z-index:1000;height:100%;">
+    <td>
+     <img src="http://www.theindependentbd.com/assets/importent_images/facebook-vertical.png" style="top:5px; position:absolute; border-left-width:5px; left:318px;"/>
+    </td>
+    <td class="contentBox" style="border:solid 5px #5370AD; width:300px;height:300px;position:relative;border-radius:5px;background-color:white;">
+     <div id="fb-root">
+     </div>
+     <script>
+      (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id))
+                                return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=175735896278886";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+     </script>
+     <div class="fb-page" data-adapt-container-width="true" data-height="260" data-hide-cover="false" data-href="https://www.facebook.com/theindependentbd" data-show-facepile="true" data-show-posts="false" data-small-header="false" data-width="300">
+      <div class="fb-xfbml-parse-ignore">
+       <blockquote cite="https://www.facebook.com/theindependentbd">
+        <a href="https://www.facebook.com/theindependentbd">
+         The Independent, Bangladesh
+        </a>
+       </blockquote>
+      </div>
+     </div>
+    </td>
+   </tr>
+  </table>
+  <script type="text/javascript">
+   jQuery(".slideLeftItem").append('<div style="font-size:12px;font-family: arial;width:300px;text-align:right;"></div>');
+            jQuery("#slideleft tr").hover(function (b) {
+                var a = jQuery(this);
+                jQuery("#slideleft tr").not(a).hide();
+                a.css({"z-index": "9999"});
+                a.stop().animate({left: 0})
+            }, function (b) {
+                var a = jQuery(this);
+                a.css({"z-index": "1000"});
+                a.stop().animate({left: -a.outerWidth()});
+                jQuery("#slideleft tr").show()
+            });
+  </script>
+  <!--back to top-->
+  <script>
+   $(document).ready(function () {
+                // hide #back-top first
+                $("#back-top").hide();
+                // fade in #back-top
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-top').fadeIn();
+                        } else {
+                            $('#back-top').fadeOut();
+                        }
+                    });
+                    $('#back-top a').bind("mouseover", function () {
+                        var color = $('#back-top').css("background-color");
+                        $('#back-top').css("background", "#E3E3E3");
+
+                        $(this).bind("mouseout", function () {
+                            $('#back-top').css("background", color);
+                        })
+                    })
+                    // scroll body to 0px on click
+                    $('#back-top a').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
+                });
+            });
+            // pop up
+  </script>
+  <div id="back-top" style="position: fixed; z-index: 100; width:40px; bottom: 30px; right: 30px; float: right; display: block; text-align:center; border: 1px solid #e41e26; color: #ffffff; padding: 3px 3px;">
+   <a href="#top">
+    <span style="display: block;">
+     <img align="absmiddle" src="http://www.theindependentbd.com/assets/importent_images/5230206e62426-up-arrow.png" width="25px"/>
+    </span>
+   </a>
+  </div>
+ </body>
+</html>

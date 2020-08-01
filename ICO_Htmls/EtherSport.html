@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   EtherSport
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/templatemo-style.css" rel="stylesheet"/>
+  <link href="img/logo-small.png" rel="icon" type="image/x-icon"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126728370-2" type="745784ec1b213ea1ca7c4d48-text/javascript">
+  </script>
+  <script type="745784ec1b213ea1ca7c4d48-text/javascript">
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126728370-2');
+  </script>
+  <script src="js/modernizr.custom.86080.js" type="745784ec1b213ea1ca7c4d48-text/javascript">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="745784ec1b213ea1ca7c4d48-text/javascript">
+  </script>
+ </head>
+ <style>
+  body {
+        background: radial-gradient(circle at center, #00254d, #000);
+    }
+
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/main-bg.jpg');
+        background-position: center;
+        background-size: cover;
+        opacity: .5;
+    }
+ </style>
+ <body>
+  <div class="bg">
+  </div>
+  <div id="particles-js">
+  </div>
+  <div class="container-fluid">
+   <div class="row cb-slideshow-text-container justify-content-center">
+    <div class="tm-content col-lg-9 col-xs-12 section">
+     <header class="text-center" style="text-transform: uppercase; color: #fff;">
+      <h2 class="mb-4" style="
+                            text-transform: uppercase;
+    letter-spacing: .35rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+">
+       Coming Soon
+      </h2>
+      <h6 style="letter-spacing: .25rem;">
+       Revolutionary platform that you've never seen before
+      </h6>
+      <h5 style="letter-spacing: .25rem;
+    font-weight: 600;">
+       but which you have always desired
+      </h5>
+      <h5 style="
+letter-spacing: .25rem;
+    font-weight: 600;font-size: 1.0rem;margin-top: 25px;max-width: 80%;border-radius: 4px;text-align: center;margin-left: 10%;background: rgb(82, 5, 255);padding: 10px;text-shadow: 1px 2px 2px rgba(0,0,0,0.4);r;">
+       We will be pleased to present a completely new type of lottery on our new improved platform.
+      </h5>
+     </header>
+     <div class="text-center my-4">
+      <h1 style="
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    font-weight: 900;
+    /*font-style: italic;*/
+    font-size: 6rem;
+">
+       ETHERSPORT
+      </h1>
+     </div>
+     <div class="container">
+      <div class="row justify-content-center">
+       <div class="col-xl-8 col-md-10 col-xs-12">
+        <form action="#" class="subscribe-form mt-5 form-inline" method="get">
+         <input class="form-control mr-4" id="contact_email" name="email" placeholder="Your Email..." required="" style="flex: 1 1 auto; font-size: 1.2rem;" type="text"/>
+         <button class="tm-btn-subscribe" style="    font-size: 1.2rem;
+    background: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    flex: 0 1 auto;
+    color: #003977;" type="button">
+          Subscribe
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script data-cf-settings="745784ec1b213ea1ca7c4d48-|49" defer="" src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js">
+  </script>
+ </body>
+ <script src="js/particles.js" type="745784ec1b213ea1ca7c4d48-text/javascript">
+ </script>
+ <script src="js/app.js" type="745784ec1b213ea1ca7c4d48-text/javascript">
+ </script>
+ <script type="745784ec1b213ea1ca7c4d48-text/javascript">
+  $(document).on('click', '.tm-btn-subscribe', function (e) {
+	e.preventDefault();
+	var _email = $('[name=email]').val();
+
+	if(!_email) {
+		alert('Please, fill email field for form submitting!');
+		return;
+    }
+	if(!validateEmail(_email)) {
+		alert('Error! Please check if you have entered your email correctly.')
+		return;
+	}
+
+	$.get(
+		'https://new.ethersport.io/site/new-subscriber',
+		{
+			email: _email
+		}, function (data) {
+			alert('Thank you! Your email successfully added to susbscribers list. We will send you an email when new EtherSport system will be anounced!')
+		}
+	)
+
+})
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+ </script>
+</html>

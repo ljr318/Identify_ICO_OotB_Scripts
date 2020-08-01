@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <meta content="#141A27" id="meta-theme" name="theme-color"/>
+  <title>
+   Coinchase - World's First Community-focused Cryptocurrency Exchange and Crowdfunding Platform
+  </title>
+  <meta content="Coinchase, CCH, ICO, IEO, Blockchain Crowdfunding, exchange, Cryptocurrency Exchange, Community-focused, Crowdfunding Platform, BTC, ETH, Staking, PoS, proof of stake, pos mining, staking pools, staking services, coin list, BTC Staking, BTC Savings, ETH Staking, ETH Savings, XRP Staking, XRP Savings, LTC Staking, LTC Savings, BCH Staking, BCH Savings, BNB Staking, BNB Savings, EOS Staking, EOS Savings, BSV Staking, BSV Savings, check in get free BTC, " id="keywords" name="keywords"/>
+  <meta content="Coinchase is World's First Community-focused Cryptocurrency Exchange and Crowdfunding Platform" id="description" name="description"/>
+  <meta content="/static/post_cover_e.png" property="og:image"/>
+  <meta content="Coinchase - World's First Community-focused Cryptocurrency Exchange and Crowdfunding Platform" property="og:title"/>
+  <meta content="Coinchase, CCH, ICO, IEO, Blockchain Crowdfunding, exchange, Cryptocurrency Exchange, Community-focused, Crowdfunding Platform, BTC, ETH, Staking, PoS, proof of stake, pos mining, staking pools, staking services, coin list, BTC Staking, BTC Savings, ETH Staking, ETH Savings, XRP Staking, XRP Savings, LTC Staking, LTC Savings, BCH Staking, BCH Savings, BNB Staking, BNB Savings, EOS Staking, EOS Savings, BSV Staking, BSV Savings, check in get free BTC, " property="og:keywords"/>
+  <meta content="Coinchase is World's First Community-focused Cryptocurrency Exchange and Crowdfunding Platform" property="og:description"/>
+  <meta content="fwYaajw4F9PqRx9PDn3gx1EBZn-CoDAN27amxir6ADA" name="google-site-verification"/>
+  <link href="/static/favicon_new_b.png?v=2" id="favicon" rel="shortcut icon"/>
+  <style>
+   body{
+        margin: 0;
+      }
+      body.app-loading::after{
+        content: ' ';
+        background: url('/static/css_img/loading_effect.svg') center 40% no-repeat;
+        line-height: 200px;
+        font-family: verdana;
+        display: block;
+        text-align: center;
+        color: #ddd;
+        background-color: #f8f8f8;
+        font-size: 24px;
+        position: absolute;
+        top: 0;left: 0; right: 0;bottom: 0;
+      }
+  </style>
+  <link href="/static/css/app.fbce68632a731b24e70be264eff05177.css" rel="stylesheet"/>
+ </head>
+ <body class="app-loading">
+  <div id="app">
+  </div>
+  <script src="/static/src_depends/vuex.min.js">
+  </script>
+  <script src="/static/src_depends/axios.min.js">
+  </script>
+  <script src="/static/src_depends/jquery-3.3.1.min.js">
+  </script>
+  <script src="/static/src_depends/flipclock.min.js">
+  </script>
+  <link href="/static/src_depends/bootstrap.min.css" rel="stylesheet"/>
+  <script src="/static/src_depends/store.min.js">
+  </script>
+  <script src="/static/src_depends/image-compressor.min.js">
+  </script>
+  <script src="/static/src_depends/math.min.js">
+  </script>
+  <script src="/static/src_depends/ice-toast.js?v=c">
+  </script>
+  <script src="/static/src_depends/zh-lang-trans.js?v=b3">
+  </script>
+  <script src="/static/src_depends//charting_library/charting_library.min.js" type="text/javascript">
+  </script>
+  <script>
+   // TradingView.host = 'https://coinchase.com'
+      window.tv_TradingView = TradingView
+  </script>
+  <script src="/static/src_depends/popper.min.js">
+  </script>
+  <script src="/static/src_depends/bootstrap.min.js">
+  </script>
+  <script src="/static/src_depends/echarts.min.js">
+  </script>
+  <link href="/static/src_depends/swiper.min.css" rel="stylesheet"/>
+  <script src="/static/src_depends/swiper.min.js">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.7.0/animate.min.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-117868135-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-117868135-1');
+  </script>
+  <script type="application/javascript">
+   // (function (w, d, t, r, u) {
+      //   w[u] = w[u] || [];
+      //   w[u].push({
+      //     'projectId': '10000',
+      //     'properties': {
+      //       'pixelId': '10059343'
+      //     }
+      //   });
+      //   var s = d.createElement(t);
+      //   s.src = r;
+      //   s.async = true;
+      //   s.onload = s.onreadystatechange = function () {
+      //     var y, rs = this.readyState,
+      //       c = w[u];
+      //     if (rs && rs != "complete" && rs != "loaded") {
+      //       return
+      //     }
+      //     try {
+      //       y = YAHOO.ywa.I13N.fireBeacon;
+      //       w[u] = [];
+      //       w[u].push = function (p) {
+      //         y([p])
+      //       };
+      //       y(c)
+      //     } catch (e) {}
+      //   };
+      //   var scr = d.getElementsByTagName(t)[0],
+      //     par = scr.parentNode;
+      //   par.insertBefore(s, scr)
+      // })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");
+  </script>
+  <script>
+   ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      // Insert Your Facebook Pixel ID below.
+      fbq('init', '2049475858707173');
+      fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=2049475858707173&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+  </noscript>
+  <script type="text/javascript">
+   (function (e, a) {
+        if (!a.__SV) {
+          var b = window;
+          try {
+            var c, l, i, j = b.location,
+              g = j.hash;
+            c = function (a, b) {
+              return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+            };
+            g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage
+              .setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+          } catch (m) {}
+          var k, h;
+          window.mixpanel = a;
+          a._i = [];
+          a.init = function (b, c, f) {
+            function e(b, a) {
+              var c = a.split(".");
+              2 == c.length && (b = b[c[0]], a = c[1]);
+              b[a] = function () {
+                b.push([a].concat(Array.prototype.slice.call(arguments,
+                  0)))
+              }
+            }
+            var d = a;
+            "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+            d.people = d.people || [];
+            d.toString = function (b) {
+              var a = "mixpanel";
+              "mixpanel" !== f && (a += "." + f);
+              b || (a += " (stub)");
+              return a
+            };
+            d.people.toString = function () {
+              return d.toString(1) + ".people (stub)"
+            };
+            k =
+              "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user"
+              .split(" ");
+            for (h = 0; h < k.length; h++) e(d, k[h]);
+            a._i.push([b, c, f])
+          };
+          a.__SV = 1.2;
+          b = e.createElement("script");
+          b.type = "text/javascript";
+          b.async = !0;
+          b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol &&
+            "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ?
+            "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";
+          c = e.getElementsByTagName("script")[0];
+          c.parentNode.insertBefore(b, c)
+        }
+      })(document, window.mixpanel || []);
+      mixpanel.init("631b4ec673d0a8327c9a7d63e12505fc");
+  </script>
+  <script src="/static/js/manifest.2ae2e69a05c33dfc65f8.js" type="text/javascript">
+  </script>
+  <script src="/static/js/vendor.9f89df76c7a7de0d23a0.js" type="text/javascript">
+  </script>
+  <script src="/static/js/app.9558713f69169fee4786.js" type="text/javascript">
+  </script>
+ </body>
+</html>

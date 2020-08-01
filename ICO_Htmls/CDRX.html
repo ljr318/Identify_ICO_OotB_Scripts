@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   CDRX
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"/>
+  <link href="assets/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="assets/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="assets/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="assets/favicons/site.webmanifest" rel="manifest"/>
+  <link color="#5bbad5" href="assets/favicons/safari-pinned-tab.svg" rel="mask-icon"/>
+  <meta content="#da532c" name="msapplication-TileColor"/>
+  <meta content="#ffffff" name="theme-color"/>
+ </head>
+ <body>
+  <div id="root">
+   <div id="ieDiv" style="display: none;">
+    <div>
+     Your brower does not support our application
+    </div>
+    <div>
+    </div>
+    <div>
+     Please upgrade to one of the following
+    </div>
+    <ul>
+     <li>
+      - Chrome version 65 or above
+     </li>
+     <li>
+      - Safari version 12 or above
+     </li>
+     <li>
+      - Edge 42 or above
+     </li>
+     <li>
+      - Firefox version 63 or above
+     </li>
+    </ul>
+   </div>
+  </div>
+  <script>
+   var isIE =
+        (eval("/*@cc_on!@*/false") && document.documentMode === 10) ||
+        ("-ms-scroll-limit" in document.documentElement.style && "-ms-ime-align" in document.documentElement.style);
+      var x = document.getElementById("ieDiv");
+      if (isIE) {
+        x.style.display = "block";
+      }
+  </script>
+  <script src="js/bundle.js?eeb586a67e42e94a8cab" type="text/javascript">
+  </script>
+ </body>
+</html>

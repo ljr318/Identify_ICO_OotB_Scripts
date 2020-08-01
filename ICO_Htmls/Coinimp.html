@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="CoinIMP Web Miner – Monero JavaScript Mining" name="application-name"/>
+  <meta content="CoinIMP is the new effective free JavaScript miner that you can embed in your website. This is the only web browser Javascript mining solution on the market with 0% fee. Web Mining in browser - Browser Mining - can be very effective way to earn on your website and can be additional source of income compared to ads. Works also on mobile devices!" name="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <title>
+   Token Sale | CoinImp
+  </title>
+  <!-- Google Analytics -->
+  <script type="99cb7c48a1c33409d211b438-text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-2289508-13', 'auto');
+        ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+  <link href="/build/main.1378b228.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen:400,700|Oswald:400,600,700" rel="stylesheet"/>
+  <link href="/build/token-sale.b559412d.css" rel="stylesheet"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/site-icon-32.png" rel="shortcut icon" sizes="32x32" type="image/png"/>
+  <link href="/site-icon-16.png" rel="shortcut icon" sizes="16x16" type="image/png"/>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <link color="#448aff" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+  <meta content="CoinIMP – Monero JavaScript Mining" name="apple-mobile-web-app-title"/>
+  <meta content="#448aff" name="msapplication-TileColor"/>
+  <meta content="/mstile-144x144.png" name="msapplication-TileImage"/>
+  <meta content="#448aff" name="theme-color"/>
+  <meta content="/build/images/opengraph-preview.c05e81cc.png" property="og:image"/>
+  <script type="application/ld+json">
+   {
+    "@context": "http://schema.org",
+    "@graph": [
+    {
+        "@type": "WebSite",
+        "name": "CoinIMP JavaScript mining",
+        "url": "https://www.coinimp.com/",
+        "about": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content.",
+        "copyrightYear": "2018",
+        "keywords": "coinimp,Javascript mining, browser mining,web miner, monero"
+    },
+    {
+        "@type": "product",
+        "brand": "CoinIMP",
+        "name": "CoinIMP JavaScript mining",
+        "logo": {
+                "@type": "ImageObject",
+                "caption": "CoinIMPLogo",
+                "contentUrl": "https://www.coinimp.com//img/main-logo.png",
+                "description": "CoinIMP JavaScript miner",
+                "name": "CoinIMPLogo",
+                "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-mascot.png",
+            "description": "CoinIMP  JavaScript miner",
+            "name": "CoinIMP",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "description": "When you refer someone YOU WILL GET 1% of all his earnings",
+            "mainEntityOfPage": "https://www.coinimp.com/referral",
+            "image": {
+                    "@type": "ImageObject",
+                    "caption": "CoinIMP referral",
+                    "contentUrl": "https://www.coinimp.com//img/imp-calculator.png",
+                    "description": "CoinIMP  referral program ",
+                    "name": "CoinIMPReferral",
+                    "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+            },
+            "name": "referralProgram"
+        },
+        "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "reviewCount": "7",
+            "ratingValue": "5",
+            "author": "https://alternativeto.net/software/coinimp/reviews/",
+            "name": "CoinIMPRating"
+        }
+    },
+    {
+        "@type": "WebApplication",
+        "name": "CoinIMP JavaScript mining",
+        "applicationCategory": "cryptocurrency",
+        "operatingSystem": "all",
+        "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website",
+        "downloadUrl": "https://www.coinimp.com//register",
+        "featureList": "https://www.coinimp.com/",
+        "installUrl": "https://www.coinimp.com/dashboard",
+        "releaseNotes": "https://www.coinimp.com/",
+        "screenshot": "https://www.coinimp.com/documentation",
+        "keywords": "coinimp,javascript mining,browser mining,web miner,monero",
+        "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "description": "When you refer someone YOU WILL GET 1% of all his earnings",
+            "mainEntityOfPage": "https://www.coinimp.com/referral",
+            "image": {
+                "@type": "ImageObject",
+                "caption": "CoinIMP referral",
+                "contentUrl": "https://www.coinimp.com//img/imp-calculator.png",
+                "description": "coinImp  referral program ",
+                "name": "CoinIMPReferral",
+                "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+            },
+            "name": "referralProgram"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "reviewCount": "7",
+            "ratingValue": "5",
+            "author": "https://alternativeto.net/software/coinimp/reviews/",
+            "name": "CoinIMPRating"
+        },
+        "image": [ {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-logo.png",
+            "description": "CoinIMP JavaScript miner Logo",
+            "name": "CoinIMPLogo",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        } ,
+        {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-mascot.png",
+            "description": "CoinIMP JavaScript miner",
+            "name": "CoinIMP",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        }],
+        "softwareHelp": {
+            "@type": "HowTo",
+            "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content.",
+            "mainEntityOfPage": "https://www.coinimp.com/documentation/reference",
+            "name": "CoinIMPHelp",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero",
+            "url": "https://www.coinimp.com/documentation"
+        },
+        "softwareRequirements": "https://www.coinimp.com/documentation",
+        "about": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content."
+    }
+    ]
+}
+  </script>
+ </head>
+ <body class="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3" id="navbar">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+     <img alt="CoinIMP javascript mining logo" height="40" src="/build/images/token-sale-logo.aee1084a.svg"/>
+    </a>
+    <button :aria-expanded="showNavbarMenu" :class="{ 'collapsed': !showNavbarMenu }" aria-label="Toggle navigation" class="navbar-toggler" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div :class="{ 'show': showNavbarMenu }" class="collapse navbar-collapse">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="/tokensale">
+        Token Sale
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/buy">
+        Buy
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/about">
+        About Us
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/documentation">
+        Documentation
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/faq">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/referral">
+        Referral Program
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/news/archive">
+        News
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/login">
+        Log In
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/register/">
+        Sign Up
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="container-fluid p-0" id="content-wrapper">
+   <div class="ico" id="content-container">
+    <div id="token-sale">
+     <section id="initial-section">
+      <div class="container">
+       <div class="row pt-3">
+        <div class="col-md-12 col-xl-7">
+         <div class="row text-center text-xl-left">
+          <div class="col-md-12 mt-4">
+           <h1 class="title">
+            The
+            <b>
+             Token Sale
+            </b>
+            of an upcoming
+            <br/>
+            revolution in
+            <b>
+             mintme monetization
+            </b>
+           </h1>
+           <p class="mt-4 mb-0">
+            IMP is a blockchain based token designed to be the most profitable
+                                    way for webmasters to generate revenue.
+           </p>
+          </div>
+          <div class="col-md-12 actions">
+           <div class="row">
+            <div class="col-md-6">
+             <button :disabled="playButtonDisabled" class="btn btn-primary-dark btn-lg btn-video text-uppercase" id="watch-it-work-button">
+              <font-awesome-icon :icon="['fas','play-circle']">
+              </font-awesome-icon>
+              Watch it work
+             </button>
+            </div>
+            <div class="col-md-6">
+             <a class="btn btn-primary-dark ico-main-btn btn-lg btn-paper text-uppercase" href="/coinimp-white-paper" target="_blank">
+              <font-awesome-icon :icon="['far','file-pdf']">
+              </font-awesome-icon>
+              White Paper
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div v-cloak="">
+          <token-sale-progress-counter imp-usd-rate="0.01" is-pre-sale="1" url="/api/sold-imp">
+          </token-sale-progress-counter>
+         </div>
+        </div>
+        <div class="col-md-12 col-xl-5 d-flex flex-column px-0 mt-4 mt-lg-0">
+         <img alt="imp coinimp ico" class="img-fluid align-self-center countdown-imp" src="/build/images/imp-ico.4a2805b1.svg" style="z-index: 2;"/>
+         <div class="countdown d-flex flex-column position-relative">
+          <div class="timer text-center" id="countdown">
+           <count-down current-date="2020-07-27 17:35:05" end-date="October 30, 2018 00:00:00">
+           </count-down>
+          </div>
+          <div class="text-center buy-action">
+           <a class="btn btn-danger btn-lg text-uppercase" href="/buy" role="button" v-cloak="">
+            <div>
+             SIGN UP FOR THE TOKEN SALE!
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="py-3 text-white position-relative" id="imp-price-section">
+      <div class="container">
+       <div class="text-white col-12 text-center">
+        <span class="title">
+         1 IMP (bought during token sale) = 0.01 USD = 1000 impressions
+        </span>
+       </div>
+      </div>
+     </section>
+     <div class="position-relative text-center" id="airdrop-row" ref="airdropsRow">
+      <section class="py-5 text-white" id="airdrop-section">
+       <div class="container">
+        <input id="parachute-url" ref="parachuteUrl" type="hidden" value="/build/images/parachute.3d3b91ea.png"/>
+        <div class="row text-white">
+         <div class="col-12">
+          <span class="title d-block mb-4">
+           A total of
+           <b>
+            25 000 000 IMP
+           </b>
+           tokens will be given away as airdrops
+          </span>
+          <a class="btn btn-success btn-lg title-lead text-uppercase" href="/buy#airdrop-row">
+           Participate
+          </a>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <section class="py-5 text-center text-lg-left" id="features-section">
+      <div class="container">
+       <div class="row align-items-center mb-3">
+        <div class="col-md-12 col-lg-3 d-none d-lg-block">
+         <img class="img-fluid" src="/build/images/icon-offering.07c6c27c.png"/>
+        </div>
+        <div class="col-md-12 col-lg-9 feature-text">
+         <h1 class="text-center text-lg-left">
+          Token sale
+         </h1>
+         <p>
+          IMP is a utility token that focuses on the functionality of today's advertising. We're not only changing the rules of the CPM game, but paving the way for the future of mintme advertising;  IMP tokens guarantee the possibility to maintain a website, from revenue to hosting, and create an economic environment based on impressions generated through websites without having to exchange to other currencies.
+         </p>
+        </div>
+       </div>
+       <div class="row align-items-center my-3">
+        <div class="col-md-12 col-lg-3 order-lg-2 d-none d-lg-block">
+         <img class="img-fluid" src="/build/images/icon-profitability.ef45bfed.png"/>
+        </div>
+        <div class="col-md-12 col-lg-9 feature-text order-lg-1">
+         <h1 class="text-center text-lg-left">
+          CPM Advertising
+         </h1>
+         <p>
+          CoinIMP advertising plan, based on the Cost per Thousand Impressions, based on paying website owners for each impression. CPM is just the beginning of the roadmap to our goal of revolutionizing mintme monetization. Read the white paper and find out more!
+         </p>
+        </div>
+       </div>
+       <div class="row align-items-center my-3">
+        <div class="col-md-12 col-lg-3 d-none d-lg-block">
+         <img class="img-fluid" src="/build/images/icon-airdrops.24c83973.png"/>
+        </div>
+        <div class="col-md-12 col-lg-9 feature-text">
+         <h1 class="text-center text-lg-left">
+          IMP Airdrops
+         </h1>
+         <p>
+          A total of 25 million IMP tokens will be distributed among users
+                            who are eligible to apply for the airdrop.  Want to be sure if you are one of them? Check
+                            the rules and regulations on
+          <a href="/buy">
+           <b>
+            buy page.
+           </b>
+          </a>
+          This is a free way to obtain tokens.
+         </p>
+        </div>
+       </div>
+       <div class="row align-items-center my-3">
+        <div class="col-md-12 col-lg-3 order-lg-2 d-none d-lg-block">
+         <img class="img-fluid" src="/build/images/icon-security.572f6c40.png"/>
+        </div>
+        <div class="col-md-12 col-lg-9 feature-text order-lg-1">
+         <h1 class="text-center text-lg-left">
+          Security of Transactions
+         </h1>
+         <p>
+          IMP is a MintMe.com Coin-based utility token. MintMe Coin is an open source blockchain  to allow the development of DApps based on ERC20 &amp; ERC23 smart contracts. It offers secure and transparent transactions.
+         </p>
+        </div>
+       </div>
+       <div class="row align-items-center my-3">
+        <div class="col-md-12 col-lg-3 d-none d-lg-block">
+         <img class="img-fluid" src="/build/images/icon-trajectory.72b07fd3.png"/>
+        </div>
+        <div class="col-md-12 col-lg-9 feature-text">
+         <h1 class="text-center text-lg-left">
+          Success is Contagious
+         </h1>
+         <p>
+          The team behind IMP launched a completely safe, adjustable, and hardware-friendly mining script provided through CoinIMP service which has been producing revenues to their clients ever since 2017. This is also the team behind MintMe.com Coin, a blockchain made to secure DApps using regular CPUs, following ERC20 and ERC223 standards. This token is backed up by the success of a hosting network that operates worldwide.
+         </p>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="pt-5" id="roadmap-section">
+      <div class="container">
+       <h1 class="text-center mb-5">
+        Roadmap
+       </h1>
+       <timeline current-date="2020-07-27" v-cloak="">
+        <timeline-item month="Q1" year="">
+         <div>
+          <p>
+           <b>
+            API Development and Release:
+           </b>
+           After assessing community needs, we developed and deployed CoinIMP API.
+          </p>
+          <p>
+           <b>
+            Placing CoinIMP among the Top 5 Google Organic Search Results:
+           </b>
+           Showing up on Google Search was an important milestone of our business growth,
+                        therefore we secured a position within the Top 5 Google Organic Search sites for
+                        browser-based mining related phrases.
+          </p>
+         </div>
+        </timeline-item>
+        <timeline-item month="Q2" year="">
+         <div>
+          <p>
+           <b>
+            MintMe.com Coin Development and Release:
+           </b>
+           Beginning for egalitarian cryptocurrency.
+          </p>
+          <p>
+           <b>
+            Project QA testing and deployment:
+           </b>
+           Web security and stability are tested out by professionals and early-access users.
+          </p>
+          <p>
+           <b>
+            IMP Concept Development &amp; White Paper draft:
+           </b>
+           Mapping out IMP and defining the way it would be delivered,
+                        followed by goals setting and business plan, being the outcome our first white paper draft.
+          </p>
+          <p>
+           <b>
+            AV-friendly Solution:
+           </b>
+           For that matter we have implemented an extra script,
+                        which is even more AV-friendly, and it’s free.
+          </p>
+         </div>
+        </timeline-item>
+        <timeline-item month="Q3" year="">
+         <div>
+          <p>
+           <b>
+            Token Sale Web Application design:
+           </b>
+           Setting of specifications and requirements for the first alpha version of the token pages.
+          </p>
+          <p>
+           <b>
+            Token Release Plan:
+           </b>
+           It was decided to split this plan into two stages, Presale and Token Sale.
+          </p>
+          <p>
+           <b>
+            Token Distribution Plan:
+           </b>
+           Definition of how IMP will be launched to the market,
+                        token sale strategy and benefits of token holders.
+          </p>
+          <p>
+           <b>
+            Early Token Sale Development:
+           </b>
+           Development of the MVP solution with the required modules.
+          </p>
+          <p>
+           <b>
+            Content Hiding Tool:
+           </b>
+           Show warning instead of content whenever miner is blocked.
+          </p>
+          <p>
+           <b>
+            New Currency:
+           </b>
+           Now you can mine MintMe.com Coin with CoinIMP.
+          </p>
+         </div>
+        </timeline-item>
+        <timeline-item month="Q4" year="">
+         <div>
+          <p>
+           <b>
+            Token Sale Official Launching:
+           </b>
+           IMP public beta and token sale pages release.
+          </p>
+          <p>
+           <b>
+            Collecting Statistics:
+           </b>
+           Beginning for data collection about websites in CoinIMP nettwork.
+          </p>
+          <p>
+           <b>
+            Referral Program Promotion:
+           </b>
+           CoinIMP users will have an extra way of earning IMP coins,
+                        a referral program that will reward them with a 5% commission
+                        for each purchase made by their referrals.
+          </p>
+          <p>
+           <b>
+            WordPress Plugin:
+           </b>
+           You can freely install our high quality JS miner plugin
+                        on your beloved Wordpress website.
+          </p>
+         </div>
+        </timeline-item>
+        <timeline-item month="2019 and 2020" year="further goals">
+         <div>
+          <p>
+           <b>
+            Ad Platform Development:
+           </b>
+           After finishing Token Sale we will start developing our IMP advertising features for CoinIMP.
+          </p>
+          <p>
+           <b>
+            Search for Potential Partnership:
+           </b>
+           expanding our ad platform with new adverstiers and publishers will be one of our priorities.
+          </p>
+          <p>
+           <b>
+            Hosting provider integration:
+           </b>
+           Activation of CoinIMP JavaScript miner and IMP ads with one click in our hosting services.
+          </p>
+          <p>
+           <b>
+            Mobile App Development:
+           </b>
+           Users will be able to track the performance of their sites,
+                        be in the know about the accumulated revenue, spot the accumulated hashes from the JS miner,
+                        follow the progress of advertisements deployed in the network and pay for their services and access other features,
+                        from their mobile devices.
+          </p>
+          <p>
+           <b>
+            Ad Platform Improvements:
+           </b>
+           Adding advertising models other than CPM.
+          </p>
+         </div>
+        </timeline-item>
+       </timeline>
+      </div>
+     </section>
+     <section class="py-5 text-center text-lg-left text-white" id="investment-recall-section">
+      <div class="container">
+       <div class="row align-items-center">
+        <div class="col-md-12 col-lg-7 order-2 order-lg-1">
+         <h1 class="text-white">
+          Be part of this revolution of mintme monetization: Register for the Token Sale!
+         </h1>
+         <p>
+          IMP Token Sale is only available for a short period of time. Be smart  and buy your tokens  while it’s possible:
+         </p>
+         <a class="btn btn-primary-dark btn-lg" href="/buy">
+          Hold your IMP tokens
+         </a>
+        </div>
+        <div class="col-md-12 col-lg-5 order-1 order-lg-2 text-center">
+         <img alt="" class="img-fluid imp-head" src="/build/images/imp-head.57fa1d0c.png"/>
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="pb-5 d-flex pt-5" id="partners-section">
+      <div class="container">
+       <div class="row text-center">
+        <div class="col-12 mb-5">
+         <h1 class="main">
+          Our Partners
+         </h1>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+         <a class="partner-logo d-flex justify-content-center align-items-center w-100" href="https://www.trackico.io/widget/coinimp/" rel="nofollow" target="_blank">
+          <img alt="trackico" class="d-block" src="/build/images/logo_trackico.ec2765e6.png"/>
+         </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+         <a class="partner-logo d-flex justify-content-center align-items-center w-100" href="https://icobench.com/ico/coinimp" rel="nofollow" target="_blank">
+          <img alt="icobench" class="d-block" src="/build/images/logo_icobench.b4eeb92e.png"/>
+         </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+         <a class="partner-logo d-flex justify-content-center align-items-center w-100" href="https://cryptolab.one/ico/coinimp-imp" rel="nofollow" target="_blank">
+          <img alt="cryptolab" class="d-block" src="/build/images/logo_cryptolab.6ad16802.png"/>
+         </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3 offset-md-2">
+         <a class="partner-logo d-flex justify-content-center align-items-center w-100" href="https://icomarks.com/ico/coinimp" rel="nofollow" target="_blank">
+          <img alt="icomarks" class="d-block" src="/build/images/logo_icomarks.88870a47.svg"/>
+         </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3 offset-sm-3 offset-md-0">
+         <a class="partner-logo d-flex justify-content-center align-items-center w-100" href="http://bitcoinbazis.hu/a-coinimp-javascript-monero-banyasz-az-internetes-hirdetesek-ellen/" rel="nofollow" target="_blank">
+          <img alt="bitcoinbazis" class="d-block" src="/build/images/logo_bitcoinbazis.bee9a4f8.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+     </section>
+     <div class="modal" role="dialog" tabindex="-1" v-cloak="" v-show="showVideo">
+      <div class="modal-dialog modal-lg">
+       <youtube :player-vars="playerOptions" class="youtube-player" v-click-outside="exitVideo" video-id="RUgWvv9VUBY">
+       </youtube>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container-fluid p-0">
+   <div id="page-footer">
+    <div class="container">
+     <div class="row">
+      <div class="col-12 text-center">
+       <p class="d-flex align-items-center justify-content-center">
+        <a class="mr-3" href="https://www.twitter.com/coinimp" rel="nofollow" target="_blank">
+         <font-awesome-layers class="fa-2x">
+          <font-awesome-icon :icon="['fab','twitter-square']">
+          </font-awesome-icon>
+         </font-awesome-layers>
+        </a>
+        <a class="mr-3" href="https://www.reddit.com/r/coinimp" rel="nofollow" target="_blank">
+         <font-awesome-layers class="fa-2x">
+          <font-awesome-icon :icon="['fab','reddit-square']">
+          </font-awesome-icon>
+         </font-awesome-layers>
+        </a>
+        <a class="mr-3" href="https://www.facebook.com/coinimp/" rel="nofollow" target="_blank">
+         <font-awesome-layers class="fa-2x">
+          <font-awesome-icon :icon="['fab','facebook-square']">
+          </font-awesome-icon>
+         </font-awesome-layers>
+        </a>
+        <a class="mr-3" href="/contact">
+         <font-awesome-layers class="fa-1x">
+          <font-awesome-icon icon="envelope">
+          </font-awesome-icon>
+         </font-awesome-layers>
+         Contact Us
+        </a>
+        <a class="mr-3" href="/faq">
+         <font-awesome-layers class="fa-1x">
+          <font-awesome-icon :icon="['far', 'question-circle']">
+          </font-awesome-icon>
+         </font-awesome-layers>
+         FAQ
+        </a>
+       </p>
+       <p class="d-flex align-items-center justify-content-center">
+        <a class="mr-3" href="/terms-and-conditions">
+         Terms &amp; Conditions
+        </a>
+        <a class="mr-3" href="/privacy-policy">
+         Privacy Policy
+        </a>
+       </p>
+      </div>
+      <div class="col-12 text-center">
+       <p class="justify-content-center">
+        v1.3.7 | Copyright 2017-2020 Coin
+        <span class="imp-color">
+         IMP
+        </span>
+        .com, All Rights Reserved
+       </p>
+       <p class="justify-content-center">
+        <a href="https://www.mintme.com/">
+         mintMe - monetize yourself
+        </a>
+        |
+        <font-awesome-icon icon="cookie-bite">
+        </font-awesome-icon>
+        This website uses cookies
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/build/main.c10384c8.js" type="99cb7c48a1c33409d211b438-text/javascript">
+  </script>
+  <script src="/build/token-sale.e0f3e438.js" type="99cb7c48a1c33409d211b438-text/javascript">
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="99cb7c48a1c33409d211b438-text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/5a280eeb5d3202175d9b6b51/default';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <script data-cf-settings="99cb7c48a1c33409d211b438-|49" defer="" src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js">
+  </script>
+ </body>
+</html>

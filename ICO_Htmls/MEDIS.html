@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="medis">
+ <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2163068-60">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+  gtag('config', 'UA-2163068-60');
+  </script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!--sharethis.com-->
+  <script async="async" src="//platform-api.sharethis.com/js/sharethis.js#property=5a0e9fdecef24500111c15cd&amp;product=sticky-share-buttons" type="text/javascript">
+  </script>
+  <base href="./"/>
+  <!-- SETTINGS -->
+  <meta charset="utf-8"/>
+  <meta content="" name="Author"/>
+  <meta content="index,follow" name="robots"/>
+  <meta content="" name="google-site-verification"/>
+  <meta content="" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="MyMEDIS" name="apple-mobile-web-app-title"/>
+  <meta content="en" http-equiv="content-language"/>
+  <title>
+   MEDIS - Globally Decentralized Medical Data Store and Blockchain-based Ecosystem
+  </title>
+  <!-- OPEN GRAPH -->
+  <meta content="MEDIS - Globally Decentralized Medical Data Store and Blockchain-based Ecosystem" property="og:title"/>
+  <meta content="A blockchain-supported system aiming to enhance methods of storage, access and use of electronic health records." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://mymedis.in" property="og:url"/>
+  <meta content="https://mymedis.in/assets/img/medis-logo-share.jpg" property="og:image"/>
+  <meta content="https://mymedis.in/assets/img/medis-medical-laboratory.jpg" property="og:image"/>
+  <meta content="https://mymedis.in/assets/img/medis-dentistry.jpg" property="og:image"/>
+  <meta content="https://mymedis.in/assets/img/medis-stethoscope.jpg" property="og:image"/>
+  <meta content="https://mymedis.in/assets/img/medis-medical-laboratory.jpg" property="og:image:alt"/>
+  <meta content="https://mymedis.in/assets/img/medis-dentistry.jpg" property="og:image:alt"/>
+  <meta content="https://mymedis.in/assets/img/medis-stethoscope.jpg" property="og:image:alt"/>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
+  <link href="./assets/css/normalize.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
+  <link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="./assets/css/style.css" rel="stylesheet"/>
+  <link href="./assets/css/responsive.css" rel="stylesheet"/>
+  <!--prod-->
+  <link href="../assets/img/favicon.ico?_=" rel="icon" title="icon" type="image/x-icon"/>
+ </head>
+ <body ng-controller="appCtrl">
+  <!-- TEASER -->
+  <div class="container" id="teaser">
+   <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse-1" data-toggle="collapse" type="button">
+         <span class="sr-only">
+          Toggle navigation
+         </span>
+         <span class="icon-bar">
+         </span>
+         <span class="icon-bar">
+         </span>
+         <span class="icon-bar">
+         </span>
+        </button>
+        <a class="navbar-brand logo" href="../">
+        </a>
+       </div>
+       <div class="navbar-text" style="padding-top:0px;margin-top:5px;">
+       </div>
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+         <li>
+          <a href="index" ng-click="openNav=false">
+           Home
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+     </nav>
+    </div>
+    <!--/col-->
+   </div>
+   <!--/row-->
+  </div>
+  <!--/teaser-->
+  <!--/container-->
+  <main>
+   <!-- COUNT DOWN -->
+   <div id="countdown">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 text-center">
+       <h1>
+        The MyMEDIS Token Sale has ended.
+       </h1>
+       <span class="title">
+        We have not reached our crowdfunding goal, but we wish to thank you for your support.
+       </span>
+       <p class="lead">
+        <a href="../index#contact">
+         Contact us
+        </a>
+        if you have questions or you are interested in collaborating with us.
+       </p>
+       <br/>
+       <p class="lead" style="color:#fff;">
+        Sign up as a patient. It's free and we'll let you know when your account is ready.
+        <br/>
+        <br/>
+        <a class="btn btn-keys" href="../register">
+         Patient sign up
+        </a>
+       </p>
+       <p class="lead" style="color:#fff;">
+        Sign up for news and future updates.
+       </p>
+       <div class="alert {{ newsletterFormAlertClass }}" ng-show="newsletterFormAlert">
+        {{ newsletterFormAlertText }}
+       </div>
+       <form method="post" name="newsletterForm" ng-class="{'validate' : newsletterFormSent}" ng-hide="newsletterFormHide" ng-model="newsletterForm" ng-submit="newsletterFormSubmit(newsletterForm.$valid)" novalidate="">
+        <div class="input-group input-group-lg">
+         <input class="form-control" name="newsletter_email" ng-model="newsletter.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" placeholder="E-Mail address" required="" type="email"/>
+         <span class="input-group-btn">
+          <button class="btn btn-ico" name="newsletter_submit" type="submit">
+           Subscribe
+          </button>
+         </span>
+        </div>
+        <!-- /input-group -->
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/about-->
+   <div id="about">
+    <div class="container">
+     <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+       <h2 class="head_title">
+        What is MEDIS?
+       </h2>
+       <p class="lead">
+        A blockchain-supported system aiming to enhance methods of storage, access and use of electronic health records.
+        <br/>
+        MEDIS is a new approach that aspires to give control to patients over their existing medical records and health related data, while making it instantly available everywhere. The system utilizes distributed storage technology for redundancy and availability, distributed computing for access control and auditing, and strong cryptographic encryption to ensure confidentiality of the content uploaded in the form of medical records, diagnostic imaging and related information.
+       </p>
+       <p class="small">
+        * All medical records are anonymized according to HIPAA requirements prior to being made available for review or download by other entities.
+       </p>
+      </div>
+     </div>
+     <!--/row-->
+     <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col">
+       <br/>
+       <div class="text-center">
+        <p>
+         <a class="btn-keys" href="../documents/MEDIS-White-Paper.pdf">
+          White paper
+         </a>
+         <br class="visible-xs"/>
+         <a class="btn-keys" href="../documents/MEDIS-Elevator-Pitch.pdf">
+          Elevator Pitch
+         </a>
+         <br class="visible-xs"/>
+         <br/>
+         <a class="btn-keys" href="../documents/MEDIS-Token-Sale-Terms-and-Conditions.pdf">
+          Token Sale Terms
+         </a>
+         <br class="visible-xs"/>
+         <a class="btn-keys" href="../documents/MEDIS-SEC-Statement.pdf">
+          SEC Statement
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--/container-->
+   </div>
+   <!--/about-->
+   <!-- team -->
+   <!-- FOOTER -->
+   <div id="footer">
+    <div class="container">
+     <div class="col-md-9 col-sm-7 col-xs-12">
+      All images, logos, music and audio tracks used in the videos on this website and its subdomains belong to their respective copyright holder / author / artist. No copyright infringement intended. Open content license.
+      <br/>
+      Copyright © 2017-2020 MyMedis.IN LLC. All rights reserved. International and domestic patents pending
+     </div>
+     <div class="col-md-3 col-sm-5 col-xs-12 text-right">
+      <a data-target="#privacy" data-toggle="modal" href="#">
+       Privacy Policy
+      </a>
+      <br/>
+      <a data-target="#terms" data-toggle="modal" href="#">
+       Terms of Use
+      </a>
+      <br/>
+      <a href="links">
+       Links
+      </a>
+      <br/>
+     </div>
+    </div>
+   </div>
+   <!-- Modal - Privacy -->
+   <div class="modal fade" id="privacy" role="dialog">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button class="close" data-dismiss="modal" type="button">
+        ×
+       </button>
+       <h4 class="modal-title">
+        Privacy Policy
+       </h4>
+      </div>
+      <div class="modal-body">
+       <p>
+        mymedis.in and its mother company MYMEDIS.IN, LLC. respects the privacy of visitors to its web sites and services. As a result, we have developed this privacy policy. This privacy policy applies only to the operation of services and web sites operated by mymedis.in that directly link to this policy when you click on "privacy statement" in the website footer.
+       </p>
+       <strong>
+        Log information
+       </strong>
+       <p>
+        When you use our services or view content provided by ryansguardianangels.com, we may automatically collect and store certain information in server logs. This may include: Internet protocol address, time and date of your picture message or email, telephony log information like your phone number or email address, device information such as hardware settings, browser type, browser language, the date and time of your request.
+       </p>
+       <strong>
+        Location information
+       </strong>
+       <p>
+        When you use the mymedis.in service, we may collect and process information about your actual location, like GPS coordinates recorded and embedded by your mobile device into the image you submit (EXIF information). We may also use various technologies to determine location, such as IP address (Internet Protocol) geo-location and browser based geo-location.
+       </p>
+       <strong>
+        Cookies and anonymous identifiers
+       </strong>
+       <p>
+        We use various technologies to collect and store information when you interact with a mymedis.inservice, and this may include sending one or more anonymous identifiers to your device. When you visit one of the mymedis.inoperated websites, we may also use cookies (see below). This website may use a technology called a "cookie". A cookie is a piece of information that our webserver sends to your computer (actually to your browser file) when you access a website. Then when you come back our site will detect whether you have one of our cookies on your computer. Our cookies help provide additional functionality to the site and help us analyze site usage more accurately. For instance, our site may set a cookie on your browser that keeps you from needing to remember and then enter a password more than once during a visit to the site. This website uses Internet Protocol (IP) Addresses. An IP Address is a number assigned to your computer by your Internet service provider so you can access the Internet. Generally, an IP address changes each time you connect to the Internet (it is a "dynamic" address). Note, however, that if you have a broadband connection, depending on your individual circumstance, it is possible that your IP Address that we collect, or even perhaps a cookie we use, may contain information that could be deemed identifiable. This is because with some broadband connections your IP Address doesn't change (it is "static") and could be associated with your personal computer. We use your IP address to report aggregate information on use and to help improve the website.
+       </p>
+       <strong>
+        How we use information we collect
+       </strong>
+       <p>
+        You should be aware that this site is not intended for, or designed to attract, individuals under the age of 18. We do not collect personally identifiable information from any person we actually know is an individual under the age of 18. Some areas of this website that collect Your Information use industry standard secure socket layer encryption (SSL); however, to take advantage of this your browser must support encryption protection (found in Internet Explorer release 3.0 and above). We may share Your Information with third parties in connection with services that these individuals or entities perform for. These agents, contractors or partners are restricted from using this data in any way other than to provide services for contractual partners, or services for the collaboration in which they and their partners are engaged (for example, some of our products are developed and marketed through joint agreements with other companies). mymedis.in LIMITED reserves the right to share Your Information to respond to duly authorized information requests of governmental authorities or where required by law. In exceptionally rare circumstances where national, state or company security is at issue (such as with the World Trade Center terrorist act in September, 2001), mymedis.in LIMITED reserves the right to share our entire database of visitors and customers with appropriate governmental authorities. The policies and procedures described in this privacy policy do not apply to external websites linked to from this website but not owned or operated by mymedis.in LIMITED We suggest contacting those sites directly for information on their privacy, security, data collection, and distribution policies. We may update this Web site Privacy Policy from time to time. When we do update it, for your convenience, we will make the updated policy available on this page.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Modal - Terms -->
+   <div class="modal fade" id="terms" role="dialog">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button class="close" data-dismiss="modal" type="button">
+        ×
+       </button>
+       <h4 class="modal-title">
+        Terms of Use
+       </h4>
+      </div>
+      <div class="modal-body">
+       <p>
+        The site ("mymedis.in" and/or all its sub-domains) and its content is provided to you (the user) subject to these terms and conditions. PLEASE READ THESE TERMS CAREFULLY AS USE OF THIS SITE CONSTITUTES ACCEPTANCE OF THESE TERMS AND CONDITIONS.
+       </p>
+       <strong>
+        Use of content on the mymedis.in web site(s)
+       </strong>
+       <p>
+        The video, audio, information, concepts, delivery mechanisms, artwork, text, or pictures (collectively, "Materials") contained on the website(s) are protected by copyright laws. You may only access and use the Materials for personal or educational purposes. You may not modify or use the Materials for any other purpose without mymedis.in's express written consent. Except as provided below, you may not reproduce, republish, post, transmit or distribute any Materials on the website.
+       </p>
+       <p>
+        You may print Materials for personal or educational purposes only, and you must include any copyright notice originally included with the Materials in all copies.
+       </p>
+       <p>
+        Any audio or video content available from the websites is licensed subject to the terms of the applicable license agreement form the creators of its content.
+       </p>
+       <p>
+        The Materials included on the website have been compiled by us from a variety of sources, and are subject to change without notice.
+       </p>
+       <p>
+        All media files on the website are protected by © copyright laws. You may not, under any circumstances, reproduce, record, publish, publicly exhibit, or distribute any media files made available for playback on the website without our express written consent, or the written consent of the publisher of the contend distributed and delivered by mymedis.in. You may not link directly to any file located on a server, and you should not attempt to "pass-off" any of the content as your own work.
+       </p>
+       <p>
+        These terms and conditions are subject to change without notice and may be modified or negotiated at the sole discretion of mymedis.in.
+       </p>
+       <strong>
+        External sites linked from mymedis.in
+       </strong>
+       <p>
+        Links to external websites may appear on this site. Those sites are not under our control, and we do not assume any responsibility or liability for any communications or materials available at such linked sites. We do not intend links on the website to be referrals or endorsements of the linked entities, and are provided for convenience only.
+       </p>
+       <strong>
+        Disclaimer of warranty
+       </strong>
+       <p>
+        The services, information, software or data (collectively, "Information") made available at the website are provided "AS IS", without warranties of any kind. We expressly disclaim any representations and warranties, including without limitation, the implied warranties of merchantability and fitness for a particular purpose. We shall have absolutely no liability in connection with the services including without limitation, any liability for damage to your computer hardware, data, information, Materials and business resulting from the Information or the lack of information available on the mymedis.in. shall have no liability for:
+       </p>
+       <ul>
+        <li>
+         Any loss or injury caused, in whole or in part, by its actions, omissions, or negligence, or for contingencies beyond its control, in procuring, compiling, or delivering the Information
+        </li>
+        <li>
+         Any errors, omissions, or inaccuracies in the Information regardless of how caused, or delays or interruptions in delivery of the Information
+        </li>
+        <li>
+         Any decision made or action taken or not taken in reliance upon the Information furnished hereunder
+        </li>
+       </ul>
+       <p>
+        We make no warranty, representation or guaranty as to the content, sequence, accuracy, timeliness or completeness of the Information or that the Information may be relied upon for any reason. We make no warranty, representation or guaranty that the Information will be uninterrupted or error free or that any defects can be corrected. For purposes of this section, 'mymedis.in' shall include the company and its divisions, subsidiaries, successors, parent companies, and their employees, partners, principals, agents and representatives, and any third-party providers or sources of information or data.
+       </p>
+       <strong>
+        Limitations of liability
+       </strong>
+       <p>
+        Under no circumstances shall we be liable for any losses or damages whatsoever, whether in contract, tort or otherwise, from the use of, or reliance on, the Information, or from the use of the Internet generally.
+       </p>
+       <p>
+        For purposes of this section, mymedis.in shall include the company and its divisions, subsidiaries, successors, parent companies, and their employees, partners, principals, agents and representatives, and any third-party providers or sources of information or data. © Copyright and trademark notices
+       </p>
+       <p>
+        Code copyright (c)(©) mymedis.in and/or its licensors, 2000-2017. All rights reserved. mymedis.in and associated logos are trademarks of mymedis.in ("pmymedis.in"). Before using any Software Services Logo or trademark, please contact us. All other trademarks are the property of their respective owners.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Modal - purchase -->
+   <div class="modal fade" id="purchase-tokens" role="dialog">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button class="close" data-dismiss="modal" type="button">
+        ×
+       </button>
+       <h4 class="modal-title">
+        Purchase MDC
+       </h4>
+      </div>
+      <div class="modal-body">
+       <div style="text-align:center;padding:100px 0 100px 0;">
+        Please wait...
+        <i class="fa fa-refresh fa-spin">
+        </i>
+       </div>
+       <br/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <!-- Preloader -->
+  <div id="preloader" ng-show="preloader">
+   <div class="spinner">
+    <div class="spinner-inner">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var _token = '1596031977:L25Zz13Xkysw+qCg/EOJCDnNQMQSp0CiqE92Ejoto7da55CoKJ4v88RKuT1/dfnOUbba0JyARXizGrjX8ZkU8Q==:/w9/60NfzzJ1BogH5tXSZF4H3Hn1VXpC91gZzM0nMjbTTm0uYLbfh5bPI1TTzQQnY402cH2pXwpsDddt+vNxfQ==';
+  </script>
+  <script src="./assets/js/jquery-3.2.0.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/angular.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/bootstrap.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/jquery.scrollfire.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/angular-recaptcha.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/clipboard.js/dist/clipboard.min.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/controllers/appCtrl.js" type="text/javascript">
+  </script>
+  <script src="./assets/js/functions.js" type="text/javascript">
+  </script>
+  <!--[if lt IE 9]><script type="text/javascript" src="./assets/js/html5shiv.min.js"></script><![endif]-->
+ </body>
+</html>

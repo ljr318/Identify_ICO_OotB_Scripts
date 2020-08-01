@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <title>
+   Artis Turba | Cryptocurrency Exchange
+  </title>
+  <meta content="Cryptocurrency Exchange South Africa" name="keywords"/>
+  <meta content="Buy and Sell Bitcoin, Ethereum, Ripple, Tron, Digibyte, Electroneum, Stellar Lumens, Binance Coin, EOS, BitTorrent and Artis in South Africa" name="description"/>
+  <link href="https://res.cloudinary.com/artisturba/image/upload/v1534246877/uploads/wzv5l7kkndfggniyp1ap.png" rel="icon" type="image/*"/>
+  <!-- Bootstrap core CSS -->
+  <link href="https://www.artisturba.com/assets/front/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/css/style.css?1596019304" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/css/animate.css" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/css/trade_light.css?1596019304" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/css/responsive.css?1596019304" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/css/fontawesome-all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://www.artisturba.com/assets/front/plugins/toast/jquery.toast.css" rel="stylesheet"/>
+  <script src="https://www.google.com/recaptcha/api.js" type="text/javascript">
+  </script>
+  <!--<script type="text/javascript" src="https://cdn.socket.io/socket.io-1.2.0.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js" type="text/javascript">
+  </script>
+  <style type="text/css">
+   .error{
+                color: #F00 !important;
+            }
+            .language_drop img {
+                width: 22px;
+            }
+            .pairs_fav_class{ cursor: pointer;  }
+            .pairs_a_class{ color:#555 !important; text-decoration: none !important; cursor: pointer;  }
+  </style>
+  <script type="text/javascript">
+   var myVAR = JSON.parse("{\"Dashboard\":\"Dashboard\",\"Trade\":\"Trade\",\"Deposit\":\"Deposit\",\"Withdraw\":\"Withdraw\",\"My Account\":\"My Account\",\"Profile\":\"Profile\",\"Bank\":\"Bank\",\"KYC\":\"KYC\",\"Settings\":\"Settings\",\"Alerts\":\"Alerts\",\"My AARP History\":\"My AARP History\",\"Logout\":\"Logout\",\"How AARP Works\":\"How AARP Works\",\"FAQ\":\"FAQ\",\"Register\":\"Register\",\"Login\":\"Login\",\"Volume\":\"Volume\",\"Markets\":\"Markets\",\"Pair\":\"Pair\",\"Coin\":\"Coin\",\"Last Price\":\"Last Price\",\"Change\":\"Change\",\"APPLY TO LIST\":\"APPLY TO LIST\",\"BENEFITS OF Artis Turba\":\"BENEFITS OF Artis Turba\",\"Subscribe to stay updated on Cryptocoin News and Offers\":\"Subscribe to stay updated on Cryptocoin News and Offers\",\"News\":\"News\",\"Read All News\":\"Read All News\",\"LEGAL\":\"LEGAL\",\"Privacy Policy\":\"Privacy Policy\",\"Terms and Conditions\":\"Terms and Conditions\",\"Support\":\"Support\",\"WHERE TO FIND US\":\"WHERE TO FIND US\",\"Fees\":\"Fees\",\"Contact us\":\"Contact us\",\"Trading volume\":\"Trading volume\",\"24 Hour Trading Volume\":\"24 Hour Trading Volume\",\"All Time Trading Volume\":\"All Time Trading Volume\",\"Pay Out Per 1 ARTIS\":\"Pay Out Per 1 ARTIS\",\"24 Hour Pay Out Per 1 ARTIS\":\"24 Hour Pay Out Per 1 ARTIS\",\"All Time Pay Out\":\"All Time Pay Out\",\"My 24 Hour Pay-Out\":\"My 24 Hour Pay-Out\",\"Search\":\"Search\",\"Download CSV\":\"Download CSV\",\"Next\":\"Next\",\"Previous\":\"Previous\",\"First\":\"First\",\"Last\":\"Last\",\"No data available in table\":\"No data available in table\",\"Username\":\"Username\",\"Email Address\":\"Email Address\",\"Password\":\"Password\",\"Confirm Password\":\"Confirm Password\",\"I agree to Artis Turba\'s Terms of Use\":\"I agree to Artis Turba\'s Terms of Use\",\"Sign up\":\"Sign up\",\"Already have an account\":\"Already have an account\",\"Sign In\":\"Sign In\",\"Enter Google 2FA code to proceed\":\"Enter Google 2FA code to proceed\",\"Forgot Password\":\"Forgot Password\",\"Not registered yet\":\"Not registered yet\",\"Enter your email address to request a password reset\":\"Enter your email address to request a password reset\",\"Submit\":\"Submit\",\"Bank Details\":\"Bank Details\",\"2 Factor Authentication\":\"2 Factor Authentication\",\"VERIFIED\":\"VERIFIED\",\"UNVERIFIED\":\"UNVERIFIED\",\"View Profile\":\"View Profile\",\"Change Password\":\"Change Password\",\"Update Banking Details\":\"Update Banking Details\",\"SECURED\":\"SECURED\",\"Disable\":\"Disable\",\"Enable\":\"Enable\",\"Login History\":\"Login History\",\"Date\":\"Date\",\"IP Address\":\"IP Address\",\"Device\":\"Device\",\"Location\":\"Location\",\"Transaction History\":\"Transaction History\",\"Name\":\"Name\",\"Type\":\"Type\",\"Amount\":\"Amount\",\"Load More\":\"Load More\",\"Wallet Balance\":\"Wallet Balance\",\"S.No\":\"S.No\",\"Status\":\"Status\",\"Account Holder Name\":\"Account Holder Name\",\"Account Number\":\"Account Number\",\"Branch Code\":\"Branch Code\",\"To receive %s use this address\":\"To receive %s use this address\",\"Transaction Hash\":\"Transaction Hash\",\"Copy Address\":\"Copy Address\",\"Deposit Fiat\":\"Deposit Fiat\",\"Select Cryptocoin\":\"Select Crypto coin\",\"Scan QR Code\":\"Scan QR Code\",\"Withdraw Fee\":\"Withdraw Fee\",\"Enter 2FA Google Authenticator Code\":\"Enter 2FA Google Authenticator Code\",\"Total Withdraw Amount\":\"Total Withdraw Amount\",\"Crypto Deposit History\":\"Crypto Deposit History\",\"Fiat Withdraw History\":\"Fiat Withdraw History\",\"Fee\":\"Fee\",\"Total Amount\":\"Total Amount\",\"Amount to Send\":\"Amount to Send\",\"Total Receive Amount\":\"Total Receive Amount\",\"Send\":\"Send\",\"Address\":\"Address\",\"My Profile Details\":\"My Profile Details\",\"User Name\":\"User Name\",\"First Name\":\"First Name\",\"Last Name\":\"Last Name\",\"Date of Birth\":\"Date of Birth\",\"Phone Number\":\"Phone Number\",\"Address 1\":\"Address 1\",\"Address 2\":\"Address 2\",\"City\":\"City\",\"State \\/ Province\":\"State \\/ Province\",\"Postal Code\":\"Postal Code\",\"Country\":\"Country\",\"Upload Profile Image\":\"Upload Profile Image\",\"(gif, png, jpg, jpeg formats only)\":\"(gif, png, jpg, jpeg formats only)\",\"Select Chat Avatar\":\"Select Chat Avatar\",\"Nickname and Text Color\":\"Nickname and Text Color\",\"My Bank Details\":\"My Bank Details\",\"Bank Name\":\"Bank Name\",\"IBAN\\/Swift\":\"IBAN\\/Swift\",\"Branch Name\":\"Branch Name\",\"Registerd on\":\"Registerd on\",\"ID Proof\":\"ID Proof\",\"Address Proof\":\"Address Proof\",\"Bank ID Proof\":\"Bank ID Proof\",\"Pending\":\"Pending\",\"Rejected\":\"Rejected\",\"Verified\":\"Verified\",\"Unverified\":\"Unverified\",\"Photo ID Proof\":\"Photo ID Proof\",\"ID Proof Type\":\"ID Proof Type\",\"To verify your account please submit A valid government issued ID, acceptable high quality images of documents are\":\"To verify your account please submit A valid government issued ID, acceptable high quality images of documents are\",\"International passport (double page)\":\"International passport (double page)\",\"National ID card\":\"National ID card\",\"Driver\'s license\":\"Driver\'s license\",\"VISIBLE in their ENTIRETY (watermarks are not permitted)\":\"VISIBLE in their ENTIRETY (watermarks are not permitted)\",\"Address Proof Type\":\"Address Proof Type\",\"Select any one of the document proof for your residential address\":\"Select any one of the document proof for your residential address\",\"To avoid delays when verifying your account, make sure that your submitted documents are:\":\"To avoid delays when verifying your account, make sure that your submitted documents are:\",\"Images of HIGH QUALITY (colour images, 300dpi resolution or higher)\":\"Images of HIGH QUALITY (colour images, 300dpi resolution or higher)\",\"Bank Proof\":\"Bank Proof\",\"Upload any one document\":\"Upload any one document\",\"Bank Pass Book\":\"Bank Pass Book\",\"Bank Statement (Not older than 3 months)\":\"Bank Statement (Not older than 3 months)\",\"First scan this QR code with your authenticator app or input the below key. NB! Save this code in a secure location for future use. Should you ever lose or change your mobile phone then this code can be used to retrieve your 2-FA setting for your account\":\"First scan this QR code with your authenticator app or input the below key. NB! Save this code in a secure location for future use. Should you ever lose or change your mobile phone then this code can be used to retrieve your 2-FA setting for your account\",\"Install Google Authenticator App from Play Store and scan the QR code. Then enter the 6 digit 2-FA code below along with your password\":\"Install Google Authenticator App from Play Store and scan the QR code. Then enter the 6 digit 2-FA code below along with your password\",\"Enter Google 2 FA Authenticator code\":\"Enter Google 2 FA Authenticator code\",\"Enter Your Login Password\":\"Enter Your Login Password\",\"Current Password\":\"Current Password\",\"New Password\":\"New Password\",\"Confirm New Password\":\"Confirm New Password\",\"Update\":\"Update\",\"New password should be\":\"New password should be\",\"Minimum of 1 lower case letter [a-z] and\":\"Minimum of 1 lower case letter [a-z] and\",\"Minimum of 1 upper case letter [A-Z] and\":\"Minimum of 1 upper case letter [A-Z] and\",\"Minimum of 1 numeric character [0-9] and\":\"Minimum of 1 numeric character [0-9] and\",\"Minimum of 1 special character: ~`!@#$%^&*()-_+={}[]|\\\\;:<>,.\\/?\":\"Minimum of 1 special character: ~`!@#$%^&*()-_+={}[]|\\\\;:<>,.\\/?\",\"At least 1 upper case, numeric, and special character must be EMBEDDED somewhere in the middle of the password, and not just be the first or the last character of the password string\":\"At least 1 upper case, numeric, and special character must be EMBEDDED somewhere in the middle of the password, and not just be the first or the last character of the password string\",\"E-mail Alerts\":\"E-mail Alerts\",\"For New Device Login\":\"For New Device Login\",\"For 2 Factor Change\":\"For 2 Factor Change\",\"For Change Password\":\"For Change Password\",\"Notifications\":\"Notifications\",\"Description\":\"Description\",\"High\":\"High\",\"Low\":\"Low\",\"Trade History\":\"Trade History\",\"Date + Time\":\"Date + Time\",\"Time\":\"Time\",\"Price\":\"Price\",\"Order Book\":\"Order Book\",\"Sell\":\"Sell\",\"Buy\":\"Buy\",\"Both\":\"Both\",\"Total\":\"Total\",\"Balance\":\"Balance\",\"Instant Order\":\"Instant Order\",\"Stop Order\":\"Stop Order\",\"Limit Order\":\"Limit Order\",\"My Open Orders\":\"My Open Orders\",\"My Stop Orders\":\"My Stop Orders\",\"My Trading History\":\"My Trading History\",\"Open Orders\":\"Open Orders\",\"Stop Orders\":\"Stop Orders\",\"Trading History\":\"Trading History\",\"Order\":\"Order\",\"Live Chat\":\"Live Chat\",\"Enter Message\":\"Enter Message\",\"Unable to load this page\":\"Unable to load this page\",\"You cannot deposit more than R %s\":\"You cannot deposit more than R %s\",\"You cannot deposit less than R %s\":\"You cannot deposit less than R %s\",\"You cannot deposit more than R %s in this month. You already deposited R %s\":\"You cannot deposit more than R %s in this month. You already deposited R %s\",\"Successfully placed your deposit request. Our team will confirm this request\":\"Successfully placed your deposit request. Our team will confirm this request\",\"Unable to place your request. Please try again later !\":\"Unable to place your request. Please try again later !\",\"Please complete your banking details to enable ZAR withdrawals\":\"Please complete your banking details to enable ZAR withdrawals\",\"You cannot withdraw more than R %s\":\"You cannot withdraw more than R %s\",\"You cannot withdraw less than R %s\":\"You cannot withdraw less than R %s\",\"You cannot withdraw more than R %s in this month. You already withdrew R %s\":\"You cannot withdraw more than R %s in this month. You already withdrew R %s\",\"KYC details need to be verified\":\"KYC details need to be verified\",\"Successfully placed your withdraw request. Please check your mail and confirm your request\":\"Successfully placed your withdraw request. Please check your mail and confirm your request\",\"You don\\\\\'t have enough balance to withdraw\":\"You don\\\\\'t have enough balance to withdraw\",\"Invalid 2FA code\":\"Invalid 2FA code\",\"Enable 2FA to continue withdraw\":\"Enable 2FA to continue withdraw\",\"Please login to confirm your withdrawal request\":\"Please login to confirm your withdrawal request\",\"Your request is already confirmed\":\"Your request is already confirmed\",\"Your request is already cancelled\":\"Your request is already cancelled\",\"Your request confirmed successfully. Our team will also confirm your requst soon\":\"Your request confirmed successfully. Our team will also confirm your requst soon\",\"Verification code is not valid\":\"Verification code is not valid\",\"Please login to cancel your withdrawal request\":\"Please login to cancel your withdrawal request\",\"Your request cancelled successfully\":\"Your request cancelled successfully\",\"Your account is accessed from another browser\":\"Your account is accessed from another browser\",\"Your account is locked. Please contact administrator\":\"Your account is locked. Please contact administrator\",\"Your account is de-activated. Please contact administrator\":\"Your account is de-activated. Please contact administrator\",\"Referral code was wrong\":\"Referral code was wrong\",\"Password and Confirm Password are not match\":\"Password and Confirm Password are not match\",\"Password length must be 8-16 characters and contain a capital letter, small capital letter, number and special character. Spaces are not allowed\":\"Password length must be 8-16 characters and contain a capital letter, small capital letter, number and special character. Spaces are not allowed\",\"Entered Email Address Already Exists\":\"Entered Email Address Already Exists\",\"Entered Username Already Exists\":\"Entered Username Already Exists\",\"Confirmation email send, please click on the link to verify your email address. Ensure to check your junk or spam folder should you not see the email in your inbox\":\"Confirmation email send, please click on the link to verify your email address. Ensure to check your junk or spam folder should you not see the email in your inbox\",\"Please check captcha\":\"Please check captcha\",\"Your Email is already verified. You can be able to login now\":\"Your Email is already verified. You can be able to login now\",\"Your account has been activated. You can be able to login now\":\"Your account has been activated. You can be able to login now\",\"Activation link is not valid\":\"Activation link is not valid\",\"Enter Password and Confirm Password\":\"Enter Password and Confirm Password\",\"Link Expired!\":\"Link Expired!\",\"Already reset password using this link\":\"Already reset password using this link\",\"Not a valid link\":\"Not a valid link\",\"Your account locked successfully. To unlock account contact administrator\":\"Your account locked successfully. To unlock account contact administrator\",\"Logged Out successfully\":\"Logged Out successfully\",\"Unable to update your profile details. Phone number already exists!\":\"Unable to update your profile details. Phone number already exists!\",\"Problem with your image or file format not supported\":\"Problem with your image or file format not supported\",\"Your profile details have been successfully updated\":\"Your profile details have been successfully updated\",\"Unable to update your profile details. Please try again later !\":\"Unable to update your profile details. Please try again later !\",\"Your bank details has been successfully saved\":\"Your bank details has been successfully saved\",\"Unable to update your bank details. Please try again later !\":\"Unable to update your bank details. Please try again later !\",\"Your KYC details have been successfully updated\":\"Your KYC details have been successfully updated\",\"Unable to update your KYC details. Please try again later !\":\"Unable to update your KYC details. Please try again later !\",\"TFA Enabled successfully\":\"TFA Enabled successfully\",\"Please Enter correct code to disable TFA\":\"Please Enter correct code to disable TFA\",\"2FA Enabled successfully\":\"2FA Enabled successfully\",\"Please Enter correct code to enable 2FA\":\"Please Enter correct code to enable 2FA\",\"2FA Disabled successfully\":\"2FA Disabled successfully\",\"Please Enter correct code to disable 2FA\":\"Please Enter correct code to disable 2FA\",\"Entered password is not valid\":\"Entered password is not valid\",\"Your seesion was expired. Please login to continue your account\":\"Your seesion was expired. Please login to continue your account\",\"Your password was changed successfully\":\"Your password was changed successfully\",\"Confirm password must be same as new password\":\"Confirm password must be same as new password\",\"Your current password is wrong\":\"Your current password is wrong\",\"Password changed successfully\":\"Password changed successfully\",\"Your old password is wrong\":\"Your old password is wrong\",\"Your withdraw request already confirmed\":\"Your withdraw request already confirmed\",\"Your withdraw request already cancelled\":\"Your withdraw request already cancelled\",\"Your are not the owner of this withdraw request\":\"Your are not the owner of this withdraw request\",\"Successfully placed your withdraw request. Our team will also confirm this request\":\"Successfully placed your withdraw request. Our team will also confirm this request\",\"Invalid withdraw confirmation\":\"Invalid withdraw confirmation\",\"Successfully cancelled your withdraw request\":\"Successfully cancelled your withdraw request\",\"Enter Valid Login Details\":\"Enter Valid Login Details\",\"Your account verification is uncompleted, please check your e-mail and click on the activation email to activate your account\":\"Your account verification is uncompleted, please check your e-mail and click on the activation email to activate your account\",\"Enter the 2FA code & then continue\":\"Enter the 2FA code & then continue\",\"Login error\":\"Login error\",\"This field is required.\":\"This field is required.\",\"Please enter email or username\":\"Please enter email or username\",\"Please enter password\":\"Please enter password\",\"Please enter name\":\"Please enter name\",\"Please enter email\":\"Please enter email\",\"Please enter phone number\":\"Please enter phone number\",\"Please enter subject\":\"Please enter subject\",\"Please enter message\":\"Please enter message\",\"Please enter valid email address\":\"Please enter valid email address\",\"Please enter at least 8 characters.\":\"Please enter at least 8 characters.\",\"Please enter no more than 10 characters.\":\"Please enter no more than 10 characters.\",\"Please enter username\":\"Please enter username\",\"Please enter email address\":\"Please enter email address\",\"Please enter confirm password\":\"Please enter confirm password\",\"Please agree terms & conditions\":\"Please agree terms & conditions\",\"Please enter at least 3 characters.\":\"Please enter at least 3 characters.\",\"Password length must be 8-16 characters and contain a capital letter, small capital letter, number and special character. Spaces are not allowed.\":\"Password length must be 8-16 characters and contain a capital letter, small capital letter, number and special character. Spaces are not allowed.\",\"Password length must be 8-16 characters and contain an uppercase letter, lowercase letter, number and special character. Spaces are not allowed.\":\"Password length must be 8-16 characters and contain an uppercase letter, lowercase letter, number and special character. Spaces are not allowed.\",\"Please enter same password\":\"Please enter same password\",\"Entered email address already exists\":\"Entered email address already exists\",\"Please enter current password\":\"Please enter current password\",\"Please enter new password\":\"Please enter new password\",\"Please enter confirm new password\":\"Please enter confirm new password\",\"Please enter valid Google 2 FA Authenticator code\":\"Please enter valid Google 2 FA Authenticator code\",\"Please enter Google 2 FA Authenticator code\":\"Please enter Google 2 FA Authenticator code\",\"Please enter your login password\":\"Please enter your login password\",\"Please enter Secret code\":\"Please enter Secret code\",\"Please enter 6 digits only\":\"Please enter 6 digits only\",\"Please enter chat aname\":\"Please enter chat aname\",\"Please enter lettersonly\":\"Please enter lettersonly\",\"Space not allowed\":\"Space not allowed\",\"Please upload photo proof frontside\":\"Please upload photo proof frontside\",\"Please upload photo proof backside\":\"Please upload photo proof backside\",\"Please select photo id proof type\":\"Please select photo id proof type\",\"Please select address proof type\":\"Please select address proof type\",\"Please upload address proof\":\"Please upload address proof\",\"Please upload bank proof\":\"Please upload bank proof\",\"Please select Subject\":\"Please select Subject\",\"Please enter description\":\"Please enter description\",\"Please enter price\":\"Please enter price\",\"Please enter numers only\":\"Please enter numers only\",\"Please enter valid price\":\"Please enter valid price\",\"Please select order type\":\"Please select order type\",\"Please enter amount\":\"Please enter amount\",\"Please enter valid amount\":\"Please enter valid amount\",\"Insufficient balance\":\"Insufficient balance\",\"Please enter amount to deposit\":\"Please enter amount to deposit\",\"Please select bank\":\"Please select bank\",\"Please enter 2fa code\":\"Please enter 2fa code\",\"Please enter valid 2fa code\":\"Please enter valid 2fa code\",\"Enter 6 digit valid 2fa code\":\"Enter 6 digit valid 2fa code\",\"Please enter atleast 10 digits\":\"Please enter atleast 10 digits\",\"Should not more than 20 digits\":\"Should not more than 20 digits\",\"Enter Amount is required\":\"Enter Amount is required\",\"Entered username already exists\":\"Entered username already exists\",\"Please enter valid username spaces are not allowed\":\"Please enter valid username spaces are not allowed\",\"Allowed 50 characters only\":\"Allowed 50 characters only\",\"Please enter letters only\":\"Please enter letters only\",\"Full Name\":\"Full Name\",\"Subject\":\"Subject\",\"Message\":\"Message\",\"Office Address\":\"Office Address\",\"Contact Information\":\"Contact Information\",\"Our Working Hour\":\"Our Working Hour\",\"Monday - Friday\":\"Monday - Friday\",\"Support Ticket\":\"Support Ticket\",\"Attach supporting documents if available\":\"Attach supporting documents if available\",\"Previous Tickets\":\"Previous Tickets\",\"Attachment if any\":\"Attachment if any\",\"Yes, close this ticket\":\"Yes, close this ticket\",\"No Previous Tickets\":\"No Previous Tickets\",\"Member Since\":\"Member Since\",\"Your message successfully sent to our team\":\"Your message successfully sent to our team\",\"Error occur!! Please try again\":\"Error occur!! Please try again\",\"Already Subscribed\":\"Already Subscribed\",\"Successfully Subscribed\":\"Successfully Subscribed\",\"Unable to place your order!\":\"Unable to place your order!\",\"Price and Amount must be numeric!\":\"Price and Amount must be numeric!\",\"Invalid Request!\":\"Invalid Request!\",\"Invalid Request\":\"Invalid Request\",\"Insufficient Balance!\":\"Insufficient Balance!\",\"Stop price must below the market price!\":\"Stop price must below the market price!\",\"Unable to place your order. Please try again later !\":\"Unable to place your order. Please try again later !\",\"Unable to process your request\":\"Unable to process your request\",\"Order cancelled successfully\":\"Order cancelled successfully\",\"Order doesn\'t exists\":\"Order doesn\'t exists\",\"Successfully placed your order\":\"Successfully placed your order\",\"Enter Valid TFA Code\":\"Enter Valid TFA Code\",\"Login successful\":\"Login successful\",\"User does not Exists\":\"User does not Exists\",\"Password reset link is sent to your email\":\"Password reset link is sent to your email\",\"Your account is de-activated !!! Kindly activate from your mail or Please contact support\":\"Your account is de-activated !!! Kindly activate from your mail or Please contact support\",\"Password reset successfully\":\"Password reset successfully\",\"Please Enter correct code to enable TFA\":\"Please Enter correct code to enable TFA\",\"TFA Disabled successfully\":\"TFA Disabled successfully\",\"unable to update\":\"unable to update\",\"Successfully updated\":\"Successfully updated\",\"Incorrect TFA\":\"Incorrect TFA\",\"Invalid Address\":\"Invalid Address\",\"Amount you have entered is more than your balance\":\"Amount you have entered is more than your balance\",\"Amount you have entered is less than minimum withdrawl limit\":\"Amount you have entered is less than minimum withdrawl limit\",\"Amount you have entered is more than maximum withdrawl limit\":\"Amount you have entered is more than maximum withdrawl limit\",\"Your withdraw request placed successfully. Please make confirm from the mail you received to your registered mail!\":\"Your withdraw request placed successfully. Please make confirm from the mail you received to your registered mail!\",\"Subscribe Now\":\"Subscribe Now\",\"Copyright\":\"Copyright\",\"NOT SECURED\":\"NOT SECURED\",\"No transactions found\":\"No transactions found\",\"Profile Image\":\"Profile Image\",\"Registered on\":\"Registered on\",\"Upload\":\"Upload\",\"View document\":\"View document\",\"Upload Address Proof\":\"Upload Address Proof\",\"Upload Bank Account Proof\":\"Upload Bank Account Proof\",\"Photo Proof (front)\":\"Photo Proof (front)\",\"Photo Proof (back)\":\"Photo Proof (back)\",\"Upload frontside Photo ID Proof\":\"Upload frontside Photo ID Proof\",\"Upload photo of yourself holding ID proof\":\"Upload photo of yourself holding ID proof\",\"profile\":\"profile\",\"details before kyc verification\":\"details before kyc verification\",\"Withdraw Cryptocurrency\":\"Withdraw Cryptocurrency\",\"Select Cryptocurrency\":\"Select Cryptocurrency\",\"Enter receiver\":\"Enter receiver\",\"Crypto Withdraw History\":\"Crypto Withdraw History\",\"Min\":\"Min\",\"Max\":\"Max\",\"per transaction\":\"per transaction\",\"per day\":\"per day\",\"per month\":\"per month\",\"Unique Reference Number\":\"Unique Reference Number\",\"Address Copied Successfully\":\"Address Copied Successfully\",\"Memo Copied Successfully\":\"Memo Copied Successfully\",\"Link Copied Successfully\":\"Link Copied Successfully\",\"Sorry! Unable to login. Please try again\":\"Sorry! Unable to login. Please try again\",\"Sorry! Unable to place your order. Please try again\":\"Sorry! Unable to place your order. Please try again\",\"Tag Copied Successfully\":\"Tag Copied Successfully\",\"Payment ID Copied Successfully\":\"Payment ID Copied Successfully\",\"Sorry! Unable to fetch data\":\"Sorry! Unable to fetch data\",\"Fiat Deposit History\":\"Fiat Deposit History\",\"Trading Volume\":\"Trading Volume\",\"Affiliate Rewards Program\":\"Affiliate Rewards Program\",\"Cryptocurrency\":\"Cryptocurrency\",\"Please fill your\":\"Please fill your\",\"Select\":\"Select\",\"Afghanistan\":\"Afghanistan\",\"Albania\":\"Albania\",\"Algeria\":\"Algeria\",\"American Samoa\":\"American Samoa\",\"Andorra\":\"Andorra\",\"Angola\":\"Angola\",\"Anguilla\":\"Anguilla\",\"Antarctica\":\"Antarctica\",\"Antigua and Barbuda\":\"Antigua and Barbuda\",\"Argentina\":\"Argentina\",\"Armenia\":\"Armenia\",\"Aruba\":\"Aruba\",\"Australia\":\"Australia\",\"Austria\":\"Austria\",\"Azerbaijan\":\"Azerbaijan\",\"Bahamas\":\"Bahamas\",\"Bahrain\":\"Bahrain\",\"Bangladesh\":\"Bangladesh\",\"Barbados\":\"Barbados\",\"Belarus\":\"Belarus\",\"Belgium\":\"Belgium\",\"Belize\":\"Belize\",\"Benin\":\"Benin\",\"Bermuda\":\"Bermuda\",\"Bhutan\":\"Bhutan\",\"Bolivia\":\"Bolivia\",\"Bosnia and Herzegovina\":\"Bosnia and Herzegovina\",\"Botswana\":\"Botswana\",\"Bouvet Island\":\"Bouvet Island\",\"Brazil\":\"Brazil\",\"British Indian Ocean Territory\":\"British Indian Ocean Territory\",\"Brunei Darussalam\":\"Brunei Darussalam\",\"Bulgaria\":\"Bulgaria\",\"Burkina Faso\":\"Burkina Faso\",\"Burundi\":\"Burundi\",\"Cambodia\":\"Cambodia\",\"Cameroon\":\"Cameroon\",\"Canada\":\"Canada\",\"Cape Verde\":\"Cape Verde\",\"Cayman Islands\":\"Cayman Islands\",\"Central African Republic\":\"Central African Republic\",\"Chad\":\"Chad\",\"Chile\":\"Chile\",\"China\":\"China\",\"Christmas Island\":\"Christmas Island\",\"Cocos (Keeling) Islands\":\"Cocos (Keeling) Islands\",\"Colombia\":\"Colombia\",\"Comoros\":\"Comoros\",\"Congo\":\"Congo\",\"Cook Islands\":\"Cook Islands\",\"Costa Rica\":\"Costa Rica\",\"Croatia (Hrvatska)\":\"Croatia (Hrvatska)\",\"Cuba\":\"Cuba\",\"Cyprus\":\"Cyprus\",\"Czech Republic\":\"Czech Republic\",\"Denmark\":\"Denmark\",\"Djibouti\":\"Djibouti\",\"Dominica\":\"Dominica\",\"Dominican Republic\":\"Dominican Republic\",\"East Timor\":\"East Timor\",\"Ecuador\":\"Ecuador\",\"Egypt\":\"Egypt\",\"El Salvador\":\"El Salvador\",\"Equatorial Guinea\":\"Equatorial Guinea\",\"Eritrea\":\"Eritrea\",\"Estonia\":\"Estonia\",\"Ethiopia\":\"Ethiopia\",\"Falkland Islands (Malvinas)\":\"Falkland Islands (Malvinas)\",\"Faroe Islands\":\"Faroe Islands\",\"Fiji\":\"Fiji\",\"Finland\":\"Finland\",\"France\":\"France\",\"France, Metropolitan\":\"France, Metropolitan\",\"French Guiana\":\"French Guiana\",\"French Polynesia\":\"French Polynesia\",\"French Southern Territories\":\"French Southern Territories\",\"Gabon\":\"Gabon\",\"Gambia\":\"Gambia\",\"Georgia\":\"Georgia\",\"Germany\":\"Germany\",\"Ghana\":\"Ghana\",\"Gibraltar\":\"Gibraltar\",\"Guernsey\":\"Guernsey\",\"Greece\":\"Greece\",\"Greenland\":\"Greenland\",\"Grenada\":\"Grenada\",\"Guadeloupe\":\"Guadeloupe\",\"Guam\":\"Guam\",\"Guatemala\":\"Guatemala\",\"Guinea\":\"Guinea\",\"Guinea-Bissau\":\"Guinea-Bissau\",\"Guyana\":\"Guyana\",\"Haiti\":\"Haiti\",\"Heard and Mc Donald Islands\":\"Heard and Mc Donald Islands\",\"Honduras\":\"Honduras\",\"Hong Kong\":\"Hong Kong\",\"Hungary\":\"Hungary\",\"Iceland\":\"Iceland\",\"India\":\"India\",\"Isle of Man\":\"Isle of Man\",\"Indonesia\":\"Indonesia\",\"Iran (Islamic Republic of)\":\"Iran (Islamic Republic of)\",\"Iraq\":\"Iraq\",\"Ireland\":\"Ireland\",\"Israel\":\"Israel\",\"Italy\":\"Italy\",\"Ivory Coast\":\"Ivory Coast\",\"Jersey\":\"Jersey\",\"Jamaica\":\"Jamaica\",\"Japan\":\"Japan\",\"Jordan\":\"Jordan\",\"Kazakhstan\":\"Kazakhstan\",\"Kenya\":\"Kenya\",\"Kiribati\":\"Kiribati\",\"Korea, Democratic People\'s Republic of\":\"Korea, Democratic People\'s Republic of\",\"Korea, Republic of\":\"Korea, Republic of\",\"Kosovo\":\"Kosovo\",\"Kuwait\":\"Kuwait\",\"Kyrgyzstan\":\"Kyrgyzstan\",\"Lao People\'s Democratic Republic\":\"Lao People\'s Democratic Republic\",\"Latvia\":\"Latvia\",\"Lebanon\":\"Lebanon\",\"Lesotho\":\"Lesotho\",\"Liberia\":\"Liberia\",\"Libyan Arab Jamahiriya\":\"Libyan Arab Jamahiriya\",\"Liechtenstein\":\"Liechtenstein\",\"Lithuania\":\"Lithuania\",\"Luxembourg\":\"Luxembourg\",\"Macau\":\"Macau\",\"Macedonia\":\"Macedonia\",\"Madagascar\":\"Madagascar\",\"Malawi\":\"Malawi\",\"Malaysia\":\"Malaysia\",\"Maldives\":\"Maldives\",\"Mali\":\"Mali\",\"Malta\":\"Malta\",\"Marshall Islands\":\"Marshall Islands\",\"Martinique\":\"Martinique\",\"Mauritania\":\"Mauritania\",\"Mauritius\":\"Mauritius\",\"Mayotte\":\"Mayotte\",\"Mexico\":\"Mexico\",\"Micronesia, Federated States of\":\"Micronesia, Federated States of\",\"Moldova, Republic of\":\"Moldova, Republic of\",\"Monaco\":\"Monaco\",\"Mongolia\":\"Mongolia\",\"Montenegro\":\"Montenegro\",\"Montserrat\":\"Montserrat\",\"Morocco\":\"Morocco\",\"Mozambique\":\"Mozambique\",\"Myanmar\":\"Myanmar\",\"Namibia\":\"Namibia\",\"Nauru\":\"Nauru\",\"Nepal\":\"Nepal\",\"Netherlands\":\"Netherlands\",\"Netherlands Antilles\":\"Netherlands Antilles\",\"New Caledonia\":\"New Caledonia\",\"New Zealand\":\"New Zealand\",\"Nicaragua\":\"Nicaragua\",\"Niger\":\"Niger\",\"Nigeria\":\"Nigeria\",\"Niue\":\"Niue\",\"Norfolk Island\":\"Norfolk Island\",\"Northern Mariana Islands\":\"Northern Mariana Islands\",\"Norway\":\"Norway\",\"Oman\":\"Oman\",\"Pakistan\":\"Pakistan\",\"Palau\":\"Palau\",\"Palestine\":\"Palestine\",\"Panama\":\"Panama\",\"Papua New Guinea\":\"Papua New Guinea\",\"Paraguay\":\"Paraguay\",\"Peru\":\"Peru\",\"Philippines\":\"Philippines\",\"Pitcairn\":\"Pitcairn\",\"Poland\":\"Poland\",\"Portugal\":\"Portugal\",\"Puerto Rico\":\"Puerto Rico\",\"Qatar\":\"Qatar\",\"Reunion\":\"Reunion\",\"Romania\":\"Romania\",\"Russian Federation\":\"Russian Federation\",\"Rwanda\":\"Rwanda\",\"Saint Kitts and Nevis\":\"Saint Kitts and Nevis\",\"Saint Lucia\":\"Saint Lucia\",\"Saint Vincent and the Grenadines\":\"Saint Vincent and the Grenadines\",\"Samoa\":\"Samoa\",\"San Marino\":\"San Marino\",\"Sao Tome and Principe\":\"Sao Tome and Principe\",\"Saudi Arabia\":\"Saudi Arabia\",\"Senegal\":\"Senegal\",\"Serbia\":\"Serbia\",\"Seychelles\":\"Seychelles\",\"Sierra Leone\":\"Sierra Leone\",\"Singapore\":\"Singapore\",\"Slovakia\":\"Slovakia\",\"Slovenia\":\"Slovenia\",\"Solomon Islands\":\"Solomon Islands\",\"Somalia\":\"Somalia\",\"South Africa\":\"South Africa\",\"South Georgia South Sandwich Islands\":\"South Georgia South Sandwich Islands\",\"Spain\":\"Spain\",\"Sri Lanka\":\"Sri Lanka\",\"St. Helena\":\"St. Helena\",\"St. Pierre and Miquelon\":\"St. Pierre and Miquelon\",\"Sudan\":\"Sudan\",\"Suriname\":\"Suriname\",\"Svalbard and Jan Mayen Islands\":\"Svalbard and Jan Mayen Islands\",\"Swaziland\":\"Swaziland\",\"Sweden\":\"Sweden\",\"Switzerland\":\"Switzerland\",\"Syrian Arab Republic\":\"Syrian Arab Republic\",\"Taiwan\":\"Taiwan\",\"Tajikistan\":\"Tajikistan\",\"Tanzania, United Republic of\":\"Tanzania, United Republic of\",\"Thailand\":\"Thailand\",\"Togo\":\"Togo\",\"Tokelau\":\"Tokelau\",\"Tonga\":\"Tonga\",\"Trinidad and Tobago\":\"Trinidad and Tobago\",\"Tunisia\":\"Tunisia\",\"Turkey\":\"Turkey\",\"Turkmenistan\":\"Turkmenistan\",\"Turks and Caicos Islands\":\"Turks and Caicos Islands\",\"Tuvalu\":\"Tuvalu\",\"Uganda\":\"Uganda\",\"Ukraine\":\"Ukraine\",\"United Arab Emirates\":\"United Arab Emirates\",\"United Kingdom\":\"United Kingdom\",\"United States\":\"United States\",\"United States minor outlying islands\":\"United States minor outlying islands\",\"Uruguay\":\"Uruguay\",\"Uzbekistan\":\"Uzbekistan\",\"Vanuatu\":\"Vanuatu\",\"Vatican City State\":\"Vatican City State\",\"Venezuela\":\"Venezuela\",\"Vietnam\":\"Vietnam\",\"Virgin Islands (British)\":\"Virgin Islands (British)\",\"Virgin Islands (U.S.)\":\"Virgin Islands (U.S.)\",\"Wallis and Futuna Islands\":\"Wallis and Futuna Islands\",\"Western Sahara\":\"Western Sahara\",\"Yemen\":\"Yemen\",\"Zaire\":\"Zaire\",\"Zambia\":\"Zambia\",\"Zimbabwe\":\"Zimbabwe\"}");
+  </script>
+  <link href="https://www.artisturba.com/assets/front/css/owl.carousel.css" rel="stylesheet"/>
+ </head>
+ <body class="new_home_page">
+  <div class="preloader" id="preloader">
+   <div id="loader">
+    <img class="img-fluid" src="https://res.cloudinary.com/artisturba/image/upload/v1536673523/uploads/u06ez8k4vhd9pbhruzj0.png"/>
+   </div>
+  </div>
+  <div class="preloader" id="preloader1" style="display: none;">
+   <div id="loader1">
+    <img class="img-fluid" src="https://www.artisturba.com/assets/front/images/loader_bar.gif"/>
+   </div>
+  </div>
+  <div id="preloader2" style="display: none;">
+   <div style="display: flex;height: 100%;align-items: center;justify-content: center;">
+    <div style="margin: 40px auto;width: 50px;height: 50px;text-align: center;font-size: 10px;">
+     <div class="rect1">
+     </div>
+     <div class="rect2">
+     </div>
+     <div class="rect3">
+     </div>
+     <div class="rect4">
+     </div>
+     <div class="rect5">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="header">
+   <nav class="navbar navbar-expand-lg navbar-fixed-top">
+    <div class="container">
+     <a class="navbar-brand" href="https://www.artisturba.com/">
+      <!-- <img src="uploads/https://res.cloudinary.com/artisturba/image/upload/v1536673523/uploads/u06ez8k4vhd9pbhruzj0.png" class="img-fluid"> -->
+      <img class="img-fluid" src="https://res.cloudinary.com/artisturba/image/upload/v1536673523/uploads/u06ez8k4vhd9pbhruzj0.png"/>
+     </a>
+     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05"
+            aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+     <div class="mobile_menu d-md-block d-sm-block">
+      <i class="fas fa-bars">
+      </i>
+     </div>
+     <div class="navbar-collapse inner_menu" id="navbarsExample05">
+      <div class="close_icon d-md-block d-sm-block">
+       <i class="fas fa-times">
+       </i>
+      </div>
+      <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/aarp_payout">
+         AARP
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/how-it-works">
+         How AARP Works
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/trade">
+         Trade
+        </a>
+       </li>
+       <!-- <li class="nav-item"> <a class="nav-link" href="#">Exchange </a> </li> -->
+       <!--                          <li class="nav-item"> <a class="nav-link " href="https://www.artisturba.com/cms/aarp">AARP </a> </li>
+                         -->
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/faq">
+         FAQ
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/register">
+         Register
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.artisturba.com/login">
+         Login
+        </a>
+       </li>
+       <li class="nav-item dropdown language_drop">
+        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle label_drop" data-toggle="dropdown" href="#" id="dropdown01" style="font-size: 13.4px;">
+         <img src="https://www.artisturba.com/assets/front/images/flags/en.png"/>
+         English
+        </a>
+        <div aria-labelledby="dropdown01" class="dropdown-menu lang_dropdown">
+         <!-- <a class="dropdown-item"> English </a> -->
+         <!-- <a class="dropdown-item" href="#"> Spanish  </a> -->
+         <a class="dropdown-item languagesElem" data-param1="Uk/uI9BRxY+fxZpNIMISlN1mO4A5MWjF4L11rKG7Ows=" data-param2="0ei4ZzGy+p9n2IHG+aX/vJ94GxUxjzHViqpEAt9NNZI=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/en.png"/>
+          English
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="/qDpG+b6OwupDzQqRiK7Jh4OwNzz/O54ARxBu1gbi1Q=" data-param2="fzXNDJ9traeV+o4fxMJZ2tj7rfFpADoygoGO+IPiiT4=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/jp.png"/>
+          Japanese
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="607VPyTYdjEJgf0gJKrq3OF0694y+i78yVR7dYzqI8g=" data-param2="2zmxHamoG7NXXxO1ghX+gyaCMhlWLk1SKfunDotjW2g=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/cn.png"/>
+          Chinese
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="dRSmLITrpURcS4iQo3hym1L0YvZtn6iC8474WOkc+UA=" data-param2="ExHm7Saz3Ry6l34exyJj3Qlr5+PK1/diSR1UhKbGNbc=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/kr.png"/>
+          Korean
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="qmyM5V/tULFuW1aO90f3vgUdlqZyxwfdCPwre+Made4=" data-param2="uDcvwWoIe7KiC23WPiinhCbp8HsWgeTQJ6lupDqgmzg=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/in.png"/>
+          Hindi
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="ck5j6xcpBfrwD3YGkPZWVKOr9fJogDJwB8gcbCaJHwc=" data-param2="RmJDrS6DI3da2W+FzyM0ngyOAhvErqgW6kJBPiQ4IBQ=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/ph.png"/>
+          Filipino
+         </a>
+         <a class="dropdown-item languagesElem" data-param1="usJayYOy3TRSjJKS+s8YIZQ0nG+B78S2ehkrMsKzPJg=" data-param2="L/H3pwg2TJgKVvyWVKMMMQMc5bdIChizdxchiQX2r2g=" href="#">
+          <img src="https://www.artisturba.com/assets/front/images/flags/ru.png"/>
+          Russian
+         </a>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </div>
+  <script type="text/javascript">
+   var socket = io('https://www.artisturba.com:8443');
+      var jsTimezone =  'UTC';
+      var FIAT_D =  '4';
+  </script>
+  <section class="banners">
+   <div class="container">
+    <div class="banner_content">
+     <h1>
+      forward together
+     </h1>
+     <h2>
+      with money 2.0
+     </h2>
+     <p>
+      Buy and sell cryptocurrencies with ZAR, BTC, ETH and XRP.
+     </p>
+     <a href="https://www.artisturba.com/trade">
+      get
+      <span>
+       started
+      </span>
+     </a>
+    </div>
+    <div class="owl-bann owl-carousel">
+     <div class="item">
+      <div class="banner_img">
+       <a href="news" target="_blank">
+        <img alt="Artis Turba  Buy ARTIS, Bitcoin (BTC), Ethereum (ETH), Ripple (XRP), Digibyte (DGB), Electroneum (ETN), Stellar Lumens (XLM), EOS (EOS), BitTorrent (BTT) with South African Rand (ZAR)" src="https://res.cloudinary.com/artisturba/image/upload/v1575117409/uploads/banner/pltuqzprn9bjcsjiklmo.png"/>
+        <div class="banner_owl_cont">
+         <h3>
+          Artis Turba V2.0
+         </h3>
+         <p>
+          The Artis Turba V2.0 platform beta testing in progress
+         </p>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="item">
+      <div class="banner_img">
+       <a href="https://medium.com/artisturba/referral-rewards-important-update-bf3743175eb" target="_blank">
+        <img alt="Artis Turba  Buy ARTIS, Bitcoin (BTC), Ethereum (ETH), Ripple (XRP), Digibyte (DGB), Electroneum (ETN), Stellar Lumens (XLM), EOS (EOS), BitTorrent (BTT) with South African Rand (ZAR)" src="https://res.cloudinary.com/artisturba/image/upload/v1575117442/uploads/banner/bl51zi9okbhy9ly4i9gl.png"/>
+        <div class="banner_owl_cont">
+         <h3>
+          Referral Rewards Now Live
+         </h3>
+         <p>
+          Earn even more by referring friends, family and associates
+         </p>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="item">
+      <div class="banner_img">
+       <a href="https://medium.com/artisturba/binance-coin-listing-at-artis-turba-24cca961cd2b" target="_blank">
+        <img alt="Artis Turba  Buy ARTIS, Binance Coin (BNB), Bitcoin (BTC), Ethereum (ETH), Ripple (XRP), Digibyte (DGB), Electroneum (ETN), Stellar Lumens (XLM), EOS (EOS), BitTorrent (BTT) with South African Rand (ZAR)" src="https://res.cloudinary.com/artisturba/image/upload/v1575117462/uploads/banner/xcndjntx02n5pd5ownje.png"/>
+        <div class="banner_owl_cont">
+         <h3>
+          Binance Coin now available
+         </h3>
+         <p>
+          Trade BNB/ZAR BNB/BTC BNB/ETH
+         </p>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="item">
+      <div class="banner_img">
+       <a href="https://medium.com/artisturba/artis-affiliate-reward-program-d5c65e5a2a36?source=collection_home---4------6-----------------------" target="_blank">
+        <img alt="Artis Affiliate Rewards Program (AARP)" src="https://res.cloudinary.com/artisturba/image/upload/v1575117478/uploads/banner/dr1wqefplhzq9akldczg.png"/>
+        <div class="banner_owl_cont">
+         <h3>
+          Earn Everyday
+         </h3>
+         <p>
+          ARTIS holders share trading fee revenue from Artis Turba
+         </p>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="sec_one">
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-6 sec_one_left clearfix">
+      <div class="sec_one_cont">
+       <h1>
+        hi!
+       </h1>
+       <span>
+        Welcome to
+       </span>
+       <h2>
+        ARTIS TURBA
+       </h2>
+       <p>
+        trading made
+easy, secure &amp; 
+intuitive.
+       </p>
+      </div>
+     </div>
+     <div class="col-md-6 sec_one_ryt">
+      <h4>
+       get started in
+       <span>
+        3 easy steps
+       </span>
+      </h4>
+      <div class="row sec_one_ryt_cont">
+       <div class="col-md-3 col-lg-2">
+        <img src="https://www.artisturba.com/assets/front/images/img-2.png"/>
+       </div>
+       <div class="col-md-9 col-lg-10 pl-0">
+        <span>
+         1
+        </span>
+        <a href="https://www.artisturba.com/register">
+         register
+        </a>
+       </div>
+      </div>
+      <div class="row sec_one_ryt_cont">
+       <div class="col-md-3 col-lg-2">
+        <img src="https://www.artisturba.com/assets/front/images/img-3.png"/>
+       </div>
+       <div class="col-md-9 col-lg-10 pl-0">
+        <span>
+         2
+        </span>
+        <a href="https://www.artisturba.com/deposit">
+         deposit
+        </a>
+       </div>
+      </div>
+      <div class="row sec_one_ryt_cont">
+       <div class="col-md-3 col-lg-2">
+        <img src="https://www.artisturba.com/assets/front/images/img-4.png"/>
+       </div>
+       <div class="col-md-9 col-lg-10 pl-0">
+        <span>
+         3
+        </span>
+        <a href="https://www.artisturba.com/trade">
+         trade
+        </a>
+       </div>
+      </div>
+      <div class="row start_link">
+       <div class="col-md-12 col-lg-6">
+        <a href="https://www.artisturba.com/trade">
+         start
+         <span>
+          trading now
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="sec_two">
+   <div class="container">
+    <section class="coin_sc_3">
+     <div class="container">
+      <div class="owl-three owl-carousel owl-theme">
+       <div class="item" data-pair="ARTIS/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ARTIS/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BTC/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BTC/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETH/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETH/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="EOS/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          EOS/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="DGB/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          DGB/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="TRX/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          TRX/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BTT/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BTT/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="XLM/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          XLM/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="XRP/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          XRP/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BNB/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BNB/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETN/ZAR">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETN/ZAR
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ARTIS/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ARTIS/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETH/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETH/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BNB/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BNB/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="EOS/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          EOS/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="DGB/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          DGB/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="TRX/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          TRX/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BTT/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BTT/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="XLM/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          XLM/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETN/BTC">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETN/BTC
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ARTIS/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ARTIS/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BNB/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BNB/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="EOS/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          EOS/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="DGB/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          DGB/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="TRX/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          TRX/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BTT/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BTT/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="XLM/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          XLM/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETN/ETH">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETN/ETH
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ARTIS/XRP">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ARTIS/XRP
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="BTC/XRP">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          BTC/XRP
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="ETH/XRP">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          ETH/XRP
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+       <div class="item" data-pair="TRX/XRP">
+        <div class="dr_bx" style="min-height:116px;">
+         <h4>
+          TRX/XRP
+         </h4>
+         <p class="dbsoon" style="margin-top: 25px;">
+          Loading...
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="market_tab">
+     <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+       <li class="nav-item">
+        <a aria-controls="home" aria-selected="true" class="nav-link" data-toggle="tab" href="#home" https:="" id="home-tab" role="tab">
+         <img alt="" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+         Favorites
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-controls="profile" aria-selected="false" class="nav-link active" data-toggle="tab" href="#home1" id="profile-tab" role="tab">
+         ZAR Markets
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#home2" id="contact-tab" role="tab">
+         BTC Markets
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#home3" id="contact-tab" role="tab">
+         ETH Markets
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#home4" id="contact-tab" role="tab">
+         XRP Markets
+        </a>
+       </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+       <div aria-labelledby="profile-tab" class="tab-pane fade show active" id="home1" role="tabpanel">
+        <div class="table-responsive">
+         <table class="table">
+          <thead>
+           <tr>
+            <th scope="col" width="4%">
+            </th>
+            <th scope="col" width="13%">
+             Pair
+            </th>
+            <th scope="col" width="14%">
+             Coin
+            </th>
+            <th scope="col" width="13%">
+             Last Price
+            </th>
+            <th scope="col" width="15%">
+             24H Change
+            </th>
+            <!-- <th width="15%" scope="col">24H High</th>
+      <th width="15%" scope="col">24H Low</th> -->
+            <th scope="col" width="11%">
+             24H Volume
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr data-tr-pair="ARTIS/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="0ei4ZzGy+p9n2IHG+aX/vJ94GxUxjzHViqpEAt9NNZI=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/1">
+              ARTIS/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BTC/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="fzXNDJ9traeV+o4fxMJZ2tj7rfFpADoygoGO+IPiiT4=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/2">
+              BTC/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETH/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="2zmxHamoG7NXXxO1ghX+gyaCMhlWLk1SKfunDotjW2g=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/3">
+              ETH/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="EOS/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="ExHm7Saz3Ry6l34exyJj3Qlr5+PK1/diSR1UhKbGNbc=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/4">
+              EOS/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="DGB/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="uDcvwWoIe7KiC23WPiinhCbp8HsWgeTQJ6lupDqgmzg=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/5">
+              DGB/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="TRX/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="RmJDrS6DI3da2W+FzyM0ngyOAhvErqgW6kJBPiQ4IBQ=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/6">
+              TRX/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BTT/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="L/H3pwg2TJgKVvyWVKMMMQMc5bdIChizdxchiQX2r2g=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/7">
+              BTT/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="XLM/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="LKa5RqYyz3JeEyjbc+qE+NxTSnTNqpgApxFUggavdaI=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/8">
+              XLM/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="XRP/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="eqHGlKP85kc2rqJ3jbmRc6LZynqFryNORHPZ9kBiX+0=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/9">
+              XRP/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BNB/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="axUFOyidWNhD0+ArktEzH2w7ZBbybOnBYNoqxx3IAOc=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/11">
+              BNB/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETN/ZAR">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="x5SFc+mSPV5MyJzFvn3JH2iaVSEIV/Pdr047l1rtKKE=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/36">
+              ETN/ZAR
+             </a>
+            </td>
+            <td>
+             ZAR
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div aria-labelledby="profile-tab" class="tab-pane fade" id="home2" role="tabpanel">
+        <div class="table-responsive">
+         <table class="table">
+          <thead>
+           <tr>
+            <th scope="col" width="4%">
+            </th>
+            <th scope="col" width="13%">
+             Pair
+            </th>
+            <th scope="col" width="14%">
+             Coin
+            </th>
+            <th scope="col" width="13%">
+             Last Price
+            </th>
+            <th scope="col" width="15%">
+             24H Change
+            </th>
+            <!-- <th width="15%" scope="col">24H High</th>
+      <th width="15%" scope="col">24H Low</th> -->
+            <th scope="col" width="11%">
+             24H Volume
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr data-tr-pair="ARTIS/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="L1nL3PV3zG0IiHq1aF2/SK8Cthk5ZnKjt9u/9/pTqWs=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/12">
+              ARTIS/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETH/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="SYSe+D+qGjl+2+9jFXY+jqMcYC3JrHSHokSTr6wKLIk=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/13">
+              ETH/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BNB/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="Q06Ty1kSN9S58U7m0bAV7/ZXjOQqBrxZ5RXcXvBvk5Q=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/14">
+              BNB/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="EOS/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="R/PsuDqkTqWYviNFKwFjgaKMRV83ZKCTE//xIhaplB4=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/15">
+              EOS/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="DGB/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="u2b3dzLUjeYP0BP3+9e2zDnHsEnFrVoznBkLnNAXUXA=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/16">
+              DGB/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="TRX/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="sCR/17lfJs5cvTjuj2xm5rnNLpFS+E6lSqkE7pLAD4w=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/17">
+              TRX/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BTT/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="kK3EcrOzpYMajFM8FAdOkXDxiEUECHSkb06Tn3vLjwA=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/18">
+              BTT/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="XLM/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="WOVTE8P0jHkI9DW7DHzRsIZ74pbPDA4pMKOwvK+vH64=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/19">
+              XLM/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETN/BTC">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="mBoLq5JFt7mJQodRJDW1HpwyjLe4zsTMpsgpRzajudc=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/37">
+              ETN/BTC
+             </a>
+            </td>
+            <td>
+             BTC
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div aria-labelledby="profile-tab" class="tab-pane fade" id="home3" role="tabpanel">
+        <div class="table-responsive">
+         <table class="table">
+          <thead>
+           <tr>
+            <th scope="col" width="4%">
+            </th>
+            <th scope="col" width="13%">
+             Pair
+            </th>
+            <th scope="col" width="14%">
+             Coin
+            </th>
+            <th scope="col" width="13%">
+             Last Price
+            </th>
+            <th scope="col" width="15%">
+             24H Change
+            </th>
+            <!-- <th width="15%" scope="col">24H High</th>
+      <th width="15%" scope="col">24H Low</th> -->
+            <th scope="col" width="11%">
+             24H Volume
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr data-tr-pair="ARTIS/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="r9aKBqWLTIqKFnXKTgtW7lyjj25I4MS2PweQ1UtMFtU=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/22">
+              ARTIS/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BNB/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="3r6OC+9SJlb0W5krNIf1r0lJCnJLad7yDWRUijASzqE=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/23">
+              BNB/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="EOS/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="1oaTNW3tFYRfCfHXu9TonZMJJn8PN3HPYCZllRmBrrs=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/24">
+              EOS/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="DGB/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="a76adZDQaSS+KzUIVYfcbeU2WO3ukGr4OMIRDmumKxo=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/25">
+              DGB/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="TRX/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="SddH3LRzrg9EGBH0xJmnGVq4W4GemDiM7gdB0d02kFc=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/26">
+              TRX/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BTT/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="RhN8hHP8AJinbPEaehaBXaC/6aVNA/8wcPi3y7yQGY8=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/27">
+              BTT/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="XLM/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="HS3w5NHadxfz+V/Wkh9RLpXO+oFbQX/h9lRu+v5ifvs=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/28">
+              XLM/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETN/ETH">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="AIzJuK1wLlXCBIYnqgdERbaZva7AFv0sCz/Psp7biyw=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/38">
+              ETN/ETH
+             </a>
+            </td>
+            <td>
+             ETH
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div aria-labelledby="profile-tab" class="tab-pane fade" id="home4" role="tabpanel">
+        <div class="table-responsive">
+         <table class="table">
+          <thead>
+           <tr>
+            <th scope="col" width="4%">
+            </th>
+            <th scope="col" width="13%">
+             Pair
+            </th>
+            <th scope="col" width="14%">
+             Coin
+            </th>
+            <th scope="col" width="13%">
+             Last Price
+            </th>
+            <th scope="col" width="15%">
+             24H Change
+            </th>
+            <!-- <th width="15%" scope="col">24H High</th>
+      <th width="15%" scope="col">24H Low</th> -->
+            <th scope="col" width="11%">
+             24H Volume
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr data-tr-pair="ARTIS/XRP">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="LwHcQIvmhXzNemO27CG3Z5mQU2W7bbrB62VIVzelkEQ=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/31">
+              ARTIS/XRP
+             </a>
+            </td>
+            <td>
+             XRP
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="BTC/XRP">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="vnarvBnho2t1Fv02Vow93ZSXNV17yIjCP4l1J1bttks=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/33">
+              BTC/XRP
+             </a>
+            </td>
+            <td>
+             XRP
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="ETH/XRP">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="q7huTAcKq6zcpKeOBPRZ7YtOAOJarjopFjS+txeg0ZA=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/34">
+              ETH/XRP
+             </a>
+            </td>
+            <td>
+             XRP
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+           <tr data-tr-pair="TRX/XRP">
+            <td>
+             <img alt="" class="pairs_fav_class" data-pair="ZMAGVV2fS/2xyVPGSmltRANE1E6pq6QObaJQFjBAl5g=" src="https://www.artisturba.com/assets/front/images/fav_star.png"/>
+            </td>
+            <td>
+             <a class="pairs_a_class" href="https://www.artisturba.com/new_trade/35">
+              TRX/XRP
+             </a>
+            </td>
+            <td>
+             XRP
+            </td>
+            <td>
+            </td>
+            <td>
+             <span class="">
+             </span>
+            </td>
+            <td>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+      <div class="text-center">
+       <a class="hvr-bounce-to-bottoms" href="https://docs.google.com/forms/u/1/d/1HRUbkJi4LBF0I8IqAohY61kO4zxvPoYn2cZ17MQWr7k/edit?ts=5ad4e5fb%5C" target="_blank">
+        APPLY TO LIST
+       </a>
+      </div>
+     </div>
+    </section>
+    <section class="benifit_sec">
+     <div class="container">
+      <h3>
+       <span>
+        benefits ARTIS TURBA
+       </span>
+      </h3>
+      <div class="row">
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInDown ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-5.png"/>
+         </div>
+         <h4>
+          Multi Crypto Platform
+         </h4>
+         <p>
+         </p>
+         <p>
+          Blockchain is a true peer-to-peer network that will reduce reliance on several types of third-party intermediaries such as banks, lawyers and brokers.
+         </p>
+        </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInDown ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-6.png"/>
+         </div>
+         <h4>
+          Fast Withdrawal Process
+         </h4>
+         <p>
+         </p>
+         <p>
+          Digital Currency withdrawals are processed continually on the blockchain and fiat withdrawals are processed daily on business days.
+         </p>
+        </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInDown ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-7.png"/>
+         </div>
+         <h4>
+          Intuitive Platform
+         </h4>
+         <p>
+         </p>
+         <p>
+          We have worked hard to make the trading of Cryptos and Fiat as intuitive as possible.
+         </p>
+        </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInUp ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-8.png"/>
+         </div>
+         <h4>
+          Instant KYC
+         </h4>
+         <p>
+         </p>
+         <p>
+          KYC submissions are reviewed continually and within 48 hours of submission.
+         </p>
+        </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInUp ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-9.png"/>
+         </div>
+         <h4>
+          Security
+         </h4>
+         <p>
+         </p>
+         <p>
+          We have implemented a range of security measures to ensure your peace of mind when trading on Artis Turba.
+         </p>
+        </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-lg-4 wow fadeInUp ben_cont">
+        <div class="b_bx">
+         <div class="b_img">
+          <img src="https://www.artisturba.com/assets/front/images/img-10.png"/>
+         </div>
+         <h4>
+          Earn with AARP
+         </h4>
+         <p>
+         </p>
+         <p>
+          ARTIS holders are entitled to a pro-rata share of 50% of the trading fee revenue generated on Artis Turba.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <div class="sec_reg_new">
+     <div class="row">
+      <div class="col-lg-9 col-md-7 sec_reg_left">
+       <h3>
+        Buy Digital Currencies in South Africa, Namibia and Eswatini with South African Rand
+       </h3>
+       <div class="reg_img">
+        <img src="https://www.artisturba.com/assets/front/images/img-12.png"/>
+        <iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/eniOtohTt84" style="/*position: absolute;left: 122px;top: 38px;*/width: 724px;height: 445px;">
+        </iframe>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-5 sec_reg_ryt pl-0 pr-0" style="min-height: 800px;">
+       <p>
+        We successfully process deposits and withdrawals to Namibia, Botswana and Eswatini (Swaziland).
+       </p>
+       <a class="hvr-bounce-to-bottoms" href="https://www.artisturba.com/register">
+        register
+        <span>
+         now
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- <div class="relat">
+  <div id="particles">
+    <div id="intro">
+      <section class="wal_sc1 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-6 col-lg-6 wow fadeInLeft"> 
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/eniOtohTt84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <img src="https://www.artisturba.com/assets/front/images/video.png" class="img-fluid">
+             </div>
+            <div class="col-md-12 col-sm-6 col-lg-6 wow fadeInRight">
+              <div class="cm_head1">
+                <h1>Buy Digital Currencies in South Africa, Namibia and Eswatini with South African Rand</h1>
+              </div>
+              <div class="cm_cn1">
+                <p>We successfully process deposits and withdrawals to Namibia, Botswana and Eswatini (Swaziland).</p>
+                <a href="https://www.artisturba.com/register" class="hvr-bounce-to-bottom">Register</a> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div> -->
+  <section class="offer_sec">
+   <div class="container">
+    <div class="row justify-content-center">
+     <div class="col-md-12 text-center">
+      <p>
+       Subscribe to stay updated on Cryptocoin News and Offers
+      </p>
+     </div>
+     <div class="col-md-7">
+      <form accept-charset="utf-8" action="https://www.artisturba.com/" id="newsletter_form" method="post">
+       <input name="csrf_artis_name" type="hidden" value="dd77695ccb6f5176e75d38654e73fdc9"/>
+       <div class="input-group">
+        <input aria-describedby="basic-addon2" aria-label="Recipient's username" class="form-control" id="newsletter_subscriber" name="newsletter_subscriber" placeholder="youremail@mail.com" required="" type="text"/>
+        <div class="input-group-append">
+         <button class="input-group-text" id="basic-addon2" name="NewsletterSubmit">
+          Subscribe
+         </button>
+        </div>
+       </div>
+       <label class="error" for="newsletter_subscriber" id="newsletter_subscriber-error" style="display: none;">
+        l
+       </label>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="news_sec">
+   <div class="container">
+    <div class="news_tit">
+     <h3>
+      Artis Turba
+      <span>
+       News
+      </span>
+     </h3>
+    </div>
+    <div class="owl-four owl-carousel owl-theme">
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        30-Apr-2020
+       </span>
+       <h4>
+        Newsletter | 30 April 2020
+       </h4>
+       Platform News
+
+ 
+
+
+
+ 
+
+The Artis Turba V2.0 upgrade is almost ready for launch, and we are happy to report that final testing is underway. V2.0 is a total upgrade of the complete Artis Turba Platform allowing it to scale with demand and to integrate the planned ARTIS CashSend interface. W...
+      </div>
+     </div>
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        25-Mar-2020
+       </span>
+       <h4>
+        Artis Turba COVID-19 Update
+       </h4>
+       With the recent COVID-19 outbreak and the World Health Organization declaring the corona virus outbreak a global pandemic, no country will be immune to the disease. On the 23rd of March 2020, South African President Cyril Ramaphosa has declared a national state of disaster with a nationwide lockdow...
+      </div>
+     </div>
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        31-Jan-2020
+       </span>
+       <h4>
+        Newsletter | 31 January 2020
+       </h4>
+       Platform News
+
+
+
+The Artis Turba V2.0 upgrade is almost ready for launch, and we are happy to report that final testing is underway. V2.0 is a total upgrade of the complete Artis Turba Platform allowing it to scale with demand and to integrate the planned ARTIS CashSend interface. We will notif...
+      </div>
+     </div>
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        07-Jan-2020
+       </span>
+       <h4>
+        Newsletter | 7 January 2020
+       </h4>
+       Platform News
+
+ 
+
+
+
+ 
+
+We wish you all a happy new year! Artis Turba V2.0 is nearing completion and will be launched within this month and we are sure that the upcoming upgrade will meet and exceed expectations for all of us. Over the festive period Artis Turba Exchange and ARTIS was list...
+      </div>
+     </div>
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        10-Dec-2019
+       </span>
+       <h4>
+        Artis Turba V2.0 launching January 2020
+       </h4>
+       We are excited to be launching Artis Turba V2.0 in January 2020. The update comes at a critical time due to increases in sign-ups and demand on the platform.
+
+The update includes amongs others; 
+
+
+ faster response times
+ faster withdrawal times
+ enhanced liquidity
+
+
+We are sure that our...
+      </div>
+     </div>
+     <div class="item">
+      <div class="nw_bx">
+       <span class="dte">
+        10-Dec-2019
+       </span>
+       <h4>
+        Artis Turba is listed at CoinMarketCap
+       </h4>
+       A big and warm shout out to the CoinMarketCap for the recent listing of Artis Turba Exchange and Artis our native exchanege token. Our community has been requesting this listing and your prayers have been heard!
+
+Track Artis Turba Exhange at: https://coinmarketcap.com/currencies/artis-turba/
+
+...
+      </div>
+     </div>
+    </div>
+    <span class="mre_lk">
+     <a href="https://www.artisturba.com/news" style="color: #FFF;">
+      Read All News
+     </a>
+    </span>
+   </div>
+  </section>
+  <footer>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-3 col-sm-3 col-lg-3 wow fadeInLeft">
+      <div class="abt_txt">
+       <h3>
+        Artis Turba (Pty) Ltd, Reg no. 2012/127321/07
+       </h3>
+       <p>
+       </p>
+       <p>
+        <span xss="removed">
+         Intuitive cryptocurrency exchange built for individuals, traders and investors
+        </span>
+       </p>
+      </div>
+     </div>
+     <div class="col-6 col-md-3 col-sm-3 col-lg-3 wow fadeInLeft">
+      <h4>
+       <span>
+        LEGAL
+       </span>
+      </h4>
+      <div class="footlks">
+       <ul>
+        <li>
+         <a href="https://www.artisturba.com/aarp">
+          <i class="fas fa-arrow-right">
+          </i>
+          AARP
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/privacy">
+          <i class="fas fa-arrow-right">
+          </i>
+          Privacy Policy
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/terms">
+          <i class="fas fa-arrow-right">
+          </i>
+          Terms and Conditions
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/news">
+          <i class="fas fa-arrow-right">
+          </i>
+          News
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-6 col-md-3 col-sm-3 col-lg-3 wow fadeInRight">
+      <h4>
+       <span>
+        Support
+       </span>
+      </h4>
+      <div class="footlks">
+       <ul>
+        <li>
+         <a href="https://www.artisturba.com/faq">
+          <i class="fas fa-arrow-right">
+          </i>
+          FAQ
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/fees">
+          <i class="fas fa-arrow-right">
+          </i>
+          Fees
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/contact-us">
+          <i class="fas fa-arrow-right">
+          </i>
+          Contact us
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/api">
+          <i class="fas fa-arrow-right">
+          </i>
+          API
+         </a>
+        </li>
+        <li>
+         <a href="https://www.artisturba.com/listings">
+          <i class="fas fa-arrow-right">
+          </i>
+          Listings
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-md-3 col-sm-3 col-lg-3 wow fadeInRight">
+      <h4>
+       <span>
+        WHERE TO FIND US
+       </span>
+      </h4>
+      <p>
+       <i class="fa fa-phone">
+       </i>
+       +27 (0)12 663 1505
+      </p>
+      <p>
+       <i class="fa fa-envelope">
+       </i>
+       info@artisturba.com
+      </p>
+      <p>
+       <i class="fa fa-map-marker">
+       </i>
+       Suite 105C, Lougardia Building, 1262 Embankment Road
+      </p>
+      <p>
+       Centurion, 0157, Gauteng
+      </p>
+      <p>
+       South Africa
+      </p>
+      <div class="social_div">
+       <ul class="list-inline">
+        <li class="list-inline-item">
+         <a class="fb" href="https://web.facebook.com/ArtisTurba/" target="_blank">
+          <i class="fab fa-facebook-f">
+          </i>
+         </a>
+        </li>
+        <li class="list-inline-item">
+         <a class="tw" href="https://twitter.com/ArtisTurba" target="_blank">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+        </li>
+        <li class="list-inline-item">
+         <a class="md" href="http://www.medium.com/artisturba" target="_blank">
+          <i class="fab fa-medium-m">
+          </i>
+         </a>
+        </li>
+        <li class="list-inline-item">
+         <a class="ppl" href="https://t.me/joinchat/HbNVngqZZnyHytw-9Xb5cg" target="_blank">
+          <i class="fas fa-paper-plane">
+          </i>
+         </a>
+        </li>
+        <li class="list-inline-item">
+         <a class="blue_icon" href="https://coinmarketcap.com/exchanges/artis-turba" target="_blank">
+          <img class="img-fluid" src="https://www.artisturba.com/assets/front/images/cmc.png?new"/>
+         </a>
+        </li>
+        <li class="list-inline-item">
+         <a class="green_icon" href="https://www.coingecko.com/en/exchanges/artisturba" target="_blank">
+          <img class="img-fluid" src="https://www.artisturba.com/assets/front/images/coingecko.png?new"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <div class="copyright">
+   <p>
+    Copyright © 2020 Artis Turba | All Rights Reserved
+   </p>
+  </div>
+  <!-- Bootstrap core JavaScript
+        ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/wow.min.js">
+  </script>
+  <script>
+   new WOW().init();
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/popper.min.js">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/bootstrap.min.js">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/jquery.min.js">
+  </script>
+  <!--language dropdown select start-->
+  <script>
+   $(document).ready(function(){
+                $(".lang_dropdown a").click(function(){
+                    $(".label_drop").html($(this).html());
+                });
+					  // mobile_menu
+  $(".mobile_menu").click(function(){
+    $(".inner_menu").addClass ("inner_shw_menu");
+    $(".after_login_head").addClass ("header_show");
+    $("#mobile-nav-toggle").hide();
+  });
+  $(".close_icon").click(function(){
+    $(".inner_menu").removeClass ("inner_shw_menu");
+    $(".after_login_head").removeClass ("header_show");
+    $("#mobile-nav-toggle").show();
+  });
+            });
+  </script>
+  <script type="text/javascript">
+   var start = +new Date(),
+    $tds,
+    fullLen,
+    n = 0;
+  setTimeout(function(){
+      $.get('https://www.artisturba.com/getMarkets',{ markets : '1' },function(data){
+        var counts = 0;
+        $.each(data.marketResults,function(k,v){
+          $('[data-pair="'+k+'"]').find('.dr_bx h4').append('<span class="'+v.changeClass+'">'+v.changeSymbol+' '+v.change+' %</span>');
+          $('[data-tr-pair="'+k+'"]').each(function(i,a){
+              $(this).find('td:eq(3)').text(v.price);
+              $(this).find('td:eq(4)').html('<span class="'+v.changeClass+'">'+v.changeSymbol+' '+v.change+'</span>');
+              $(this).find('td:eq(5)').text(v.volume);
+          });
+          /*$('[data-tr-pair="'+k+'"] td:eq(3)').text(v.price);
+          $('[data-tr-pair="'+k+'"] td:eq(4)').html('<span class="'+v.changeClass+'">'+v.changeSymbol+' '+v.change+'</span>');
+          $('[data-tr-pair="'+k+'"] td:eq(5)').text(v.volume);*/
+          var price = v.price.toString();
+          price = price.replace(',','');
+          var pairs = k.split('/');          
+          var appendData = '<h3>'+parseFloat(price).toFixed(8);
+          appendData += '<span>'+myVAR['Volume']+': '+v.volume+' '+pairs[0]+'</span></h3>';
+          appendData += '<table id="table-sparkline"><tbody id="tbody-sparkline"><tr><td data-sparkline="'+data.marketChartResults[k]+'" data-cur="'+pairs[0]+'"/></tr></tbody></table>';
+          $('[data-pair="'+k+'"]').find('.dr_bx p').remove();
+          $('[data-pair="'+k+'"]').find('.dr_bx').append(appendData);          
+         
+           counts++;
+          if(counts==data.total){
+            setTimeout(function(){
+                start = +new Date(),
+            $tds = $('td[data-sparkline]'),
+            fullLen = $tds.length,
+            n = 0;
+            doChunk();   
+            },500);             
+          }
+        });        
+      },'json');
+  },2000);
+  setTimeout(function(){
+    setFav();
+  },500);
+  function setFav(){
+    $('.pairs_fav_class').unbind('click');
+    var login = '';
+    $('.pairs_fav_class').click(function(e){
+      var _this = $(this);
+      if(login==''){
+        window.location.href="https://www.artisturba.com/login";
+      }
+      var pair = $(this).data('pair');
+      $.get('https://www.artisturba.com/setFavoritePair',{ pair:pair },function(res){
+        if(res.msg=='login' && res.status=='0'){
+          window.location.href="https://www.artisturba.com/login";   
+        } else if(res.status=='1' && res.msg=='check') {
+          _this.attr('src','https://www.artisturba.com/assets/front/images/fav_star_checked.png');  
+          var newrow = _this.parent().parent().clone();
+          $('#home tbody').append(newrow);
+          setFav();
+        } else if(res.status=='0' && res.msg=='already') {
+          var newrow = _this.parent().parent().attr('data-tr-pair');
+          $('#home tbody [data-tr-pair="'+newrow+'"]').remove();
+          $('[data-tr-pair="'+newrow+'"] img').attr('src','https://www.artisturba.com/assets/front/images/fav_star.png');  
+          setFav();
+        }
+      },'json');
+    });
+  }
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/owl.carousel.js">
+  </script>
+  <script type="text/javascript">
+   $('.owl-three').owlCarousel({
+                loop: true,
+                autoplay: true,
+                // margin: 5,
+                margin: 20,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 3,
+                    nav: false
+                  },
+                  1000: {
+                    // items: 6,
+                    items: 5,
+                    nav: true,
+                    loop: true
+                  }
+                }
+            })
+  </script>
+  <script type="text/javascript">
+   $('.owl-four').owlCarousel({
+                loop: true,
+                autoplay: true,
+          margin: 5,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 1,
+              nav: false
+            },
+            1000: {
+              items:2,
+              nav: true,
+              loop: false
+            }
+          }
+        });
+        $('.owl-bann').owlCarousel({
+                loop: true,
+                autoplay: true,
+          margin: 5,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            600: {
+              // items: 1,
+              items: 2,
+              nav: false
+            },
+            1000: {
+              // items:4,
+              items:3,
+              nav: false,
+              loop: true
+            },
+            1300: {
+              items:4,
+              nav: false,
+              loop: true
+            }
+          }
+        });
+  </script>
+  <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+  <script src="https://www.artisturba.com/assets/front/plugins/jquery.highcharts.js">
+  </script>
+  <script>
+   /**
+         * Create a constructor for sparklines that takes some sensible defaults and merges in the individual
+         * chart options. This function is also available from the jQuery plugin as $(element).highcharts('SparkLine').
+         */
+        Highcharts.SparkLine = function (a, b, c) {
+          var hasRenderToArg = typeof a === 'string' || a.nodeName,
+            options = arguments[hasRenderToArg ? 1 : 0],
+            defaultOptions = {
+              chart: {
+                renderTo: (options.chart && options.chart.renderTo) || this,
+                backgroundColor: null,
+                borderWidth: 0,
+                type: 'area',
+                margin: [2, 0, 0, 0],
+                // width:175,
+                width:$('.coin_sc_3 .owl-item')[0].clientWidth - 8,
+                height:45,
+                style: {
+                  overflow: 'visible'
+                },
+
+                // small optimalization, saves 1-2 ms each sparkline
+                skipClone: true
+              },
+              title: {
+                text: ''
+              },
+              credits: {
+                enabled: false
+              },
+              xAxis: {
+                labels: {
+                  enabled: false
+                },
+                title: {
+                  text: null
+                },
+                startOnTick: false,
+                endOnTick: false,
+                tickPositions: []
+              },
+              yAxis: {
+                endOnTick: false,
+                startOnTick: false,
+                labels: {
+                  enabled: false
+                },
+                title: {
+                  text: null
+                },
+                tickPositions: [0]
+              },
+              legend: {
+                enabled: false
+              },
+              tooltip: {
+                backgroundColor: null,
+                borderWidth: 0,
+                shadow: false,
+                useHTML: true,
+                hideDelay: 0,
+                shared: true,
+                padding: 0,
+                positioner: function (w, h, point) {
+                  return { x: point.plotX - w / 2, y: point.plotY - h };
+                }
+              },
+              plotOptions: {
+                series: {
+                  animation: false,
+                  lineWidth: 2,
+                  shadow: false,
+                  states: {
+                    hover: {
+                      lineWidth: 2
+                    }
+                  },
+                  marker: {
+                    radius: 1,
+                    states: {
+                      hover: {
+                        radius: 2
+                      }
+                    }
+                  },
+                  fillOpacity: 0.25,
+                  color: '#fcb43b'
+                },
+                column: {
+                  negativeColor: '#910000',
+                  borderColor: 'silver'
+                }
+              }
+            };
+
+            options = Highcharts.merge(defaultOptions, options);
+              return hasRenderToArg ?
+                new Highcharts.Chart(a, options, c) :
+                new Highcharts.Chart(options, b);
+            };
+
+            var start = +new Date(),
+              $tds = $('td[data-sparkline]'),
+              fullLen = $tds.length,
+              n = 0;
+
+            // Creating 153 sparkline charts is quite fast in modern browsers, but IE8 and mobile
+            // can take some seconds, so we split the input into chunks and apply them in timeouts
+            // in order avoid locking up the browser process and allow interaction.
+            function doChunk() {
+              var time = +new Date(),
+                i,
+                len = $tds.length,
+                $td,
+                stringdata,
+                arr,
+                data,
+                chart;
+
+              for (i = 0; i < len; i += 1) {
+                $td = $($tds[i]);
+                stringdata = $td.data('sparkline');
+                arr = stringdata.split('; ');
+                data = $.map(arr[0].split(', '), parseFloat);
+
+                var oldDAta = 0;
+                var calcDAta = 0;
+                var newDAta = 0;
+                data = $.map(data,function(v){
+                  if(v > oldDAta){
+                    calcDAta = 100;
+                    // var randAr = [60,70,80,90];
+                    // var newDAta = v + randAr[Math.floor(Math.random()*randAr.length)];
+                    // newDAta = (v * Math.floor((Math.random() * calcDAta) + 1));
+                    /*if(oldDAta==v){
+                      newDAta = oldDAta;
+                    } else if(newDAta < oldDAta){
+                      newDAta = newDAta + ((oldDAta - newDAta) * 2);
+                    }*/
+                  } else {
+                    calcDAta = 50;
+                    // var randAr = [20,30,40,50];
+                    // var newDAta = v + randAr[Math.floor(Math.random()*randAr.length)];
+                    // newDAta = (v * Math.floor((Math.random() * calcDAta) + 1));
+                    /*if(oldDAta==v){
+                      newDAta = oldDAta;
+                    } else if(newDAta > oldDAta){
+                      newDAta = newDAta - ((newDAta - oldDAta) * 2);
+                    }*/
+                  }
+                  oldDAta = v;
+                  return { y : v, name : v };
+                });
+                
+                chart = {};
+
+                if (arr[1]) {
+                  chart.type = arr[1];
+                }
+                $td.highcharts('SparkLine', {
+                  series: [{
+                    data: data,
+                    pointStart: 1
+                  }],
+                  tooltip: {
+                    // headerFormat: '<span style="font-size: 10px">' + $td.parent().find('th').html() + ', Q{point.x}:</span><br/>',
+                    // pointFormat: '<b>{point.y}.000</b> BTC'
+                    headerFormat: '',
+                    pointFormat: '<b>{point.name}</b> '+$td.data('cur')
+                  },
+                  chart: chart
+                });
+
+                n += 1;
+
+                // If the process takes too much time, run a timeout to allow interaction with the browser
+                if (new Date() - time > 500) {
+                  $tds.splice(0, i + 1);
+                  setTimeout(doChunk, 0);
+                  break;
+                }
+
+                // Print a feedback on the performance
+                if (n === fullLen) {
+                  $('#result').html(' sparklines in ' + (new Date() - start) + ' ms');
+                }
+              }
+            }
+            doChunk();
+  </script>
+  <script>
+   // makes sure the whole site is loaded
+  // will first fade out the loading animation
+  jQuery("#status").fadeOut();
+  // will fade out the whole DIV that covers the website.
+  jQuery("#preloader").delay(1000).fadeOut("slow");
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/jquery.particleground.js" type="text/javascript">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/js/demo.js" type="text/javascript">
+  </script>
+  <script>
+   var base_url='https://www.artisturba.com/';
+var front_url='https://www.artisturba.com/';
+  </script>
+  <script src="https://www.artisturba.com/assets/front/plugins/toast/jquery.toast.js" type="text/javascript">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/plugins/jquery.preloaders.js" type="text/javascript">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/plugins/jquery.validate.min.js?asdf">
+  </script>
+  <script src="https://www.artisturba.com/assets/front/plugins/newsletter.js?1596019304">
+  </script>
+  <script>
+   var csrfName = 'csrf_artis_name';
+$(document).ready(function() {
+$.ajaxPrefilter(function (options, originalOptions, jqXHR) {    
+        if (options.type.toLowerCase() == 'post') {
+            if(options.sendType=='formdata'){
+                options.data.append(csrfName,$("input[name="+csrfName+"]").val());
+            }else{
+                options.data += '&'+csrfName+'='+$("input[name="+csrfName+"]").val();
+                if (options.data.charAt(0) == '&') {
+                    options.data = options.data.substr(1);
+                }
+            }
+        }
+  });
+$( document ).ajaxComplete(function( event, xhr, settings ) {
+if (settings.type.toLowerCase() == 'post') {
+ $.ajax({
+        url: front_url+"get_csrf_token", 
+        type: "GET",
+        async:false,
+        //cache: false,             
+       // processData: false,      
+        success: function(data) {
+           $("input[name="+csrfName+"]").val(data);    
+                     socket.emit('csrfChange',{token : data,rcode:'159601930147150747'});                 
+        }
+      });
+  }
+});
+ socket.on('csrfChange',function(data){
+    if(data.rcode=='159601930147150747'){        
+        $("input[name="+csrfName+"]").val(data.token);                    
+    } 
+  });
+ $.validator.addMethod("noSpace", function(value) {
+    return value.indexOf(" ") < 0 && value != ""; 
+});
+$.validator.addMethod("pwcheck", function(value) {
+  return (/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>])[A-Za-z\d!@#$%^&*()\-_=+{};:,<.>]{8,16}$/.test(value));
+});
+$.validator.addMethod("lettersonly", function(value) {
+    return (/^[a-zA-Z\s]*$/.test(value));
+});
+$.validator.addMethod("emailcheck", function(value) {
+  //return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value));
+  return (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z\-])+\.)+([a-zA-Z]{2,4})+$/.test(value));
+});
+$('.languagesElem').click(function(){
+  startLoader();
+  var param1 = $(this).data('param1');
+  var param2 = $(this).data('param2');
+  $.get(base_url+'setLanguage',{ param1 : param1, param2 : param2 },function(result){
+    if(result.status=='1'){
+      location.reload();
+    }
+  },'json');
+});
+});
+
+
+function startLoader(){
+    // $.preloader.start({
+    //     modal: true,        
+    // });
+    $('#preloader2').show();
+}function stopLoader(){
+    // $.preloader.stop();
+    $('#preloader2').fadeOut('slow');
+
+}
+
+// Add the following into your HEAD section
+var ALTimer = 0;
+var ALTimeout = 3600000; //60 Minutes
+function AL_set_interval() {
+  // the interval 'timer' is set as soon as the page loads
+  ALTimer = setInterval("AL_auto_logout()", ALTimeout);
+  // the figure '10000' above indicates how many milliseconds the timer be set to.
+  // Eg: to set it to 5 mins, calculate 5min = 5x60 = 300 sec = 300,000 millisec.
+  // So set it to 300000
+}
+
+function AL_reset_interval(thistab) { 
+  //resets the timer. The timer is reset on each of the below events:
+  // 1. mousemove   2. mouseclick   3. key press 4. scroliing
+  //first step: clear the existing timer
+
+  if (ALTimer != 0) {
+    clearInterval(ALTimer);
+    ALTimer = 0;
+    // second step: implement the timer again
+    ALTimer = setInterval("AL_auto_logout()", ALTimeout);
+
+      // completed the reset of the timer
+  }
+}
+
+function AL_auto_logout() {
+  // this function will redirect the user to the logout script
+  window.location = base_url+"logout";
+}
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+   
+    ga('create', 'UA-112199327-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+ </body>
+</html>

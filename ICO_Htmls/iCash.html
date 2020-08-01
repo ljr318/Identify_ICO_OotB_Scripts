@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="uUV3PqiSwoXfzc7sITqrRGcobCXMcsfWqolaAxKw" name="csrf-token"/>
+  <title>
+   icash.io is for sale for $4,500 on DomainHolder.io
+  </title>
+  <meta content="icash.io is for sale for $4,500 on DomainHolder.io" name="description"/>
+  <meta content="www.domainholder.io" name="generator"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="icash.io is for sale for $4,500 on DomainHolder.io" property="og:title"/>
+  <meta content="icash.io is for sale for $4,500 on DomainHolder.io" property="og:description"/>
+  <meta content="https://api.imageee.com/default?title=icash.io is for sale for $4,500&amp;bg_color=edece7" property="og:image"/>
+  <link href="https://static.domainholder.io/css/app.css?id=5869c85962be442ca0d3" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-8410169-71">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-8410169-71', {'page_path': '/parking/icash.io'});
+  </script>
+ </head>
+ <body>
+  <div class="parking" id="app">
+   <default-template :domain="domain" v-if="domain.template_name == 'default'">
+   </default-template>
+   <vertigo-template :domain="domain" v-if="domain.template_name == 'vertigo'">
+   </vertigo-template>
+   <duo-template :domain="domain" v-if="domain.template_name == 'duo'">
+   </duo-template>
+  </div>
+  <script src="https://static.domainholder.io/js/parking.js?id=4b3930ac86d688a4643f">
+  </script>
+  <script>
+   const app = new Vue({
+
+                el: '#app',
+
+                data: function() {
+                    return {
+                        domain: {
+                            template_name: null
+                        }
+                    }
+                },
+
+                created: function() {
+                    this.getDomain()
+                },
+
+                methods: {
+                    getDomain: function() {
+                        axios
+                            .get('/api/domains/9930')
+                            .then(response => {
+                                this.domain = response.data.data;
+                            })
+                    }
+                }
+            });
+  </script>
+  <script type="application/ld+json">
+   {
+                "@context": "http://schema.org",
+                "@type": "Product",
+                "name": "icash.io",
+                                "offers": {
+                    "@type": "Offer",
+                    "price": "4500",
+                    "priceCurrency": "USD"
+                }
+                            }
+  </script>
+ </body>
+</html>

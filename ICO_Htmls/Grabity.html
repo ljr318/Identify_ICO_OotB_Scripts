@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Grabity
+  </title>
+  <link href="main.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js">
+  </script>
+  <script src="circletype.min.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- circular -->
+  <div class="circular-img">
+   <img alt="" src="symbol@2x.png"/>
+  </div>
+  <div class="circular-text">
+   <span id="rotated">
+    dApp  • opensource • projects •
+   </span>
+  </div>
+  <!-- circular ends -->
+  <div class="container">
+   <div class="hero-title">
+    <div class="title">
+     <h1>
+      Beyond
+      <span>
+       the Universe
+      </span>
+     </h1>
+    </div>
+   </div>
+   <span class="welcome">
+    Welcome to Grabity
+   </span>
+  </div>
+  <div class="container">
+   <div class="hero-title">
+    <div class="title">
+     <h1>
+      Grabity
+     </h1>
+     <span class="intro">
+      Grabity is a non-profit technology consortium 
+                                        founded in 2018 to develop dApps based on 
+                                        GBT, to support open source projects, 
+                                        and to promote its commercial adoption.
+     </span>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+   <div class="hero-title">
+    <div class="title">
+     <h1>
+      Coming Soon
+     </h1>
+    </div>
+   </div>
+  </div>
+  <!-- BG -->
+  <article class="img">
+   <div class="img-wrapper">
+    <div class="img-inner">
+     <img class="img-holder" src="BG@2x.png"/>
+    </div>
+   </div>
+  </article>
+  <!-- BG ends -->
+  <script>
+   animteHover();
+
+            function animteHover() {
+                var $img = $(".img");
+
+                $img.mousemove(function (e) {
+                    var xPos = $(this).data("xPos");
+                    var yPos = $(this).data("yPos");
+                    var mouseX = e.pageX;
+                    var mouseY = e.pageY;
+                    var left = mouseX - xPos;
+                    var top = mouseY - yPos;
+                    var origin = "center center -300";
+                    var xPerc =
+                        ((left - $(this).data("itemWidth") / 2) / $(this).data("itemWidth")) * 200;
+                    var yPerc =
+                        ((top - $(this).data("itemHeight") / 2) / $(this).data("itemHeight")) * 200;
+
+                    TweenMax.to($(this).data("imgOuter"), 3, {
+                        rotationX: 0.1 * yPerc,
+                        rotationY: -0.1 * xPerc,
+                        transformOrigin: origin,
+                        ease: Expo.easeOut,
+                    });
+                });
+
+                $img.each(function () {
+                    $(this).data("xPos", $(this).offset().left);
+                    $(this).data("yPos", $(this).offset().top);
+                    $(this).data("itemWidth", $(this).width());
+                    $(this).data("itemHeight", $(this).height());
+                    $(this).data("imgOuter", $(this).find(".img-inner"));
+                });
+
+                $img.on("mouseleave", function () {
+                    TweenMax.to($(this).data("imgOuter"), 3, {
+                        rotationX: 0,
+                        rotationY: 0,
+                        transformOrigin: origin,
+                        ease: Expo.easeOut,
+                    });
+                });
+            }
+  </script>
+ </body>
+ <script>
+  const circleType = new CircleType(
+            document.getElementById("rotated")
+        ).radius(80);
+
+        $(window).scroll(function() {
+            var offset = $(window).scrollTop();
+            offset = offset * 0.4;
+
+            $(".circular-text").css({
+                "-moz-transform": "rotate(" + offset + "deg)",
+                "-webkit-transform": "rotate(" + offset + "deg)",
+                "-o-transform": "rotate(" + offset + "deg)",
+                "-ms-transform": "rotate(" + offset + "deg)",
+                transform: "rotate(" + offset + "deg)"
+            });
+        });
+ </script>
+</html>

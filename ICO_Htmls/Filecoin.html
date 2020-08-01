@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script>
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f86b2d730f","applicationID":"101261930","transactionName":"IltdR0QJCFVSSxZYWQVRSxxQDwhcVFZQX2gIWldWTg==","queueTime":0,"applicationTime":55,"agent":""}
+  </script>
+  <script>
+   (window.NREUM||(NREUM={})).loader_config={licenseKey:"f86b2d730f",applicationID:"101261930"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="/assets/applications/coinlist-e93ffda4568cca6c86f101300fc3c3b5a1303fe5bf55c17d82c38e7aaac38bb2.css" media="all" rel="stylesheet"/>
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="S/I4iEqwizHQbGNWXIDzcvqAcntR5BzJ+fsoYQDejGcmToSXZH7kR3x2GqPiFbpKFV3g4yGCmECzVhwBWznfUQ==" name="csrf-token"/>
+  <meta content="wss://websocket.coinlist.co/websocket" name="action-cable-url"/>
+  <link href="/assets/shared/coinlist_favicon-f1798d0047eef2a4efe6c0c092ff6860d40101e45a0fb42b169f9a46dfd3243e.ico" rel="shortcut icon" type="image/x-icon"/>
+  <title>
+   Filecoin - CoinList
+  </title>
+  <meta content="A decentralized storage network that turns cloud storage into an algorithmic market" name="description"/>
+  <!-- / Facebook Open Graph data -->
+  <meta content="Filecoin - CoinList" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://coinlist.co/filecoin" property="og:url"/>
+  <meta content="https://coinlist.co/assets/index/new_home/meta-98cf23f147de87d6e602b69eed98297d0356f6de584648026fe8a8ac32c90546.png" property="og:image"/>
+  <meta content="A decentralized storage network that turns cloud storage into an algorithmic market" property="og:description"/>
+  <meta content="Filecoin" property="og:site_name"/>
+  <!-- / Twitter Card data -->
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@coinlist" name="twitter:site"/>
+  <meta content="Filecoin - CoinList" name="twitter:title"/>
+  <meta content="A decentralized storage network that turns cloud storage into an algorithmic market" name="twitter:description"/>
+  <meta content="@coinlist" name="twitter:creator"/>
+  <meta content="https://coinlist.co/assets/index/new_home/meta-98cf23f147de87d6e602b69eed98297d0356f6de584648026fe8a8ac32c90546.png" name="twitter:image:src"/>
+  <link href="https://coinlist.co/filecoin" rel="canonical"/>
+  <script>
+   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";}}();
+  
+    analytics.load("B8cWXtot6mZziGlobbH1vMihwiDi83v4");
+  </script>
+  <script>
+   analytics.page({}, {
+    anonymousId: "0573d451-8617-40b1-845a-0ad7d21d0cc8",
+  });
+  </script>
+  <script src="https://d2t77mnxyo7adj.cloudfront.net/v1/c.js?449243283324298">
+  </script>
+ </head>
+ <body class="layouts-coinlist-application layouts-coinlist-application--" data-rc="layouts/coinlist/application">
+  <div class="layouts-flashes" data-load-plaid-script="false" data-rc="layouts/flashes">
+  </div>
+  <div class="index-filecoin_index__header layouts-coinlist-cover" data-rc="layouts/coinlist/cover">
+   <div class="layouts-coinlist-header layouts-coinlist-header--transparent" data-rc="layouts/coinlist/header">
+    <div class="s-container s-gridMaxXs24 layouts-coinlist-header__navbar">
+     <div class="s-grid">
+      <div class="s-grid-colXs6">
+       <div class="s-paddingVert1_5">
+        <a href="/">
+         <img alt="Coinlist logo white" class="layouts-coinlist-header__logo" src="/assets/shared/coinlist_logo_white-e63e5cefda94a01db3454f07f70a87177a247db5750a15d246519c073d481823.svg"/>
+        </a>
+       </div>
+      </div>
+      <div class="s-grid-colXs18 u-text-right u-verticalAlignBottom">
+       <div class="layouts-coinlist-header-dropdown" data-rc="layouts/coinlist/header/dropdown">
+        <div class="s-fontSize15 layouts-coinlist-header-nav_items layouts-coinlist-header-nav_items--transparent" data-rc="layouts/coinlist/header/nav_items">
+         <a class="s-marginLeft1_5 c-link s-paddingVert1_5 u-displayInlineBlock" href="/">
+          Home
+         </a>
+         <a class="s-marginLeft1_5 c-link s-paddingVert1_5 u-displayInlineBlock" href="https://pro.coinlist.co">
+          View Exchange
+         </a>
+         <a class="s-marginLeft1_5 c-link u-displayInlineBlock s-paddingVert1_5" href="/for-companies">
+          For Companies
+         </a>
+         <a class="s-marginLeft1_5 c-link s-paddingVert1_5 u-displayInlineBlock" href="/build">
+          For Developers
+         </a>
+         <a class="s-marginLeft1_5 c-link s-paddingVert1_5 u-displayInlineBlock" href="https://twitter.com/coinlist" target="_blank">
+          <i class="icon-twitter">
+          </i>
+         </a>
+        </div>
+        <div class="s-fontSize15 u-displayInlineBlock">
+         <div class="s-paddingVert1_5 u-displayInlineBlock s-marginLeft1_5">
+          <a class="c-link" href="/login">
+           Log in
+          </a>
+         </div>
+         <div class="s-paddingVert0_5 u-displayInlineBlock s-marginLeft1_5">
+          <a class="c-button c-button--small u-fontWeight700 u-colorWhite" href="/register">
+           Get started
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="cover_top_content">
+    <div class="index-filecoin_index-header" data-rc="index/filecoin_index/header">
+     <div class="s-container s-gridMaxXs24 u-colorWhite">
+      <div class="s-grid">
+       <div class="s-grid-colSm24 u-text-center">
+        <h1 class="s-marginTop3">
+         <img alt="Filecoin white" class="index-filecoin_index-header__offering_logo" src="/assets/index/filecoin_index/logos/filecoin_white-eaf3d60e7742ec8731ab3f8ea249c15e5ab97328f1c59ee8e69f7b08cf9f55e5.svg"/>
+        </h1>
+        <h2 class="index-filecoin_index-header__headline s-fontSize46 s-marginBottom4 s-marginTop1">
+         Filecoin
+         <div class="s-fontSize23 s-marginTop0_5">
+          A decentralized storage network · Launching in 2020
+         </div>
+        </h2>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="">
+   <div class="index-filecoin_index" data-rc="index/filecoin_index">
+    <div class="s-container s-gridMaxXs20">
+     <div class="s-grid">
+      <div class="s-grid-colSm18 s-grid--pushSm3">
+       <section class="s-marginTop3" id="purchasers">
+        <div class="index-filecoin_index-purchasers" data-rc="index/filecoin_index/purchasers">
+         <div class="c-box">
+          <div class="c-box__separator s-paddingVert1_5 s-paddingHoriz2">
+           <div class="s-fontSize18 u-fontWeight700">
+            For Purchasers
+           </div>
+          </div>
+          <div class="c-box__separator s-paddingVert1_5 s-paddingHoriz2">
+           <div class="s-grid">
+            <div class="s-grid-colSm12 s-paddingBottom1_5">
+             <div class="s-fontSize14 u-textTransformUppercase u-text-center u-colorGrayA u-fontWeight700 u-letterSpacing0_5">
+              CoinList users
+             </div>
+             <div class="s-marginTop1">
+              <a class="c-button c-button--block" href="/login">
+               Log In To Register
+              </a>
+             </div>
+            </div>
+            <div class="s-grid-colSm12">
+             <div class="s-fontSize14 u-textTransformUppercase u-text-center u-colorGrayA u-fontWeight700 u-letterSpacing0_5">
+              Don't have a CoinList account?
+             </div>
+             <div class="s-marginTop1">
+              <a class="c-button c-button--block" href="/register">
+               Create A CoinList Account
+              </a>
+             </div>
+             <div class="s-marginTop1 s-fontSize13 u-colorGrayA u-text-center">
+              Use the email you used to purchase your Filecoin SAFT
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <section class="s-marginTop3" id="about">
+        <div class="index-filecoin_index-about" data-rc="index/filecoin_index/about">
+         <div class="c-box">
+          <div class="c-box__separator s-paddingVert1_5 s-paddingHoriz2">
+           <div class="s-fontSize18 u-fontWeight700">
+            Profile
+           </div>
+          </div>
+          <div class="s-padding2">
+           <div class="s-fontSize14 u-textTransformUppercase u-colorGrayA u-fontWeight700 u-letterSpacing0_5">
+            About
+           </div>
+           <div class="u-colorGray6 s-marginTop1">
+            Filecoin is a decentralized storage network that turns cloud storage into an algorithmic
+market. Miners earn the native protocol token (also called “filecoin”) by providing data
+storage and/or retrieval. Conversely, clients pay miners to store or distribute data and to
+retrieve it. “Filecoin” can refer to a) the network, b) the protocol, c) the token powering
+the network, and d) the project.
+           </div>
+           <div class="s-fontSize14 u-textTransformUppercase u-colorGrayA u-fontWeight700 u-letterSpacing0_5 s-marginTop2">
+            Links
+           </div>
+           <div class="u-colorGray6 s-marginTop1">
+            <div class="s-grid">
+             <div class="s-grid-colSm12">
+              <ul class="u-listUnstyled">
+               <li class="s-marginBottom0_5">
+                <a href="https://filecoin.io/" target="_blank">
+                 Website
+                </a>
+               </li>
+               <li class="s-marginBottom0_5">
+                <a href="https://filecoin.io/filecoin.pdf" target="_blank">
+                 Whitepaper
+                </a>
+               </li>
+               <li>
+                <a href="https://docs.filecoin.io/" target="_blank">
+                 Developer Docs
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="s-grid-colSm12">
+              <ul class="u-listUnstyled">
+               <li class="s-marginBottom0_5">
+                <a href="https://github.com/filecoin-project/" target="_blank">
+                 Github
+                </a>
+               </li>
+               <li class="s-marginBottom0_5">
+                <a href="https://twitter.com/Filecoin" target="_blank">
+                 Twitter
+                </a>
+               </li>
+               <li>
+                <a href="https://discuss.filecoin.io/" target="_blank">
+                 Discussion Forums
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+           <div class="u-hidden">
+            <a href="/filecoin-2017">
+             Filecoin 2017 Token Sale
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <section class="s-marginTop3 s-marginBottom3" id="news">
+        <div class="index-filecoin_index-news" data-rc="index/filecoin_index/news">
+         <div class="c-box">
+          <div class="c-box__separator s-paddingVert1_5 s-paddingHoriz1_5">
+           <div class="s-fontSize18 u-fontWeight700">
+            Recent News
+           </div>
+          </div>
+          <div class="s-paddingBottom1 s-paddingRight1 s-paddingLeft1">
+           <div class="market-dashboard-news-article" data-link="/news/articles/9540b832-b29b-42fc-98fb-cc8e6e1915d9/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/9540b832-b29b-42fc-98fb-cc8e6e1915d9/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="9540b832 b29b 42fc 98fb cc8e6e1915d9 1595937655" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/954/0b8/32-/9540b832-b29b-42fc-98fb-cc8e6e1915d9-1595937655-ff2fb5175f7188d9fd98735c5c4a891e41b39104."/>
+              <img alt="9540b832 b29b 42fc 98fb cc8e6e1915d9 1595937655" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/954/0b8/32-/9540b832-b29b-42fc-98fb-cc8e6e1915d9-1595937655-30fd3f9a0a1470bf955012a20f732b6974eb3110."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/ethereum-defi-platforms-eth-history" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=How%20Decentralized%20Finance%20Became%20Ethereum's%20Top%20Dog&amp;url=https://www.coindesk.com/ethereum-defi-platforms-eth-history&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/ethereum-defi-platforms-eth-history&amp;title=How%20Decentralized%20Finance%20Became%20Ethereum's%20Top%20Dog" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                How Decentralized Finance Became Ethereum's Top Dog
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 22h
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                And so, that small group of startups would build through the last Crypto Winter, making DeFi the narrative driver of Vitalik Buterin’s Ethereum protocol as it turns five years old.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               34 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/a99a41e7-68f4-4add-afeb-d79e4863b91e/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/a99a41e7-68f4-4add-afeb-d79e4863b91e/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="A99a41e7 68f4 4add afeb d79e4863b91e 1595541667" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/a99/a41/e7-/a99a41e7-68f4-4add-afeb-d79e4863b91e-1595541667-faf798fde68434ea583757d9d8a851f75c560dc9."/>
+              <img alt="A99a41e7 68f4 4add afeb d79e4863b91e 1595541667" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/a99/a41/e7-/a99a41e7-68f4-4add-afeb-d79e4863b91e-1595541667-9fdaff2fd5056ec5e3fcd8a4bf4026b46f31fcef."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/climbing-off-twitter-on-scaffolds-of-truth-where-srinivasan-and-benet-diverge" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Climbing%20off%20Twitter%20on%20Scaffolds%20of%20Truth:%20Where%20Srinivasan%20and%20Benet%20Diverge&amp;url=https://www.coindesk.com/climbing-off-twitter-on-scaffolds-of-truth-where-srinivasan-and-benet-diverge&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/climbing-off-twitter-on-scaffolds-of-truth-where-srinivasan-and-benet-diverge&amp;title=Climbing%20off%20Twitter%20on%20Scaffolds%20of%20Truth:%20Where%20Srinivasan%20and%20Benet%20Diverge" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Climbing off Twitter on Scaffolds of Truth: Where Srinivasan and Benet Diverge
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jul 23
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                This stood out Wednesday night when Benet shared the Zoom stage with Ethereum creator Vitalik Buterin and former Coinbase executive Balaji Srinivasan, both of whom are strong futurists.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               42 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/b0704709-c143-4dc7-b736-3a1de90a15f2/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/b0704709-c143-4dc7-b736-3a1de90a15f2/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="B0704709 c143 4dc7 b736 3a1de90a15f2 1594828860" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/b07/047/09-/b0704709-c143-4dc7-b736-3a1de90a15f2-1594828860-6ebc33c0097ff9a059b5ad05bb42071691e9343d."/>
+              <img alt="B0704709 c143 4dc7 b736 3a1de90a15f2 1594828860" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/b07/047/09-/b0704709-c143-4dc7-b736-3a1de90a15f2-1594828860-e84a8d4844312944061b14654e3a19a217aa821e."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/filecoin-pushes-back-final-testing-phase-announces-calibration-period-for-miners" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Filecoin%20Pushes%20Back%20Final%20Testing%20Phase,%20Announces%20%E2%80%98Calibration%20Period%E2%80%99%20for%20Miners&amp;url=https://www.coindesk.com/filecoin-pushes-back-final-testing-phase-announces-calibration-period-for-miners&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/filecoin-pushes-back-final-testing-phase-announces-calibration-period-for-miners&amp;title=Filecoin%20Pushes%20Back%20Final%20Testing%20Phase,%20Announces%20%E2%80%98Calibration%20Period%E2%80%99%20for%20Miners" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Filecoin Pushes Back Final Testing Phase, Announces ‘Calibration Period’ for Miners
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jul 15
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                Decentralized storage network provider Filecoin has delayed the launch of its incentivized testnet, the final phase of testing for its blockchain enabled storage network.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               2 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/773720ed-edc0-42a9-be9f-304cf5e55126/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/773720ed-edc0-42a9-be9f-304cf5e55126/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="773720ed edc0 42a9 be9f 304cf5e55126 1594659647" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/773/720/ed-/773720ed-edc0-42a9-be9f-304cf5e55126-1594659647-05714bdbe67807c8e8af91235fb0622675fa7c9b."/>
+              <img alt="773720ed edc0 42a9 be9f 304cf5e55126 1594659647" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/773/720/ed-/773720ed-edc0-42a9-be9f-304cf5e55126-1594659647-a9f05234e9b6461ef496b15f0e05331ddb372ce7."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/blockchain-bites-its-never-been-harder-to-mine-bitcoin" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Blockchain%20Bites:%20It's%20Never%20Been%20Harder%20to%20Mine%20Bitcoin&amp;url=https://www.coindesk.com/blockchain-bites-its-never-been-harder-to-mine-bitcoin&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/blockchain-bites-its-never-been-harder-to-mine-bitcoin&amp;title=Blockchain%20Bites:%20It's%20Never%20Been%20Harder%20to%20Mine%20Bitcoin" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Blockchain Bites: It's Never Been Harder to Mine Bitcoin
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jul 13
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                Bitcoin’s mining difficulty is at a record high, Singapore’s central bank digital currency could find commercial use and Chinese firms are going in on Filecoin.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               45 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/de5e13cd-c05f-47a8-a46c-844b7df223d4/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/de5e13cd-c05f-47a8-a46c-844b7df223d4/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="De5e13cd c05f 47a8 a46c 844b7df223d4 1594609243" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/de5/e13/cd-/de5e13cd-c05f-47a8-a46c-844b7df223d4-1594609243-fcad3d1219b040e4afeb8b1bdb3df7e88fa7d82f."/>
+              <img alt="De5e13cd c05f 47a8 a46c 844b7df223d4 1594609243" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/de5/e13/cd-/de5e13cd-c05f-47a8-a46c-844b7df223d4-1594609243-cefbc187a154bbcd25daddbaea0a159015c17b0f."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/filecoin-mining-craze-in-china" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Inside%20the%20Craze%20for%20Filecoin%20Crypto%20Mining%20in%20China&amp;url=https://www.coindesk.com/filecoin-mining-craze-in-china&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/filecoin-mining-craze-in-china&amp;title=Inside%20the%20Craze%20for%20Filecoin%20Crypto%20Mining%20in%20China" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Inside the Craze for Filecoin Crypto Mining in China
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jul 13
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                As Filecoin inches closer to a blockchain mainnet launch – after several delays since its $200 million raise in 2017 – investors in China are again speculating heavily on the network’s mining hardware and its token prices.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               72 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/a55ac1be-7f2a-4bea-949e-8d88b16b82ba/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/a55ac1be-7f2a-4bea-949e-8d88b16b82ba/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="A55ac1be 7f2a 4bea 949e 8d88b16b82ba 1592146847" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/a55/ac1/be-/a55ac1be-7f2a-4bea-949e-8d88b16b82ba-1592146847-190bd0733bd8a0f04df5f67538ff86746bf2ec3a."/>
+              <img alt="A55ac1be 7f2a 4bea 949e 8d88b16b82ba 1592146847" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/a55/ac1/be-/a55ac1be-7f2a-4bea-949e-8d88b16b82ba-1592146847-621ac58f793e434b3d3226eaa76c2e2820036c49."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://cointelegraph.com/news/filecoin-mainnet-launch-is-on-track" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Filecoin%20Mainnet%20Launch%20%22Is%20on%20Track%22&amp;url=https://cointelegraph.com/news/filecoin-mainnet-launch-is-on-track&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://cointelegraph.com/news/filecoin-mainnet-launch-is-on-track&amp;title=Filecoin%20Mainnet%20Launch%20%22Is%20on%20Track%22" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                Coin Telegraph
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Filecoin Mainnet Launch "Is on Track"
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jun 14
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 Coin Telegraph
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                After releasing details of its testnet competition several days ago, Filecoin business development staff Angie Maguire said the project's mainnet is on pace for this summer.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               33 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="market-dashboard-news-article" data-link="/news/articles/cc1e377d-127a-44c9-adea-500577fe7bb6/redirect_to_external_content" data-rc="market/dashboard/news/article">
+            <div class="s-grid c-box__separator js-news-content c-news-content" data-link="/news/articles/cc1e377d-127a-44c9-adea-500577fe7bb6/redirect_to_external_content">
+             <div class="c-news-content__thumbnail-container">
+              <img alt="Cc1e377d 127a 44c9 adea 500577fe7bb6 1591862449" class="c-news-content__thumbnail" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/thumbnail/cc1/e37/7d-/cc1e377d-127a-44c9-adea-500577fe7bb6-1591862449-e8840404d5e6d68ea4b8dbd8b07282e244575039."/>
+              <img alt="Cc1e377d 127a 44c9 adea 500577fe7bb6 1591862449" class="c-news-content__thumbnail-square" src="https://s3-us-west-1.amazonaws.com/compliance-ico-af-us-west-1/production/news/articles/images/square/cc1/e37/7d-/cc1e377d-127a-44c9-adea-500577fe7bb6-1591862449-fceb75641604637701663989a0615855d1ff57c3."/>
+             </div>
+             <div class="c-news-content__body s-fontSize14">
+              <div class="market-dashboard-news-share_dropdown" data-rc="market/dashboard/news/share_dropdown">
+               <div class="js-dropdown c-dropdown c-dropdown--actions-right c-dropdown--no-hover u-floatRight u-colorGrayA">
+                <div class="c-dropdown__close_area">
+                </div>
+                <a class="c-link c-link--unstyled" href="javascript:void(0)">
+                 <span class="market-dashboard-news-share_dropdown__toggle s-fontSize16 u-fontWeight700">
+                  ···
+                 </span>
+                </a>
+                <div class="c-dropdown__content_wrapper s-marginLeft2_5">
+                 <div class="c-dropdown__content js-dropdown__content">
+                  <a class="s-fontSize14" href="https://facebook.com/sharer/sharer.php?u=https://www.coindesk.com/filecoin-prepares-for-network-launch-with-final-testing-phase" target="_blank">
+                   <i class="icon-facebook u-colorBrandFacebook">
+                   </i>
+                   Share on Facebook
+                  </a>
+                  <a class="s-fontSize14" href="https://twitter.com/intent/tweet/?text=Filecoin%20Prepares%20for%20Network%20Launch%20With%20Final%20Testing%20Phase&amp;url=https://www.coindesk.com/filecoin-prepares-for-network-launch-with-final-testing-phase&amp;via=CoinList" target="_blank">
+                   <i class="icon-twitter u-colorBrandTwitter">
+                   </i>
+                   Share on Twitter
+                  </a>
+                  <a class="s-fontSize14" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.coindesk.com/filecoin-prepares-for-network-launch-with-final-testing-phase&amp;title=Filecoin%20Prepares%20for%20Network%20Launch%20With%20Final%20Testing%20Phase" target="_blank">
+                   <i class="icon-linkedin u-colorBrandLinkedin">
+                   </i>
+                   Share on LinkedIn
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="c-news-content__info market-dashboard-news-article__info">
+               <span class="c-news-content__mentioned u-colorGrayA">
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+               <span class="c-news-content__mentioned-sm">
+                CoinDesk
+                <a class="c-link c-link--muted" href="/asset/filecoin">
+                 <b class="js-token-profile-link">
+                  Filecoin
+                 </b>
+                </a>
+               </span>
+              </div>
+              <div class="c-news-content__text">
+               <div class="u-fontWeight700 s-fontSize16">
+                Filecoin Prepares for Network Launch With Final Testing Phase
+               </div>
+               <div class="market-dashboard-news-article__content_presenter">
+                <span class="u-colorGrayA u-whiteSpaceNowrap">
+                 Jun 11
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                <span class="c-news-content__mentioned u-colorGrayA">
+                 CoinDesk
+                </span>
+                <span class="c-news-content__middot u-colorGrayA">
+                 ·
+                </span>
+                Decentralised storage network provider Filecoin announced the launch of the ‘Incentivized Testnet’, the final phase of testing for its decentralized storage network, on Wednesday.
+               </div>
+              </div>
+              <div class="u-colorGrayA c-news-content__shares u-hiddenXsOnly">
+               3 Shares
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="layouts-coinlist-footer" data-rc="layouts/coinlist/footer">
+   <div class="s-paddingVert2">
+    <div class="s-container s-gridMaxXs24">
+     <div class="s-grid">
+      <div class="layouts-coinlist-footer__footer_left s-grid-colSm18">
+       <a class="c-link" href="/jobs">
+        Jobs
+       </a>
+       <a class="c-link s-marginLeft2" href="/help">
+        Help
+       </a>
+       <a class="c-link s-marginLeft2" href="mailto:team@coinlist.co">
+        Contact
+       </a>
+       <a class="c-link s-marginLeft2" href="/privacy">
+        Privacy
+       </a>
+       <a class="c-link s-marginLeft2" href="/terms">
+        Terms
+       </a>
+       <a class="c-link s-marginLeft2" href="/legal">
+        Legal
+       </a>
+       <a class="c-link s-marginLeft2" href="https://blog.coinlist.co/">
+        Blog
+       </a>
+       <a class="c-link s-marginLeft2" href="https://twitter.com/coinlist" target="_blank">
+        <i class="icon-twitter">
+        </i>
+       </a>
+      </div>
+      <div class="layouts-coinlist-footer__footer_right s-grid-colSm6">
+       <a class="layouts-coinlist-footer__logo" href="/">
+       </a>
+      </div>
+     </div>
+     <div class="layouts-coinlist-footer__disclaimer s-grid s-marginTop2">
+      <div class="s-grid-colSm10 s-fontSize11">
+       <div class="s-marginBottom0_5">
+        This site is operated by Amalgamated Token Services Inc. through its wholly-owned
+subsidiary, CoinList Services, LLC (together, “CoinList”), which is not a registered
+broker-dealer. CoinList does not give investment advice, endorsement, analysis or
+recommendations with respect to any securities or provide legal or tax advice. All securities
+listed here are being offered by, and all information included on this site is the
+responsibility of, the applicable issuer of such securities. Neither CoinList nor any of its
+officers, directors, agents, and employees makes any warranty, express or implied, of any kind
+whatsoever related to the adequacy, accuracy or completeness of any information
+on this site or the use of information on this site. This site contains external links to
+third-party content (content hosted on sites unaffiliated with CoinList). As such, CoinList
+makes no representations or endorsements whatsoever regarding any third-party content/sites
+that may be accessible directly or indirectly from this site.
+       </div>
+       <div class="s-marginBottom0_5">
+        All securities-related activity is conducted by EC Securities, LLC (“EC Securities”),
+an affiliate of CoinList, a registered broker-dealer and member FINRA/SIPC, located at 850
+Montgomery St. Suite 350, San Francisco, CA 94133. EC Securities does not make investment
+recommendations, and no communication, through this website or in any other medium, should be
+construed as a recommendation for any security offered on or off this investment platform. These
+securities are not FDIC or SIPC insured and there is no bank or other guarantee if they lose
+value. Please review the background of our broker-dealer and investment professionals on
+        <a class="" href="https://brokercheck.finra.org/firm/summary/287845" target="_blank">
+         FINRA’s broker/check
+        </a>
+        . Please also review our
+        <a class="" href="https://coinlist.co/assets/legal/FormCRS-149f81174d5196efe59e6bf3b7e5806ecb91b3e6d6a32664c86828f69f43d3b9.pdf" target="_blank">
+         Form CRS
+        </a>
+        , a uniform customer relationship
+summary and disclosure template prescribed by the SEC, that provides succinct and relevant
+information to retail investors and enables comparability between broker-dealers with respect to
+fees, conflicts, and services provided.
+       </div>
+      </div>
+      <div class="s-grid-colSm10 s-fontSize11">
+       <div class="s-marginBottom0_5">
+        All cryptocurrency trading and related services are provided by CoinList Markets LLC
+(“CoinList Markets”) NMLS #1785267, an affiliate of CoinList and a Money Services Business
+registered with Financial Crimes Enforcement Network and certain states as a money
+transmitter.
+       </div>
+       <div class="s-marginBottom0_5">
+        All lending services are provided by Coinlist Lend LLC, an affiliate of Coinlist and
+a proprietary cryptocurrency lender.
+       </div>
+       <div class="s-marginBottom0_5">
+        Certain services may be limited to residents of certain jurisdictions, and certain
+disclosures are required in certain jurisdictions,
+        <a class="" href="/legal">
+         available here
+        </a>
+        .
+       </div>
+       <div class="s-marginBottom0_5">
+        Potential investors must conduct their own due diligence of any issuer, cryptocurrency,
+token or token-based security. Investing in cryptocurrencies, tokens and token-based securities
+is highly risky and may lead to total loss of investment. Use of the site is subject to certain
+risks, including but not limited to those
+        <a class="" href="/help/what-are-the-risks-of-investing-in-virtual-currencies">
+         listed here
+        </a>
+        .
+       </div>
+       <div class="s-marginBottom0_5">
+        All activities on this site are governed by our
+        <a class="" href="/terms">
+         Terms of Service
+        </a>
+        and
+        <a class="" href="/privacy">
+         Privacy Policy
+        </a>
+        which you agree to by using this site. CoinList and
+the employees, officers, directors and affiliates of CoinList may own equity, tokens or other
+interests in companies using the site and may also participate in certain current offerings using
+the site (where permitted). CoinList services are not being directed toward the residents of any
+jurisdictions outside of the United States of America.
+       </div>
+      </div>
+      <div class="layouts-coinlist-footer__copyright s-fontSize11 s-grid-colSm4 u-text-right">
+       Copyright © 2020 CoinList
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="media-sm">
+  </div>
+  <div id="media-md">
+  </div>
+  <div id="media-lg">
+  </div>
+  <div class="js-environment" data-environment="production">
+  </div>
+  <script src="/webpack/application-065c6adc6ddccf804506.js">
+  </script>
+ </body>
+</html>

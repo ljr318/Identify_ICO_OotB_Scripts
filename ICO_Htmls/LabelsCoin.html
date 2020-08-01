@@ -1,0 +1,75 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <!-- 
+         'Plain Jane' Mini-Theme running on EZP Maintenance Mode Plugin
+         snapcreek.com
+    -->
+ <head>
+  <title>
+   LabelsCoin™ | Blockchain of Music Copyrights
+  </title>
+  <link href="http://fonts.googleapis.com/css?family=Oswald|Droid+Serif" rel="stylesheet" type="text/css"/>
+  <link href="https://www.labelscoin.io/wp-content/plugins/easy-pie-maintenance-mode/mini-themes/plain/css/style.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   body {
+background: #f1f1f1;
+overflow-y: hidden;
+}
+
+#header {
+    border-bottom: 0 none transparent !important;
+}
+
+#message {
+
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    color: 
+
+    #787878;
+    letter-spacing: 0.05em;
+
+}
+
+#headline {display: none;} 
+
+.box, #content {
+    background: none transparent;
+    height: 100%;
+    margin: auto;
+    padding: 40px 0 0;
+    width: 100%;
+}
+  </style>
+ </head>
+ <body>
+  <div id="header">
+   <p>
+   </p>
+  </div>
+  <div id="content">
+   <img id="logo-img" src="https://www.labelscoin.io/wp-content/uploads/2018/08/labelscoin-logo-all-li.png"/>
+   <h1 id="headline">
+   </h1>
+   <p id="message">
+    website working progress, we will back to you soon
+   </p>
+  </div>
+  <!-- Removes the image when not defined -->
+  <script type="text/javascript">
+   var image = document.getElementById("logo-img");
+         
+            function ezp_hideImage() {
+                image.style.display = "none";
+            }                                                                
+                
+            if(image.getAttribute('src') == '') {
+                        
+                ezp_hideImage();
+            }
+                
+            image.addEventListener('error', ezp_hideImage, true);
+  </script>
+ </body>
+</html>

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="wl3dfVJREEoOdXSwItFTZKp0yKaBDNjNXCmsD799" name="csrf-token"/>
+  <title>
+   Jobs Search | Empleos.io
+  </title>
+  <meta content="Find your next job on Empleos.io. Search and apply for jobs in the United States." name="description"/>
+  <meta content="jobs, position, employment, search, apply" name="keywords"/>
+  <meta content="Jobs Search | Empleos.io" property="og:title"/>
+  <meta content="Find your next job on Empleos.io. Search and apply for jobs in the United States." property="og:description"/>
+  <meta content="https://empleos.io/logo_square.jpg" property="og:image"/>
+  <link href="https://empleos.io" rel="canonical"/>
+  <script defer="" src="https://empleos.io/js/manifest.js">
+  </script>
+  <script defer="" src="https://empleos.io/js/vendor.js">
+  </script>
+  <script defer="" src="https://empleos.io/js/app.js">
+  </script>
+  <link href="https://empleos.io/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://empleos.io/css/app.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700" rel="stylesheet" type="text/css"/>
+  <link href="/css/cookieconsent.min.css" rel="stylesheet" type="text/css"/>
+  <script type="application/ld+json">
+   {"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/empleos.io","name":"Empleos.io","image":null}}]}
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-120447386-3">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120447386-3');
+  </script>
+ </head>
+ <body>
+  <div id="app">
+   <div class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+     <div class="container">
+      <a class="navbar-brand" href="https://empleos.io" title="Empleos - Jobs in the United States">
+       <img alt="" src="https://empleos.io/logo_white.png"/>
+      </a>
+      <button aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarMenu" data-toggle="collapse" type="button">
+       <span class="navbar-toggler-icon">
+       </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+       <ul class="navbar-nav mt-3 mx-auto">
+        <li class="nav-item">
+         <a class="nav-link" href="https://empleos.io/resumes/create">
+          Post a resume
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="https://empleos.io/jobs/create">
+          Post a job
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="https://empleos.io/resumes">
+          Search for candidates
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="https://empleos.io/contact">
+          Contact
+         </a>
+        </li>
+       </ul>
+       <ul class="navbar-nav mt-3 ml-auto">
+        <li class="nav-item">
+         <a class="nav-link btn btn-primary btn-sm" href="https://empleos.io/login">
+          Login
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="https://empleos.io/register">
+          Register
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </nav>
+    <div class="container">
+     <div class="col col-sm-12 text-center">
+      <h1>
+       Find your ideal position in a minute
+      </h1>
+     </div>
+    </div>
+    <div class="search-form container">
+     <form class="mx-auto" id="search-top">
+      <div class="input-group input-group-lg col col-sm-12">
+       <span>
+        <i aria-hidden="true" class="fab fa-twitter">
+        </i>
+       </span>
+       <input aria-label="Position" class="form-control form-control-lg" id="what" placeholder="Position" type="text" value=""/>
+       <input aria-label="City, state" class="form-control form-control-lg" id="where" placeholder="City, state" type="text" value=""/>
+       <div class="input-group-append">
+        <button class="form-control form-control-lg btn btn-lg btn-primary" type="submit">
+         Find Jobs
+        </button>
+       </div>
+      </div>
+      <input id="what-type" name="what_type" type="hidden" value=""/>
+      <input id="where-type" name="where_type" type="hidden" value=""/>
+     </form>
+    </div>
+   </div>
+   <main class="py-4">
+    <div class="container">
+     <div class="row">
+      <div class="col col-12 text-center pb-4">
+       <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+       </script>
+       <!-- Empleos.io top -->
+       <ins class="adsbygoogle" data-ad-client="ca-pub-5926723624897474" data-ad-format="horizontal" data-ad-slot="7318656358" data-full-width-responsive="true" style="display:block">
+       </ins>
+       <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
+      </div>
+     </div>
+    </div>
+    <div class="container">
+     <section class="recent-jobs">
+      <header class="section-header">
+       <h2 class="mt-0 mb-5 text-center">
+        Recent Jobs
+       </h2>
+      </header>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224864.html">
+            <h4 class="link">
+             Customer Service Associate - Temporary
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Walgreens
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224864.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Models and delivers a distinctive and delightful customer experience.
+Registers sales on assigned cash register, provides customers with courteous, fair, friendly, and efficient checkout service.
+
+Customer Experience
+
+Engages customers and patients by greeting them and offering assistance with products and services. Resolves customer issues and answers questions to ensure a positive customer experience.
+Models and shares customer service best practices...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Traverse City, MI
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224863.html">
+            <h4 class="link">
+             Research Engineer with Cyber Experience, LGS Advance Cyber Science
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            CACI International Inc.
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224863.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Job Description
+Do you have a passion for innovation?
+So do we! At LGS our people are our greatest asset – we make sure your voice is heard and give you the resources to invent solutions to some of the most difficult challenges facing our customers. Our entrepreneurial environment fosters your best ideas and allows you to build your career...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Herndon, VA
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employers/1583218814832981.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224862.html">
+            <h4 class="link">
+             The National Center for Environmental Health (NCEH) - Public Health Analyst I
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            ProSidian Consulting, LLC
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Contractor
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224862.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Company Description
+
+
+ProSidian is looking for “Great People Who Lead” at all levels in the organization.  Are you a talented professional ready to deliver real value to clients in a fast-paced, challenging environment?  ProSidian Consulting is looking for professionals who share our commitment to integrity, quality, and value.
+ProSidian is a management and operations consulting firm with a reputation for...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Atlanta, GA
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224861.html">
+            <h4 class="link">
+             FT - Sales Specialist Cabinets - Day
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Lowe's Companies, Inc.
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224861.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           What You Will Do 
+All Lowe's associates deliver quality customer service while maintaining a store that is clean, safe, and stocked with the products our customers need. As a Sales Specialist Cabinets, this means:
+
+Being friendly and professional, eager to understand the customer's specific needs in order to pair the best products and service offerings in support of their project....
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Ypsilanti, MI
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224860.html">
+            <h4 class="link">
+             FT - Mechanic I - Nights
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Lowe's Companies, Inc.
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224860.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           FT - Mechanic I - Nights
+What You Will Do 
+The focus of the maintenance team is to keep equipment in the RDC fully operational. The Maintenance Mechanic I is a knowledgeable repair person with exposure to and experience with RDC systems and
+building components. The Maintenance Mechanic I has specialist knowledge and complex repair capability in one of the...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Findlay, OH
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224859.html">
+            <h4 class="link">
+             Grocery / Freezer Warehouse Order Selector
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Kroger
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224859.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Company Name: Kroger Logistics
+Position Type: Employee
+FLSA Status: Non-Exempt
+The Fred Meyer Clackamas Distribution Center is a proud member of the nation-wide Kroger Family of Companies. We are currently looking for Order Selector to become a part of our Dry Grocery and Freezer department. The Dry Grocery and Freezer department is a union warehouse and the days off are...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Clackamas, OR
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employers/1583095546964182.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224858.html">
+            <h4 class="link">
+             Customer Service Representative
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Public Storage
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224858.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Company Description
+
+
+Public Storage is committed to providing a safe environment to the public, our customers, and our family of employees! 
+We are Public Storage, the self-storage industry leader established in 1972.  And with over 2,500 locations across 38 states, we’re still growing!  We continue to shape the way the industry operates by offering innovative new ways for customers to...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Austin, TX
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224857.html">
+            <h4 class="link">
+             Grad RN Nurse Residency Medical Specialty Unit
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            HCA
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224857.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           SHIFT: Days (rotating weekends)
+SCHEDULE: Full-time
+Do you have a passion for patient care? Do you want to work for a leading healthcare organization that values your professional growth? Come and join our StaRN Nurse Residency Program!
+Hospital Corporation of America (HCA) is a leading healthcare provider with over 31.2 million patient encounters a year at locations in 21 states...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Richmond, VA
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employers/1583100035392864.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224856.html">
+            <h4 class="link">
+             Junior Software Developer
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            LaunchCode
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224856.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Company Description
+
+
+ As a national nonprofit focused on closing the tech talent gap, LaunchCode is working with this partner to create a special on-ramp program for people who have the skills to work in technology, but just need an opportunity. 
+
+ Come and join us to start your tech journey. Apply to be considered today! 
+
+We only accept applications through our...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Shawnee, KS
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-md-12 item-block">
+        <div class="card">
+         <div class="card-header">
+          <img class="employer-logo float-left mr-4 mt-3" src="/images/employer.png"/>
+          <div class="hgroup float-left">
+           <a href="https://empleos.io/view/224855.html">
+            <h4 class="link">
+             Commercial Executive - Volume Licensing
+            </h4>
+           </a>
+           <h5 class="cursor-pointer float-left">
+            Microsoft Corporation
+           </h5>
+           <span class="float-left badge badge-success ml-3 my-1">
+            Full time
+           </span>
+           <span class="float-left badge badge-info ml-3 my-1 text-white">
+            Full day
+           </span>
+          </div>
+          <div class="save-icon float-right mt-2">
+           <span class="text-muted mr-3 mb-2">
+            <strong>
+            </strong>
+           </span>
+           <a class="btn btn-link btn-sm btn-success pull-right mb-2 font13" href="https://empleos.io/view/224855.html">
+            View job
+           </a>
+          </div>
+         </div>
+         <div class="card-body">
+          <div class="short-body">
+           Microsoft envisions a cloud-empowered world. A world of more possibility, more innovation, more openness and more sky's-the-limit thinking. A world where passionate innovators come to collaborate, envisioning what can be and taking their careers to places they simply could not anywhere else. Our mission is to empower every person and every organization on the planet to achieve more. This mission...
+          </div>
+         </div>
+         <div class="container">
+          <div class="row pb-4">
+           <div class="col col-md-4 col-12">
+            <time>
+             Posted on: Jul 28, 2020
+            </time>
+           </div>
+           <div class="col col-md-4 col-12">
+            <i class="fas fa-map-marker-alt">
+            </i>
+            <span>
+             Dallas, TX
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <div class="row no-gutters">
+      <div class="col col-12 text-center py-4">
+       <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+       </script>
+       <!-- Empleos.io middle -->
+       <ins class="adsbygoogle" data-ad-client="ca-pub-5926723624897474" data-ad-format="horizontal" data-ad-slot="4009966738" data-full-width-responsive="true" style="display:block">
+       </ins>
+       <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
+      </div>
+     </div>
+     <section class="popular-categories mt-5">
+      <h2 class="col-md-12 text-center mb-4">
+       Popular searches
+      </h2>
+      <div class="category-grid">
+       <div class="grid-box">
+        <a class="" href="/search?position=software" rel="nofollow">
+         <i class="fas cursor-pointer fa-laptop">
+         </i>
+         <h6 class="cursor-pointer">
+          Software
+         </h6>
+        </a>
+       </div>
+       <div class="grid-box">
+        <a class="" href="/search?position=accountant" rel="nofollow">
+         <i class="fas cursor-pointer fa-chart-line">
+         </i>
+         <h6 class="cursor-pointer">
+          Accountant
+         </h6>
+        </a>
+       </div>
+       <div class="grid-box">
+        <a class="" href="/search?position=health" rel="nofollow">
+         <i class="fas cursor-pointer fa-medkit">
+         </i>
+         <h6 class="cursor-pointer">
+          Health
+         </h6>
+        </a>
+       </div>
+       <div class="grid-box">
+        <a class="" href="/search?position=restaurant" rel="nofollow">
+         <i class="fas cursor-pointer fa-utensils">
+         </i>
+         <h6 class="cursor-pointer">
+          Restaurant
+         </h6>
+        </a>
+       </div>
+       <div class="grid-box">
+        <a class="" href="/search?position=marketing" rel="nofollow">
+         <i class="fas cursor-pointer fa-newspaper">
+         </i>
+         <h6 class="cursor-pointer">
+          Marketing
+         </h6>
+        </a>
+       </div>
+       <div class="grid-box">
+        <a class="" href="/search?position=manager" rel="nofollow">
+         <i class="fas cursor-pointer fa-university">
+         </i>
+         <h6 class="cursor-pointer">
+          Manager
+         </h6>
+        </a>
+       </div>
+      </div>
+     </section>
+    </div>
+    <div class="container border my-3">
+     <div class="row pt-2 pb-3">
+      <div class="col-md-3 col-sm-12">
+       <a href="https://microtasks.io/pages/landingpage-provider?utm_source=empleos.io&amp;utm_medium=cpc&amp;utm_campaign=provider" rel="nofollow" target="_blank">
+        <img alt="MicroTasks.io" class="img-fluid mt-md-2 mt-sm-1 mt-1" src="/images/ads/4.jpg"/>
+       </a>
+      </div>
+      <div class="col-md-9 col-sm-12">
+       <h3 class="mt-md-1 pt-3">
+        Share you skills and get paid!
+       </h3>
+       <p class="pt-1">
+        All from the comfort of your home.
+       </p>
+       <p class="pt-1">
+        <a class="btn btn-success" href="https://microtasks.io/pages/landingpage-provider?utm_source=empleos.io&amp;utm_medium=cpc&amp;utm_campaign=provider" rel="nofollow" target="_blank">
+         LEARN MORE
+        </a>
+       </p>
+      </div>
+     </div>
+    </div>
+   </main>
+   <footer class="site-footer pl-2">
+    <div class="container pl-0">
+     <div class="row">
+      <div class="col-sm-12 col-md-8">
+       <h6>
+        About
+       </h6>
+       <p class="text-justify">
+        Empleos.io is a free Job Board where employers can post their jobs and search for candidates, and candidates can search for available jobs and submit their resumes.
+       </p>
+      </div>
+      <div class="col-sm-12 col-md-3 offset-md-1">
+       <h6>
+        Company
+       </h6>
+       <ul class="footer-links list-unstyled">
+        <li>
+         <a class="" href="https://empleos.io/page/help">
+          <span>
+           Help
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://medium.com/@empleos.official" target="_blank">
+          Our Blog
+         </a>
+        </li>
+        <li>
+         <a href="https://empleos.io/page/terms-and-conditions">
+          Terms &amp; Conditions
+         </a>
+        </li>
+        <li>
+         <a href="https://empleos.io/page/privacy-policy">
+          Privacy Policy
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <hr/>
+    </div>
+    <div class="container pl-0">
+     <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+       <p class="copyright-text">
+        Copyright © Empleos LLC 2020, All Rights Reserved
+       </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+       <ul class="social-icons">
+        <li>
+         <a class="facebook" href="https://www.facebook.com/empleos.io/" target="_blank">
+          <i class="fab fa-facebook">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="twitter" href="https://twitter.com/EmpleosIO" target="_blank">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="linkedin" href="https://www.linkedin.com/company/empleos-io/" target="_blank">
+          <i class="fab fa-linkedin">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script data-cfasync="false" src="/js/cookieconsent.min.js">
+  </script>
+  <script>
+   window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "This website or its third-party tools use cookies, which are necessary to its functioning and required to achieve the purposes illustrated in the cookie policy. If you want to know more or withdraw your consent to all or some of the cookies, please refer to the: ",
+    "dismiss": "OK",
+    "link": "Privacy policy",
+    "href": "/page/privacy-policy"
+  }
+});
+  </script>
+ </body>
+</html>

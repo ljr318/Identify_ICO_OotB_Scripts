@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   iZ³|Izzzio - Tokensale
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="http://gmpg.org/xfn/11" rel="profile"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <link href="//ico.izzz.io/images/favicon.ico" rel="shortcut icon"/>
+  <meta content="#603cba" name="msapplication-TileColor"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+  <link href="https://ico.izzz.io/themes/backmoon/css/sign.css" rel="stylesheet"/>
+  <link href="https://ico.izzz.io/themes/backmoon/style/flash.css" rel="stylesheet"/>
+  <link href="https://ico.izzz.io/izzz/css/customize.css?_=431809507" rel="stylesheet"/>
+ </head>
+ <body class="login-body">
+  <div class="site sign-in-page login-site" id="site">
+   <div class="sign-header row">
+    <div class="sign-name sign-header-col">
+     <a href="https://izzz.io">
+      <picture>
+       <source srcset="https://static.tildacdn.com/tild3761-3439-4666-a437-653763653136/logowhite.svg">
+        <img alt="logo" src="https://static.tildacdn.com/tild3761-3439-4666-a437-653763653136/logowhite.svg"/>
+       </source>
+      </picture>
+     </a>
+    </div>
+   </div>
+   <div class="sign-block-wrapper">
+    <div class="sb-bg1 sb-bg">
+     <picture>
+      <source srcset="/img/sb-bg1.png,
+										/img/sb-bg1_2x.png 2x">
+       <img alt="" class="sb-bg" src="/img/sb-bg1.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="sb-bg2 sb-bg">
+     <picture>
+      <source srcset="/img/sb-bg2.png,
+										/img/sb-bg2_2x.png 2x">
+       <img alt="" class="sb-bg" src="/img/sb-bg2.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="sign-block">
+     <form action="https://ico.izzz.io/app/login" class="sign-in-form" method="POST">
+      <input name="_CSRF" type="hidden" value="YTU5Q1dsRU4vNGorekozWUpibkY4Zz09"/>
+      <div class="sign-block-title">
+       Sign in
+      </div>
+      <div class="input-block">
+       <label for="email">
+        Email
+       </label>
+       <input class="input-field" id="email" name="email" required="" type="text"/>
+      </div>
+      <div class="input-block">
+       <label for="pass">
+        Password
+       </label>
+       <input autocomplete="off" class="input-field" id="pass" name="password" required="" type="password"/>
+      </div>
+      <div class="input-block sbm-block">
+       <input class="btn-sbm" type="submit" value="Sign in"/>
+      </div>
+      <a class="sign-link" href="https://ico.izzz.io/app/restore">
+       Forgot password
+      </a>
+      <a class="sign-link sign-up-link" href="https://ico.izzz.io/app/register">
+       Sign up
+      </a>
+     </form>
+    </div>
+   </div>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script src="https://ico.izzz.io/themes/backmoon/js/jquery-1.12.4.min.js">
+  </script>
+  <script>
+   $('.close').click(function () {
+        $(this).parent().parent().parent().remove();
+    });
+  </script>
+  <script>
+   function inIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    if(inIframe()) {
+        document.getElementsByTagName('body')[0].innerHTML = "";
+        window.parent.location = self.location;
+    }
+  </script>
+ </body>
+</html>

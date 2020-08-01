@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   eMusic Blockchain Music Platform
+  </title>
+  <base href="/"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="autoRotate:disabled" http-equiv="ScreenOrientation"/>
+  <link href="assets/img/e_favicon.png" rel="icon" type="image/png"/>
+  <meta content="eMusic is the first major music service to embrace Blockchain technology - redefining music distribution and rights management." name="description"/>
+  <meta content="eMusic Blockchain Music Platform" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="http://token.emusic.com" property="og:url"/>
+  <meta content="eMusic is the first major music service to embrace Blockchain technology - redefining music distribution and rights management." property="og:description"/>
+  <meta content="eMusic Blockchain Music Platform" property="og:site_name"/>
+  <meta content="https://token.emusic.com/assets/img/Emusic_Open_Graph_v2_2x.jpg" property="og:image"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+  </script>
+  <link href="https://use.typekit.net/nja3tcc.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+  <link href="âhttps://use.typekit.net/nja3tcc.cssâ" rel="âstylesheetâ"/>
+  <script>
+   var isProduction = window.location.host.match(/^(token)\.emusic\.com/) !== null;
+
+    function getFacebookEventsKey() {
+      return isProduction
+        ? "2099894296710664"
+        : "166983284186257"
+    }
+  </script>
+  <!--FACEBOOK CLIENT LIBRARY-->
+  <script>
+   window.fbAsyncInit = function () {
+      FB.init({
+        appId: '309461179481548',
+        status: true,
+        xfbml: true,
+        version: 'v2.6'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--GOOGLE CLIENT LIBRARY-->
+  <script>
+   var auth2;
+    window.initGapi = function () {
+      gapi.load('auth2', function onLoadCallback() {
+        auth2 = gapi.auth2.init({
+          client_id: '530578558121-llrfhp3bt8dtsgneoha3keanfnkfjelp.apps.googleusercontent.com'
+        });
+      });
+    };
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+   !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', getFacebookEventsKey());
+  </script>
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=2099894296710664&amp;ev=PageView&amp;noscript=1" width="1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <!--gtag-->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-980807960">
+  </script>
+  <script>
+   if (isProduction) {
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', 'AW-980807960');
+    }
+  </script>
+  <!--end gtag-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+   var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5c057d8540105007f37acb42/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <script async="" defer="" src="https://apis.google.com/js/platform.js?onload=initGapi">
+  </script>
+  <link href="https://d1494mdq8by75k.cloudfront.net/styles.0b502c2694416f13cf27.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="global_wrapper" id="gW">
+   <app-root>
+   </app-root>
+  </div>
+  <script src="https://d1494mdq8by75k.cloudfront.net/runtime.6ee9f7bde82d519adf37.js" type="text/javascript">
+  </script>
+  <script src="https://d1494mdq8by75k.cloudfront.net/polyfills.0c8444e4ba074a036c50.js" type="text/javascript">
+  </script>
+  <script src="https://d1494mdq8by75k.cloudfront.net/scripts.b10142e5de4a1f9d1173.js" type="text/javascript">
+  </script>
+  <script src="https://d1494mdq8by75k.cloudfront.net/main.22f9fa413993a8b4596c.js" type="text/javascript">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <meta content="website" property="og:type"/>
+  <meta content="OSA decentralized" property="og:title"/>
+  <meta content="" property="og:description"/>
+  <meta content="/en" property="og:url"/>
+  <meta content="" property="og:image"/>
+  <meta content="" property="og:site_name"/>
+  <meta content="OSA decentralized" name="twitter:title"/>
+  <meta content="" name="twitter:description"/>
+  <meta content="" name="twitter:image"/>
+  <meta content="" name="twitter:site"/>
+  <meta content="" itemprop="name"/>
+  <meta content="" itemprop="description"/>
+  <meta content="" itemprop="image"/>
+  <meta content="en" http-equiv="content-language"/>
+  <link href="/ru" hreflang="ru" rel="alternate"/>
+  <link href="/en" hreflang="en" rel="alternate"/>
+  <link href="/ar" hreflang="ar" rel="alternate"/>
+  <link href="/cn" hreflang="zh" rel="alternate"/>
+  <link href="/jp" hreflang="ja" rel="alternate"/>
+  <link href="/kr" hreflang="ko" rel="alternate"/>
+  <link href="/vn" hreflang="vi" rel="alternate"/>
+  <title>
+   OSA decentralized
+  </title>
+  <link href="/assets/static/favicon.png" rel="icon" type="image/png"/>
+  <script type="text/javascript">
+   var lang = navigator.languages && navigator.languages[0] || navigator.language || navigator.userLanguage,
+            support = {
+              'en': 'en',
+              'zh': 'cn',
+              'ja': 'jp',
+              'ko': 'kr',
+              'ar': 'ar',
+              'vi': 'vn',
+              'ru': 'ru'
+            },
+            defLang = 'en',
+            list;
+
+          if (lang) {
+
+            list = lang.split('-');
+
+            if (list.length > 1) {
+              lang = list[0];
+            }
+
+          }
+
+          if (!support.hasOwnProperty(lang)) {
+            lang = defLang;
+          }
+
+          window.location.href = '/' + support[lang] + window.location.pathname + window.location.search;
+  </script>
+ </head>
+ <body class="wrap--en">
+  <div style="opacity: 0.01">
+   <a href="/en">
+    en
+   </a>
+   <a href="/ar">
+    ar
+   </a>
+   <a href="/cn">
+    cn
+   </a>
+   <a href="/jp">
+    jp
+   </a>
+   <a href="/kr">
+    kr
+   </a>
+   <a href="/vn">
+    vn
+   </a>
+   <a href="/ru">
+    ru
+   </a>
+  </div>
+ </body>
+</html>

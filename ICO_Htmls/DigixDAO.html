@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="#111111" name="theme-color"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <link href="favicon.ico" rel="icon"/>
+  <script>
+   const isProduction = 'production' === 'production';
+    const isStaging = 'production' === 'kovan';
+    const isDebug = 'false' === 'true';
+    const isDev = isDebug || (!isProduction && !isStaging);
+    if (!isDev && typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === "object") {
+      for (let [key, value] of Object.entries(window.__REACT_DEVTOOLS_GLOBAL_HOOK__)) {
+        window.__REACT_DEVTOOLS_GLOBAL_HOOK__[key] = typeof value == "function" ? () => { } : null;
+      }
+    }
+  </script>
+  <script>
+   window.spectrumBuildTime = "2020-07-08T07:34:24.379Z";
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+   !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    window.fbq = fbq;
+  </script>
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=305356147094424&amp;ev=PageView&amp;noscript=1" width="1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <meta charset="utf-8"/>
+  <title>
+   Digix | The Future of Owning Gold is Digital
+  </title>
+  <link href="./manifest.35f071cfca5a835b59bcdd5591654aaa.json" rel="manifest"/>
+  <meta content="At Digix, we create a world where 99.99% fine gold bars are made divisible, transferable and redeemable." name="description"/>
+  <link href="./main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="app">
+   <div class="ui active loader">
+   </div>
+   <noscript>
+    Digix Marketplace requires Javascript to be enabled?
+   </noscript>
+  </div>
+  <script src="./runtime.96d01dd3a953e705e73a.js" type="text/javascript">
+  </script>
+  <script src="./utilityVendor.6aee8d636d0a2c3d12f5.js" type="text/javascript">
+  </script>
+  <script src="./web3Vendor.13df3d85fc5985f5d569.js" type="text/javascript">
+  </script>
+  <script src="./main.430f234fb4c5ba58a587.js" type="text/javascript">
+  </script>
+  <script src="./translations.7113d01c726f792c2de3.js" type="text/javascript">
+  </script>
+  <script src="./vendors~wallet-core.4f78a07095bec10ed4ef.js" type="text/javascript">
+  </script>
+  <script src="./wallet-core.7a1b927b0488a549ff7f.js" type="text/javascript">
+  </script>
+ </body>
+</html>

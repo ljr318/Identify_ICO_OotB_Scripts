@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>
+   Squarespace - Domain Not Claimed
+  </title>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+  <script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-d475613fc87b40630584b-min.en-US.js">
+  </script>
+  <link href="//assets.squarespace.com/universal/styles-compressed/common-83b7f986b33276bfae0d91f1c1e7c4fe-min.css" rel="stylesheet" type="text/css"/>
+  <script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/dialog-a83581bbf9a938bbeaf52-min.en-US.js">
+  </script>
+  <link href="//assets.squarespace.com/universal/styles-compressed/dialog-afeb96ba160fb642a2d98c892a956065-min.css" rel="stylesheet" type="text/css"/>
+  <script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/system-page-a5ec7e9298b1215a803c3-min.en-US.js">
+  </script>
+  <link href="//assets.squarespace.com/universal/styles-compressed/system-page-6b393a4b3a1b687988d925d9496458ce-min.css" rel="stylesheet" type="text/css"/>
+  <script>
+   YUI(YUI_CONFIG).use('squarespace-common', 'squarespace-system-page', function(Y) {
+	
+      Y.on("domready", function() {
+      
+        var lb = new Y.Squarespace.Lightbox({
+          disableNormalClose: true,
+          clickAnywhereToExit: false,
+          content: '<div class="bigtext"><div class="title">Domain Not Claimed</div><div class="description">This domain has been mapped to Squarespace, but it has not yet been claimed by a website.  If this is your domain, claim it in the Domains tab of your Website Manager.</div></div>',
+          margin: 100,
+          noHeightConstrain: true
+        });
+
+        lb.show();
+
+        lb.getContentEl().on("click", function(e) {
+          if (e.target.ancestor(".login-button", true)) {
+            document.location.href = '/config/';
+          }
+        });
+        
+      });
+          
+    });
+  </script>
+ </head>
+ <body class="squarespace-config squarespace-system-page">
+  <div class="minimal-logo">
+  </div>
+ </body>
+</html>

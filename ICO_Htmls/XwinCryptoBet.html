@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Auction for domain name xwin.io | Park.io
+  </title>
+  <meta content="The domain name xwin.io is being auctioned right now! View the current auction, and place a bid..." name="description"/>
+  <link href="https://park.io/auctions/view/xwin.io" rel="canonical"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet"/>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <link href="/images/system-icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/images/system-icons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="/images/system-icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="/images/system-icons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/images/system-icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/images/system-icons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/images/system-icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="/images/system-icons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/images/system-icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/images/system-icons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="/images/system-icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/images/system-icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+  <link href="/images/system-icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <meta content="#3c177a" name="msapplication-TileColor"/>
+  <meta content="images/system-icons/ms-icon-144x144.png" name="msapplication-TileImage"/>
+  <meta content="#3c177a" name="theme-color"/>
+  <!-- javascripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+  </script>
+  <script src="/js/bootstrap.min.js">
+  </script>
+  <!-- Le styles -->
+  <link href="/css/bootstrap-park.css" rel="stylesheet"/>
+  <link href="/css/park.css" rel="stylesheet"/>
+ </head>
+ <body class="non-home domain-profile">
+  <div class="navbar">
+   <div class="container">
+    <div class="navbar-header">
+     <button class="navbar-toggle collapsed" data-target="#top-nav" data-toggle="collapse" type="button">
+      <span class="sr-only">
+       Toggle navigation
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+      <span class="icon-bar">
+      </span>
+     </button>
+     <a class="navbar-brand" href="/">
+      Park.io
+     </a>
+    </div>
+    <div class="navbar-collapse collapse" id="top-nav">
+     <ul class="nav navbar-nav">
+      <li>
+       <a href="/domains">
+        Domains
+       </a>
+      </li>
+      <li>
+       <a href="/auctions">
+        Auctions
+       </a>
+      </li>
+      <li>
+       <a href="/pricing">
+        Pricing
+       </a>
+      </li>
+      <li>
+       <a href="/support">
+        Support
+       </a>
+      </li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li>
+       <a href="/users/login">
+        Login
+       </a>
+      </li>
+      <li>
+       <a class="btn btn-default sign-up" href="/users/add">
+        Sign up
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+   <div class="park-module">
+    <div class="row">
+     <div class="col-sm-10 col-sm-offset-1">
+      <h1>
+       xwin.io
+      </h1>
+      <h2>
+       Domain Name Auction
+      </h2>
+      <dl>
+       <dt>
+        Current Price
+       </dt>
+       <dd>
+        $99.00
+       </dd>
+       <dt>
+        Number of Bids
+       </dt>
+       <dd>
+        <a href="/bids/index/6418">
+         2
+        </a>
+       </dd>
+       <dt>
+        Last Bid
+       </dt>
+       <dd>
+        Tue, Jul 28th 2020, 10:45
+       </dd>
+       <dt>
+        Start Date
+       </dt>
+       <dd>
+        Tue, Jul 28th 2020, 10:45
+       </dd>
+       <dt>
+        End Date
+       </dt>
+       <dd>
+        Fri, Aug 7th 2020, 12:41 EDT (UTC−04:00)
+       </dd>
+       <dt>
+        Time Left
+       </dt>
+       <dd id="timer">
+        1 week, 3 days
+       </dd>
+       <br/>
+       <a href="/users/login">
+        <button class="btn btn-default" type="button">
+         Place a bid
+        </button>
+       </a>
+       <br/>
+       <br/>
+      </dl>
+     </div>
+    </div>
+   </div>
+   <script>
+    jQuery(function($) {
+		$('#bid-button').click(function(event) {
+			$('#cc-form').show();
+			$('#bid-button').hide();
+		});
+
+		$('#BidAddForm').submit(function(event) {
+			return confirm('Are you sure you want to place a bid of $' + $("#BidAmount").val() + '? If you are the winner of this auction your credit card will be charged.');
+		});
+
+
+		// TODO: query server to see if close date updated since
+		timer = function() {
+
+			var delta = closeTime - Date.now(); // milliseconds until auction end
+			var secondsUntilEnd = Math.floor(delta / 1000);
+
+			if (secondsUntilEnd > (3600 * 3)) {	// only show timer when less than 3 hours to go
+				clearInterval(counter);
+				counter = setInterval(timer, 1000 * 60);	// only run once per minute
+				return;
+			}
+
+			if (secondsUntilEnd <= 0) {
+				clearInterval(counter);
+				$("#timer").html("<span style='color:red'>Ending very soon</span>");
+				return;
+			}
+
+			var currentHours = Math.floor(secondsUntilEnd / 3600);
+			var currentMinutes = Math.floor(secondsUntilEnd / 60) - (60 * currentHours);
+			var currentSeconds = secondsUntilEnd % 60;
+			if (currentSeconds <= 9) currentSeconds = "0" + currentSeconds;
+			if ((currentMinutes <= 9) && (currentHours > 0)) currentMinutes = "0" + currentMinutes;
+
+			if (currentHours > 0) {
+				$("#timer").html("<span style='color:red;'>" + currentHours + ":" + currentMinutes + ":" + currentSeconds + "</span>");
+			} else {
+				$("#timer").html("<span style='color:red;'>" + currentMinutes + ":" + currentSeconds + "</span>");
+			}
+
+			clearInterval(counter);
+			counter = setInterval(timer, 500);	// run every 500ms
+		}
+
+		// Split timestamp into [ Y, M, D, h, m, s ]
+		var closeDateTime = "2020-08-07 16:41:01".split(/[- :]/);
+		var closeTime = new Date(Date.UTC(closeDateTime[0], closeDateTime[1]-1, closeDateTime[2], closeDateTime[3], closeDateTime[4], closeDateTime[5]));
+
+		var counter = setInterval(timer, 500); //1000 will  run it every 1 second
+	});
+   </script>
+  </div>
+  <!-- /container -->
+  <footer>
+   <div class="container text-center">
+    <div class="col-sm-12 newsletter">
+     <h4>
+      Sign up to be notified of updates from park.io
+     </h4>
+     <span>
+      <form action="https://humb.us4.list-manage.com/subscribe/post?u=b2db1cda42f73ffbe13e5f2c4&amp;id=ba2afcf9b0" class="validate inline" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+       <input class="input-lg" id="email" name="EMAIL" placeholder="Enter your email..." type="email"/>
+       <button class="btn btn-primary" type="submit">
+        Subscribe
+       </button>
+      </form>
+     </span>
+    </div>
+   </div>
+   <div class="container text-center">
+    <ul class="footer-links">
+     <li>
+      <a href="/domains">
+       Domains
+      </a>
+     </li>
+     <li>
+      <a href="/auctions">
+       Auctions
+      </a>
+     </li>
+     <li>
+      <a href="/pricing">
+       Pricing
+      </a>
+     </li>
+     <li>
+      <a href="/support">
+       Support
+      </a>
+     </li>
+    </ul>
+    <p class="copyright">
+     © Copyright 2020
+     <a href="http://humbly.com">
+      humbly, LLC
+     </a>
+    </p>
+    <ul class="social">
+     <li>
+      <a href="http://facebook.com/www.park.io">
+       <img src="/images/facebook.svg"/>
+      </a>
+     </li>
+     <li>
+      <a href="http://twitter.com/io_domains">
+       <img src="/images/twitter.svg"/>
+      </a>
+     </li>
+    </ul>
+    <div class="footer-logo">
+     <a href="/">
+      <img src="/images/footer-flag.svg"/>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <!-- Le javascript
+	================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+  </script>
+  <script src="https://js.stripe.com/v2/" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   Stripe.setPublishableKey('pk_EzvDS8tziPDB8iX7GJ9ejLKU11jBy');
+  </script>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-51818815-2', 'auto');
+		ga('require', 'ec');
+		ga('ec:addProduct', {
+			'id': 'Auction-6418',
+			'name': 'xwin.io',
+			'category': 'Auctions',
+			'brand': 'io'
+		});
+		ga('ec:setAction', 'detail');
+		ga('send', 'pageview');
+  </script>
+ </body>
+</html>

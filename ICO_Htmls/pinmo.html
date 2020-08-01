@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Internal Server Error
+  </title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600,900" rel="stylesheet" type="text/css"/>
+  <!-- Favicon -->
+  <link href="http://www.pinmo.io/public/img/favicon.png" rel="icon" type="image/png"/>
+  <!-- Css -->
+  <link href="http://www.pinmo.io/public\bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.pinmo.io/public\fontawesome\css\all.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.pinmo.io/public\swiper\css\swiper.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.pinmo.io/public\fancybox\jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.pinmo.io/public\css\mark20181101.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.pinmo.io/public\css\main20181101.css" rel="stylesheet" type="text/css"/>
+  <!-- Js -->
+  <script src="http://www.pinmo.io/public\js\jquery.js" type="text/javascript">
+  </script>
+  <script src="http://www.pinmo.io/public\js\popers.js" type="text/javascript">
+  </script>
+  <script src="http://www.pinmo.io/public\bootstrap\js\bootstrap.js" type="text/javascript">
+  </script>
+  <script src="http://www.pinmo.io/public\swiper\js\swiper.js" type="text/javascript">
+  </script>
+  <script src="http://www.pinmo.io/public\fancybox\jquery.fancybox.js" type="text/javascript">
+  </script>
+ </head>
+ <style>
+  .gift-card-left{
+        padding-top: 20vh;
+    }
+    .gift-card-right{
+        padding-top: 20vh;
+    }
+    .gift-title{
+        color: white;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .gift-card-option{
+        font-size: 8em;
+        font-weight: 500;
+    }
+    .box{
+        color: white;
+        font-size: 22px;
+        line-height: 1.2;
+        width: 70%;
+        border-left:thick solid white;
+        padding-left: 8px;
+    }
+    .form_style{
+        margin: 0 auto;
+        padding-left: 50px;
+        background-color: white;
+        width: min-content;
+        padding-right: 50px;
+        border-radius: 18px;
+    }
+    .form_title{
+        font-size: 30px;
+        line-height: 1;
+        font-weight: bold;
+    }
+    .form_content{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .red_btn{
+        box-shadow: none;
+        padding-bottom: 0.7rem !important;
+        padding-top: 0.7rem !important;
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+        border-radius: 25px;
+        border: none;
+    }
+    .form-control{
+        border: 1px solid #65d8b2;
+        border-radius: 2rem;
+        height: calc(3rem + 2px);
+    }
+    .bg-blue{
+        background-image: url('./public/img/500_bg.png');
+        /*background: linear-gradient(to left,#4eecba,#2ec5bd,#2ec5bd);*/
+        height: 100%;
+        overflow-x: hidden
+    }
+    .giftcard-label {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .a1_1{
+        position: absolute;
+        top: 200px;
+        right: 80px;
+        /* width: 40%; */
+        width: 500px;
+    }
+
+
+    @media(max-width: 1322px) {
+        .a1_1{
+            width: 500px;
+        }
+
+    }
+    @media(max-width: 1060px) {
+        .a1_1{
+            width: 300px;
+            top: 300px;
+
+        }
+    }
+    @media(max-width: 950px) {
+        .a1_1{
+            width: 300px;
+            top: 600px;
+        }
+
+    }
+    .a1_logo{
+        position: absolute;
+        width: 150px;
+        top: 8%;
+        left: 10%;
+        z-index: 9;
+    }
+    .pop_title{
+        font-size: 2em;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 1;
+        padding-bottom: 25px;
+    }
+    input::-webkit-input-placeholder {
+        color: #D3D3D3 !important;
+    }
+
+    input:-moz-placeholder { /* Firefox 18- */
+        color: #D3D3D3 !important;
+    }
+
+    input::-moz-placeholder {  /* Firefox 19+ */
+        color: #D3D3D3 !important;
+    }
+
+    input:-ms-input-placeholder {
+        color: #D3D3D3 !important;
+    }
+    .error_404{
+        display: -moz-box;
+        background-color: white;
+        color: #4BC9C2;
+        width: fit-content;
+        font-size: 2em;
+        font-weight: 500;
+    }
+ </style>
+ <body style="height:100%;">
+  <div class="bg-blue position-relative">
+   <img class="a1_logo" src="http://www.pinmo.io/public/img/pinmo_logo.png"/>
+   <img class="a1_1" src="http://www.pinmo.io/public/img/500.png"/>
+   <div>
+    <div class="row px-lg-5 mx-0">
+     <div class="col-xl-7 col-lg-7 gift-card-left text-left">
+      <div class="error_404 px-4 py-2">
+       ERROR 500
+      </div>
+      <div class="gift-card-option pt-5 pb-3">
+       ooops!
+      </div>
+      <div class="gift-title">
+       It's not you, its us. We're aware of the issue and are fixing it.
+      </div>
+      <a class="btn red_btn mt-5" href="./" style="font-weight: 600; float: left">
+       Back Home &amp;nbsp&amp;nbsp
+       <i class="fas fa-arrow-right">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

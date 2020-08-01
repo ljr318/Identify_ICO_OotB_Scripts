@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Maintainance
+  </title>
+  <style>
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        *:after, *:before {
+            box-sizing: border-box;
+        }
+        html {
+            box-sizing: border-box;
+            font-size: 50%;
+        }
+        body{
+            margin: unset;
+        }
+        .maintainance{
+            background: url("https://bcnex.net/images/Asset1-01.png") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding: 8rem 1rem;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .maintainance__img img {
+            max-width: 100%;
+        }
+        .maintainance__logo{
+            padding-top: 4rem;
+        }
+        .maintainance__logo img{
+            width: 200px;
+        }
+        .borded{
+            margin: 2.5rem auto;
+            height: 5px;
+            width: 75px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
+        .maintainance__content{
+            color: #ffffff;
+            padding-bottom: 5rem;
+        }
+        .maintainance__content p:nth-child(1){
+            font-size: 2.5rem;
+            font-weight: 600;
+            padding-bottom: 1rem;
+        }
+        .maintainance__content p:nth-child(2){
+            font-size: 1.6rem;
+        }
+        .maintainance__content p:nth-child(2) span{
+            font-weight: 600;
+            display: inline-block;
+            width: 20px;
+        } 
+        .maintainance__btn a{
+            font-family: 'Montserrat', sans-serif;
+            padding: 1.5rem 2.5rem;
+            border: transparent;
+            border-radius: 50px;
+            background: #d94496;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.4rem;
+        }
+        .maintainance__btn a:hover{
+            color: #ffffff;
+            outline: none;
+            box-shadow: 0px 0px 10px 2px rgba(192, 13, 104, 0.6);
+        }
+
+        /* Responsive */
+        @media(min-width: 768px){
+            .maintainance{
+                padding: 10rem 0;
+                height: 100%;
+            }
+            .maintainance__logo img{
+                width: unset;
+            }
+            .maintainance__content p:nth-child(1) {
+                font-size: 3rem;
+            }
+        }
+        @media(min-width: 992px){
+            html{
+                font-size: 62.5%; 
+                /* 1rem = 10px, 10px/16px = 62.5% */
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="maintainance">
+   <div class="maintainance__img">
+    <img alt="" src="https://bcnex.net/images/Asset2.png"/>
+   </div>
+   <div class="maintainance__logo">
+    <a href="https://www.bcnex.net">
+     <img alt="" src="https://bcnex.net/images/Asset3.png"/>
+    </a>
+   </div>
+   <div class="borded">
+   </div>
+   <div class="maintainance__content">
+    <p>
+     WE ARE NOW UNDERGOING MAINTENANCE
+    </p>
+    <p>
+     Redirecting you to Bcnex Official Channel after
+     <span class="set-time-redirect">
+      30
+     </span>
+     seconds
+    </p>
+   </div>
+   <div class="maintainance__btn text-center">
+    <a href="https://www.facebook.com/bcnex.net">
+     REDIRECT NOW!
+    </a>
+   </div>
+  </div>
+  <script>
+   window.onload = function(){
+        var elem = document.querySelector('.set-time-redirect');
+        var t = 30;
+        var time = setInterval(setTimeRedirect, 1000);
+        function setTimeRedirect(){
+          if(t == 0){
+            clearInterval(time);
+            window.location.href = `https://www.facebook.com/bcnex.net`;
+          }else{
+            t--;
+            elem.textContent = t;
+          }
+        }
+      }
+  </script>
+ </body>
+</html>

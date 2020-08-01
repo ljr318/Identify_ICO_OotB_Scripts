@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   APEX
+  </title>
+  <meta content="" name="description"/>
+  <meta content="" name="Author"/>
+  <link href="images/ONMOUSEOVER.png" rel="icon" sizes="16x16" type="image/png"/>
+  <!-- mobile settings -->
+  <meta content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" name="viewport"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+ </head>
+ <style>
+  body{
+            margin: 0;
+            padding: 0;
+            background: #1b1b1b;
+            text-align: center;
+        }
+        #vh__100{height: 100vh; }
+ </style>
+ <body class="">
+  <!-- wrapper -->
+  <div id="vh__100">
+   <a href="javascript:void(0);" onclick="fun()" style="display: block;">
+    <div class="">
+     <!-- divider -->
+     <img alt="img" src="images/ONMOUSEOVER.png" style="padding: 12% 0;"/>
+    </div>
+   </a>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" data-backdrop="static" data-keyboard="false" id="exampleModalLong" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+     <div class="modal-body">
+      <h4>
+       You are trying to enter website from restricted area
+      </h4>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+            // $("#exampleModalLong").modal({
+            //     backdrop: 'static',
+            //     keyboard: false
+            // });
+        });
+        
+		function fun(){
+		    $.get("https://ipapi.co/json/")
+            .done(function( data ) {
+                 var ip_Address = data.country;
+                 if( ip_Address == "US")
+                 {  
+                    $("#exampleModalLong").modal('show');
+                 } else {
+                    window.location.href = "https://apextrader.com/platform";
+                 }
+             });
+		}
+//
+  </script>
+ </body>
+</html>

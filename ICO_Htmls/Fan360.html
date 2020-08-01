@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="htmland" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="One Community. All Stars. All Fans." name="description"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/site.webmanifest" rel="manifest"/>
+  <meta content="#da532c" name="msapplication-TileColor"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="628" property="og:image:height"/>
+  <meta content="Fan360.net" property="og:title"/>
+  <meta content="One Community. All Stars. All Fans. Fan 360 app is the first worldwide football news aggregator powered by artificial intelligence (AI) that provides you up-to-date personalized content." property="og:description"/>
+  <meta content="https://fan360.net" property="og:url"/>
+  <meta content="https://fan360.net/img/stadium.jpg" property="og:image"/>
+  <title>
+   Fan360.net // One Community. All Stars. All Fans.
+  </title>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+  <style>
+   .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  </style>
+  <link href="css/fan360.css" rel="stylesheet"/>
+  <script>
+   function getMobileOperatingSystem() {
+          var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+              // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+        function DetectAndServe(){
+            let os = getMobileOperatingSystem();
+            if (os == "Android") {
+                window.location.href = "fan360://"; 
+                var TimeoutAndroid = setTimeout(function(){
+                    window.location.href = "https://play.google.com/store/apps/details?id=si.bplanet.fan360"; 
+                }, 2000);
+            } else if (os == "iOS") {
+                window.location.href = "fan360://"; 
+                var TimeoutAndroid = setTimeout(function(){
+                    window.location.href = "https://apps.apple.com/us/app/fan360-top-football-app/id1472977213";
+                }, 2000);
+            } 
+        }
+  </script>
+ </head>
+ <body class="land text-center" onload="DetectAndServe();">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+   <header class="masthead mb-auto">
+    <div class="inner">
+     <h3 class="text-center">
+      <img src="img/logo.png" style="max-width:60px;"/>
+     </h3>
+    </div>
+   </header>
+   <main class="inner cover" role="main">
+    <h1>
+     Fan360
+    </h1>
+    <h2 class="cover-heading">
+     One Community.
+     <br/>
+     All Stars. All Fans.
+    </h2>
+    <p class="lead">
+     Fan 360 app is the first worldwide football news aggregator powered by artificial intelligence (AI) that provides you up-to-date personalized content.
+    </p>
+    <p class="lead">
+     <a href="https://play.google.com/store/apps/details?id=si.bplanet.fan360&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" style="max-width: 150px;"/>
+     </a>
+     <a href="https://apps.apple.com/us/app/fan360-top-football-app/id1472977213?mt=8" style="display:inline-block;width:150px;height:43px;">
+      <img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-07-25&amp;kind=iossoftware&amp;bubble=ios_apps"/>
+     </a>
+    </p>
+   </main>
+   <footer class="mastfoot mt-auto">
+    <div class="inner">
+     <p>
+      © FAN360 LIMITED
+      <br/>
+      <a href="terms.html">
+       Terms of service
+      </a>
+      |
+      <a href="privacy.html">
+       Privacy Policy
+      </a>
+      <br/>
+      <small>
+       Google Play and the Google Play
+       <span onclick="install();">
+        logo
+       </span>
+       are trademarks of Google LLC.
+      </small>
+     </p>
+    </div>
+   </footer>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  <script>
+   // This is the "Offline page" service worker
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+          
+    let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+    } else {
+      console.log('User chose to not install your PWA');
+    }
+
+    deferredPrompt = null;
+
+    });
+
+ 
+  }
+}
+  </script>
+ </body>
+</html>

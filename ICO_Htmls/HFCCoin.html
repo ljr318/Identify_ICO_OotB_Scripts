@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="HFC Coin" name="apple-mobile-web-app-title"/>
+  <title>
+   HFC Coin - Whitepaper Coming Soon
+  </title>
+  <meta content="HFC Coin - Coming Soon" name="description"/>
+  <link href="http://hfccoin.org/" rel="canonical"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="website" property="og:type"/>
+  <meta content="HFC Coin" property="og:title"/>
+  <meta content="HFC Coin - Coming Soon" property="og:description"/>
+  <meta content="http://hfccoin.org/" property="og:url"/>
+  <meta content="HFC Coin" property="og:site_name"/>
+  <meta content="//hfccoin.org/assets/img/hfc-coin-og.jpg" property="og:image"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="HFC Coin - Coming Soon" name="twitter:description"/>
+  <meta content="HFC Coin" name="twitter:title"/>
+  <script type="application/ld+json">
+   {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/hfccoin.org\/","name":"HFC Coin","potentialAction":{"@type":"SearchAction","target":"http:\/\/hfccoin.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <script type="application/ld+json">
+   {"@context":"http:\/\/schema.org","@type":"Organization","url":"http:\/\/hfccoin.org\/","sameAs":[],"@id":"#organization","name":"HFC Coin","logo":""}
+  </script>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" rel="stylesheet"/>
+  <link href="//hfccoin.org/assets/css/style.css" rel="stylesheet"/>
+  <script crossorigin="anonymous" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" src="https://code.jquery.com/jquery-3.1.1.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+  </script>
+  <link href="https://use.typekit.net/dha4qqu.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="d-md-flex flex-row">
+   <div class="col image-block">
+   </div>
+   <div class="col d-flex justify-content-between text-block flex-column">
+    <div class="top">
+    </div>
+    <div class="middle">
+     <div class="col-md-12">
+      <h1 class="logo-mark">
+       <img alt="coin" height="100" src="assets/img/coin.png" style="max-width: 100%;" width="100"/>
+      </h1>
+      <h1 class="logo">
+       HFC Coin
+      </h1>
+      <div class="opening bottom">
+       <p>
+        WhitePaper Coming Soon
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bottom" style="margin-top: 3rem;">
+     <div class="col-md-12">
+      <div class="contact">
+       <p>
+        <a href="mailto:info@hfccoin.org">
+         info@hfccoin.org
+        </a>
+       </p>
+      </div>
+      <!--
+						<div class="site-credit">
+							<p> Site Developed by <a href="http://jameslopez.us" title="Custom Software and Website Development in Destin, FL">Inception Theory</a></p>
+						</div>
+-->
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   jQuery(document).ready(function() {
+				
+				$ = jQuery;
+				
+				$( "body" ).delegate( "form > a.submit", "click", function(){
+					
+					$node = $(this);
+					$node.closest("form").submit();
+					return false;
+					
+				});
+				
+				// Submit forms
+				$('body').delegate('form', 'submit', function(e){		
+					
+					// let's look into the data
+					var ob = $(this).data();
+					var form = ($(this));
+					
+					var data = $(this).serializeArray();					
+					
+					// disable the form
+					$(this).find(":input").attr("disabled", true);
+					
+					var timestamp = new Date().getTime();
+					
+					// submit the form if there are no files to upload				
+					$.ajax({
+						type:'POST', 
+						url: $(this).attr('action') + "?" + timestamp, 
+						data: data, 
+						success: function(response) {
+			
+							// handle form responses here
+							formSubmitCallback(response, form);
+											
+						},
+						error: function(jqxhr){
+							
+							if(jqxhr.status == "404"){
+							
+								// console.log(jqxhr.status);
+								alert("There was a problem processing your request. Please try again in a few minutes.")
+							
+							} else {
+								
+								var response = jQuery.parseJSON(jqxhr.responseText);
+							
+								alert(response.message);
+									
+								if($(form).length > 0)
+								{
+											
+									$(form).find(":input").removeAttr("disabled");
+								
+								}
+								
+							}
+														
+						}
+						
+					});
+					
+					return false;
+				
+				});
+	
+			});
+			
+			function formSubmitCallback(response, form){
+				
+				$ = jQuery;
+				
+				$form = $(form);
+				
+				$form.animate({"opacity":"0"}, "fast", function(){
+					
+					$form.css("display", "none");
+					
+					$(".mailchimp").find(".alert-success").css("display", "block").animate({"opacity":"1"}, "fast", function(){
+							
+					});
+					
+				});
+				
+			}
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-117523851-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-117523851-1');
+  </script>
+ </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="html-wholesale-clients" lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <link href="/favicon.ico?v=2" rel="shortcut icon" type="image/x-icon"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Личный кабинет / B2B Portal ELCO.KZ
+  </title>
+  <meta content="Личный кабинет / B2B Portal ELCO.KZ,B2B Portal ELCO.KZ" name="keywords"/>
+  <meta content="Личный кабинет / B2B Portal ELCO.KZ" name="description"/>
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/assets/css/bootstrap-theme.css" rel="stylesheet"/>
+  <link href="/assets/css/media.css" rel="stylesheet"/>
+ </head>
+ <body class="wholesale-clients flex flex-align-center" ng-app="app" style="background-color:#1C2137">
+  <div class="container">
+   <div class="wholesale-clients-body flex">
+    <div class="col-xs-12 col-sm-7 wholesale-clients-form flex flex-align-center">
+     <div>
+      <a class="wholesale-clients-logo" href="/" style="margin-bottom: 40px">
+       <img alt="" src="/assets/images/logoelco.png"/>
+      </a>
+      <h3>
+       Вход для оптовых клиентов
+      </h3>
+      <p>
+       Если Вы уже являетесь нашим оптовым клиентом и получали у своего менеджера данные для доступа на портал, введите их
+    ниже
+      </p>
+      <form action="/login/" id="loginform" method="post">
+       <div class="form-group">
+        <label for="InputWaybill">
+         Логин
+        </label>
+        <input class="form-control required mail" id="InputLogin" name="email" type="text"/>
+       </div>
+       <div class="form-group">
+        <label for="InputData">
+         Пароль
+        </label>
+        <input class="form-control required" id="InputPassword" name="password" type="password"/>
+       </div>
+       <div class="form-group">
+        <div class="flex flex-align-center">
+         <div>
+          <button class="btn btn-primary" type="submit">
+           Войти
+          </button>
+         </div>
+         <div>
+          <a data-target="#popup-form" data-toggle="modal" href="#">
+           Забыли пароль?
+          </a>
+         </div>
+        </div>
+       </div>
+      </form>
+     </div>
+    </div>
+    <div class="col-xs-12 col-sm-5 wholesale-clients-invite flex flex-align-center" style="background: url(/assets/images/system/bg-wholesale-clients-neutral.jpg) 50% 50% no-repeat; -webkit-background-size: cover;
+                background-size: cover;">
+     <div ng-controller="Registration as vm">
+      <h3>
+       Получить аккаунт
+      </h3>
+      <p>
+       Если Вы только хотите им стать, то Вы можете
+       <a href="" ng-click="vm.regForm(); $event.preventDefault();" style="color: #ffffff; font-weight: bold; font-size: 11pt; text-decoration: underline;">
+        заполнить заявку
+       </a>
+       , и после ее рассмотрения наши менеджеры
+                        свяжутся с Вами и предоставят данные для доступа. Для этого Вы можете написать нам на
+                        b2b@elco.kz
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal fade" id="popup-form">
+   <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+       ×
+      </button>
+      <strong class="modal-title" id="myModalLabel2">
+       Восстановление пароля
+      </strong>
+     </div>
+     <div class="modal-body">
+      <br/>
+      <div id="check-error" style="color: #FF0000;">
+      </div>
+      <div id="check-ok" style="color: #34A702;">
+      </div>
+      <form id="reminder" method="post" name="reminder" onsubmit="return false">
+       <div class="form-group">
+        <input class="form-control required" id="checkmail" name="email" placeholder="Укажите ваш Логин" type="text"/>
+       </div>
+       <div class="text-center">
+        <button class="btn btn-primary" onclick="remindUser()" type="submit">
+         Отправить
+        </button>
+       </div>
+       <input name="proccess" type="hidden" value="1"/>
+      </form>
+      <div class="clearfix">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/build/gentelella/js/min.js">
+  </script>
+  <script src="/build/js/min.js">
+  </script>
+ </body>
+</html>

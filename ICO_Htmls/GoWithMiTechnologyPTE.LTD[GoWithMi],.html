@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
+  <title>
+   GoWithMi
+  </title>
+  <meta content="Global decentralized location-based services infrastructure for everyone's benefits,complement the last key component of the blockchain to empower the real economy application" name="description"/>
+  <meta content="GoWithMi" name="keywords"/>
+  <meta content="Bruce Cao" name="author"/>
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/ico"/>
+  <!-- Bootstrap -->
+  <link href="https://download1.gowithmi.com/web/gowithmi/js/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/css.css" rel="stylesheet" type="text/css"/>
+  <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/m_css/website.css" rel="stylesheet"/>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body>
+  <div id="app">
+   <div class="load_div" style="display: block;">
+    <div class="load_mask">
+    </div>
+    <div class="load">
+     <div class="spinner">
+      <div class="rect1">
+      </div>
+      <div class="rect2">
+      </div>
+      <div class="rect3">
+      </div>
+      <div class="rect4">
+      </div>
+      <div class="rect5">
+      </div>
+      <span>
+       loading...
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://download1.gowithmi.com/web/gowithmi/js/jquery.1.11.1.js" type="text/javascript">
+  </script>
+  <script>
+   var lang = navigator.language||navigator.userLanguage; //é»è®¤ä»æµè§å¨è¯­è¨è¯»å 'zh'
+    lang = lang.substr(0, 2);
+    function isPC () { //æ¯å¦ä¸ºPCç«¯
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if(isPC()){
+        location.href="index_"+lang+".html";
+        // window.location.href="";
+    }else{
+        location.href="index_"+lang+"_m.html";
+    }
+  </script>
+ </body>
+</html>

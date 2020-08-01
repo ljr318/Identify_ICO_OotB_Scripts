@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="d-flex flex-column" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Verifer" name="description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Verifer" property="og:title"/>
+  <meta content="verifer.io – ICO certificate service" property="og:description"/>
+  <!-- Project-specific CSS -->
+  <link href="/static/css/style.css?v=8" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"/>
+  <!-- Favicons -->
+  <link href="/static/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/static/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/static/img/favicon-64x64.png" rel="icon" sizes="64x64" type="image/png"/>
+  <!-- Web app manifest -->
+  <link href="/static/js/manifest.json" rel="manifest"/>
+  <title>
+   Verifer
+  </title>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <script src="/static/js/bootstrap_form_fields.js">
+  </script>
+  <script src="/static/js/navbar.js">
+  </script>
+  <script src="/static/js/auto_disable_buttons.js">
+  </script>
+  <!-- Bootstrap -->
+  <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </script>
+  <!-- Django content edit -->
+  <script src="/static/ckeditor/ckeditor/ckeditor.js" type="text/javascript">
+  </script>
+  <script src="/static/content_edit/content_edit.js" type="text/javascript">
+  </script>
+  <!-- Toastr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js">
+  </script>
+  <script src="/static/js/toastr_options.js">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125420575-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-125420575-1');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0">
+  </script>
+  <script src="/static/js/jquery.countdown.min.js">
+  </script>
+  <script>
+   var countDown;
+
+        $('#ee-navbar').addClass('ee-navbar-top');
+
+        function initializeCountdown() {
+            countdown = {
+                days: document.getElementById('countdown-days'),
+                hours: document.getElementById('countdown-hours'),
+                minutes: document.getElementById('countdown-minutes'),
+                seconds: document.getElementById('countdown-seconds')
+            };
+            // $('#countdown').countdown('2019/01/01 00:00:00').on('update.countdown', updateCountdown);
+        }
+
+        function updateCountdown(event) {
+            countdown.days.textContent = event.strftime('%D');
+            countdown.hours.textContent = event.strftime('%H');
+            countdown.minutes.textContent = event.strftime('%M');
+            countdown.seconds.textContent = event.strftime('%S');
+        }
+
+        var chartColors = {
+            blue: 'rgb(54, 162, 235)',
+            green: 'rgb(75, 192, 192)',
+            grey: 'rgb(201, 203, 207)',
+            orange: 'rgb(255, 159, 64)',
+            purple: 'rgb(153, 102, 255)',
+            red: 'rgb(255, 99, 132)'
+        };
+
+        var tooltipOptions = {
+            callbacks: {
+                label: function (tooltip, data) {
+                    return ' ' + data.datasets[tooltip.datasetIndex].data[tooltip.index] + '%';
+                },
+                title: function (tooltips, data) {
+                    return data.labels[tooltips[0].index];
+                }
+            }
+        };
+
+        var tokenChartConfig = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [88.2, 8.8, 2.9],
+                    backgroundColor: [
+                        chartColors.blue,
+                        chartColors.red,
+                        chartColors.green
+                    ]
+                }],
+                labels: [
+                    'ICO',
+                    'Marketing',
+                    'Team'
+                ]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                rotation: 1.25 * Math.PI,
+                tooltips: tooltipOptions
+            }
+        };
+
+        var usageChartConfig = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [35, 30, 6, 4, 25],
+                    backgroundColor: [
+                        chartColors.blue,
+                        chartColors.green,
+                        chartColors.orange,
+                        chartColors.purple,
+                        chartColors.red
+                    ]
+                }],
+                labels: [
+                    'Globalisation',
+                    'Development',
+                    'Datacenters',
+                    'Hardware',
+                    'Marketing'
+                ]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                rotation: 0.65 * Math.PI,
+                tooltips: tooltipOptions
+            }
+        };
+
+        $.extend(Chart.defaults.global.plugins.datalabels, {
+            align: 'start',
+            anchor: 'end',
+            clip: false,
+            color: '#000',
+            font: {
+                family: 'Lato',
+                size: 13,
+                weight: 'bold'
+            },
+            formatter: function (value, context) {
+                var label = context.chart.data.labels[context.dataIndex];
+                var value = context.dataset.data[context.dataIndex];
+                return label + ' (' + Math.round(value) + '%)';
+            }
+        });
+
+        function initializeCharts() {
+            var tokenContext = document.getElementById('token-chart').getContext('2d');
+            new Chart(tokenContext, tokenChartConfig);
+            var usageContext = document.getElementById('usage-chart').getContext('2d');
+            new Chart(usageContext, usageChartConfig);
+        }
+
+        $(document).ready(function () {
+            function setNavbarBackground() {
+                if($(window).scrollTop() < 50 && !navbar.hasClass('ee-navbar-expanded')){
+                    navbar.addClass('ee-navbar-top');
+                    $('#navbar-logo').attr("src", "/static/img/verifer_logo_white.svg");
+                } else {
+                    navbar.removeClass('ee-navbar-top');
+                    $('#navbar-logo').attr("src", "/static/img/verifer_logo.svg");
+                }
+            }
+
+            var navbar = $('#ee-navbar');
+
+            setNavbarBackground();
+            $('#navbar-collapse').on('show.bs.collapse', function () {
+                navbar.addClass('ee-navbar-expanded');
+                setNavbarBackground();
+            });
+            $('#navbar-collapse').on('hide.bs.collapse', function () {
+                navbar.removeClass('ee-navbar-expanded').addClass('ee-navbar-collapsing');
+            });
+            $('#navbar-collapse').on('hidden.bs.collapse', function () {
+                navbar.removeClass('ee-navbar-collapsing');
+                setNavbarBackground();
+            });
+
+            $(document).scroll(setNavbarBackground);
+            initializeCountdown();
+            initializeCharts();
+        });
+  </script>
+ </head>
+ <body class="d-flex flex-column flex-shrink ee-index-body">
+  <header>
+   <nav class="navbar navbar-expand-md navbar-light fixed-top" id="ee-navbar">
+    <div class="container my-0">
+     <a class="navbar-brand" href="/">
+      <img alt="Verifer" class="ee-navbar-logo mr-2" id="navbar-logo" src="/static/img/verifer_logo.svg"/>
+     </a>
+     <button aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler my-0" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="/">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/ico">
+         Verifer-ICO
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/products">
+         Products
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/about">
+         About Us
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/login/">
+         Log In
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="flex-grow-1">
+   <div class="container-fluid ee-container-gradient">
+    <div class="ee-verifer-header text-center" id="ico-header">
+     <h1>
+      Verifer-ICO
+     </h1>
+     <div class="text-center pt-3">
+      <a class="btn ee-btn-highlight mr-1" href="/media/white_paper.pdf">
+       White paper
+      </a>
+      <a class="btn ee-btn-highlight ml-1" href="/media/pitch_deck.pdf">
+       Pitch deck
+      </a>
+     </div>
+     <a class="btn btn-lg ee-btn-highlight my-3" href="/ico_join">
+      Join Verifer-ICO Now
+     </a>
+    </div>
+   </div>
+   <div class="container-fluid ee-container-gray">
+    <div class="container">
+     <h1>
+      Our crowdfunding campaign is now open
+      <br/>
+      Why to invest in verifer
+     </h1>
+     <p>
+      We are a rapidly growing company and also the demand for remote verifications is expanding rapidly.  We are already one of the leading players in the world and with our latest tools and we are a forerunner in capacity and user-frendliness. With crowdfunding, we will expand our verification centers around the world and we will be able to further develop our tools and practices. We are developing multi functional platform which offers not only KYC, AML and PEP services but also secured and automated signing processes to our clients. If you are interested to join our campaign please contact at
+      <a href="mailto:sales@verifer.io">
+       sales@verifer.io
+      </a>
+     </p>
+     <div class="d-sm-flex flex-wrap justify-content-center">
+     </div>
+     <div class="text-center">
+      <a class="btn btn-lg ee-btn-highlight mt-3" href="/ico_join">
+       Join Verifer-ICO Now
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="container-fluid ee-container-gradient">
+    <div class="container">
+     <br/>
+     <div class="card ee-info-card mx-auto">
+      <div class="card-body">
+       <h2>
+        Volume Discount
+       </h2>
+       <table class="mx-auto text-right">
+        <tr>
+         <td>
+          1–4.999 ETH
+         </td>
+         <td class="pl-5">
+          −5%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          5–9.999 ETH
+         </td>
+         <td class="pl-5">
+          −10%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          10–999.99 ETH
+         </td>
+         <td class="pl-5">
+          −20%
+         </td>
+        </tr>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container text-center">
+    <div class="row mt-5">
+     <div class="col-sm-6 col-md-5 col-lg-4 offset-lg-1">
+      <h3>
+       Total supply
+      </h3>
+      <p>
+       170 000 000 SPY
+      </p>
+     </div>
+     <div class="col-sm-6 col-md-5 offset-md-2 col-lg-4 offset-lg-2">
+      <h3>
+       Token price in ICO
+      </h3>
+      <p>
+       170 000 000 SPY
+      </p>
+     </div>
+    </div>
+    <div class="row mt-sm-3">
+     <div class="col-sm-6 col-md-5 col-lg-4 offset-lg-1">
+      <h3>
+       Token type
+      </h3>
+      <p>
+       Utility token
+      </p>
+     </div>
+     <div class="col-sm-6 col-md-5 offset-md-2 col-lg-4 offset-lg-2">
+      <h3>
+       Token type
+      </h3>
+      <p>
+       ERC20
+      </p>
+     </div>
+    </div>
+    <div class="row mt-4">
+     <div class="col-sm-6 col-md-5 col-lg-4 offset-lg-1 mb-5 mb-sm-0">
+      <h3 class="mb-4">
+       Token Distribution
+      </h3>
+      <canvas height="200" id="token-chart" width="200">
+      </canvas>
+     </div>
+     <div class="col-sm-6 col-md-5 offset-md-2 col-lg-4 offset-lg-2">
+      <h3 class="mb-4">
+       Crowdfunding Usage
+      </h3>
+      <canvas height="200" id="usage-chart" width="200">
+      </canvas>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="container my-0 py-3">
+    <ul class="nav justify-content-center">
+     <li class="nav-item">
+      <a class="nav-link" href="/media/legal/disclaimers.pdf" target="_blank">
+       Disclaimers
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/media/legal/legal_letter.pdf" target="_blank">
+       Legal Letter
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/media/legal/privacy_policy.pdf" target="_blank">
+       Privacy Policy
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/media/legal/terms_of_use.pdf" target="_blank">
+       Terms of Use
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/media/legal/token_sale_agreement.pdf" target="_blank">
+       Token Sale Agreement
+      </a>
+     </li>
+    </ul>
+    <p class="ee-copyright-text text-center mt-3 mb-0">
+     © 2020 Verifer
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

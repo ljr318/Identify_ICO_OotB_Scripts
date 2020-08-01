@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Page not found (404)
+  </title>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Montserrat:700" rel="stylesheet" type="text/css"/>
+  <style>
+   html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    background-color: #5BB647;
+    color: #2B7C19;
+    text-align: center;
+    display: table;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+  }
+  div.dialog {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  </style>
+ </head>
+ <body>
+  <!-- This file lives in public/404.html -->
+  <div class="dialog">
+   <img src="/images/404.png"/>
+   <h1>
+    Uh-oh...
+   </h1>
+   <p>
+    This page is no longer available.
+   </p>
+  </div>
+ </body>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  if (window.location.origin === 'https://www.startengine.com') {
+    ga('create', 'UA-31467066-1', 'auto', { 'allowAnchor': true });
+    ga('send', 'event', '404 Error', document.location.href, document.referrer || 'No Referrer', 0, {
+      nonInteraction: true,
+    });
+  }
+ </script>
+</html>

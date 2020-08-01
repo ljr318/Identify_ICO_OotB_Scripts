@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Search and find your perfect property! Rent or buy your dream home with OpenBrix. The property portal that gives you more!" name="description"/>
+  <meta content="index, follow" name="googlebot"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="#000000" name="theme-color"/>
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link href="/manifest.json" rel="manifest"/>
+  <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <!--    <script src="https://apis.google.com/js/api.js" async defer></script>-->
+  <!-- https://openbrix.co.uk/Filter?lat=&lng=&property_for=0&search=asdkas -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVqJ_a6VwkCi7_qHFvx0K5n1-tExiaLmQ&amp;libraries=places&amp;language=en">
+  </script>
+  <script type="application/ld+json">
+   {
+        "@context": "https://schema.org",
+        "@type": "OpenBrix",
+        "url": "http://www.openbrix.co.uk",
+        "logo": "http://www.openbrix.co.uk/favicon.ico"
+      }
+  </script>
+  <script type="application/ld+json">
+   {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "http://www.openbrix.co.uk",
+        "potentialAction": [{
+          "@type": "SearchAction",
+          "target": "https://openbrix.co.uk/Filter?lat=&lng=&property_for=0&search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },{
+          "@type": "SearchAction",
+          "target": "android-app://com.example/https/query.example.com/search/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }]
+      }
+  </script>
+  <!--    async defer-->
+  <title>
+   OpenBrix - The next generation property portal!
+  </title>
+ </head>
+ <body>
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="/static/js/bundle.js">
+  </script>
+  <script src="/static/js/1.chunk.js">
+  </script>
+  <script src="/static/js/main.chunk.js">
+  </script>
+  <script src="/main.ff86998d581dd771629f.hot-update.js">
+  </script>
+ </body>
+</html>

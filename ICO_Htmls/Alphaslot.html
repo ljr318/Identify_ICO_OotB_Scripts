@@ -1,0 +1,31 @@
+<html>
+ <head>
+  <script type="text/javascript">
+   window.onload = function() {
+
+  var domain = "www.linkedin.com";
+  if (domain !== location.host) {
+    var subdomainIndex = location.host.indexOf(".linkedin");
+    if (subdomainIndex !== -1) {
+      domain = "www" + location.host.substring(subdomainIndex);
+    }
+  }
+
+  var challengeId = "";
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; ++i) {
+    if ((cookies[i].indexOf("li_cu=") === 0) && (cookies[i].length > 6)) {
+      challengeId = cookies[i].substring(6);
+      if (challengeId !== "") {
+        document.cookie = "li_cu=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Path=/";
+      }
+    }
+  }
+
+  if (challengeId !== "") {
+    window.location.href = "https://" + domain + "/checkpoint" + challengeId;
+  }
+}
+  </script>
+ </head>
+</html>

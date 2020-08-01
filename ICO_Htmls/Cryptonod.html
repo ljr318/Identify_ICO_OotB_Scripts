@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   江苏远景装饰 -- 中国装饰行业的领跑者 - 安博电竞app 扫码下载_安博电竞平台_安博竞猜
+  </title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"/>
+  <meta content="安博电竞app 扫码下载" name="keywords"/>
+  <meta content="安博电竞app 扫码下载_安博电竞平台_安博竞猜，安博电竞app 扫码下载自成立以来，始终坚持一个目标：在竞争中不断超越自我，立志成为业内一流的网站之一。 在此激励下，我们致力于向我们的合作伙伴提供一个公平合理、安全可靠和准确快捷的货币交易平台，并为活跃用户提供24/7的支援。" name="description"/>
+  <meta content="webkit" name="renderer"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/fullpage.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/animate.min.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/base.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/style.css?" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/swiper.min.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/jq22.css" rel="stylesheet"/>
+  <link href="http://www.future-zs.cn/template/yuanijng/css/media.css" rel="stylesheet"/>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/jquery.min.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/bootstrap.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/fullpage.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/swiper.min.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/navLeft.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/jq22.js">
+  </script>
+  <script src="http://www.future-zs.cn/template/yuanijng/js/wow.min.js">
+  </script>
+  <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+ </head>
+ <style>
+  .fp-slidesNav.fp-bottom{
+			text-align: center;
+		}
+		/* .section1 { background: url(/template/yuanijng/images/indexbg1.jpg) no-repeat bottom center;background-size: cover;} */
+		.section2 { background: url(/template/yuanijng/images/indexbg2.jpg) no-repeat bottom center;background-size: cover;}
+		.section3 { background: url(/template/yuanijng/images/indexbg3.jpg) no-repeat bottom center;background-size: cover;}
+		.section4 { background: url(/template/yuanijng/images/indexbg4.jpg) no-repeat bottom center;background-size: cover;}
+		.section5 { background: url(/template/yuanijng/images/indexbg5.jpg) no-repeat bottom center;background-size: cover;}
+ </style>
+ <script>
+  $(function(){
+			// var $www = $(window).width();
+			
+				$('#dowebok').fullpage({
+					// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+					'navigation': true,
+					navigationPosition: 'left',
+					VerticalCentered:false,
+					loopBottom: true,
+					 scrollingSpeed: 300,
+					navigation:false,
+					 slidesNavigation:true,
+					 controlArrows:false,
+					 slidesNavPosition:'bottom',
+					
+//					 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+//					autoScrolling:false
+				});
+				
+			//
+			setInterval(function(){
+			    $.fn.fullpage.moveSlideRight();
+			}, 3000);
+			 $(window).resize(function(){
+
+			    autoScrolling();
+
+			});
+		
+			
+
+			function autoScrolling(){
+
+			    var $ww = $(window).width();
+
+			    if($ww < 1024){
+
+			        $.fn.fullpage.setAutoScrolling(false);
+
+			    } else {
+
+			        $.fn.fullpage.setAutoScrolling(true);
+
+			    }
+
+			}
+
+			autoScrolling();
+			//
+			var swiper = new Swiper('.swiper-container', {
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+			  on: {
+			    slideChangeTransitionStart: function(){
+			      var index=this.activeIndex;
+			       $('[data-click="tap"]').eq(index).addClass('active').siblings().removeClass('active');
+			    },
+			  },
+//			  onSlideChangeEnd:function(swipe) {
+//				console.log(1);
+////				var index = swipe.activeIndex;
+//				var index =swiper.activeIndex;
+//				//修改背景颜色
+//				console.log(index);
+//				 $('[data-click="tap"]').eq(index).addClass('active').siblings().removeClass('active');
+//				}
+			});
+			$('[data-click="tap"]').click(function(e){
+				e.preventDefault();
+				var idx=$(this).index();
+				$(this).addClass('active').siblings().removeClass('active')
+				swiper.slideTo(idx);
+			})
+			/**回到顶部***/
+			$('.btn-top').click(function(){
+				console.log(1);
+				$.fn.fullpage.moveTo(1)
+			})
+			/***弹框**/
+			$('.tkbtn').click(function(){
+				$('#myModal').modal('show')
+			})
+			/***弹框**/
+			$('.tkbtn2').click(function(){
+				$('#myModal2').modal('show')
+			})
+		});
+ </script>
+ <body bgcolor="d0d0d0">
+  <div class="header">
+   <div class="container">
+    <div class="row">
+     <div class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+       <a class="navbar-brand" href="http://cryptonod.com">
+        <img src="/template/yuanijng/images/logo.png" style="max-height:100%;"/>
+       </a>
+      </div>
+      <div class="fr hidden-xs hidden-sm">
+       <div class="clearfix headertel">
+        <div class="fl headertel-l">
+         <img alt="" src="/template/yuanijng/images/tel.png"/>
+        </div>
+        <div class="fl headertel-r" style="line-height:30px;padding: 10px 0;">
+         <span>
+          025-83713338
+         </span>
+         <span>
+          025-83723338
+         </span>
+        </div>
+       </div>
+      </div>
+      <div id="cssmenu">
+       <ul class="navwap">
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-1">
+          网站首页
+         </a>
+         <ul>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-8">
+          走进安博电竞平台
+         </a>
+         <ul>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-8" style="font-weight: normal">
+            安博竞猜简介
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-9" style="font-weight: normal">
+            企业文化
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-108" style="font-weight: normal">
+            荣誉资质
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-3">
+          安博电竞平台新闻
+         </a>
+         <ul>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-4">
+          主营业务
+         </a>
+         <ul>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-5">
+          项目案例
+         </a>
+         <ul>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-6">
+          加盟合作
+         </a>
+         <ul style="left: -9999px">
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-18" style="font-weight: normal">
+            经营困惑
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-19" style="font-weight: normal">
+            荣誉资质
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-20" style="font-weight: normal">
+            服务支持
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-21" style="font-weight: normal">
+            项目流程
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-22" style="font-weight: normal">
+            加盟优势
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-24" style="font-weight: normal">
+            加入权利
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-11">
+          联系我们
+         </a>
+         <ul>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-11" style="font-weight: normal">
+            联系我们
+           </a>
+          </li>
+          <li>
+           <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-12" style="font-weight: normal">
+            人才招聘
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="dowebok">
+   <div class="section section1" id="page1">
+    <div class="slide" style="background: url(/template/yuanijng/images/indexbg1.jpg) no-repeat bottom center;background-size: cover;">
+     <div class="home-first" style="display: none">
+      <div class="h-f-line">
+      </div>
+      <h3 class="wow slideInUp">
+       江苏安博电竞平台安博电竞app 扫码下载工程· 安博电竞app 扫码下载美好
+      </h3>
+      <span class="h-f-p1 wow slideInUp">
+       一家以室内安博电竞app 扫码下载为主体的，一体化专业化安博电竞app 扫码下载企业
+      </span>
+      <span class="h-f-p2 wow slideInUp">
+       Good life · private customization simple modern cloakroom overall combination custom-made whole house custom furniture
+      </span>
+      <div class="h-f-num clearfix wow slideInUp">
+       <div class="h-f-num-one fl">
+        <span class="p1">
+         2005
+        </span>
+        <span class="p2">
+         成立于
+        </span>
+       </div>
+       <div class="h-f-num-one fl">
+        <span class="p1">
+         50+
+        </span>
+        <span class="p2">
+         设计团队
+        </span>
+       </div>
+       <div class="h-f-num-one fl">
+        <span class="p1">
+         20+
+        </span>
+        <span class="p2">
+         建造师
+        </span>
+       </div>
+      </div>
+      <div class="h-f-link wow slideInUp">
+       <a href="//cryptonod.com/about-8.html">
+        <img alt="" src="/template/yuanijng/images/hicon1.png"/>
+        <span>
+         了解详情
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="slide" style="background: url(/static/upload/image/20190910/1568092548201506.jpg) no-repeat bottom center;background-size: cover;">
+    </div>
+    <div class="slide" style="background: url(/static/upload/image/20190910/1568093265502946.jpg) no-repeat bottom center;background-size: cover;">
+    </div>
+   </div>
+   <div class="section section2">
+    <div class="home-second">
+     <div class="container">
+      <div class="h-s-title">
+       <span class="h-s-title-l">
+        主营业务 /
+       </span>
+       <span class="h-s-title-r">
+        Business
+       </span>
+      </div>
+      <div class="h-s-content clearfix">
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-88">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190719/1563520779910442.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           安博电竞app 扫码下载
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-184">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190722/1563765639350047.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           机电安装
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-182">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190722/1563765525880053.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           智能化
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-118">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190719/1563520836879130.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           幕墙
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-117">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190719/1563520762559562.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           钢结构
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="h-s-item item1 fl">
+        <a class="h-s-item-diva" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-183">
+         <div class="item-icon">
+          <img alt="" src="/static/upload/image/20190722/1563765567434264.png"/>
+         </div>
+         <div class="item-mid">
+          <h3 style="font-size:18px">
+           古建筑
+          </h3>
+         </div>
+         <div class="item-bot">
+          <div class="item-bot-a">
+           <img alt="" class="item-bot-a-img" src=""/>
+           <img alt="" class="item-bot-a-img2" src="/template/yuanijng/images/arrow.png"/>
+           <span class="item-bot-a-span">
+            了解详情
+           </span>
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section section3">
+    <div class="home-third">
+     <div class="container">
+      <div class="home-third-title">
+       <span class="span-l">
+        项目案例 /
+       </span>
+       <span class="span-r">
+        Case
+       </span>
+      </div>
+      <div class="home-third-nav colorBai hidden-xs">
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        上海世纪汇广场
+       </a>
+       /
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        东亚银行
+       </a>
+       /
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        上海海洋大厦
+       </a>
+       /
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        京通罗斯福广场
+       </a>
+       /
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        和昌置业森林湖会所
+       </a>
+       /
+       <a class="mylinka" data-click="tap" href="javascript:;">
+        中国银行扬州支行安博电竞app 扫码下载工程
+       </a>
+       /
+      </div>
+      <div class="home-third-group">
+       <div>
+        <div class="swiper-container">
+         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               上海世纪汇广场位于浦东新区潍坊路179号，总建筑面积约28万平方米，其中写字楼建筑面积14万平方米，商场建筑面积14万平方米。
+               <br/>
+               我安博竞猜主要承建室内公区安博电竞app 扫码下载装修、屋面外立面穿孔铝板、扶梯加固及改造、下沉广场安博电竞app 扫码下载装修、机电安装工程、室外景观改造等项目。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-177">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              上海世纪汇广场
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190925/1569393555188846.jpg"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               上海世纪汇广场位于浦东新区潍坊路179号，总建筑面积约28万平方米，其中写字楼建筑面积14万平方米，商场建筑面积14万平方米。
+               <br/>
+               我安博竞猜主要承建室内公区安博电竞app 扫码下载装修、屋面外立面穿孔铝板、扶梯加固及改造、下沉广场安博电竞app 扫码下载装修、机电安装工程、室外景观改造等项目。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-177">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               上海东亚银行位于陆家嘴环路、花园石桥路口，大厦高198米。
+               <br/>
+               我司主要承接项目为一层室内大堂服务台、内庭墙面、吊顶安博电竞app 扫码下载装修、室外大理石幕墙工程及配套的机电安装工程等。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-171">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              东亚银行
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190731/1564544451959385.png"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               上海东亚银行位于陆家嘴环路、花园石桥路口，大厦高198米。
+               <br/>
+               我司主要承接项目为一层室内大堂服务台、内庭墙面、吊顶安博电竞app 扫码下载装修、室外大理石幕墙工程及配套的机电安装工程等。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-171">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               海洋大厦位于上海市黄浦区延安东路550号，楼层总高:29层，写字楼等级：甲级
+               <br/>
+               我司主要承接项目为室内安博电竞app 扫码下载装修及屋顶钢结构加固。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-186">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              上海海洋大厦
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190925/1569394546433663.jpg"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               海洋大厦位于上海市黄浦区延安东路550号，楼层总高:29层，写字楼等级：甲级
+               <br/>
+               我司主要承接项目为室内安博电竞app 扫码下载装修及屋顶钢结构加固。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-186">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               京通罗斯福广场，位于通州区的梨园商圈，紧邻九棵树地铁站，商业建筑总面积6.7万平方米，是一家集餐饮、购物、休闲、娱乐、教育为一体的大型购物中心。优质的地理位置、舒适愉快的购物环境必将成为通州人气聚集地，从此购物何须进城；秉承优质生活品位、先进运营理念的京通罗斯福广场旨在打造老幼皆宜的复合式购物中心，势必发展成为通州区的第三生活空间。
+               <br/>
+               我司承接项目为商场内公区安博电竞app 扫码下载装修、钢结构施工及配套机电安装工程。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-213">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              京通罗斯福广场
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190910/1568079769712735.jpg"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               京通罗斯福广场，位于通州区的梨园商圈，紧邻九棵树地铁站，商业建筑总面积6.7万平方米，是一家集餐饮、购物、休闲、娱乐、教育为一体的大型购物中心。优质的地理位置、舒适愉快的购物环境必将成为通州人气聚集地，从此购物何须进城；秉承优质生活品位、先进运营理念的京通罗斯福广场旨在打造老幼皆宜的复合式购物中心，势必发展成为通州区的第三生活空间。
+               <br/>
+               我司承接项目为商场内公区安博电竞app 扫码下载装修、钢结构施工及配套机电安装工程。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-213">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               扬州市兴城西路与博物馆路交会处距京华城1.5公里
+               <br/>
+               项目占地面积约12万㎡，总建筑面积约10万㎡
+               <br/>
+               以世界上最负盛名的西班牙风情建筑为蓝本，营造悦水联排、澜香叠墅两种人居空间。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-176">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              和昌置业森林湖会所
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190816/1565943265778637.jpg"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               扬州市兴城西路与博物馆路交会处距京华城1.5公里
+               <br/>
+               项目占地面积约12万㎡，总建筑面积约10万㎡
+               <br/>
+               以世界上最负盛名的西班牙风情建筑为蓝本，营造悦水联排、澜香叠墅两种人居空间。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-176">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="item">
+            <div class="item-r hidden-sm hidden-md hidden-xs">
+             <div class="item-font-div">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               中国银行扬州支行安博电竞app 扫码下载工程：位于扬州市邗江区顺达路与开发西路交叉口，场所强调业务及功能流线的合理优化，运用业务和服务格局的模块化，注重地方特色与人脉的融入，突出银行的特征“大气、庄重”国际化的设计风格“现代、简洁”模式组织的办公动线“层次、高效”具有环保。人性化的办公环境。
+              </ul>
+             </div>
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-217">
+              <img alt="" src="/template/yuanijng/images/arrow.png"/>
+              <span style="font-size: 14px">
+               了解详情
+              </span>
+             </a>
+            </div>
+            <div class="item-l">
+             <h3>
+              中国银行扬州支行安博电竞app 扫码下载工程
+             </h3>
+             <div class="item-l-wdz">
+              <div class="item-l-k item-l-k hidden-sm hidden-xs hidden-md">
+              </div>
+              <div class="item-l-img">
+               <img alt="" class="" src="/static/upload/image/20190912/1568278296732317.jpg"/>
+              </div>
+             </div>
+            </div>
+            <div class="item-r hidden-lg">
+             <div class="item-font-div" style="font-size: 14px;text-align: justify">
+              <span class="p1" style="font-size: 20px">
+               案例信息
+              </span>
+              <ul>
+               中国银行扬州支行安博电竞app 扫码下载工程：位于扬州市邗江区顺达路与开发西路交叉口，场所强调业务及功能流线的合理优化，运用业务和服务格局的模块化，注重地方特色与人脉的融入，突出银行的特征“大气、庄重”国际化的设计风格“现代、简洁”模式组织的办公动线“层次、高效”具有环保。人性化的办公环境。
+              </ul>
+             </div>
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">基装+主材配置（标配）：</span>-->
+             <!--<span class="p1" style="font-weight:bold;font-size: 16px!important;">软装配置（选配）：</span>-->
+             <a class="item-link" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-217">
+              <span>
+               了解详情
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section section4">
+    <div class="home-news">
+     <div class="container">
+      <div class="h-news-title">
+       <span class="span-l">
+        安博电竞平台新闻/
+       </span>
+       <span class="span-r">
+        NEWS
+       </span>
+      </div>
+      <div class="h-news-content clearfix">
+       <div class="h-news-content-l fl hidden-sm hidden-xs">
+        <div class="h-news-content-l-top">
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-230">
+          <img alt="" src="/template/yuanijng/images/indexnews.png"/>
+          <div class="title" style="font-size: 26px">
+           热烈祝贺我司成功签订吉安市安博电竞app 扫码下载装修及房屋维修改造采购项目合同
+          </div>
+         </a>
+        </div>
+        <div class="h-news-content-l-bot">
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-230" style="font-size: 16px">
+          在全面复工的关键时期，江苏安博电竞平台安博电竞app 扫码下载工程有限安博竞猜严格按照安博竞猜部署，始终坚持在一线，努力开拓市场，在疫情危机中寻求机遇。安博竞猜团队积极协调、克服困难，凭借良好的企业信誉、优质的服务水平，最终脱颖而出；顺利与中国电信吉安分安博竞猜签订【2020-2021年吉安市安博电竞app 扫码下载装修及房屋维修改造采购项目】合同。 吉
+         </a>
+        </div>
+       </div>
+       <div class="h-news-content-r fr">
+        <div class="h-news-content-r-top">
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-3">
+          <img alt="" src="/template/yuanijng/images/arrow.png"/>
+          <span>
+           了解详情
+          </span>
+         </a>
+        </div>
+        <div class="h-news-content-r-group">
+         <ul>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-229">
+            <span class="num">
+             1
+            </span>
+            <span class="title" style="font-size: 16px">
+             安博电竞平台安博电竞app 扫码下载承接北京西绒线胡同12号老年公寓安博电竞app 扫码下载装修工程正式开工
+            </span>
+            <span class="time">
+             2020/07/01
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-228">
+            <span class="num">
+             2
+            </span>
+            <span class="title" style="font-size: 16px">
+             喜讯频传  |  热烈祝贺武汉饶总加盟我司
+            </span>
+            <span class="time">
+             2020/06/08
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-227">
+            <span class="num">
+             3
+            </span>
+            <span class="title" style="font-size: 16px">
+             安博电竞平台安博电竞app 扫码下载 || “疫”时迎喜讯 大家鼓干劲
+            </span>
+            <span class="time">
+             2020/06/03
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-226">
+            <span class="num">
+             4
+            </span>
+            <span class="title" style="font-size: 16px">
+             祝贺我司成功中标中国电信吉安分安博竞猜2020-2021年吉安安博电竞app 扫码下载装修及房屋维修改造采购项目
+            </span>
+            <span class="time">
+             2020/05/14
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-225">
+            <span class="num">
+             5
+            </span>
+            <span class="title" style="font-size: 16px">
+             热烈祝贺芜湖点睛安博电竞app 扫码下载设计有限安博竞猜加盟我司
+            </span>
+            <span class="time">
+             2020/04/20
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+          <li>
+           <a class="active" href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/content-220">
+            <span class="num">
+             6
+            </span>
+            <span class="title" style="font-size: 16px">
+             南京安博电竞app 扫码下载行业协会领导莅临指导工作
+            </span>
+            <span class="time">
+             2019/11/08
+            </span>
+            <img alt="" class="arrow" src="/template/yuanijng/images/arrow3.png"/>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section section5" style="position: relative;">
+    <span class="f16 colorBai text-center section5-bot hidden-xs hidden-sm" style="font-size: 15px">
+     <a href="http://www.beian.miit.gov.cn" rel="nofollow" style="color:#fff;" target="_blank">
+      版权所有 ©2019 江苏安博电竞平台安博电竞app 扫码下载工程有限安博竞猜 苏ICP备19052457号-1 苏公网安备32011502010466号
+     </a>
+    </span>
+    <div class="container">
+     <div class="section-footer">
+      <div class="h-news-title">
+       <span class="span-l colorBai">
+        联系我们 /
+       </span>
+       <span class="span-r colorBai">
+        Contact
+       </span>
+      </div>
+      <div class="footer-content">
+       <div class="footer-content-l fl">
+        <div class="footer-content-l-top">
+         <img alt="" src="/static/upload/image/20190722/1563772224299031.png"/>
+         <span>
+          江苏安博电竞平台安博电竞app 扫码下载工程有限安博竞猜
+         </span>
+        </div>
+        <span style="font-size: 16px">
+         江苏安博电竞平台安博电竞app 扫码下载工程有限安博竞猜成立于2005年12月，是一家一级资质安博电竞app 扫码下载安博竞猜，经过15年的坚持与拼搏，形成一家以室内安博电竞app 扫码下载为主体，融幕墙、钢结构、家具、景观、艺术品、机电设备安装等为一体的专业化安博电竞app 扫码下载企业。
+        </span>
+        <ul>
+         <li style="font-size: 16px">
+          地址：江苏省南京市雨花台区软件大道165号紫竹芥纳空间11楼
+         </li>
+         <li style="font-size: 16px">
+          传真:025-83699518
+         </li>
+         <li style="font-size: 16px">
+          邮编:210000
+         </li>
+         <li style="font-size: 16px">
+          E-Mail:yuanjingzs07@163.com
+         </li>
+        </ul>
+       </div>
+       <div class="footer-content-m fl">
+        <div class="erweima text-center">
+         <img alt="" src="/static/upload/image/20200514/1589421428464136.jpg"/>
+        </div>
+        <span class="text-center" style="font-size: 16px">
+         官方微信
+        </span>
+        <span class="text-center" style="font-size: 16px">
+         热线电话
+        </span>
+        <div class="text-center tel" style="font-size: 18px">
+         <span style="line-height: 20px;">
+          025-83713338
+         </span>
+         <span style="line-height: 20px;">
+          025-83723338
+         </span>
+        </div>
+       </div>
+       <div class="footer-content-r fl hidden-xs">
+        <div class="clearfix">
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-1" style="font-size: 16px">
+          网站首页
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-8" style="font-size: 16px">
+          走进安博电竞平台
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-3" style="font-size: 16px">
+          安博电竞平台新闻
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-4" style="font-size: 16px">
+          主营业务
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-5" style="font-size: 16px">
+          项目案例
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/list-6" style="font-size: 16px">
+          加盟合作
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-11" style="font-size: 16px">
+          联系我们
+         </a>
+         <a href="//cryptonod.com/index.s18dIMLilUCAGqXNZRYnceVj5zoEQbOB9P3wahpyFTJWSg4mfrKk7HvuxtD206/about-12" style="font-size: 16px">
+          人才招聘
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?9658c1b4422548a90f95818c622a71d8";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+  </script>
+  <div class="hidden-sm hidden-xs" id="tk">
+  </div>
+  <div aria-labelledby="gridSystemModalLabel" class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <div class="tk-content">
+       <h3 class="text-center">
+        江苏安博电竞平台安博电竞app 扫码下载
+       </h3>
+       <h4>
+        加盟咨询
+       </h4>
+       <form action="/index.php/Form/add/fcode/2" method="post">
+        <div class="index-form">
+         <div class="form-item clearfix">
+          <div class="form-item-l">
+           <img alt="" src="/template/yuanijng/images/tk01.png"/>
+          </div>
+          <div class="form-item-r">
+           <input name="address" placeholder="输入所在区域" type="text"/>
+          </div>
+         </div>
+         <div class="form-item clearfix">
+          <div class="form-item-l">
+           <img alt="" src="/template/yuanijng/images/tk02.png"/>
+          </div>
+          <div class="form-item-r">
+           <input name="tel" placeholder="输入手机号码" type="text"/>
+          </div>
+         </div>
+         <div class="form-item clearfix">
+          <div class="form-item-l">
+           <img alt="" src="/template/yuanijng/images/tk03.png"/>
+          </div>
+          <div class="form-item-r">
+           <input name="name" placeholder="输入您得姓名" type="text"/>
+          </div>
+         </div>
+         <button class="sumitBtn" style="width:100%" type="submit">
+          立即咨询
+         </button>
+        </div>
+       </form>
+       <div class="tkbot">
+        <span class="text-center color999 f12">
+         为了您的权益，你的信息将被严格保密
+        </span>
+        <span class="text-center color999 f12">
+         热线电话：025-83713338
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal fade" id="myModal2" role="dialog">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <div class="tk-content">
+       <h3 class="text-center">
+        江苏安博电竞平台安博电竞app 扫码下载
+       </h3>
+       <h4>
+        业务咨询
+       </h4>
+       <form action="/index.php/Form/add/fcode/3" method="post">
+        <div class="index-form">
+         <div class="form-item clearfix">
+          <div class="form-item-l">
+           <img alt="" src="/template/yuanijng/images/tk02.png"/>
+          </div>
+          <div class="form-item-r">
+           <input name="tel" placeholder="输入手机号码" type="text"/>
+          </div>
+         </div>
+         <div class="form-item clearfix">
+          <div class="form-item-l">
+           <img alt="" src="/template/yuanijng/images/tk03.png"/>
+          </div>
+          <div class="form-item-r">
+           <input name="name" placeholder="输入您得姓名" type="text"/>
+          </div>
+         </div>
+         <button class="sumitBtn" style="width:100%" type="submit">
+          立即咨询
+         </button>
+        </div>
+       </form>
+       <div class="tkbot">
+        <span class="text-center color999 f12">
+         为了您的权益，你的信息将被严格保密
+        </span>
+        <span class="text-center color999 f12">
+         热线电话：025-83713338
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

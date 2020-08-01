@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="ATLANT Blockchain-based global real estate platform built over Ethereum. Trade tokenized property and rent apartments without paying high fees." name="description"/>
+  <meta content="ATLANT, ATL, TOKEN, real estate, blockchain, platform" name="keywords"/>
+  <title>
+   ATLANT World's Real Estate Blockchain Platform
+  </title>
+  <link href="/assets/favicon.ico" rel="shortcut icon"/>
+  <link href="/assets/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/assets/manifest.json" rel="manifest"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="#333" name="theme-color"/>
+  <meta content="my-app" name="application-name"/>
+  <link href="/assets/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/assets/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="/assets/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="/assets/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/assets/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/assets/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/assets/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="/assets/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/assets/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167"/>
+  <link href="/assets/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/assets/apple-touch-icon-1024x1024.png" rel="apple-touch-icon" sizes="1024x1024"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="my-app" name="apple-mobile-web-app-title"/>
+  <link href="/css/chunk-0bfb4073.c5f53797.css" rel="prefetch"/>
+  <link href="/css/chunk-46049c36.8eb577c1.css" rel="prefetch"/>
+  <link href="/css/chunk-5df08f23.b43ad1c0.css" rel="prefetch"/>
+  <link href="/css/chunk-65db62e4.cc01a3fd.css" rel="prefetch"/>
+  <link href="/css/chunk-9d0b3ba4.d5589134.css" rel="prefetch"/>
+  <link href="/css/chunk-c592f4e2.3bbafade.css" rel="prefetch"/>
+  <link href="/css/chunk-d2ec183e.f96ec888.css" rel="prefetch"/>
+  <link href="/js/chunk-0bfb4073.307048fc.js" rel="prefetch"/>
+  <link href="/js/chunk-46049c36.f50e8b2a.js" rel="prefetch"/>
+  <link href="/js/chunk-5df08f23.d4136ac2.js" rel="prefetch"/>
+  <link href="/js/chunk-65db62e4.749a9651.js" rel="prefetch"/>
+  <link href="/js/chunk-9d0b3ba4.47a8cb34.js" rel="prefetch"/>
+  <link href="/js/chunk-c592f4e2.7cb71204.js" rel="prefetch"/>
+  <link href="/js/chunk-d2ec183e.853b76fb.js" rel="prefetch"/>
+  <link as="style" href="/css/index.3266f862.css" rel="preload"/>
+  <link as="script" href="/js/chunk-vendors.3f42f673.js" rel="preload"/>
+  <link as="script" href="/js/index.2566d6f6.js" rel="preload"/>
+  <link href="/css/index.3266f862.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="preloader">
+   <div class="preloader__text">
+    ATLANT
+   </div>
+  </div>
+  <style>
+   .preloader {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #04070e;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999999;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.preloader__text {
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    display: block;
+    font-weight: 900;
+    font-size: 5vw;
+    letter-spacing: 24.4px;
+    color: #212223;
+}
+.preloader__text--scrambled {
+    color: #212223;
+    opacity: 80%;
+}
+  </style>
+  <script type="67a50c9180aef0c64cbbfe1f-text/javascript">
+   'use strict';
+
+var arrText = ['INVEST', 'TRADE', 'RENT'];
+var preloaderContainer = document.querySelector('.preloader');
+var el = document.querySelector('.preloader__text');
+var chars = '#{>&=<@?}!+]/^__*%[â-$';
+var step = [];
+var counter = 0;
+var frameRequest;
+var frame;
+
+preloaderContainer.style.opacity = 1;
+
+var setText = function setText (newText) {
+  return new Promise(function (resolve) {
+    var oldText = el.innerText;
+    var length = Math.max(oldText.length, newText.length);
+    step = [];
+
+    for (var i = 0; i < length; i++) {
+      var from = oldText[i] || '';
+      var to = newText[i] || '';
+      var start = Math.floor(Math.random() * 30);
+      var end = start + Math.floor(Math.random() * 30);
+      step.push({
+        from: from,
+        to: to,
+        start: start,
+        end: end
+      });
+    }
+
+    ;
+    cancelAnimationFrame(frameRequest);
+    frame = 0;
+    update();
+    resolve();
+  });
+};
+
+var update = function update () {
+  var output = '';
+  var complete = 0;
+
+  for (var i = 0, n = step.length; i < n; i++) {
+    var _step$i = step[i];
+    var from = _step$i.from;
+    var to = _step$i.to;
+    var start = _step$i.start;
+    var end = _step$i.end;
+    var char = _step$i.char;
+
+    if (frame >= end) {
+      complete++;
+      output += to;
+    } else if (frame >= start) {
+      if (!char || Math.random() < 0.28) {
+        char = randomChar();
+        step[i].char = char;
+      }
+
+      output += '<span class="preloader__text--scrambled">' + char + '</span>';
+    } else {
+      output += from;
+    }
+  }
+
+  el.innerHTML = output;
+
+  if (complete !== step.length) {
+    frameRequest = requestAnimationFrame(update);
+    frame++;
+  }
+};
+
+var randomChar = function randomChar () {
+  return chars[Math.floor(Math.random() * chars.length)];
+};
+
+var nextPhrase = function nextPhrase () {
+  setText(arrText[counter]).then(function () {
+    setTimeout(nextPhrase, 1500);
+  });
+  counter = (counter + 1) % arrText.length;
+};
+
+nextPhrase();
+  </script>
+  <main>
+   <div id="app">
+   </div>
+  </main>
+  <noscript>
+   For full functionality of this site it is necessary to enable JavaScript. Here are the
+   <a href="https://www.enable-javascript.com/">
+    instructions how to enable JavaScript in your web browser.
+   </a>
+  </noscript>
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-T8FKKSL" style="display:none;visibility:hidden" width="0">
+   </iframe>
+   <img alt="" src="https://mc.yandex.ru/watch/50916815" style="position:absolute; left:-9999px;"/>
+  </noscript>
+  <script src="/js/chunk-vendors.3f42f673.js" type="67a50c9180aef0c64cbbfe1f-text/javascript">
+  </script>
+  <script src="/js/index.2566d6f6.js" type="67a50c9180aef0c64cbbfe1f-text/javascript">
+  </script>
+  <script data-cf-settings="67a50c9180aef0c64cbbfe1f-|49" defer="" src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js">
+  </script>
+  <script data-cf-beacon='{"rayId":"5ba091faaf401a42","version":"2020.7.0","si":10}' defer="" src="https://static.cloudflareinsights.com/beacon.min.js">
+  </script>
+ </body>
+</html>

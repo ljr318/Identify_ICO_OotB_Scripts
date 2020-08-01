@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   FAC
+  </title>
+  <meta content="same-origin" name="referrer"/>
+  <meta content="width=1200" name="viewport"/>
+  <style>
+   .anim{visibility:hidden}
+  </style>
+  <style>
+   body,div{font-size:0}p, span,h1,h2,h3,h4,h5,h6{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto}sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em}sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em}ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;padding:0;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0}li{display:block}li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}form{display:inline-block}a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0)}textarea{resize:none}.shm-l{float:left;clear:left}.shm-r{float:right;clear:right}.whitespacefix{word-spacing:-1px}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1,h2,h3,h4,h5,h6{font-size:1em;line-height:1;margin:0em 0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box;white-space: normal}input[type=text],input[type=password],textarea{-webkit-appearance:none;appearance: none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+#b{background-color:#fff}.v4{display:inline-block;*display:inline;zoom:1;vertical-align:top}.ps80{position:relative;margin-top:0}.s90{width:100%;min-width:1200px;min-height:1300px}.c60{z-index:1;pointer-events:none;border:0;background-color:#06f}.v5{display:block;*display:block;zoom:1;vertical-align:top}.s91{min-width:1200px;width:1200px;margin-left:auto;margin-right:auto}.ps81{position:relative;margin-left:360px;margin-top:0}.s92{min-width:480px;width:480px;min-height:1300px}.c61{z-index:31;border:0;background-color:rgba(38,38,109,.36);behavior:url(js/PIE.htc);-pie-background:rgba(38,38,109,0.36);behavior:url(js/PIE.htc);-pie-background:rgba(38,38,109,0.36)}.ps82{position:relative;margin-left:75px;margin-top:162px}.s93{min-width:330px;width:330px;min-height:186px;height:186px}.c62{z-index:43;pointer-events:auto}.i67{position:absolute;left:0;width:330px;height:186px;top:0;border:0}.i68{left:0;width:330px;height:186px;top:0;display:inline-block}.ps83{position:relative;margin-top:-890px}.s94{width:100%;min-width:1200px;min-height:480px;height:480px}.c63{z-index:2;border:0;background-color:rgba(38,38,109,.36);behavior:url(js/PIE.htc);-pie-background:rgba(38,38,109,0.36);behavior:url(js/PIE.htc);-pie-background:rgba(38,38,109,0.36)}.ps84{position:relative;margin-top:-713px}.ps85{position:relative;margin-left:124px;margin-top:0}.s95{min-width:952px;width:952px;min-height:127px;height:127px}.c64{z-index:44;pointer-events:auto}.i69{position:absolute;left:0;width:952px;height:127px;top:0;border:0}.i70{left:0;width:952px;height:127px;top:0;display:inline-block}
+  </style>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="apple-touch-icon-20190611211700.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="mstile-144x144-20190611211700.png" name="msapplication-TileImage"/>
+  <link href="manifest.json" rel="manifest"/>
+  <link as="style" href="css/site.20190611211700.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+  <noscript>
+   <link href="css/site.20190611211700.css" rel="stylesheet"/>
+  </noscript>
+  <!--[if lte IE 7]>
+<link rel="stylesheet" href="css/site.20190611211700-lteIE7.css" type="text/css">
+<![endif]-->
+  <!--[if lte IE 8]>
+<link rel="stylesheet" href="css/site.20190611211700-lteIE8.css" type="text/css">
+<![endif]-->
+  <!--[if gte IE 9]>
+<link rel="stylesheet" href="css/site.20190611211700-gteIE9.css" type="text/css">
+<![endif]-->
+  <link as="style" href="css/plyr3.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+  <noscript>
+   <link href="css/plyr3.css" rel="stylesheet"/>
+  </noscript>
+  <script>
+   !function(e){var t=!1;try{t=e.document.createElement("link").relList.supports("preload")}catch(e){}if(!t)for(var n=e.document.getElementsByTagName("link"),l=0;l<n.length;l++){var a=n[l];"preload"===a.rel&&"style"===a.getAttribute("as")&&function(e){function t(){e.media="all"}e.addEventListener("load",t),setTimeout(function(){e.rel="stylesheet",e.media="nl x"}),setTimeout(t,3e3)}(a)}}(this);
+  </script>
+ </head>
+ <body id="b">
+  <div class="v4 ps80 s90 c60">
+   <div class="ps80 v5 s91">
+    <div class="v4 ps81 s92 c61">
+     <div class="v4 ps82 s93 c62">
+      <picture class="i68">
+       <source srcset="images/001-1-330-2.png 1x, images/001-1-660-1.png 2x">
+        <img alt="" class="js i67" src="images/001-1-330-2.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v ps s c">
+      <a class="a" href="http://www.facepower.cc/whitepaper-e.pdf" rel="noopener" target="_blank">
+       <picture class="i2">
+        <source srcset="images/001-3-346-2.png 1x, images/001-3-692-1.png 2x">
+         <img alt="" class="js2 i" src="images/001-3-346-2.png"/>
+        </source>
+       </picture>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="v4 ps83 s94 c63">
+   </div>
+   <div class="ps84 v5 s91">
+    <div class="v4 ps85 s95 c64">
+     <picture class="i70">
+      <source srcset="images/001-2-952-1.png 1x, images/001-2-1904-1.png 2x">
+       <img alt="" class="js3 i69" src="images/001-2-952-1.png"/>
+      </source>
+     </picture>
+    </div>
+   </div>
+  </div>
+  <div class="v ps2 s2 c2">
+   <div class="ps3 v2 s3">
+    <div class="v ps4 s4 c3">
+     <picture class="i4">
+      <source srcset="images/qqq-505.png 1x, images/qqq-1010.png 2x">
+       <img alt="" class="js4 i3" src="images/qqq-505.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="v3 ps5 s5 c4">
+     <p class="p f">
+      From now on, the FAC token has moved to TRON chain and fully joined the TRON ecology. Facepower's native token "FAC" is the ERC20 standard token. After the migration, the TRC20 standard token is generated, and the token name is unchanged. At 12:00 noon on June 12, the Bgogo Exchange will stop the deposit and withdraw of FAC, please withdraw FAC to your wallet as soon as possible.
+     </p>
+     <p class="p f">
+      ﻿​
+     </p>
+     <p class="p f">
+      TRON has a faster transaction speed and lower transaction costs. At present, the TRON ecology is in an outbreak period. In order to provide better user experience for FAC users. FAC decided to join the TRON ecology and grow up with TRON together.By joining the TRON ecology, the FAC will gain better liquidity and promote the development of its overall community ecology.
+     </p>
+     <p class="p f">
+      ﻿​
+     </p>
+     <p class="p f">
+      In order to promote the ecological construction of Facepower and protect the rights and interests of all community members, we will start the exchange of FAC(ERC20)-FAC(TRC20) from now on.
+     </p>
+     <p class="p f">
+      ﻿​
+     </p>
+     <p class="p f">
+      Users holding ERC 20 FAC tokens can refer to the following ways to exchange FAC: please send an email to the official email address (contact@facepower.org), leaving your contact information: mobile phone number, quantity of FAC  (require wallet Screen capture), we will follow up after receiving the email, and contact you immediately.
+     </p>
+     <p class="p f">
+      ﻿​
+     </p>
+     <p class="p f">
+      If you have any questions, please contact: contact@facepower.org
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="ps6 v2 s6">
+   <div class="v ps7 s7 c5">
+    <picture class="i6">
+     <source srcset="images/02-001-849-1.png 1x, images/02-001-1698-1.png 2x">
+      <img alt="" class="js5 i5" src="images/02-001-849-1.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps8 s8 c6">
+    <picture class="i8">
+     <source srcset="images/02-002-1082-1.png 1x, images/02-002-2164-1.png 2x">
+      <img alt="" class="js6 i7" src="images/02-002-1082-1.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps9 s9 c7">
+    <picture class="i10">
+     <source srcset="images/02-003-922-1.png 1x, images/02-003-1844-1.png 2x">
+      <img alt="" class="js7 i9" src="images/02-003-922-1.png"/>
+     </source>
+    </picture>
+   </div>
+  </div>
+  <div class="v ps10 s10 c8">
+   <div class="ps11 v2 s3">
+    <div class="v ps12 s11 c9">
+     <div class="v ps13 s12 c10">
+      <picture class="i12">
+       <source srcset="images/002-2-271-1.png 1x, images/002-2-542-1.png 2x">
+        <img alt="" class="js8 i11" src="images/002-2-271-1.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="anim fadeInUp js9 v3 ps14 s13 c11">
+      <p class="p f2">
+       FAC is the world's first decentralized chain for influencers and creators, designed to create the open, transparent, autonomous, and efficient economic ecosystem for future national internet influencers, investors, fans.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js10 v3 ps15 s14 c12">
+     <p class="p f2">
+      The goal of the FAC ecosystem is to assure future influencer investment and return open and justified. Also, FAC will meet the needs of decentralized, safety, return, auditing, reporting and regulatory compliance in the most secure and effective methods.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="ps10 v2 s6">
+   <div class="v ps16 s15 c13">
+    <picture class="i14">
+     <source srcset="images/03-001-1199-1.png 1x, images/03-001-2398-1.png 2x">
+      <img alt="" class="js11 i13" src="images/03-001-1199-1.png"/>
+     </source>
+    </picture>
+   </div>
+  </div>
+  <div class="v ps17 s10 c14">
+   <div class="ps18 v2 s3">
+    <div class="v ps19 s16 c9">
+     <div class="v ps20 s17 c15">
+      <picture class="i16">
+       <source srcset="images/04-001-410-1.png 1x, images/04-001-820-1.png 2x">
+        <img alt="" class="js12 anim fadeInLeft i15" src="images/04-001-410-1.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="anim fadeInUp js13 v3 ps21 s18 c16">
+      <p class="p f2">
+       FAC is the world first transparent and justified idol value invest and profit eco system. Traditional idol operation is
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js14 v3 ps22 s19 c17">
+     <p class="p f2">
+      heavily base on the oligopolistic factors, which is hardly ever be transparent to public.
+     </p>
+     <p class="p f2">
+      Block chain and smart contract theory enable public to involve the investment and supervise the idol creating and operation. The aim of FAC is provide such a platform to make the possibility to come true.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="ps23 v2 s6">
+   <div class="v ps24 s20 c18">
+    <picture class="i18">
+     <source srcset="images/05-001-411-3.png 1x, images/05-001-822-2.png 2x">
+      <img alt="" class="js15 i17" src="images/05-001-411-3.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps25 s21 c19">
+    <picture class="i20">
+     <source srcset="images/05-002-1149-1.png 1x, images/05-002-2298-1.png 2x">
+      <img alt="" class="js16 i19" src="images/05-002-1149-1.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps26 s22 c20">
+    <picture class="i22">
+     <source srcset="images/05-003-1200-1.png 1x, images/05-003-2400-1.png 2x">
+      <img alt="" class="js17 i21" src="images/05-003-1200-1.png"/>
+     </source>
+    </picture>
+   </div>
+  </div>
+  <div class="v ps27 s23 c21">
+   <div class="ps28 v2 s3">
+    <div class="v ps12 s24 c22">
+     <picture class="i24">
+      <source srcset="images/06-001-109-1.png 1x, images/06-001-218-1.png 2x">
+       <img alt="" class="js18 anim fadeInLeft i23" src="images/06-001-109-1.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="anim fadeInUp js19 v3 ps29 s25 c23">
+     <p class="p f2">
+      stands for Facepower Asset Exchange. It is the first innovative exchange platform to truly invest, trade, collateralize and donate influencer equity.
+     </p>
+     <p class="p f2">
+      ﻿​
+     </p>
+    </div>
+    <div class="v ps30 s26 c24">
+     <picture class="i26">
+      <source srcset="images/06-002-117-1.png 1x, images/06-002-234-1.png 2x">
+       <img alt="" class="js20 anim fadeInLeft i25" src="images/06-002-117-1.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="anim fadeInUp js21 v3 ps29 s27 c25">
+     <p class="p f2">
+      stands for Smart Contract Counter. It is a smart contract settlement center for digital equity, aiming to provide clearance services to FAE equity trading. SCC is designed with functionalities such as smart contract and smart controller.
+     </p>
+     <p class="p f2">
+      ﻿​
+     </p>
+    </div>
+    <div class="v ps31 s28 c26">
+     <picture class="i28">
+      <source srcset="images/06-003-117-1.png 1x, images/06-003-234-1.png 2x">
+       <img alt="" class="js22 anim fadeInLeft i27" src="images/06-003-117-1.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="anim fadeInUp js23 v3 ps29 s29 c27">
+     <p class="p f2">
+      DSA stands for Decentralized Service Agency. Based on FAE, it is a decentralized service agency for influencers. Influencers, agents, producers, publishers and other professional teams all operate and interact under the rules of FAC ecosystem.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="ps32 v2 s6">
+   <div class="v ps33 s30 c9">
+    <div class="v ps12 s31 c28">
+     <div class="v ps34 s32 c29">
+      <div class="js24">
+       <a class="js26" href="http://pp-pic.qiniudn.com/fac002.mov">
+        <picture class="i30">
+         <source srcset="images/poster-608.jpg 1x, images/poster-1216-1.jpg 2x">
+          <img alt="视频" class="js25 i29" src="images/poster-608.jpg" title="视频"/>
+         </source>
+        </picture>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="v ps35 s33 c30">
+     <picture class="i32">
+      <source srcset="images/video-01-438-3.png 1x, images/video-01-876-2.png 2x">
+       <img alt="" class="js27 i31" src="images/video-01-438-3.png"/>
+      </source>
+     </picture>
+    </div>
+   </div>
+  </div>
+  <div class="v ps36 s34 c31">
+   <div class="ps37 v2 s3">
+    <div class="v ps38 s35 c32">
+     <picture class="i34">
+      <source srcset="images/ee01-619-1.png 1x, images/ee01-1238-1.png 2x">
+       <img alt="" class="js28 i33" src="images/ee01-619-1.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="v ps39 s36 c33">
+     <picture class="i36">
+      <source srcset="images/ee02-1191-1.png 1x, images/ee02-2382-1.png 2x">
+       <img alt="" class="js29 i35" src="images/ee02-1191-1.png"/>
+      </source>
+     </picture>
+    </div>
+   </div>
+  </div>
+  <div class="ps40 v2 s6">
+   <div class="v ps41 s37 c34">
+    <picture class="i38">
+     <source srcset="images/j001-384-1.png 1x, images/j001-768-1.png 2x">
+      <img alt="" class="js30 i37" src="images/j001-384-1.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps42 s38 c35">
+    <div class="v ps43 s39 c9">
+     <div class="v ps12 s40 c36">
+      <picture class="i40">
+       <source srcset="images/j002-300.png 1x, images/j002-600.png 2x">
+        <img alt="" class="js31 i39" src="images/j002-300.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v ps44 s41 c37">
+      <picture class="i42">
+       <source srcset="images/j003-261.png 1x, images/j003-522.png 2x">
+        <img alt="" class="js32 i41" src="images/j003-261.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="anim fadeInUp js33 v3 ps45 s42 c38">
+      <p class="p f2">
+       We don’t need no contract
+      </p>
+      <p class="p f2">
+       We don’t need no thought control
+      </p>
+      <p class="p f2">
+       No dark sarcasm in the entertainment circles
+      </p>
+      <p class="p f2">
+       Wandering singers leave them music alone
+      </p>
+     </div>
+     <div class="v ps46 s43 c39">
+      <picture class="i44">
+       <source srcset="images/j004-118-1.png 1x, images/j004-236-1.png 2x">
+        <img alt="" class="js34 i43" src="images/j004-118-1.png"/>
+       </source>
+      </picture>
+     </div>
+    </div>
+   </div>
+   <div class="v ps47 s44 c9">
+    <div class="v3 ps12 s45 c30">
+     <p class="p2 f3">
+      heartbeats
+     </p>
+    </div>
+    <div class="v3 ps48 s45 c30">
+     <p class="p2 f3">
+      Walk Away
+     </p>
+    </div>
+    <div class="v3 ps48 s45 c30">
+     <p class="p2 f3">
+      Blank Space
+     </p>
+    </div>
+   </div>
+   <div class="v ps49 s46 c9">
+    <div class="v ps12 s47 c30">
+     <div class="player js35">
+      <audio class="audio" controls="" preload="metadata" src="http://pp-pic.qiniudn.com/hearbeat.mp3" type="audio/mpeg3">
+      </audio>
+     </div>
+    </div>
+    <div class="v ps50 s47 c30">
+     <div class="player js36">
+      <audio class="audio" controls="" preload="metadata" src="http://pp-pic.qiniudn.com/walkaway.mp3" type="audio/mpeg3">
+      </audio>
+     </div>
+    </div>
+    <div class="v ps50 s47 c30">
+     <div class="player js37">
+      <audio class="audio" controls="" preload="metadata" src="http://pp-pic.qiniudn.com/blankspace.mp3" type="audio/mpeg3">
+      </audio>
+     </div>
+    </div>
+   </div>
+   <div class="v ps51 s38 c40">
+    <div class="v ps43 s48 c9">
+     <div class="v ps12 s40 c41">
+      <picture class="i40">
+       <source srcset="images/j006-300-1.png 1x, images/j006-600-1.png 2x">
+        <img alt="" class="js38 i39" src="images/j006-300-1.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v ps52 s49 c42">
+      <picture class="i46">
+       <source srcset="images/j007-254-1.png 1x, images/j007-508-1.png 2x">
+        <img alt="" class="js39 i45" src="images/j007-254-1.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="anim fadeInUp js40 v3 ps45 s50 c43">
+      <p class="p f2">
+       Hey you
+       <span class="f4">
+        ，
+       </span>
+       dont help them to bury the light
+      </p>
+      <p class="p f2">
+       Don’t give in without a fight
+      </p>
+      <p class="p f2">
+       Hey you, out there on your own
+      </p>
+      <p class="p f2">
+       Sitting naked by the phone
+      </p>
+      <p class="p f2">
+       Would you touch me?
+      </p>
+     </div>
+     <div class="v ps53 s43 c44">
+      <picture class="i44">
+       <source srcset="images/j004-118-1.png 1x, images/j004-236-1.png 2x">
+        <img alt="" class="js41 i43" src="images/j004-118-1.png"/>
+       </source>
+      </picture>
+     </div>
+    </div>
+   </div>
+   <div class="v ps54 s51 c9">
+    <div class="v ps12 s52 c30">
+     <picture class="i48">
+      <source srcset="images/j008-710.jpg 1x, images/j008-1420.jpg 2x">
+       <img alt="" class="js42 i47" src="images/j008-710.jpg"/>
+      </source>
+     </picture>
+    </div>
+    <div class="v ps55 s53 c30">
+     <picture class="i50">
+      <source srcset="images/j009-124.jpg 1x, images/j009-248.jpg 2x">
+       <img alt="" class="js43 i49" src="images/j009-124.jpg"/>
+      </source>
+     </picture>
+    </div>
+    <div class="v ps56 s54 c30">
+     <picture class="i52">
+      <source srcset="images/j010-336.jpg 1x, images/j010-672.jpg 2x">
+       <img alt="" class="js44 i51" src="images/j010-336.jpg"/>
+      </source>
+     </picture>
+    </div>
+   </div>
+  </div>
+  <div class="v ps57 s55 c45">
+   <div class="ps58 v2 s3">
+    <div class="v ps12 s56 c46">
+     <picture class="i54">
+      <source srcset="images/07-001-498-2.png 1x, images/07-001-996-1.png 2x">
+       <img alt="" class="js45 i53" src="images/07-001-498-2.png"/>
+      </source>
+     </picture>
+    </div>
+    <div class="anim fadeInUp js46 v3 ps59 s57 c47">
+     <p class="p f5">
+      Influencer Investing
+     </p>
+    </div>
+    <div class="anim fadeInUp js47 v3 ps60 s58 c48">
+     <p class="p f6">
+      FAC Token holder has the right to invest in influencers and is incentivized by investing-driven mining — they will gain a certain portion of the influencer equities when investing in target influencers.
+     </p>
+    </div>
+    <div class="anim fadeInUp js48 v3 ps61 s57 c49">
+     <p class="p f5">
+      Investment Priority
+     </p>
+    </div>
+    <div class="anim fadeInUp js49 v3 ps60 s59 c50">
+     <p class="p f7">
+      According to the amount of FAC they hold, FAC Token holders have investment priority during each round of new influencer investment.
+     </p>
+    </div>
+    <div class="anim fadeInUp js50 v3 ps62 s57 c51">
+     <p class="p f5">
+      Decision Making
+     </p>
+    </div>
+    <div class="anim fadeInUp js51 v3 ps60 s60 c52">
+     <p class="p f8">
+      FAC community utilizes smart contract to vote and make decisions. Token holders will have the chance to participate in the decision of major operation and investment event.
+     </p>
+    </div>
+    <div class="anim fadeInUp js52 v3 ps63 s57 c53">
+     <p class="p f5">
+      Vote to List
+     </p>
+    </div>
+    <div class="anim fadeInUp js53 v3 ps60 s61 c54">
+     <p class="p f7">
+      FAC token holders can be elected to be the delegate according to the amount of tokens they hold and their contributions to FAC community. Delegate will have the rights to recommend  investing and listing global influencers, publicly trade global influencer equities and other major decision making rights.
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="ps64 v2 s6">
+   <div class="v ps12 s62 c55">
+    <picture class="i56">
+     <source srcset="images/08-001-529-1.png 1x, images/08-001-1058-1.png 2x">
+      <img alt="" class="js54 i55" src="images/08-001-529-1.png"/>
+     </source>
+    </picture>
+   </div>
+   <div class="v ps65 s63 c9">
+    <div class="anim fadeInUp js56 v ps12 s64 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h009-190-3.png 1x, images/h009-380-2.png 2x">
+        <img alt="" class="js55 i57" src="images/h009-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       William Sum (UK)
+      </p>
+     </div>
+     <div class="v3 ps68 s67 c9">
+      <p class="p f10">
+       Global CEO, education from Warwick University with master's degree in electrical engineering. He was the chief manager for projects exceeding $1 billion in both entertainment and media industry. He was the CEO of 100C Entertainment Group in the UK. Mr. Sum is currently overseeing FAC's global business.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js58 v ps69 s68 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h008-190-3.png 1x, images/h008-380-2.png 2x">
+        <img alt="" class="js57 i57" src="images/h008-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Moon Ma (China)
+      </p>
+     </div>
+     <div class="v3 ps68 s69 c9">
+      <p class="p f10">
+       Global COO, Chief Manager in Asia and Pacific region. Moon is Chinese original, who has founded MOKO, the largest influencer platform in Asia. It has elevated Asian super stars such as Angelababy and Zhang Xinyu.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="v ps70 s70 c9">
+    <div class="anim fadeInUp js60 v ps12 s71 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h007-190-3.png 1x, images/h007-380-2.png 2x">
+        <img alt="" class="js59 i57" src="images/h007-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Logan Lee (USA)
+      </p>
+     </div>
+     <div class="v3 ps68 s72 c9">
+      <p class="p f10">
+       Chief Manager of the Americas region. He graduated from UC Berkeley with bachelor’s degree in film analysis. He has been a member of the Rotterdam International Film Festival. He has working experiences in North America and Brazil for many years. He has a strong connection in entertainment and he is fully responsible for the FAC business on American side.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js62 v ps69 s68 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h006-190-3.png 1x, images/h006-380-2.png 2x">
+        <img alt="" class="js61 i57" src="images/h006-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Lila Kidson (USA)
+      </p>
+     </div>
+     <div class="v3 ps68 s69 c9">
+      <p class="p f10">
+       Head of Global Marketing. Graduated from Peking University School of Arts with a double degree from Waseda University School of International Liberal Studies. She is the famous KOL in the world and the vice-president of the MCN Institute.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="v ps71 s73 c9">
+    <div class="anim fadeInUp js64 v ps12 s74 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h005-190-3.png 1x, images/h005-380-2.png 2x">
+        <img alt="" class="js63 i57" src="images/h005-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Yibo Zhao (China)
+      </p>
+     </div>
+     <div class="v3 ps68 s75 c9">
+      <p class="p f10">
+       Head of Asian operations. Graduated from Purdue University with a bachelor's degree in marketing from Purdue University, he has been an entrepreneur for many years. He has been selected as one of Alibaba's 30 global dreamers and Forbes China elite. Mr. Zhao is fully responsible for FAC's Asian operations.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js66 v ps69 s68 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h004-190-3.png 1x, images/h004-380-2.png 2x">
+        <img alt="" class="js65 i57" src="images/h004-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Daniel Tang (Canada)
+      </p>
+     </div>
+     <div class="v3 ps68 s69 c9">
+      <p class="p f10">
+       Head of Operations in the Americas. Mr. Tang holds a bachelor's degree in economics from the University of Toronto, Canada, and served as CEO of EMG. He is fully responsible for FAC Americas operations.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="v ps72 s76 c9">
+    <div class="anim fadeInUp js68 v ps12 s77 c30">
+     <div class="v ps66 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h003-190-3.png 1x, images/h003-380-2.png 2x">
+        <img alt="" class="js67 i57" src="images/h003-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Xiaonan Ge (China)
+      </p>
+     </div>
+     <div class="v3 ps68 s78 c9">
+      <p class="p f10">
+       The head of FAC's global ecological construction. Princeton University graduates a master's degree in finance. He worked for Goldman Sachs Asia as analyst. He is responsible for the economic and ecological construction of FAC.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js70 v ps69 s68 c30">
+     <div class="v ps73 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h002-190-3.png 1x, images/h002-380-2.png 2x">
+        <img alt="" class="js69 i57" src="images/h002-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Ziyi Shi (China)
+      </p>
+     </div>
+     <div class="v3 ps68 s69 c9">
+      <p class="p f10">
+       Post-2000s Opinion Leader . Excellent respondent in Zhihu - the entertainment field . Ms. Shi is fully responsible for FAC's Asian community operations.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="v ps74 s79 c9">
+    <div class="anim fadeInUp js72 v ps12 s80 c30">
+     <div class="v ps73 s65 c9">
+      <picture class="i58">
+       <source srcset="images/h001-190-3.png 1x, images/h001-380-2.png 2x">
+        <img alt="" class="js71 i57" src="images/h001-190-3.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps67 s66 c9">
+      <p class="p2 f9">
+       Jay Wang (China)
+      </p>
+     </div>
+     <div class="v3 ps68 s81 c9">
+      <p class="p f10">
+       Head of European operations. Wang graduated from University of Oxford with a master's degree in engineering. He has participated in the merger and acquisition of a number of listed companies and is fully responsible for FAC's European operations.
+      </p>
+     </div>
+    </div>
+    <div class="anim fadeInUp js74 v ps69 s82 c30">
+     <div class="v ps73 s83 c9">
+      <picture class="i60">
+       <source srcset="images/v10-188.png 1x">
+        <img alt="" class="js73 i59" src="images/v10-188.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v3 ps75 s66 c9">
+      <p class="p2 f9">
+      </p>
+     </div>
+     <div class="v3 ps68 s84 c9">
+      <p class="p f10">
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="v ps2 s85 c56">
+   <div class="ps76 v2 s3">
+    <div class="v ps77 s86 c9">
+     <div class="v ps12 s87 c57">
+      <picture class="i62">
+       <source srcset="images/con01-421-2.png 1x, images/con01-842-1.png 2x">
+        <img alt="" class="js75 i61" src="images/con01-421-2.png"/>
+       </source>
+      </picture>
+     </div>
+     <div class="v ps78 s88 c58">
+      <a class="a" href="javascript:em1();">
+       <picture class="i64">
+        <source srcset="images/con02-287-2.png 1x, images/con02-574-1.png 2x">
+         <img alt="" class="js76 i63" src="images/con02-287-2.png"/>
+        </source>
+       </picture>
+      </a>
+     </div>
+     <div class="v ps79 s89 c59">
+      <a class="a" href="https://t.me/FAC_English" rel="noopener" target="_blank">
+       <picture class="i66">
+        <source srcset="images/con03-303.png 1x, images/con03-606.png 2x">
+         <img alt="" class="js77 i65" src="images/con03-303.png"/>
+        </source>
+       </picture>
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   !function(){var s=["js/jquery.js","js/woolite.js","js/plyr3.js","js/index.20190611211700.js"],n={},j=0,e=function(e){var o=new XMLHttpRequest;o.open("GET",s[e],!0),o.onload=function(){if(n[e]=o.responseText,4==++j)for(var t in s){var i=document.createElement("script");i.textContent=n[t],document.body.appendChild(i)}},o.send()};for(var o in s)e(o)}();
+  </script>
+  <script type="text/javascript">
+   var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+  </script>
+  <script>
+   function IsPC(){    
+             var userAgentInfo = navigator.userAgent;  
+             var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");    
+             var flag = true;    
+             for (var v = 0; v < Agents.length; v++) {    
+                 if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }    
+             }    
+             return flag;    
+          }  
+          if (!IsPC()) {  
+                window.location.href ="/h5/index.html";  
+          };
+  </script>
+  <script src="js/jquery.js">
+  </script>
+  <script>
+   var index = 0;
+		jQuery("audio").each(function(i){
+			console.log("i=" + i);
+			$(this).on("play", function(){
+				audioPause(i);
+			})
+			index++;
+		})
+
+		function audioPause(pIndex){
+			console.log("pIndex=" + pIndex);			
+			jQuery("audio").each(function(i){
+				if(pIndex != i){
+					var audio = this;
+					audio.pause();
+					console.log(99);
+				}	
+			})
+		}
+  </script>
+ </body>
+</html>

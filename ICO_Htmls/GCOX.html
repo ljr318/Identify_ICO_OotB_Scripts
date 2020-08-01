@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <meta content="BTC, bitcoin, cryptocurrency, exchange, crypto, celebrity, celebrity tokens" name="keywords"/>
+  <meta content="GCOX is a licenced digital token exchange where celebrities and brands are able to leverage on blockchain technology, a highly secure and dependable distributed protocol, to truly revolutionise and redefine popularity and celebrity culture." name="description"/>
+  <title>
+   GCOX - Global Crypto Offering Exchange
+  </title>
+  <script charset="utf-8" src="/static/charting_library/charting_library.min.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/dataUpdater.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/datafees.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="/static/js/TVjsApi.js" type="text/javascript">
+  </script>
+  <link href="/static/css/app.ddedfe80587947fbc6778a8aa0b663eb.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="app">
+  </div>
+  <script type="text/javascript">
+   /*function receiveMessage(event) {
+    if (typeof event.data === "string") {
+      var data = window.JSON.parse(event.data);
+      if (data.transactionReference) {
+        //jumio kyc äºä»¶çå¬
+        console.log('Netverify Web was loaded in an iframe.');
+        console.log('auth token:', data.authorizationToken);
+        console.log('transaction reference:', data.transactionReference);
+        console.log('customer internal reference:', data.customerInternalReference);
+        console.log('event type:', data.eventType);
+        console.log('date-time:', data.dateTime);
+        console.log('event value:', data.payload.value);
+        console.log('event metainfo:', data.payload.metainfo);
+        window.onJumioResult && window.onJumioResult(data);
+      }
+    }
+  }
+
+  window.addEventListener("message", receiveMessage, false);*/
+  /*(function(){
+    // éå¯¹çäº§ç¯å¢ï¼åªåè®¸è·³è½¬å°http://www.gcox.ink
+    var protocol = location.protocol;
+    var host = location.host.toLowerCase();
+    if (host === 'pre.gcox.ink' || host === 'test.gcox.ink') {
+      return
+    }
+    if (host.indexOf('gcox.ink') !== -1 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+      location.href = 'https://m.gcox.ink/' + location.hash;
+      return
+    }
+    if (host.indexOf('gcox.ink') !== -1 && (protocol !== 'https:' || host !== 'www.gcox.ink')) {
+      // location.href = 'https://www.gcox.ink';
+    }
+  })();*/
+  </script>
+  <script src="/static/js/jsencrypt.min.js" type="text/javascript">
+  </script>
+  <script src="/static/js/gt.js" type="text/javascript">
+  </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-135198121-1">
+  </script>
+  <script>
+   (function(){
+    if (top.location !== window.location) {top.location=window.location; return;}
+    var protocol = location.protocol;
+    var host = location.host.toLowerCase();
+    var pathname = location.pathname
+    if(host.indexOf('gcox.com') !== -1 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+      location.href = 'https://m-exchange' + (host==='gcox.com'?'.gcox.com':'-staging.gcox.com') + '/#'+ pathname;
+      return
+    }
+    if(host.indexOf('gcox.com') !== -1 && protocol !== 'https:') {
+      location.href = 'https://'+host + pathname;
+      return
+    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135198121-1');
+  })();
+  </script>
+  <script src="/static/js/manifest.b497b6e0453b76a9c216.js" type="text/javascript">
+  </script>
+  <script src="/static/js/vendor.44c3d9ad4c17bbb5f917.js" type="text/javascript">
+  </script>
+  <script src="/static/js/app.c5ba4ee6a920ed6dabbe.js" type="text/javascript">
+  </script>
+ </body>
+</html>

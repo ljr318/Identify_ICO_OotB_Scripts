@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Rise Housing
+  </title>
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet"/>
+  <link href="https://risehousing.io/wp-content/themes/rise-theme/js/YouTubePopUp.css" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/themes/rise-theme/js/tingle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/themes/rise-theme/css/style.css?ver=1.12" rel="stylesheet"/>
+  <link href="//s.w.org" rel="dns-prefetch"/>
+  <script type="text/javascript">
+   window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/risehousing.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.6"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <link href="https://risehousing.io/wp-includes/css/dist/block-library/style.min.css?ver=5.1.6" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/themes/rise-theme/style.css?ver=5.1.6" id="default-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/plugins/ethereumico/ethereum-ico.css?ver=9.9.9" id="ethereum-ico-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/plugins/ethereumico/font-awesome.css?ver=4.7.0" id="font-awesome-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/plugins/learnpress/assets/css/bundle.min.css?ver=3.2.6.10" id="learn-press-bundle-css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://risehousing.io/wp-content/plugins/learnpress/assets/css/learnpress.css?ver=3.2.6.10" id="learn-press-css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="https://risehousing.io/wp-includes/js/jquery/jquery.js?ver=1.12.4" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/ethereumico/ethereum-ico.js?ver=9.9.9" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/ethereumico/web3.min.js?ver=0.19.0" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/vendor/plugins.all.min.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-includes/js/underscore.min.js?ver=1.8.3" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1595967971","secure":"1"};
+/* ]]> */
+  </script>
+  <script src="https://risehousing.io/wp-includes/js/utils.min.js?ver=5.1.6" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /* <![CDATA[ */
+var lpGlobalSettings = {"url":"https:\/\/risehousing.io\/?utm_source=icobench","siteurl":"https:\/\/risehousing.io","ajax":"https:\/\/risehousing.io\/wp-admin\/admin-ajax.php","theme":"rise-theme","localize":{"button_ok":"OK","button_cancel":"Cancel","button_yes":"Yes","button_no":"No"}};
+/* ]]> */
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/global.min.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/utils.min.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/frontend/learnpress.min.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/frontend/course.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <script src="https://risehousing.io/wp-content/plugins/learnpress/assets/js/frontend/become-teacher.js?ver=3.2.6.10" type="text/javascript">
+  </script>
+  <link href="https://risehousing.io/wp-json/" rel="https://api.w.org/"/>
+  <link href="https://risehousing.io/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+  <link href="https://risehousing.io/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+  <meta content="WordPress 5.1.6" name="generator"/>
+  <link href="https://risehousing.io/wp-content/uploads/2018/03/cropped-rise-yellow-1-32x32.png" rel="icon" sizes="32x32"/>
+  <link href="https://risehousing.io/wp-content/uploads/2018/03/cropped-rise-yellow-1-192x192.png" rel="icon" sizes="192x192"/>
+  <link href="https://risehousing.io/wp-content/uploads/2018/03/cropped-rise-yellow-1-180x180.png" rel="apple-touch-icon-precomposed"/>
+  <meta content="https://risehousing.io/wp-content/uploads/2018/03/cropped-rise-yellow-1-270x270.png" name="msapplication-TileImage"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115934000-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-115934000-1');
+  </script>
+ </head>
+ <body>
+  <div class="header px3 clearfix flex items-center border-box">
+   <div class="flex-auto">
+    <a href="/">
+     <h1 class="symbol black p bigger" style="margin-top:8px;">
+      Rise Housing
+     </h1>
+    </a>
+   </div>
+   <div class="">
+    <a class="purple md-hide lg-hide medium menu-trigger" href="#">
+     MENU
+    </a>
+    <div class="menu-dec18-main-menu-container">
+     <ul class="menu" id="menu-dec18-main-menu">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-683 menu-item-summary-3" id="menu-item-683">
+       <a href="https://risehousing.io/wp-content/uploads/2018/12/Copy-of-Rise-Housing-Summary-10-2018.pdf">
+        Summary
+       </a>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-680 menu-item-whitepaper-3" id="menu-item-680">
+       <a href="https://risehousing.io/wp-content/uploads/2018/12/Rise-Housing-WP-V2.pdf">
+        Whitepaper
+       </a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681 menu-item-team" id="menu-item-681">
+       <a href="https://risehousing.io/team/">
+        Team
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="hero clearfix m1 bg-purple p4">
+   <div class="col md-col-5 lg-col-6">
+    <h1 class="white mt0 mb2">
+     Buy real estate without a mortgage. No credit score needed.
+    </h1>
+    <p class="mb3">
+     Blockchain technology is the biggest disruption to real estate that we've ever seen.
+    </p>
+    <a class="button bg-gold learnmore1-modal" href="#">
+     Learn More
+    </a>
+    <!-- Yes, the social links are duplicated here because getting the layout to happen in one go was too much :/ Plz forgive me and change both - MDS 4/2018 -->
+    <div class="col-6-m bottom-absolute mb2 xs-hide sm-hide" style="z-index: 999;">
+     <a class="social-icon-link" href="https://twitter.com/risehousing">
+      <img src="https://icon.now.sh/twitter/FFFFFF"/>
+     </a>
+     <a class="social-icon-link" href="https://medium.com/@risehousing">
+      <img src="https://icon.now.sh/medium/FFFFFF"/>
+     </a>
+     <a class="social-icon-link" href="https://www.youtube.com/channel/UC7wtD0H5mpPqq41eEtd-YQQ">
+      <img src="https://icon.now.sh/play/FFFFFF"/>
+     </a>
+    </div>
+    <div class="clearfix md-hide lg-hide mt2 mb2" style="z-index: 999;">
+     <a class="social-icon-link-small" href="https://twitter.com/risehousing">
+      <img src="https://icon.now.sh/twitter/FFFFFF"/>
+     </a>
+     <a class="social-icon-link-small" href="https://medium.com/@risehousing">
+      <img src="https://icon.now.sh/medium/FFFFFF"/>
+     </a>
+     <a class="social-icon-link-small" href="https://www.youtube.com/channel/UC7wtD0H5mpPqq41eEtd-YQQ">
+      <img src="https://icon.now.sh/play/FFFFFF"/>
+     </a>
+    </div>
+    <!-- End Social Icons -->
+    <div class="confetti one rellax xs-hide sm-hide" data-rellax-speed="4" style="background-image:url(https://risehousing.io/wp-content/themes/rise-theme/images/confetti-one.png);">
+    </div>
+    <div class="confetti two rellax xs-hide sm-hide" data-rellax-speed="-4" style="background-image:url(https://risehousing.io/wp-content/themes/rise-theme/images/confetti-two.png);">
+    </div>
+   </div>
+   <div class="overflow pt5">
+    <div class="max-width-4 mx-auto mb5 px3">
+     <div class="clearfix mxn3">
+      <div class="col-12 col-right sm-col-6 mb3 px3">
+       <a class="video bg-purple mb2" href="https://www.youtube.com/watch?v=Sjb1Hq0r95A">
+        <img alt="" class="art rellax" data-rellax-percentage="0.5" data-rellax-speed="-0.5" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-house.png"/>
+       </a>
+      </div>
+      <div class="sm-col sm-col-6 px3">
+       <h1 class="purple">
+        Enabling portfolio diversification in real time.
+       </h1>
+       <p>
+        Never pay interest rates again or be shackled to your credit score to buy real estate. Fractional ownership with Rise changes all of that.
+       </p>
+       <p>
+        With the Rise Marketplace, investors don't have to rely on just one neighborhood appreciating because now they can invest small amounts in multiple properties. No need to risk it all on just one property.
+       </p>
+       <a class="button bg-purple learnmore2-modal" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-width-4 mx-auto mb5 px3">
+    <div class="sm-flex md-flex lg-flex mxn2">
+     <div class="card sm-col sm-col-4 p3 mb3 mx2">
+      <p class="smaller spaced medium caps center black">
+       Security
+      </p>
+      <p class="purple center mb2">
+       Your Rise account is linked directly to you, and no one else. We are built with secure blockchain technology to keep your investments safe.
+      </p>
+      <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-accounts.png"/>
+     </div>
+     <div class="card sm-col sm-col-4 p3 mb3 mx2">
+      <p class="smaller spaced medium caps center black">
+       <a href="/whitepaper">
+        Whitepaper
+       </a>
+      </p>
+      <p class="purple center mb4">
+       Our
+       <a href="/whitepaper">
+        whitepaper
+       </a>
+       explains everything in the Rise Housing universe. Read about the Rise ecosystem, our dedication to financial literacy for everyday investors, and our future plans for expansion.
+      </p>
+      <a href="/whitepaper">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-whitepaper.png"/>
+      </a>
+     </div>
+     <div class="card sm-col sm-col-4 p3 mb3 mx2">
+      <p class="smaller spaced medium caps center black">
+       Owners
+      </p>
+      <p class="purple center mb1">
+       We reduce the cost of selling for property owners, giving them a cheaper way to to buy, sell, and diversify their portfolio.
+      </p>
+      <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-city.png"/>
+     </div>
+    </div>
+   </div>
+   <div class="cta py4 mb5 px3">
+    <div class="max-width-4 mx-auto right-align py4">
+     <div class="clearfix">
+      <div class="sm-col-7 col-right">
+       <h1 class="huge purple mt0 mb2" style="font-size:40px;">
+        What real estate should be.
+       </h1>
+       <p>
+        Rise enables investors buy and sell real estate worldwide, in real time.
+       </p>
+      </div>
+     </div>
+     <img alt="" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-family.png"/>
+    </div>
+   </div>
+   <div class="max-width-4 mx-auto mb5 px3 brands">
+    <div class="card flex flex-wrap items-center">
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://www.kickico.com">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-kickico.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="http://www.rexmls.com">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-rex.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-hoosh.png"/>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="http://verbhouse.com">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-verbhouse.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://www.nar.realtor">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-nar.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://collisionconf.com">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-collision.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://www.deedcoinlaunch.com/">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-deedcoin.jpg"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://schedule.sxsw.com/2018/events/PP100127">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-sxsw-2018.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-ignite.jpg"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://asiablockchainexpo.com/">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-asia-blockchain-expo.png"/>
+      </a>
+     </div>
+     <div class="col-4 sm-col-2 p2 border-box">
+      <a href="https://thailand.bc.events/en">
+       <img alt="" class="fit" src="https://risehousing.io/wp-content/themes/rise-theme/images/logo-bbb.jpg"/>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="overflow">
+    <div class="max-width-4 mx-auto px3 mb5 heavy">
+     <div class="clearfix block mb5">
+      <div class="sm-col sm-col-6">
+       <h1 class="purple">
+        A complete ecosystem.
+       </h1>
+       <p>
+        Everyday investors want a chance to buy real estate without the crippling debt, while property owners want a faster and easier way to sell. We solve both of these problems, reducing transaction costs by 77%, while getting the bank out of the middle.
+       </p>
+       <p>
+        The Rise Marketplace makes buying and selling properties easy and secure for anyone, anywhere, in real time.
+       </p>
+       <a class="button bg-purple learnmore4-modal" href="#">
+        Learn More
+       </a>
+      </div>
+      <img alt="" class="fit xs-hide" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-app.png"/>
+     </div>
+     <div class="clearfix block mb5">
+      <div class="sm-col sm-col-6">
+       <h1 class="purple">
+        Roadmap
+       </h1>
+       <p>
+        We will be launching our first properties in the coming weeks. Check back here to see the first properties in the US and abroad that will be available for investors of all levels.
+       </p>
+       <a class="button bg-purple learnmore5-modal" href="#">
+        Learn More
+       </a>
+      </div>
+      <img alt="" class="fit xs-hide" src="https://risehousing.io/wp-content/themes/rise-theme/images/scene-computer.png"/>
+     </div>
+    </div>
+   </div>
+   <div class="max-width-4 mx-auto mb5 px3 faqs">
+    <div class="card">
+     <!--<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">How does the marketplace work?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p3 m0">#todo - Marketplace text</p>
+			</div>
+		</div>
+		<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">Praesent commodo cursus magna, vel scelerisque nisl?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p2 pt0 m0">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+		</div>-->
+     <!--<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">Where can I learn more?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p2 pt0 m0">The best way to learn more about Rise Housing is by reading our Whitepaper. Click <a href="https://risehousing.io/wp-content/uploads/2018/12/Rise-Housing-WP-V2.pdf">here</a>.</p>
+			</div>
+		</div>-->
+     <!--<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">What is Blockchain?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p2 pt0 m0">Blockchain is a fraud proof way of handling transactions ont he internet. Think of it like instagram- without the delete feature- for pdf's, transaction and money.</p>
+			</div>
+		</div>-->
+     <!--<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">How can I particpate?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p2 pt0 m0">Stay tuned. Our properties are about to go live in just a few weeks.</p>
+			</div>
+		</div>-->
+     <!--<div class="set">
+			<div class="question pr3">
+				<p class="purple p2 m0">Where can I learn more about the founder, Monika Proffitt?</p>
+				<img src="https://risehousing.io/wp-content/themes/rise-theme/images/icon-expand.svg" width="24" height="24" alt="" class="expand">
+			</div>
+			<div class="answer">
+				<p class="p2 pt0 m0">To check our the book she published, Blockchain 101: Fundamentals of a New Economy, see her speaking engagements across the US, Europe and Asia, visit to her website, <a href="https://monikaproffitt.com">monikaproffitt.com</a>.</p>
+			</div>
+		</div>-->
+    </div>
+   </div>
+   <!--<div class="cta py4 px3 m1 bg-purple relative">
+	<div class="max-width-4 mx-auto center py4 relative">
+		<div class="clearfix">
+			<div class="">
+				<h1 class="huge white mt0 mb2">Can we keep in touch?</h1>
+				<p>Get updated on the latest news, acquisitions, blogs, and more about Rise.</p>
+				<div class="subscribe-form">
+							</div>
+			</div>
+		</div>
+	</div>
+	<div class="cover" style="background-image:url(https://risehousing.io/wp-content/themes/rise-theme/images/photo-home.jpg)"></div>
+</div>-->
+   <div class="modal terms hide">
+    <h1>
+     Coming Soon
+    </h1>
+    <p>
+     Rise Housing isn't one of those shady ICOs. We're dotting our i's and crossing our t's with our legal council to ensure that all investments are made to the letter of the law. Sign up for our mailing list and we'll send you a notice once we are accepting investments from US citizens.
+    </p>
+    <div class="subscribe-form">
+    </div>
+   </div>
+   <div class="modal learnmore1 hide">
+    <h1 class="purple">
+     Equity for everyone
+    </h1>
+    <p>
+     Equity has often been out of reach for large portions of the population without many years of savings or a rich uncle. Renters in a Rise building can build equity without the massive barrier to entry. This equity is portable; renters can easily move their tokens to a different RISE property when they want to move.
+    </p>
+    <p>
+     Owners don’t always have it easy either. They are often trapped in many years of high payments reducing their quality of life. Partnering with Rise, they now have the option of gaining instant liquidity while providing better options for their tenants.
+    </p>
+   </div>
+   <div class="modal learnmore2 hide">
+    <h1 class="purple">
+     Rise Housing Platform
+    </h1>
+    <p>
+     Here’s a look at our Rise platform. This is where Rise members can log in and see where their wallet is held. Here our users have the option to keep their funds in Rise coin (RSE) or trade with a fixed portion of their RSE on the open market.
+    </p>
+    <p>
+     <img alt="" class="size-large wp-image-116 aligncenter" height="692" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2018/02/RiseHousing-Dashboard_inBrowser-1024x922.jpg" srcset="https://risehousing.io/wp-content/uploads/2018/02/RiseHousing-Dashboard_inBrowser-1024x922.jpg 1024w, https://risehousing.io/wp-content/uploads/2018/02/RiseHousing-Dashboard_inBrowser-300x270.jpg 300w, https://risehousing.io/wp-content/uploads/2018/02/RiseHousing-Dashboard_inBrowser-768x692.jpg 768w" width="768"/>
+    </p>
+   </div>
+   <div class="modal learnmore3 hide">
+    <h1 class="purple">
+     Global Asset Class
+    </h1>
+    <p>
+     Our platform allows tenants and everyday participants to be able to buy equity in real estate, one token at a time, without any lending or interest rates involved. Our platform creates liquidity for the current asset owners of large, multifamily buildings, without enduring the expense and wasted time of the traditional selling process.
+    </p>
+    <p>
+     A currency is only as strong as its circulation and what it is backed by, and our security token will not only be used by large real estate investors looking for a cleaner way to liquidate, but we are positioned to be in the hands of otherwise disengaged tenants and small contributors, creating high transaction volume in a new global asset class.
+    </p>
+   </div>
+   <div class="modal learnmore4 hide">
+    <h1 class="purple">
+     Equity Access For Everyone
+    </h1>
+    <p>
+     <span style="font-weight: 400;">
+      We make real estate equity access a reality for everyone, even folks with no down payment or bad credit. We make buying and selling real estate easy and affordable by getting rid of the middlemen and using blockchain technology.
+     </span>
+    </p>
+    <p>
+     <span style="font-weight: 400;">
+      With the Rise Token marketplace, tenants and participants alike are able to access and trade equity in real estate in real time. Really.
+     </span>
+    </p>
+    <p>
+    </p>
+   </div>
+   <div class="modal learnmore5 hide">
+    <h1 class="purple">
+     Roadmap
+    </h1>
+    <p>
+     In phase one, we use Ethereum to bring fraud-proof, smart contracts to real estate transactions. This positions us to seamlessly offer the Rise Token as the cryptocurrency of option to swap for equity.
+    </p>
+    <p>
+     PHASE TWO: We tokenize the assets on our platform, creating a harmonious marketplace for global contributions and smooth transfers of equity-tied assets on the blockchain. Rise enables asset owners to unlock the value of their assets by creating and selling their asset tokens on the blockchain.
+    </p>
+    <p>
+    </p>
+    <p>
+     <img alt="" class="size-full wp-image-377 aligncenter" height="776" sizes="(max-width: 600px) 100vw, 600px" src="https://risehousing.io/wp-content/uploads/2018/02/Rise-Housing-Roadmap-WEB-2.jpg" srcset="https://risehousing.io/wp-content/uploads/2018/02/Rise-Housing-Roadmap-WEB-2.jpg 600w, https://risehousing.io/wp-content/uploads/2018/02/Rise-Housing-Roadmap-WEB-2-232x300.jpg 232w" width="600"/>
+    </p>
+   </div>
+   <div class="modal ethereum-ico hide">
+    <div id="buy-no-metamask" style="display:none">
+     <h1>
+      MetaMask Not Found
+     </h1>
+     <p>
+      You do not seem to have the Metamask extension installed. Please install Metamask from
+      <a href="https://metamask.io">
+       metamask.io
+      </a>
+      . MetaMask (or a similar web3 browser/extension) is required to buy RSE from this site.
+     </p>
+     <a href="https://metamask.io">
+      <img class="mx-auto mobile-fit" src="/wp-content/uploads/2018/03/metamask.png"/>
+     </a>
+    </div>
+    <div id="buy-rise-input">
+     <div class="wpcf7" dir="ltr" id="wpcf7-f221-o1" lang="en-US" role="form">
+      <div class="screen-reader-response">
+      </div>
+      <form action="/?utm_source=icobench#wpcf7-f221-o1" class="wpcf7-form" method="post" novalidate="novalidate">
+       <div style="display: none;">
+        <input name="_wpcf7" type="hidden" value="221"/>
+        <input name="_wpcf7_version" type="hidden" value="5.1.1"/>
+        <input name="_wpcf7_locale" type="hidden" value="en_US"/>
+        <input name="_wpcf7_unit_tag" type="hidden" value="wpcf7-f221-o1"/>
+        <input name="_wpcf7_container_post" type="hidden" value="0"/>
+        <input name="g-recaptcha-response" type="hidden" value=""/>
+       </div>
+       <h1>
+        Let's keep in touch!
+       </h1>
+       <p>
+        Before investing, please give us your email address so we can keep you up to date with news and investor information about Rise Housing.
+       </p>
+       <p>
+        <label>
+         Email:
+         <span style="color:red">
+          *
+         </span>
+        </label>
+        <br/>
+        <span class="wpcf7-form-control-wrap your-email">
+         <input aria-invalid="false" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email kyc-text" name="your-email" size="40" type="email" value=""/>
+        </span>
+       </p>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-walletaddress" name="your-walletaddress" type="hidden" value=""/>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-ipaddress" name="your-ipaddress" type="hidden" value=""/>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-referrer" name="your-referrer" type="hidden" value=""/>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-query-string" name="your-query-string" type="hidden" value=""/>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-guid" name="your-guid" type="hidden" value=""/>
+       <input class="wpcf7-form-control wpcf7-hidden" id="your-datetime" name="your-datetime" type="hidden" value=""/>
+       <p>
+        <span class="wpcf7-form-control-wrap your-consent">
+         <span class="wpcf7-form-control wpcf7-acceptance">
+          <span class="wpcf7-list-item">
+           <label>
+            <input aria-invalid="false" name="your-consent" type="checkbox" value="1"/>
+            <span class="wpcf7-list-item-label">
+             I am not U.S., China, Bahamas, or Singapore citizen, I do not have a primary residence or domicile in the U.S., in China or in Singapore, or The Bahamas and I am not currently on the territory of those countries, nor I am transferring cryptocurrency on behalf of such a person or entity.
+            </span>
+           </label>
+          </span>
+         </span>
+        </span>
+       </p>
+       <p>
+        <input class="wpcf7-form-control wpcf7-submit bg-purple button" type="submit" value="Continue"/>
+       </p>
+       <div class="wpcf7-response-output wpcf7-display-none">
+       </div>
+      </form>
+     </div>
+    </div>
+    <div class="ethereum-ico-container" id="buy-rise" style="display: none;">
+     <p style="text-align:center;">
+      Thanks for the information! You can now buy RSE.
+     </p>
+     <script type="text/javascript">
+      var coins = [];
+    var tokenName = "RISE TOKEN (RSE)";
+    var rateData = {"ethbtc":"0.02897","ethbtc_timestamp":"1595967914","ethusd":"318.03","ethusd_timestamp":"1595967914"};
+    var rateDataFiat = null;
+    var tokenRate = 109800;
+    var icoperiod = 30; // days
+    var start = new Date("2018-03-01");
+    var infuraApiKey = "WDn8l9AeTSeGjMdlJElI";
+    var web3Endpoint = "https://mainnet.infura.io/" + infuraApiKey;
+    var tokenAddress = "";
+    var crowdsaleAddress = "0x8bf82aa0966f6c8c9becb81cdd55d1b6ce19f695";
+    var decimals = 1e+18;
+     </script>
+     <div class="ethereum-ico-shortcode">
+      <div class="ethereum-ico-content">
+       <h2 class="ethereum-ico-gaslimit">
+        Gas Limit: 200000
+       </h2>
+       <div class="ethereum-ico-button-group">
+        <div class="ethereum-ico-quantity">
+         <input class="ethereum-ico-bottom-input-one" id="etherInput" min="0.01" name="etherInput" placeholder="Input ETH amount" step="0.1" type="number"/>
+         <div class="quantity-nav">
+          <div class="quantity-button quantity-up">
+           <i aria-hidden="true" class="fa fa-chevron-up">
+           </i>
+          </div>
+          <div class="quantity-button quantity-down">
+           <i aria-hidden="true" class="fa fa-chevron-down">
+           </i>
+          </div>
+         </div>
+        </div>
+        <span class="eth">
+         ETH
+        </span>
+        <a class="ethereum-ico-bottom-button-two" href="#" id="buyTokensButton">
+         Buy token with Metamask
+        </a>
+        <div class="clear">
+        </div>
+       </div>
+       <p class="ethereum-ico-description">
+        5 Rise Tokens (RSE) for every $1 USD worth of ETH contributed (Do not send ETH directly from an exchange to the ICO address.)
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="flex flex-auto justify-center mt2">
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Privacy-Policy-And-Statement.pdf">
+      Privacy Policy
+     </a>
+     <span>
+      •
+     </span>
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Terms-Of-Use.pdf">
+      Terms of Use
+     </a>
+     <span>
+      •
+     </span>
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Disclaimer.pdf">
+      Disclaimer
+     </a>
+    </div>
+   </div>
+   <div class="modal login hide">
+    <div class="login-form clearfix mxn3">
+     <div class="sm-col sm-col-7 px3">
+      <h1>
+       Rise Housing
+      </h1>
+      <input name="" placeholder="Email" type="text"/>
+      <input name="" placeholder="Password" type="password"/>
+      <button class="button bg-purple left-align">
+       Log In
+      </button>
+     </div>
+     <div class="sm-col sm-col-5 px3 social">
+      <h1 class="black center">
+       Or
+      </h1>
+      <div class="buttons relative clearfix">
+       <a class="button white center" href="#" style="background-color:#db3236">
+        Google
+       </a>
+       <a class="button white center" href="#" style="background-color:#3b5998">
+        Facebook
+       </a>
+       <a class="button white center" href="#" style="background-color:#E78C3B">
+        MetaMask
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer px3 clearfix flex items-center border-box" style="margin-top:2em;margin-bottom:2em;">
+    <div class="">
+     <h1 class="symbol black p bigger">
+      Rise Housing
+     </h1>
+    </div>
+    <div class="flex flex-auto justify-center">
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Privacy-Policy-And-Statement.pdf">
+      Privacy Policy
+     </a>
+     <span>
+      •
+     </span>
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Terms-Of-Use.pdf">
+      Terms of Use
+     </a>
+     <span>
+      •
+     </span>
+     <a href="https://risehousing.io/wp-content/themes/rise-theme/documents/Rise-Housing-Disclaimer.pdf">
+      Disclaimer
+     </a>
+    </div>
+    <div class="">
+     <div class="menu-footer-menu-container">
+      <ul class="menu" id="menu-footer-menu">
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-687 menu-item-summary-4" id="menu-item-687">
+        <a href="https://risehousing.io/wp-content/uploads/2018/12/Copy-of-Rise-Housing-Summary-10-2018.pdf">
+         Summary
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-686 menu-item-whitepaper-4" id="menu-item-686">
+        <a href="https://risehousing.io/wp-content/uploads/2018/12/Rise-Housing-WP-V2.pdf">
+         Whitepaper
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16 menu-item-team" id="menu-item-16">
+        <a href="https://risehousing.io/team/">
+         Team
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <script src="//code.jquery.com/jquery-3.2.1.min.js" type="text/javascript">
+   </script>
+   <script src="https://risehousing.io/wp-content/themes/rise-theme/js/YouTubePopUp.jquery.js" type="text/javascript">
+   </script>
+   <script src="https://risehousing.io/wp-content/themes/rise-theme/js/rellax.min.js" type="text/javascript">
+   </script>
+   <script src="https://risehousing.io/wp-content/themes/rise-theme/js/tingle.js" type="text/javascript">
+   </script>
+   <script src="https://risehousing.io/wp-content/themes/rise-theme/js/rise.js?ver=1.12" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    // youtube pop
+		$("a.video").YouTubePopUp();
+
+
+	// parallax things
+		var rellax = new Rellax('.rellax');
+   </script>
+   <script type="text/javascript">
+    /* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/risehousing.io\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+   </script>
+   <script src="https://risehousing.io/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1" type="text/javascript">
+   </script>
+   <script src="https://risehousing.io/wp-includes/js/wp-embed.min.js?ver=5.1.6" type="text/javascript">
+   </script>
+  </div>
+ </body>
+</html>

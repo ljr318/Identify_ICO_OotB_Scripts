@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html data-n-head="" data-n-head-ssr="">
+ <head>
+  <title data-n-head="true">
+   BRD - bitcoin wallet
+  </title>
+  <meta charset="utf-8" data-n-head="true"/>
+  <meta content="width=device-width, initial-scale=1" data-n-head="true" name="viewport"/>
+  <meta content="BRD is the simple and secure way to get started with Bitcoin, Ethereum and other cryptocurrencies." data-hid="description" data-n-head="true" name="description"/>
+  <meta content="app-id=885251393" data-hid="apple-itunes-app" data-n-head="true" name="apple-itunes-app"/>
+  <meta content="summary" data-hid="twitter:card" data-n-head="true" name="twitter:card"/>
+  <meta content="@breadapp" data-hid="twitter:site" data-n-head="true" name="twitter:site"/>
+  <meta content="BRD" data-hid="twitter:text:title" data-n-head="true" name="twitter:text:title"/>
+  <meta content="BRD is the simple and secure way to get started with Bitcoin, Ethereum and other cryptocurrencies." data-hid="twitter:text:description" data-n-head="true" name="twitter:text:description"/>
+  <meta content="https://d2n2g5n187q8lu.cloudfront.net/static/img/favicon.jpg" data-hid="twitter:image" data-n-head="true" name="twitter:image"/>
+  <meta content="BRD" data-hid="og:title" data-n-head="true" name="og:title"/>
+  <meta content="article" data-hid="og:type" data-n-head="true" name="og:type"/>
+  <meta content="https://brd.com" data-hid="og:url" data-n-head="true" name="og:url"/>
+  <meta content="https://d2n2g5n187q8lu.cloudfront.net/static/img/favicon.jpg" data-hid="og:image" data-n-head="true" name="og:image"/>
+  <meta content="BRD is the simple and secure way to get started with Bitcoin, Ethereum and other cryptocurrencies." data-hid="og:description" data-n-head="true" name="og:description"/>
+  <meta content="BRD" data-hid="og:site_name" data-n-head="true" name="og:site_name"/>
+  <meta content="_Q0_TGNDGU4wPyU3WshERspBrOgK0c3edNIYm0LOpDA" data-hid="google-site-verification" data-n-head="true" name="google-site-verification"/>
+  <meta content="/browserconfig.xml" data-hid="msapplication-config" data-n-head="true" name="msapplication-config"/>
+  <link data-n-head="true" href="/site.webmanifest" rel="manifest"/>
+  <link data-n-head="true" href="/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link data-n-head="true" href="/favicon-16x16.png" rel="icon" sizes="16x16"/>
+  <link data-n-head="true" href="/favicon-32x32.png" rel="icon" sizes="32x32"/>
+  <link data-n-head="true" href="/android-chrome-192x192.png" rel="icon" sizes="192x192"/>
+  <link data-n-head="true" href="/android-chrome-256x256.png" rel="icon" sizes="256x256"/>
+  <link data-n-head="true" href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link color="#ff4f94" data-n-head="true" href="/safari-pinned-tab.svg" rel="mask-icon"/>
+  <link data-n-head="true" href="/android-chrome-256x256.png" rel="shortcut icon"/>
+  <link data-n-head="true" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet"/>
+  <link data-n-head="true" href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"/>
+  <style data-vue-ssr-id="fd547dac:0 2eb43ff6:0 07c97ac9:0 5bd42a58:0 359d07b4:0 264ca286:0 26fd761b:0 47aaa349:0 23f19272:0 6e4daee8:0 489645b4:0 849c7f06:0 5beb46c5:0 eba36f06:0 ea0f0362:0 8d570294:0 b16f69f6:0 7eb3db87:0 7de695e2:0 30f2b00a:0">
+   .nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#f9a538;z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{transition:none
+}
+.nuxt-progress-failed{background-color:red
+}
+
+@font-face{font-family:Circular-Pro-Book;src:url(/_nuxt/fonts/335fbbc.eot);src:url(/_nuxt/fonts/335fbbc.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/6d78fbc.woff2) format("woff2"),url(/_nuxt/fonts/c011b1a.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Bolditalic;src:url(/_nuxt/fonts/11dcaf6.eot);src:url(/_nuxt/fonts/11dcaf6.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/dc2c143.woff2) format("woff2"),url(/_nuxt/fonts/7711b4b.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Blackitalic;src:url(/_nuxt/fonts/3ac5609.eot);src:url(/_nuxt/fonts/3ac5609.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/7bb2682.woff2) format("woff2"),url(/_nuxt/fonts/9338b52.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Medium;src:url(/_nuxt/fonts/06b42c6.eot);src:url(/_nuxt/fonts/06b42c6.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/c68251a.woff2) format("woff2"),url(/_nuxt/fonts/95f0b6d.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Mediumitalic;src:url(/_nuxt/fonts/2212205.eot);src:url(/_nuxt/fonts/2212205.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/087172b.woff2) format("woff2"),url(/_nuxt/fonts/e749262.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Black;src:url(/_nuxt/fonts/38aa70e.eot);src:url(/_nuxt/fonts/38aa70e.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/be06836.woff2) format("woff2"),url(/_nuxt/fonts/ff9a612.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Bookitalic;src:url(/_nuxt/fonts/dc208c2.eot);src:url(/_nuxt/fonts/dc208c2.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/f88afe4.woff2) format("woff2"),url(/_nuxt/fonts/e883637.woff) format("woff");font-weight:400;font-style:normal
+}
+@font-face{font-family:Circular-Pro-Bold;src:url(/_nuxt/fonts/71f91f2.eot);src:url(/_nuxt/fonts/71f91f2.eot?#iefix) format("embedded-opentype"),url(/_nuxt/fonts/f7a0d96.woff2) format("woff2"),url(/_nuxt/fonts/b8322f5.woff) format("woff");font-weight:400;font-style:normal
+}
+@-webkit-keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+html{text-align:left;font-family:Circular-Pro-Book,serif;color:#141233;-webkit-font-smoothing:antialiased;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;background-color:#fff
+}
+@media screen and (min-width:600px){
+html{text-rendering:optimizeLegibility
+}
+}
+body{font-size:100%;line-height:1.5em!important;margin:0
+}
+h1{box-sizing:border-box;width:100%;margin:0 0 24px;font-size:56px;line-height:60px;font-family:Circular-Pro-Bold,serif;font-weight:300;letter-spacing:-.5px
+}
+@media screen and (max-width:1024px){
+h1{font-size:47.6px;line-height:48px
+}
+}
+@media screen and (max-width:510px){
+h1{font-size:10vw;line-height:11vw
+}
+}
+h2{box-sizing:border-box;width:100%;margin:24px 0;font-size:40px;line-height:48px;font-family:Circular-Pro-Bold,serif;font-weight:400
+}
+@media screen and (max-width:1024px){
+h2{font-size:34px;line-height:35.7px
+}
+}
+@media screen and (max-width:510px){
+h2{font-size:8vw;line-height:9vw
+}
+}
+h2:first-child{margin-top:0
+}
+h3{box-sizing:border-box;width:100%;margin:0 0 24px;font-size:28px;line-height:30px;font-family:Circular-Pro-Bold,serif;font-weight:400;letter-spacing:-.5px
+}
+@media screen and (max-width:1024px){
+h3{font-size:23.8px;line-height:25.5px
+}
+}
+h4{margin:0 0 24px;font-family:Circular-Pro-Book,serif
+}
+h4,h5{box-sizing:border-box;width:100%;font-size:20px;line-height:24px;font-weight:400
+}
+h5{font-family:Circular-Pro-Bold,serif
+}
+h5,h6{margin:0 0 12px
+}
+h6{box-sizing:border-box;width:100%;font-size:18.08px;line-height:24px;font-family:Circular-Pro-Book,serif;font-weight:400
+}
+h1>small{display:block;margin-top:12px;font-size:.65em;line-height:1.2em;font-family:Circular-Pro-Book,serif;opacity:.5
+}
+h2>small,h3>small,h4>small,h5>small,h6>small{display:block;margin:0;font-size:.75em;line-height:1.2em;font-family:Circular-Pro-Book,serif;opacity:.75
+}
+h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{font-family:Circular-Pro-Bold,serif;text-decoration:none
+}
+a{text-decoration:underline;color:#ff4f94
+}
+p{margin:0;width:100%;max-width:672px;clear:both
+}
+p+p{margin-top:24px
+}
+p+*{margin-top:24px
+}
+p.centered{margin:0 auto;text-align:center
+}
+.p-width{margin-left:auto;margin-right:auto;max-width:672px
+}
+hr{display:block;margin:48px auto;width:100%;border:none;border-bottom:1px solid rgba(0,0,0,.1)
+}
+hr.light{border-bottom:1px solid hsla(0,0%,100%,.15)
+}
+ul{margin:0 0 24px
+}
+ul+hr{margin-top:0
+}
+blockquote{margin:24px 0;padding:24px;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1);background-color:#f5f7fa;font-style:italic
+}
+strong{font-family:Circular-Pro-Bold,serif;font-weight:400
+}
+small{display:block;margin-bottom:12px;font-size:14px;line-height:20.4px
+}
+.hidden{display:none
+}
+fieldset{padding:0;border:none
+}
+input[type=email],input[type=text]{border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;-webkit-box-shadow:inset 0 3px 9px rgba(0,0,0,.06),inset 0 1px 4px rgba(0,0,0,.09);box-sizing:border-box;padding:12px;margin:0 0 12px;width:100%;border:none;border:1px solid rgba(0,0,0,.1);font-size:16px;-webkit-appearance:none;-moz-appearance:none;appearance:none
+}
+.quiet{color:#716c80
+}
+.quieter{color:#8b8799
+}
+.quietest{color:#9894a5
+}
+.whisper{color:#7b76ce
+}
+.white{color:#fff
+}
+.text-centered{text-align:center
+}
+.no-margin{margin:0
+}
+.gradient-brand,.gradient-text-brand{background:linear-gradient(45deg,#ff4f94,#f9a538);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="$stop1",endColorstr="$stop2",GradientType=1)
+}
+.gradient-text-brand{background-position:50% 50%;-webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+.gradient-brand-secondary,.gradient-text-brand-secondary{background:linear-gradient(90deg,#ff4f94,#d742ff)
+}
+.gradient-text-brand-secondary{background-position:50% 50%;-webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+.gradient-brand-tertiary{background:linear-gradient(45deg,#4b77f3,#4cbf2c)
+}
+.gradient-brand-dark,.gradient-brand-tertiary{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="$stop1",endColorstr="$stop2",GradientType=1)
+}
+.gradient-brand-dark{background:linear-gradient(45deg,#141233,#141233)
+}
+.gradient-blue{background:linear-gradient(45deg,#4b77f3,#d742ff);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="$stop1",endColorstr="$stop2",GradientType=1)
+}
+.content{box-sizing:border-box;margin-top:72px;position:relative;overflow:visible;padding:0
+}
+@media screen and (max-width:650px){
+.content{margin-top:48px
+}
+}
+@media screen and (max-width:370px){
+.content{margin-top:96px
+}
+}
+.split-content{display:flex;flex-direction:row;flex-wrap:nowrap;width:672px;margin:0 auto
+}
+section{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;padding:144px 72px
+}
+@media screen and (max-width:1024px){
+section{padding:96px 48px
+}
+}
+@media screen and (max-width:850px){
+section{padding:96px 48px
+}
+}
+@media screen and (max-width:499px){
+section{padding:48px
+}
+}
+section.flex-center{display:flex;flex-direction:column;align-items:center;justify-content:center
+}
+article{display:block;padding:72px;max-width:744px
+}
+@media screen and (max-width:1120px){
+article{padding:72px 48px
+}
+}
+@media screen and (max-width:850px){
+article{padding:48px
+}
+}
+@media screen and (max-width:499px){
+article{padding:24px 0
+}
+}
+.centered article{margin:0 auto
+}
+article *{max-width:100%
+}
+section.centered{min-height:100vh;align-items:center;justify-content:flex-start;align-content:center;position:relative;max-width:600px;padding-top:0;padding-bottom:0
+}
+@media screen and (max-width:999px){
+section.centered{min-height:inherit;padding-top:48px;padding-bottom:48px
+}
+}
+section.text{display:block;padding:72px
+}
+section.grey{background-color:#f5f7fa
+}
+.card-title{padding:24px 48px 0;border-bottom:1px solid rgba(0,0,0,.1)
+}
+@media screen and (max-width:560px){
+.card-title{padding:24px 24px 0
+}
+}
+.card-content{padding:24px 48px
+}
+@media screen and (max-width:560px){
+.card-content{padding:24px
+}
+}
+.icon-size{font-size:24px
+}
+.button{box-sizing:border-box;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;height:36px;position:relative;display:inline-flex;justify-content:center;align-items:center;flex-direction:row;flex-wrap:none;flex:0 0 content;padding:0 18px;margin-bottom:24px;background-color:#d742ff;color:#fff;font-size:16px;line-height:1.5em;font-family:Circular-Pro-Bold,serif;font-weight:400;text-align:center;text-decoration:none;text-transform:none;transition:all .3s cubic-bezier(.33,.465,.18,1);cursor:pointer
+}
+.button.big-cta{margin:24px 0;height:60px;padding:0 36px
+}
+.button.trans{background-color:rgba(0,0,0,.15)
+}
+.button.blue{background-color:#4b77f3
+}
+.button.green{background-color:#4cbf2c
+}
+
+@-webkit-keyframes Gradient-data-v-78a52466{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-78a52466{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+header[data-v-78a52466]{box-sizing:border-box;box-shadow:0 3px 9px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.12);position:fixed;z-index:1000;left:0;width:100%;top:0;padding:0 24px;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;align-content:center;background-color:#141233;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:460px){
+header[data-v-78a52466]{flex-direction:column;padding-top:24px
+}
+}
+header .logo[data-v-78a52466]{width:85px;height:25px;margin:0 0 0 24px;background-image:url(/_nuxt/img/51574cc.svg);background-position:50%;background-repeat:no-repeat;background-size:85px 25px;text-decoration:none;text-indent:-9999em;color:#716c80;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:815px){
+header .logo[data-v-78a52466]{margin:0;width:68px;height:20px;background-size:68px 20px
+}
+}
+header nav a[data-v-78a52466]{padding:24px;display:inline-block;text-decoration:none;color:#fff;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:815px){
+header nav a[data-v-78a52466]{padding:12px;font-size:14px
+}
+}
+@media screen and (max-width:575px){
+header nav a[data-v-78a52466]{padding:12px 6px;font-size:12px
+}
+}
+@media screen and (max-width:460px){
+header nav a[data-v-78a52466]{padding:6px 3px
+}
+}
+header nav a[data-v-78a52466]:hover{color:#f9a538
+}
+
+@-webkit-keyframes Gradient-data-v-031dc62a{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-031dc62a{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+section.hero[data-v-031dc62a]{min-height:100vh;margin-top:-72px;align-items:center;justify-content:flex-start;align-content:center;position:relative;padding:0
+}
+@media screen and (max-width:850px){
+section.hero[data-v-031dc62a]{margin-top:0;min-height:auto;padding-bottom:48px
+}
+}
+div.hero-content[data-v-031dc62a]{padding:96px 72px;width:720px
+}
+@media screen and (max-width:1024px){
+div.hero-content[data-v-031dc62a]{padding:0 48px;width:100%
+}
+}
+@media screen and (max-width:851px){
+div.hero-content[data-v-031dc62a]{box-sizing:border-box;padding:72px 48px;width:100%;text-align:center
+}
+}
+@media screen and (max-width:499px){
+div.hero-content[data-v-031dc62a]{box-sizing:border-box;padding:24px 16px 48px;width:100%;text-align:center
+}
+}
+@media screen and (max-width:1680px){
+div.partition.left .phone-outer-container[data-v-031dc62a]{-webkit-transform:scale(.75) translateY(0);transform:scale(.75) translateY(0)
+}
+}
+div.hero-content .centering-phone-container[data-v-031dc62a]{box-sizing:border-box;display:flex;justify-content:center;width:100%;max-height:540px
+}
+@media screen and (max-width:499px){
+div.hero-content .centering-phone-container[data-v-031dc62a]{max-height:575px
+}
+}
+@media screen and (max-width:460px){
+div.hero-content .centering-phone-container[data-v-031dc62a]{max-height:500px
+}
+}
+@media screen and (min-width:852px){
+div.hero-content .centering-phone-container[data-v-031dc62a]{display:none
+}
+}
+@media screen and (max-height:950px){
+.centering-phone-container .phone-outer-container[data-v-031dc62a]{-webkit-transform:scale(.65);transform:scale(.65)
+}
+}
+@media screen and (max-width:1150px){
+.centering-phone-container .phone-outer-container[data-v-031dc62a]{-webkit-transform:scale(.65);transform:scale(.65)
+}
+}
+@media screen and (max-width:851px){
+.centering-phone-container .phone-outer-container[data-v-031dc62a]{-webkit-transform:scale(.65);transform:scale(.65);-webkit-transform-origin:top center;transform-origin:top center
+}
+}
+@media screen and (max-width:460px){
+.centering-phone-container .phone-outer-container[data-v-031dc62a]{-webkit-transform:scale(.55);transform:scale(.55);-webkit-transform-origin:top center;transform-origin:top center
+}
+}
+section.hero .sneaky-sneaky-links[data-v-031dc62a]{position:absolute;bottom:0;left:0;right:0;width:100%
+}
+@media screen and (max-width:825px){
+.content.has-banner[data-v-031dc62a]{padding-top:24px
+}
+}
+@media screen and (max-width:650px){
+.content.has-banner[data-v-031dc62a]{padding-top:72px
+}
+}
+
+@-webkit-keyframes Gradient-data-v-6de7ff07{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-6de7ff07{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.partition[data-v-6de7ff07]{box-sizing:border-box;width:50%;padding:0;position:absolute;display:flex;flex-direction:column
+}
+.partition.single[data-v-6de7ff07]{box-sizing:border-box;width:100%;max-width:768px;position:relative;display:block;margin:0 auto
+}
+.partition.left[data-v-6de7ff07]{box-shadow:inset 0 15px 35px rgba(50,50,90,.1),inset 0 5px 15px rgba(0,0,0,.07);top:0;left:0;bottom:0;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:851px){
+.partition.left[data-v-6de7ff07]{width:0;opacity:0
+}
+}
+.partition.right[data-v-6de7ff07]{top:0;left:50%;position:relative;background-color:#fff;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:851px){
+.partition.right[data-v-6de7ff07]{width:100%;left:0
+}
+}
+@media screen and (max-width:851px){
+.partition.content[data-v-6de7ff07]{padding-top:0
+}
+}
+.partition.fixed[data-v-6de7ff07]{justify-content:center;align-items:center;-webkit-transform:translateZ(0);transform:translateZ(0)
+}
+.partition.employees[data-v-6de7ff07],.partition.fixed[data-v-6de7ff07]{top:72px;position:fixed;overflow:auto
+}
+@media screen and (max-width:851px){
+.partition.employees[data-v-6de7ff07]{position:relative;width:auto;height:auto;overflow:auto;padding:24px 0;top:auto;opacity:1
+}
+}
+.partition.gradient-brand[data-v-6de7ff07]{color:#fff
+}
+.partition.gradient-brand-animated[data-v-6de7ff07]{background:linear-gradient(135deg,#f9a538,#f9a538,#ff4f94,#d742ff,#4b77f3,#4cbf2c,#4cbf2c);background-size:600% 600%;-webkit-animation:Gradient-data-v-6de7ff07 40s ease infinite;animation:Gradient-data-v-6de7ff07 40s ease infinite;background-attachment:scroll;color:#fff
+}
+.partition.gradient-brand-secondary[data-v-6de7ff07]{background:linear-gradient(90deg,#ff4f94,#d742ff)
+}
+
+@-webkit-keyframes Gradient-data-v-643d75ca{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-643d75ca{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.phone-outer-container[data-v-643d75ca]{box-shadow:0 15px 35px hsla(0,0%,100%,.1),0 5px 15px hsla(0,0%,100%,.07);border-top-left-radius:55px;border-top-right-radius:55px;border-bottom-left-radius:55px;border-bottom-right-radius:55px;box-sizing:content-box;width:375px;min-width:375px;height:812px;min-height:812px;padding:12px;position:relative;border:4px solid #394551;background-color:#020206;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+.inner-container[data-v-643d75ca]{border-top-left-radius:44px;border-top-right-radius:44px;border-bottom-left-radius:44px;border-bottom-right-radius:44px;height:100%;width:100%;position:relative;overflow:hidden;display:flex;background-color:#fff;border:none;color:#141233
+}
+.phone-chrome-notch[data-v-643d75ca]{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:20px;border-bottom-right-radius:20px;position:absolute;top:12px;left:94px;height:30px;width:209px;z-index:10;background-color:#000
+}
+.phone-chrome-top[data-v-643d75ca]{border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;width:48px;height:6px;top:48px;margin-left:-24px;left:50%;border:1px solid #394551
+}
+.phone-chrome-off[data-v-643d75ca],.phone-chrome-top[data-v-643d75ca]{position:absolute;background-color:#394551
+}
+.phone-chrome-off[data-v-643d75ca]{border-top-left-radius:0;border-top-right-radius:3px;border-bottom-left-radius:0;border-bottom-right-radius:3px;height:48px;width:3px;right:-7px;top:160px
+}
+.phone-chrome-silent[data-v-643d75ca]{height:24px;top:90px
+}
+.phone-chrome-silent[data-v-643d75ca],.phone-chrome-volup[data-v-643d75ca]{border-top-left-radius:3px;border-top-right-radius:0;border-bottom-left-radius:3px;border-bottom-right-radius:0;width:3px;position:absolute;left:-7px;background-color:#394551
+}
+.phone-chrome-volup[data-v-643d75ca]{height:36px;top:160px
+}
+.phone-chrome-voldown[data-v-643d75ca]{border-top-left-radius:3px;border-top-right-radius:0;border-bottom-left-radius:3px;border-bottom-right-radius:0;height:36px;width:3px;position:absolute;left:-7px;top:210px;background-color:#394551
+}
+.phone-chrome-bottom[data-v-643d75ca]{border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-left-radius:24px;border-bottom-right-radius:24px;width:48px;height:48px;position:absolute;bottom:24px;margin-left:-24px;left:50%;border:#394551;background-color:#394551
+}
+
+@-webkit-keyframes Gradient-data-v-6648bebd{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-6648bebd{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.screen-container[data-v-6648bebd]{width:100%;background-color:#141233
+}
+
+@-webkit-keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.header-home{box-sizing:border-box;display:flex;position:relative;align-items:flex-end;width:100%;padding:36px 16px 12px;flex:0 0 auto;background-color:#141233
+}
+.header-home.dark{background-color:#141233;color:#f9fbfe
+}
+.header-home.dark .big-text .small-title{color:hsla(0,0%,100%,.7)
+}
+.header-home.dark .big-text .text{color:#f9fbfe
+}
+.header-home.light{background-color:#f9fbfe;color:#141233
+}
+.header-home .status-bar{box-sizing:border-box;width:100%;height:20px;position:absolute;top:0;left:0;padding:17px 24px;font-size:10px;line-height:10px;text-align:left;font-weight:600;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,sans-serif
+}
+.header-home .small-title{font-size:14px
+}
+.header-home .big-text{flex-grow:1;color:#141233
+}
+.header-home .logo{margin:0!important
+}
+
+@-webkit-keyframes Gradient-data-v-eac8c558{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-eac8c558{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.logo[data-v-eac8c558]{width:85px;height:25px;margin:18px 24px 24px;background-image:url(/_nuxt/img/51574cc.svg);background-position:50%;background-repeat:no-repeat;background-size:85px 25px;text-decoration:none;text-indent:9999em;color:#716c80
+}
+.logo.white[data-v-eac8c558]{background-image:url(/_nuxt/img/18910e0.svg)
+}
+
+@-webkit-keyframes Gradient-data-v-6c83d983{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-6c83d983{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.big-text[data-v-6c83d983]{position:relative;text-align:right
+}
+.big-text h2[data-v-6c83d983]{margin:0;font-size:28px;line-height:28px
+}
+
+@-webkit-keyframes Gradient-data-v-28c1eb01{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-28c1eb01{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.parent[data-v-28c1eb01]{flex-grow:1;overflow:hidden;background-color:#141233
+}
+.phone-content[data-v-28c1eb01]{overflow-x:hidden;overflow-y:auto;padding-top:12px
+}
+.parent.has-sub-nav .phone-content[data-v-28c1eb01]{padding-top:42px
+}
+.parent.grid .phone-content[data-v-28c1eb01]{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between
+}
+.parent.glidera-content[data-v-28c1eb01]{background:linear-gradient(90deg,#4f6e89,#394551)
+}
+.hodl[data-v-28c1eb01]{margin:24px 0;color:#8b8799;text-align:center
+}
+
+@-webkit-keyframes Gradient-data-v-04d4344b{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-04d4344b{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.card-currency[data-v-04d4344b]{border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;margin:12px 16px;padding:24px 12px;position:relative;display:block;overflow:hidden;color:#fff
+}
+.card-currency .token-icon[data-v-04d4344b]{border-top-left-radius:24px;border-top-right-radius:24px;border-bottom-left-radius:24px;border-bottom-right-radius:24px;width:39.36px;height:39.36px;margin-right:12px;float:left;background-color:hsla(0,0%,100%,.25)
+}
+.card-currency .currency-row[data-v-04d4344b]{position:relative;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between
+}
+.card-currency .currency-row h6[data-v-04d4344b]{margin:0;text-align:left;font-family:Circular-Pro-Bold,serif
+}
+.card-currency .currency-row h6+h6[data-v-04d4344b]{text-align:right
+}
+.card-currency .currency-row span.small[data-v-04d4344b]{font-family:Circular-Pro-Bold,serif;font-size:14px;line-height:14px;opacity:.75
+}
+.card-currency .currency-name[data-v-04d4344b]{text-transform:capitalize
+}
+.card-currency .currency-slug[data-v-04d4344b]{margin-left:5px;font-size:12px;color:rgba(249,251,254,.5);font-weight:300
+}
+.card-currency.BRD[data-v-04d4344b]{background:linear-gradient(45deg,#ff4f94,#f9a538);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="$stop1",endColorstr="$stop2",GradientType=1)
+}
+.card-currency.BTC[data-v-04d4344b]{background-color:#f29500
+}
+.card-currency.BCH[data-v-04d4344b]{background-color:#478559
+}
+.card-currency.debit[data-v-04d4344b]{background-color:#f29500
+}
+.card-currency.ETH[data-v-04d4344b]{background-color:#5e6fa5
+}
+.card-currency.OMG[data-v-04d4344b]{background-color:#3a8cdd
+}
+.card-currency.XJP[data-v-04d4344b]{background:linear-gradient(90deg,#d3430d,#f15a22)
+}
+.card-currency.DOGE[data-v-04d4344b]{background-image:url(/_nuxt/img/2be0c81.jpg)!important;background-position:100%;background-size:cover
+}
+
+@-webkit-keyframes Gradient-data-v-5a366255{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-5a366255{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.card-floating[data-v-5a366255]{border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;margin:12px 16px;padding:24px 16px;overflow:visible;display:flex;flex-flow:row;flex-wrap:nowrap;align-items:center;justify-content:center;position:relative;text-align:center;color:hsla(0,0%,100%,.25)
+}
+.card-floating h6[data-v-5a366255]{margin:0
+}
+
+@-webkit-keyframes Gradient-data-v-01648848{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-01648848{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.tab-nav[data-v-01648848]{position:absolute;bottom:0;left:0;right:0;background-color:rgba(0,0,0,.15);color:#4995ff
+}
+.tab-nav ul[data-v-01648848]{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-around;margin:0;padding:0;list-style:none
+}
+.tab-nav ul li[data-v-01648848]{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 24px;text-align:center;font-size:12px
+}
+.tab-nav-icon[data-v-01648848]{height:24px;width:24px;background-position:50%;background-size:contain;background-repeat:no-repeat
+}
+.tab-nav-icon.buy[data-v-01648848]{background-image:url(/_nuxt/img/3110e51.svg)
+}
+.tab-nav-icon.trade[data-v-01648848]{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyOCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjggMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMjlBQkUyO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI3LjMsNS45YzAuNC0wLjQsMC40LTEsMC0xLjRsLTMuOC0zLjhjLTAuNi0wLjYtMS43LTAuMi0xLjcsMC43djEuMmMwLDAuNi0wLjQsMS0xLDFIMTJjLTAuNiwwLTEsMC40LTEsMXYxLjIKCWMwLDAuNiwwLjQsMSwxLDFoOC44YzAuNiwwLDEsMC40LDEsMVY5YzAsMC45LDEuMSwxLjMsMS43LDAuN0wyNy4zLDUuOXogTTYuMiwxMC42YzAtMC45LTEuMS0xLjMtMS43LTAuN2wtMy44LDMuOAoJYy0wLjQsMC40LTAuNCwxLDAsMS40bDMuOCwzLjhjMC42LDAuNiwxLjcsMC4yLDEuNy0wLjdWMTdjMC0wLjYsMC40LTEsMS0xSDE2YzAuNiwwLDEtMC40LDEtMXYtMS4yYzAtMC42LTAuNC0xLTEtMUg3LjIKCWMtMC42LDAtMS0wLjQtMS0xVjEwLjZ6Ii8+Cjwvc3ZnPgo=)
+}
+.tab-nav-icon.menu[data-v-01648848]{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyOCA4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOCA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzI5QUJFMjt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yNCwwYy0yLjIsMC00LDEuOC00LDRzMS44LDQsNCw0czQtMS44LDQtNFMyNi4yLDAsMjQsMHogTTI0LDZjLTEuMSwwLTItMC45LTItMnMwLjktMiwyLTJzMiwwLjksMiwyCglTMjUuMSw2LDI0LDZ6Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00LDBDMS44LDAsMCwxLjgsMCw0czEuOCw0LDQsNHM0LTEuOCw0LTRTNi4yLDAsNCwweiBNNCw2QzIuOSw2LDIsNS4xLDIsNHMwLjktMiwyLTJzMiwwLjksMiwyUzUuMSw2LDQsNnoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE0LDBjLTIuMiwwLTQsMS44LTQsNHMxLjgsNCw0LDRzNC0xLjgsNC00UzE2LjIsMCwxNCwweiBNMTQsNmMtMS4xLDAtMi0wLjktMi0yczAuOS0yLDItMnMyLDAuOSwyLDIKCVMxNS4xLDYsMTQsNnoiLz4KPC9zdmc+Cg==)
+}
+
+@-webkit-keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.hero-links{margin:48px 0 0;width:100%
+}
+@media screen and (max-width:851px){
+.hero-links{display:inline-block;margin:48px auto 0;text-align:center
+}
+}
+.hero-link{display:inline-block;height:48px;width:168px;margin:6px 0;background-size:contain;background-repeat:no-repeat;background-position:50%;text-indent:-9999em;color:hsla(0,0%,100%,0)
+}
+@media screen and (max-width:350px){
+.hero-link{display:block;margin:12px auto
+}
+}
+@media screen and (max-width:851px){
+.hero-link{display:inline-block;margin:12px auto;text-align:center
+}
+}
+.download-ios{background-image:url(/_nuxt/img/9c2a4b3.svg)
+}
+@media screen and (max-width:499px){
+.download-ios{margin-top:0
+}
+}
+.download-google{background-image:url(/_nuxt/img/ec47387.svg);height:49px
+}
+@media screen and (max-width:342px){
+.shame-link-spacer{display:none
+}
+}
+
+@-webkit-keyframes Gradient-data-v-1c7fde1e{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-1c7fde1e{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.sneaky-sneaky-links ul[data-v-1c7fde1e]{margin:0;padding:24px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:space-around;list-style:none
+}
+@media screen and (max-width:400px){
+.sneaky-sneaky-links ul[data-v-1c7fde1e]{padding:24px 12px
+}
+}
+.sneaky-sneaky-links ul li a[data-v-1c7fde1e]{display:block;padding:12px;-webkit-transform:scale(.6);transform:scale(.6);text-decoration:none;font-size:42px;color:rgba(113,108,128,.4);transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+@media screen and (max-width:400px){
+.sneaky-sneaky-links ul li a[data-v-1c7fde1e]{padding:12px 6px
+}
+}
+.sneaky-sneaky-links ul li a[data-v-1c7fde1e]:hover{-webkit-transform:scale(1);transform:scale(1);color:#716c80
+}
+
+@-webkit-keyframes Gradient-data-v-e47f8906{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-e47f8906{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.blurb[data-v-e47f8906]{width:45%;margin:0
+}
+.blurb.centered[data-v-e47f8906]{width:100%;margin-top:96px;margin-bottom:96px;text-align:center
+}
+.blurb.profile[data-v-e47f8906]{margin:48px 0;text-align:center
+}
+.blurb.centered[data-v-e47f8906]:first-of-type{margin-top:0
+}
+.blurb.centered[data-v-e47f8906]:last-of-type{margin-bottom:0
+}
+.blurb.centered p[data-v-e47f8906]{margin:0 auto
+}
+.blurb-graphic[data-v-e47f8906]{max-width:480px;width:75%;margin:0 auto 24px
+}
+
+@-webkit-keyframes Gradient-data-v-302fcf0c{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-302fcf0c{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+footer[data-v-302fcf0c]{box-sizing:border-box;min-height:360px;padding:48px 72px;display:flex;flex-direction:column;background-color:#141233;color:#fff
+}
+@media screen and (max-width:480px){
+footer[data-v-302fcf0c]{padding:48px 24px
+}
+}
+footer .logo[data-v-302fcf0c]{margin:0 0 48px
+}
+@media screen and (max-width:1023px) and (min-width:852px){
+footer .logo[data-v-302fcf0c]{margin:0 auto 48px
+}
+}
+@media screen and (max-width:480px){
+footer .logo[data-v-302fcf0c]{margin:0 auto 48px
+}
+}
+footer .link-lists[data-v-302fcf0c]{display:flex;align-items:flex-start;justify-content:flex-start;margin-bottom:48px
+}
+@media screen and (max-width:1023px) and (min-width:852px){
+footer .link-lists[data-v-302fcf0c]{flex-flow:column;margin-bottom:0;padding:24px 24px 0
+}
+}
+@media screen and (max-width:480px){
+footer .link-lists[data-v-302fcf0c]{flex-flow:column;margin-bottom:0;padding:24px 24px 0
+}
+}
+footer ul[data-v-302fcf0c]{box-sizing:border-box;padding:0;min-width:50%;margin:0;list-style:none
+}
+@media screen and (max-width:1023px) and (min-width:852px){
+footer ul[data-v-302fcf0c]{min-width:100%;flex-flow:column;margin-bottom:48px
+}
+}
+@media screen and (max-width:480px){
+footer ul[data-v-302fcf0c]{min-width:100%;flex-flow:column;margin-bottom:48px
+}
+}
+footer a[data-v-302fcf0c]{color:#fff;text-decoration:none;transition:all .3s cubic-bezier(.33,.465,.18,1)
+}
+footer a[data-v-302fcf0c]:hover{color:#f9a538
+}
+.list-title[data-v-302fcf0c]{padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid hsla(0,0%,100%,.15);font-family:Circular-Pro-Bold,serif
+}
+footer>.open-source[data-v-302fcf0c]{box-sizing:border-box;width:100%;margin-top:6px;margin-bottom:48px
+}
+@media screen and (max-width:480px){
+footer>.open-source[data-v-302fcf0c]{padding:0 24px
+}
+}
+footer .small-print[data-v-302fcf0c]{margin-top:48px;text-align:center;color:hsla(0,0%,100%,.5)
+}
+@media screen and (max-width:480px){
+footer .small-print[data-v-302fcf0c]{margin-top:0
+}
+}
+
+@-webkit-keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.download-links{box-sizing:border-box;width:100%;margin-top:6px;margin-bottom:48px;display:flex;align-items:center;justify-content:center;font-size:0
+}
+@media screen and (max-width:1023px) and (min-width:852px){
+.download-links{text-align:center
+}
+}
+@media screen and (max-width:480px){
+.download-links{text-align:center
+}
+}
+.download-link{display:flex;height:48px;width:168px;margin:0 6px 0 0;background-size:contain;background-repeat:no-repeat;background-position:50%;text-indent:-9999em;color:hsla(0,0%,100%,0)
+}
+@media screen and (max-width:1023px) and (min-width:852px){
+.download-link{margin:3px
+}
+}
+@media screen and (max-width:480px){
+.download-link{margin:0 auto
+}
+}
+.download-ios{background-image:url(/_nuxt/img/9c2a4b3.svg)
+}
+@media screen and (max-width:499px){
+.download-ios{margin-top:0
+}
+}
+.download-google{background-image:url(/_nuxt/img/ec47387.svg);height:49px
+}
+@media screen and (max-width:342px){
+.shame-link-spacer{display:none
+}
+}
+
+@-webkit-keyframes Gradient-data-v-46c8bf68{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+@keyframes Gradient-data-v-46c8bf68{
+0%{background-position:0 50%
+}
+50%{background-position:100% 50%
+}
+to{background-position:0 50%
+}
+}
+.gdpr-banner[data-v-46c8bf68]{box-sizing:border-box;box-shadow:0 3px 9px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.12);opacity:0;transition:opacity .3s linear;pointer-events:none;width:100%;position:fixed;bottom:0;left:0;padding:0 12px;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;align-content:center;z-index:10000;background-color:#4b77f3;color:#fff
+}
+.gdpr-banner.show[data-v-46c8bf68]{opacity:1;pointer-events:all
+}
+@media screen and (max-width:660px){
+.gdpr-banner[data-v-46c8bf68]{flex-direction:column;padding:12px
+}
+}
+.gdpr-banner p[data-v-46c8bf68]{max-width:none
+}
+@media screen and (max-width:660px){
+.gdpr-banner p[data-v-46c8bf68]{text-align:center
+}
+}
+.gdpr-banner a[data-v-46c8bf68]{max-width:none;color:#fff
+}
+.flag-eu[data-v-46c8bf68]{display:block;height:60px;width:132px;min-width:132px;margin-right:12px;background-image:url(/_nuxt/img/2350964.svg);background-position:50%;background-repeat:no-repeat;background-size:contain;text-decoration:none;text-indent:-9999em;color:#716c80
+}
+.button-gdpr[data-v-46c8bf68]{border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;-webkit-appearance:none;padding:6px 12px;margin:0 0 0 12px;display:inline-block;background-color:hsla(0,0%,100%,.25);font-size:16px;text-transform:none;text-decoration:none;color:#fff;white-space:nowrap
+}
+@media screen and (max-width:660px){
+.button-gdpr[data-v-46c8bf68]{margin-top:12px
+}
+}
+  </style>
+ </head>
+ <body data-n-head="">
+  <div data-server-rendered="true" id="__nuxt">
+   <!-- -->
+   <div id="__layout">
+    <div>
+     <header class="menu" data-v-78a52466="">
+      <a class="logo nuxt-link-exact-active nuxt-link-active" data-v-78a52466="" href="/">
+       BRD
+      </a>
+      <nav data-v-78a52466="">
+       <a data-v-78a52466="" href="/rewards">
+        Rewards
+       </a>
+       <a data-v-78a52466="" href="/about">
+        About
+       </a>
+       <a data-v-78a52466="" href="/partners">
+        Partners
+       </a>
+       <a data-v-78a52466="" href="/blog">
+        Blog
+       </a>
+       <a data-v-78a52466="" href="/support">
+        Support
+       </a>
+       <a data-v-78a52466="" href="/careers">
+        Careers
+       </a>
+      </nav>
+     </header>
+     <div class="content has-banner" data-v-031dc62a="">
+      <div class="partition left fixed gradient-brand" data-v-031dc62a="" data-v-6de7ff07="">
+       <div class="phone-outer-container" data-v-031dc62a="" data-v-643d75ca="">
+        <div class="phone-chrome-notch" data-v-643d75ca="">
+        </div>
+        <div class="phone-chrome-silent" data-v-643d75ca="">
+        </div>
+        <div class="phone-chrome-volup" data-v-643d75ca="">
+        </div>
+        <div class="phone-chrome-voldown" data-v-643d75ca="">
+        </div>
+        <div class="phone-chrome-off" data-v-643d75ca="">
+        </div>
+        <div class="inner-container" data-v-643d75ca="">
+         <div class="screen-container" data-v-031dc62a="" data-v-6648bebd="">
+          <div class="header-home dark" data-v-6648bebd="">
+           <div class="status-bar">
+            8:00 pm
+           </div>
+           <div class="logo" data-v-eac8c558="">
+           </div>
+           <div class="big-text" data-v-6648bebd="" data-v-6c83d983="" style="align-items:baseline;">
+            <span class="small-title" data-v-6648bebd="" data-v-6c83d983="">
+             Total Assets
+            </span>
+            <h2 class="text" data-v-6648bebd="" data-v-6c83d983="">
+             $52,760.56
+            </h2>
+           </div>
+           <div class="current-value">
+           </div>
+          </div>
+          <div class="parent" data-v-28c1eb01="" data-v-6648bebd="">
+           <div class="phone-content" data-v-28c1eb01="">
+            <div class="card-currency BTC" data-v-04d4344b="" data-v-6648bebd="" style="background:#f29500;">
+             <div class="token-icon" data-v-04d4344b="">
+              <img alt="sdv" data-v-04d4344b="" src="/_nuxt/img/7091e8e.svg"/>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <h6 data-v-04d4344b="">
+               <span class="currency-name" data-v-04d4344b="">
+                Bitcoin
+               </span>
+              </h6>
+              <h6 data-v-04d4344b="">
+               $46,787.35
+              </h6>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <span class="small quiet-white" data-v-04d4344b="">
+               $11,060.84 per BTC
+              </span>
+              <span class="small quiet-white" data-v-04d4344b="">
+               4.23 BTC
+              </span>
+             </div>
+            </div>
+            <div class="card-currency ETH" data-v-04d4344b="" data-v-6648bebd="" style="background:#7882b3;">
+             <div class="token-icon" data-v-04d4344b="">
+              <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO2ZpbGwtb3BhY2l0eTowLjYwMjt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qye2ZpbGw6I0ZGRkZGRjtmaWxsLW9wYWNpdHk6MC4yO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYuNSw0djguOWw3LjUsMy4zTDE2LjUsNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xNi41LDRMOSwxNi4ybDcuNS0zLjRMMTYuNSw0eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE2LjUsMjJ2NkwyNCwxNy42TDE2LjUsMjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTYuNSwyOHYtNkw5LDE3LjZMMTYuNSwyOHoiLz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNi41LDIwLjZsNy41LTQuNGwtNy41LTMuM1YyMC42eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTksMTYuMmw3LjUsNC40di03LjdMOSwxNi4yeiIvPgo8L2c+Cjwvc3ZnPgo="/>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <h6 data-v-04d4344b="">
+               <span class="currency-name" data-v-04d4344b="">
+                Ethereum
+               </span>
+              </h6>
+              <h6 data-v-04d4344b="">
+               $2,631.98
+              </h6>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <span class="small quiet-white" data-v-04d4344b="">
+               $323.26 per ETH
+              </span>
+              <span class="small quiet-white" data-v-04d4344b="">
+               8.142 ETH
+              </span>
+             </div>
+            </div>
+            <div class="card-currency BRD" data-v-04d4344b="" data-v-6648bebd="" style="background:linear-gradient(45deg, #f04e98, #ff9e1a);">
+             <div class="token-icon" data-v-04d4344b="">
+              <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjQuMywxMS44YzAtMi4yLTEuNS00LjItNS41LTQuMkg4LjFDNy42LDcuNyw3LjIsOCw3LjIsOC41djE1YzAsMC41LDAuNCwwLjgsMC44LDAuOGgxMC45CgkJCWM0LjIsMCw1LjgtMi4yLDUuOC00LjVzLTIuMi00LTQuNS00QzIyLjYsMTUuOCwyNC4zLDE0LDI0LjMsMTEuOHogTTE0LjIsMTcuN2g1YzAuOCwwLDEuNSwwLjcsMS41LDEuNWMwLDAuOC0wLjcsMS41LTEuNSwxLjVoLTgKCQkJdi05LjRoNy41YzAuOCwwLDEuNSwwLjUsMS41LDEuM1MxOS42LDE0LDE4LjgsMTRoLTQuNWMtMC41LDAtMC44LDAuNC0wLjgsMC44djJDMTMuNCwxNy4zLDEzLjgsMTcuNywxNC4yLDE3Ljd6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="/>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <h6 data-v-04d4344b="">
+               <span class="currency-name" data-v-04d4344b="">
+                BRD
+               </span>
+              </h6>
+              <h6 data-v-04d4344b="">
+               $680.00
+              </h6>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <span class="small quiet-white" data-v-04d4344b="">
+               $0.14 per BRD
+              </span>
+              <span class="small quiet-white" data-v-04d4344b="">
+               5000 BRD
+              </span>
+             </div>
+            </div>
+            <div class="card-currency DAI" data-v-04d4344b="" data-v-6648bebd="" style="background:#f7b14b;">
+             <div class="token-icon" data-v-04d4344b="">
+              <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA3MCA3MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzAgNzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1vcGFjaXR5OjA7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8cmVjdCB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTM2LDEzLjlsLTEtMWwwLDBsMCwwTDEyLjksMzVsMCwwbDIyLDIyLjF2MGwwLDBsMCwwTDU3LDM1bDAsMEwzNiwxMy45eiBNMzkuOCwzMy42TDM1LDI4LjhsLTQuMyw0LjhIMjAuNgoJTDM1LDE3LjVsMTQuOSwxNi4xSDM5Ljh6Ii8+Cjwvc3ZnPgo="/>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <h6 data-v-04d4344b="">
+               <span class="currency-name" data-v-04d4344b="">
+                DAI
+               </span>
+              </h6>
+              <h6 data-v-04d4344b="">
+               $232.20
+              </h6>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <span class="small quiet-white" data-v-04d4344b="">
+               $1.03 per DAI
+              </span>
+              <span class="small quiet-white" data-v-04d4344b="">
+               225 DAI
+              </span>
+             </div>
+            </div>
+            <div class="card-currency BCH" data-v-04d4344b="" data-v-6648bebd="" style="background:#4f966d;">
+             <div class="token-icon" data-v-04d4344b="">
+              <img alt="sdv" data-v-04d4344b="" src="/_nuxt/img/bda6de0.svg"/>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <h6 data-v-04d4344b="">
+               <span class="currency-name" data-v-04d4344b="">
+                Bitcoin Cash
+               </span>
+              </h6>
+              <h6 data-v-04d4344b="">
+               $2,429.03
+              </h6>
+             </div>
+             <div class="currency-row" data-v-04d4344b="">
+              <span class="small quiet-white" data-v-04d4344b="">
+               $289.86 per BCH
+              </span>
+              <span class="small quiet-white" data-v-04d4344b="">
+               8.38 BCH
+              </span>
+             </div>
+            </div>
+            <div class="card-floating" data-v-5a366255="" data-v-6648bebd="">
+             <h6 data-v-5a366255="" data-v-6648bebd="">
+              <i class="mdi mdi-plus-circle" data-v-5a366255="" data-v-6648bebd="">
+              </i>
+              Add Wallets
+             </h6>
+            </div>
+           </div>
+          </div>
+          <div class="tab-nav" data-v-01648848="" data-v-6648bebd="">
+           <ul data-v-01648848="" data-v-6648bebd="">
+            <li data-v-01648848="" data-v-6648bebd="">
+             <div class="tab-nav-icon buy" data-v-01648848="" data-v-6648bebd="">
+             </div>
+             <span data-v-01648848="" data-v-6648bebd="">
+              Buy
+             </span>
+            </li>
+            <li data-v-01648848="" data-v-6648bebd="">
+             <div class="tab-nav-icon trade" data-v-01648848="" data-v-6648bebd="">
+             </div>
+             <span data-v-01648848="" data-v-6648bebd="">
+              Trade
+             </span>
+            </li>
+            <li data-v-01648848="" data-v-6648bebd="">
+             <div class="tab-nav-icon menu" data-v-01648848="" data-v-6648bebd="">
+             </div>
+             <span data-v-01648848="" data-v-6648bebd="">
+              Menu
+             </span>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="partition right" data-v-031dc62a="" data-v-6de7ff07="">
+       <section class="hero" data-v-031dc62a="" data-v-6de7ff07="">
+        <div class="hero-content" data-v-031dc62a="" data-v-6de7ff07="">
+         <h1 class="gradient-text-brand" data-v-031dc62a="" data-v-6de7ff07="">
+          Move your money forward.
+         </h1>
+         <h3 data-v-031dc62a="" data-v-6de7ff07="">
+          BRD is the simple and secure onramp to bitcoin, ethereum, and other digital currencies.
+         </h3>
+         <div class="centering-phone-container" data-v-031dc62a="" data-v-6de7ff07="">
+          <div class="phone-outer-container" data-v-031dc62a="" data-v-643d75ca="">
+           <div class="phone-chrome-notch" data-v-643d75ca="">
+           </div>
+           <div class="phone-chrome-silent" data-v-643d75ca="">
+           </div>
+           <div class="phone-chrome-volup" data-v-643d75ca="">
+           </div>
+           <div class="phone-chrome-voldown" data-v-643d75ca="">
+           </div>
+           <div class="phone-chrome-off" data-v-643d75ca="">
+           </div>
+           <div class="inner-container" data-v-643d75ca="">
+            <div class="screen-container" data-v-031dc62a="" data-v-6648bebd="">
+             <div class="header-home dark" data-v-6648bebd="">
+              <div class="status-bar">
+               8:00 pm
+              </div>
+              <div class="logo" data-v-eac8c558="">
+              </div>
+              <div class="big-text" data-v-6648bebd="" data-v-6c83d983="" style="align-items:baseline;">
+               <span class="small-title" data-v-6648bebd="" data-v-6c83d983="">
+                Total Assets
+               </span>
+               <h2 class="text" data-v-6648bebd="" data-v-6c83d983="">
+                $52,760.56
+               </h2>
+              </div>
+              <div class="current-value">
+              </div>
+             </div>
+             <div class="parent" data-v-28c1eb01="" data-v-6648bebd="">
+              <div class="phone-content" data-v-28c1eb01="">
+               <div class="card-currency BTC" data-v-04d4344b="" data-v-6648bebd="" style="background:#f29500;">
+                <div class="token-icon" data-v-04d4344b="">
+                 <img alt="sdv" data-v-04d4344b="" src="/_nuxt/img/7091e8e.svg"/>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <h6 data-v-04d4344b="">
+                  <span class="currency-name" data-v-04d4344b="">
+                   Bitcoin
+                  </span>
+                 </h6>
+                 <h6 data-v-04d4344b="">
+                  $46,787.35
+                 </h6>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  $11,060.84 per BTC
+                 </span>
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  4.23 BTC
+                 </span>
+                </div>
+               </div>
+               <div class="card-currency ETH" data-v-04d4344b="" data-v-6648bebd="" style="background:#7882b3;">
+                <div class="token-icon" data-v-04d4344b="">
+                 <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO2ZpbGwtb3BhY2l0eTowLjYwMjt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qye2ZpbGw6I0ZGRkZGRjtmaWxsLW9wYWNpdHk6MC4yO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYuNSw0djguOWw3LjUsMy4zTDE2LjUsNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xNi41LDRMOSwxNi4ybDcuNS0zLjRMMTYuNSw0eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE2LjUsMjJ2NkwyNCwxNy42TDE2LjUsMjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTYuNSwyOHYtNkw5LDE3LjZMMTYuNSwyOHoiLz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNi41LDIwLjZsNy41LTQuNGwtNy41LTMuM1YyMC42eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTksMTYuMmw3LjUsNC40di03LjdMOSwxNi4yeiIvPgo8L2c+Cjwvc3ZnPgo="/>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <h6 data-v-04d4344b="">
+                  <span class="currency-name" data-v-04d4344b="">
+                   Ethereum
+                  </span>
+                 </h6>
+                 <h6 data-v-04d4344b="">
+                  $2,631.98
+                 </h6>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  $323.26 per ETH
+                 </span>
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  8.142 ETH
+                 </span>
+                </div>
+               </div>
+               <div class="card-currency BRD" data-v-04d4344b="" data-v-6648bebd="" style="background:linear-gradient(45deg, #f04e98, #ff9e1a);">
+                <div class="token-icon" data-v-04d4344b="">
+                 <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjQuMywxMS44YzAtMi4yLTEuNS00LjItNS41LTQuMkg4LjFDNy42LDcuNyw3LjIsOCw3LjIsOC41djE1YzAsMC41LDAuNCwwLjgsMC44LDAuOGgxMC45CgkJCWM0LjIsMCw1LjgtMi4yLDUuOC00LjVzLTIuMi00LTQuNS00QzIyLjYsMTUuOCwyNC4zLDE0LDI0LjMsMTEuOHogTTE0LjIsMTcuN2g1YzAuOCwwLDEuNSwwLjcsMS41LDEuNWMwLDAuOC0wLjcsMS41LTEuNSwxLjVoLTgKCQkJdi05LjRoNy41YzAuOCwwLDEuNSwwLjUsMS41LDEuM1MxOS42LDE0LDE4LjgsMTRoLTQuNWMtMC41LDAtMC44LDAuNC0wLjgsMC44djJDMTMuNCwxNy4zLDEzLjgsMTcuNywxNC4yLDE3Ljd6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="/>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <h6 data-v-04d4344b="">
+                  <span class="currency-name" data-v-04d4344b="">
+                   BRD
+                  </span>
+                 </h6>
+                 <h6 data-v-04d4344b="">
+                  $680.00
+                 </h6>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  $0.14 per BRD
+                 </span>
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  5000 BRD
+                 </span>
+                </div>
+               </div>
+               <div class="card-currency DAI" data-v-04d4344b="" data-v-6648bebd="" style="background:#f7b14b;">
+                <div class="token-icon" data-v-04d4344b="">
+                 <img alt="sdv" data-v-04d4344b="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA3MCA3MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzAgNzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1vcGFjaXR5OjA7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8cmVjdCB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iNzAiIGhlaWdodD0iNzAiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTM2LDEzLjlsLTEtMWwwLDBsMCwwTDEyLjksMzVsMCwwbDIyLDIyLjF2MGwwLDBsMCwwTDU3LDM1bDAsMEwzNiwxMy45eiBNMzkuOCwzMy42TDM1LDI4LjhsLTQuMyw0LjhIMjAuNgoJTDM1LDE3LjVsMTQuOSwxNi4xSDM5Ljh6Ii8+Cjwvc3ZnPgo="/>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <h6 data-v-04d4344b="">
+                  <span class="currency-name" data-v-04d4344b="">
+                   DAI
+                  </span>
+                 </h6>
+                 <h6 data-v-04d4344b="">
+                  $232.20
+                 </h6>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  $1.03 per DAI
+                 </span>
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  225 DAI
+                 </span>
+                </div>
+               </div>
+               <div class="card-currency BCH" data-v-04d4344b="" data-v-6648bebd="" style="background:#4f966d;">
+                <div class="token-icon" data-v-04d4344b="">
+                 <img alt="sdv" data-v-04d4344b="" src="/_nuxt/img/bda6de0.svg"/>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <h6 data-v-04d4344b="">
+                  <span class="currency-name" data-v-04d4344b="">
+                   Bitcoin Cash
+                  </span>
+                 </h6>
+                 <h6 data-v-04d4344b="">
+                  $2,429.03
+                 </h6>
+                </div>
+                <div class="currency-row" data-v-04d4344b="">
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  $289.86 per BCH
+                 </span>
+                 <span class="small quiet-white" data-v-04d4344b="">
+                  8.38 BCH
+                 </span>
+                </div>
+               </div>
+               <div class="card-floating" data-v-5a366255="" data-v-6648bebd="">
+                <h6 data-v-5a366255="" data-v-6648bebd="">
+                 <i class="mdi mdi-plus-circle" data-v-5a366255="" data-v-6648bebd="">
+                 </i>
+                 Add Wallets
+                </h6>
+               </div>
+              </div>
+             </div>
+             <div class="tab-nav" data-v-01648848="" data-v-6648bebd="">
+              <ul data-v-01648848="" data-v-6648bebd="">
+               <li data-v-01648848="" data-v-6648bebd="">
+                <div class="tab-nav-icon buy" data-v-01648848="" data-v-6648bebd="">
+                </div>
+                <span data-v-01648848="" data-v-6648bebd="">
+                 Buy
+                </span>
+               </li>
+               <li data-v-01648848="" data-v-6648bebd="">
+                <div class="tab-nav-icon trade" data-v-01648848="" data-v-6648bebd="">
+                </div>
+                <span data-v-01648848="" data-v-6648bebd="">
+                 Trade
+                </span>
+               </li>
+               <li data-v-01648848="" data-v-6648bebd="">
+                <div class="tab-nav-icon menu" data-v-01648848="" data-v-6648bebd="">
+                </div>
+                <span data-v-01648848="" data-v-6648bebd="">
+                 Menu
+                </span>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="hero-links" data-v-031dc62a="">
+          <a class="hero-link download-ios" href="https://itunes.apple.com/app/breadwallet/id885251393">
+           Apple App Store
+          </a>
+          <span class="shame-link-spacer">
+          </span>
+          <a class="hero-link download-google" href="https://play.google.com/store/apps/details?id=com.breadwallet">
+           Google Play Store
+          </a>
+         </div>
+        </div>
+        <div class="sneaky-sneaky-links" data-v-031dc62a="" data-v-1c7fde1e="">
+         <ul data-v-1c7fde1e="">
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://www.youtube.com/c/Breadbitcoinwallet">
+            <i class="mdi mdi-youtube-play" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://www.reddit.com/r/brdapp">
+            <i class="mdi mdi-reddit" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://www.facebook.com/brdhq/">
+            <i class="mdi mdi-facebook" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://www.instagram.com/brd_wallet/">
+            <i class="mdi mdi-instagram" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://twitter.com/brdhq">
+            <i class="mdi mdi-twitter" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+          <li data-v-1c7fde1e="">
+           <a data-v-1c7fde1e="" href="https://t.me/BreadChat">
+            <i class="mdi mdi-telegram" data-v-1c7fde1e="">
+            </i>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </section>
+       <section class="grey" data-v-031dc62a="" data-v-6de7ff07="">
+        <div class="blurb centered" data-v-031dc62a="" data-v-e47f8906="">
+         <img alt="" class="blurb-graphic" data-v-031dc62a="" data-v-e47f8906="" src="/_nuxt/img/39c5f68.png"/>
+         <h3 data-v-031dc62a="" data-v-e47f8906="">
+          Buy bitcoin.
+         </h3>
+         <p data-v-031dc62a="" data-v-e47f8906="">
+          We make it easy to purchase bitcoin using a variety of methods, including credit card, in-person purchases at a bitcoin ATM, or a convenience store. We also support converting your bitcoin into bitcoin cash, ethereum, and a large number of ERC20 tokens.
+         </p>
+        </div>
+       </section>
+       <section data-v-031dc62a="" data-v-6de7ff07="">
+        <div class="blurb centered" data-v-031dc62a="" data-v-e47f8906="">
+         <img alt="" class="blurb-graphic" data-v-031dc62a="" data-v-e47f8906="" src="/_nuxt/img/7791ceb.png"/>
+         <h3 data-v-031dc62a="" data-v-e47f8906="">
+          Simplicity by design.
+         </h3>
+         <p data-v-031dc62a="" data-v-e47f8906="">
+          Our mission has always been to make the world of cryptocurrencies accessible to everyone. We've designed our app from the ground up to be the easiest way to get started with bitcoin and other cryptocurrencies, without sacrificing the security and privacy experienced users expect.
+         </p>
+        </div>
+       </section>
+       <section class="grey" data-v-031dc62a="" data-v-6de7ff07="">
+        <div class="blurb centered" data-v-031dc62a="" data-v-e47f8906="">
+         <img alt="" class="blurb-graphic" data-v-031dc62a="" data-v-e47f8906="" src="/_nuxt/img/882e02b.png"/>
+         <h3 data-v-031dc62a="" data-v-e47f8906="">
+          No accounts, no logins.
+         </h3>
+         <p data-v-031dc62a="" data-v-e47f8906="">
+          Our app is a fully decentralized wallet that connects directly to the blockchain using a securely generated 12-word paper key. This means there are no accounts to setup, no passwords to remember, and no servers to hack. No matter what may happen, your money will always be secure and accessible.
+         </p>
+        </div>
+       </section>
+       <section data-v-031dc62a="" data-v-6de7ff07="">
+        <div class="blurb centered" data-v-031dc62a="" data-v-e47f8906="">
+         <img alt="" class="blurb-graphic" data-v-031dc62a="" data-v-e47f8906="" src="/_nuxt/img/c892d0f.png"/>
+         <h3 data-v-031dc62a="" data-v-e47f8906="">
+          Support is always just a click away.
+         </h3>
+         <p data-v-031dc62a="" data-v-e47f8906="">
+          Access our in-app knowledge base from nearly any screen to get your questions answered quickly. If you still have problems, send us an email! Most users hear back within a few hours. We’re even here nights and weekends!
+         </p>
+        </div>
+       </section>
+       <footer class="fat-footer" data-v-031dc62a="" data-v-302fcf0c="">
+        <div class="logo white" data-v-302fcf0c="" data-v-eac8c558="">
+        </div>
+        <div class="download-links" data-v-302fcf0c="">
+         <a class="download-link download-ios" href="https://itunes.apple.com/app/breadwallet/id885251393">
+          Apple App Store
+         </a>
+         <a class="download-link download-google" href="https://play.google.com/store/apps/details?id=com.breadwallet">
+          Google Play Store
+         </a>
+        </div>
+        <div class="link-lists" data-v-302fcf0c="">
+         <ul data-v-302fcf0c="">
+          <h6 class="list-title" data-v-302fcf0c="">
+           Sitemap
+          </h6>
+          <li data-v-302fcf0c="">
+           <a class="nuxt-link-exact-active nuxt-link-active" data-v-302fcf0c="" href="/">
+            Home
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/about">
+            About
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/support">
+            Support
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/careers">
+            Careers
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/partners">
+            Partners
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/privacy">
+            Privacy
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/terms">
+            Terms of Use
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="/token-privacy">
+            Token Privacy Notice
+           </a>
+          </li>
+         </ul>
+         <ul data-v-302fcf0c="">
+          <h6 class="list-title" data-v-302fcf0c="">
+           Social Media
+          </h6>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://www.youtube.com/c/Breadbitcoinwallet">
+            <i class="mdi mdi-youtube-play" data-v-302fcf0c="">
+            </i>
+            YouTube
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://www.reddit.com/r/brdapp">
+            <i class="mdi mdi-reddit" data-v-302fcf0c="">
+            </i>
+            Reddit
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://www.facebook.com/brdhq/">
+            <i class="mdi mdi-facebook" data-v-302fcf0c="">
+            </i>
+            Facebook
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://www.instagram.com/brd_wallet/">
+            <i class="mdi mdi-instagram" data-v-302fcf0c="">
+            </i>
+            Instagram
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://twitter.com/brdhq">
+            <i class="mdi mdi-twitter" data-v-302fcf0c="">
+            </i>
+            Twitter: App
+           </a>
+          </li>
+          <li data-v-302fcf0c="">
+           <a data-v-302fcf0c="" href="https://t.me/BreadApp">
+            <i class="mdi mdi-telegram" data-v-302fcf0c="">
+            </i>
+            Announcements
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="open-source" data-v-302fcf0c="">
+         <h6 class="list-title" data-v-302fcf0c="">
+          BRD is Open Source
+         </h6>
+         <p data-v-302fcf0c="">
+          We believe in trust through transparency. Our core wallet technology is, and will always be, open-source and free. We invite anyone to use our code according to the terms of the MIT open-source license.
+         </p>
+         <a class="button blue" data-v-302fcf0c="" href="https://github.com/breadwallet">
+          Check us out on
+          <i class="mdi mdi-github-circle" data-v-302fcf0c="">
+          </i>
+         </a>
+        </div>
+        <div class="small-print" data-v-302fcf0c="">
+         © 2019 Breadwinner AG. All rights reserved.
+        </div>
+       </footer>
+      </div>
+     </div>
+     <div class="gdpr-banner geo-eu" data-v-46c8bf68="">
+      <a class="flag-eu" data-v-46c8bf68="" href="/https://eugdpr.org">
+       EU Flag
+      </a>
+      <p data-v-46c8bf68="">
+       This site uses cookies for the purposes outlined in our
+       <a data-v-46c8bf68="" href="/privacy">
+        cookie policy
+       </a>
+       . Your consent is assumed by dismissing this banner.
+      </p>
+      <button class="button-gdpr" data-v-46c8bf68="">
+       Consent &amp; Dismiss
+      </button>
+      <!-- -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   window.__NUXT__=(function(a,b,c,d,e,f){return {layout:"default",data:[{currencies:{BTC:{name:"Bitcoin",price:11060.84,balance:4.23,slug:"BTC",graphType:"volatile",color:"#f29500"},ETH:{name:"Ethereum",price:323.26,balance:8.142,slug:"ETH",graphType:"upward",color:"#7882b3"},BCH:{name:"Bitcoin Cash",symbol:b,price:289.86,balance:8.38,slug:b,graphType:"downward",color:"#4f966d"},BRD:{name:c,price:.136,balance:5000,slug:c,graphType:d,color:"linear-gradient(45deg, #f04e98, #ff9e1a)"},DAI:{name:e,price:1.032,balance:225,slug:e,graphType:d,color:"#f7b14b"}}}],error:a,state:{country:"US",auth:{id:a,role:a,profile:a},i18n:{currentLocale:f,supportedLocales:[f],locales:{en:Object.assign(Object.create(null),{default:{"about.jobs.ceo-and-cofounder":"CEO and Co-Founder","about.jobs.president-and-cofounder":"President and Co-Founder","about.jobs.cto":"Chief Technology Officer","about.jobs.cpo":"Chief Product Officer","about.jobs.cmo":"Chief Marketing Officer","about.jobs.cro":"Chief Revenue Officer","about.jobs.cso":"Chief Strategy Officer","about.jobs.vp-of-product":"VP of Product","about.jobs.vp-of-eng":"VP of Engineering","about.jobs.vp-of-marketing":"VP of Marketing","about.jobs.vp-of-hr":"VP of Human Resources","about.jobs.ios":"iOS Development","about.jobs.android":"Android Development","about.jobs.core":"Blockchain\u002FCore","about.jobs.investor-relations":"Investor Relations","about.jobs.business-development":"Business Development","about.jobs.web":"Web Development","about.jobs.infra":"Infrastructure","about.jobs.it-manager":"IT Manager","about.jobs.it":"IT Support","about.jobs.design":"Design","about.jobs.social-media":"Social Media","about.jobs.support":"Support","about.jobs.office-manager":"Office Manager","about.jobs.community-manager":"Community Manager","about.jobs.senior-product-manager":"Sr. Product Manager","about.jobs.product-manager":"Product Manager","about.jobs.director-of-brand":"Director of Brand","about.jobs.director-of-engineering":"Director of Engineering","about.jobs.chief-of-staff":"Chief of Staff","about.jobs.quality-manager":"Quality Manager","about.jobs.quality-engineer":"Quality Engineer","about.jobs.null":"New!","in-app.simplex.complete-header":"Purchase Complete","in-app.simplex.complete-body":"Your order has been submitted. Please keep an eye on your email for updates about your order. Close this window to return to the breadwallet app.","in-app.partner.sign-in-success.header":"Success!","in-app.partner.sign-in-success.body":"You have been signed in to our partner. Please continue on your device.","in-app.partner.success.header":"Success!","in-app.partner.success.body":"Your account has successfully been connected with our partner {partner}. Close this window to return to the BRD app.","identity-input.onfido.welcome.title":"Verify Your Identity","identity-input.onfido.welcome.description":"Before we can register you for this ICO, we need to verify your identity. It will only take a couple of minutes.","identity-input.onfido.complete.message":"Verification Completed!","identity-input.onfido.complete.submessage":"You will be automatically advanced to the next step in a couple seconds...","label.time-interval.days":"Days","label.time-interval.hours":"Hours","label.time-interval.minutes":"Minutes","label.time-interval.seconds":"Seconds","general.error.timed-out":"Timed out","general.loader.label.loading":"Loading {noun}","general.loader.label.empty-state":"No items found","general.label.error":"Error","general.label.unknown-error":"Unknown Error","kyc.index.country-intro":"In order to participate in the Blockshipping.io token sale, your identity must be verified.  To get started, please select your country below.","kyc.index.country-unavailable":"Unfortunately participation in this ICO isn’t available in your country.","checkout.intro.welcome.ccc.title":"Welcome to the Blockshipping GSCP ICO","checkout.intro.welcome.description":"Before you get started, you’ll need to go through identity verification. We are legally required to ask these questions as a security measure to prevent money laundering. Please note that BRD does not store or use any of the information given during this process.","checkout.intro.welcome.button-text":"Get Started","checkout.intro.ico-explainer.ccc.title":"What is Blockshipping?","checkout.intro.ico-explainer.ccc.button-text":"Watch the Video","checkout.intro.ico-explainer.ccc.description":"The Danish company Blockshipping is creating the blockchain-based Global Shared Container Platform (GSCP), which is the first real-time registry of the world's approximately 27 million shipping containers as well as a joint transaction platform for all players in the global container shipping industry.","checkout.intro.ico-explainer.ccc.cards.one.description":"The GSCP platform will enable a savings potential for the global container industry of at least USD 5.7bn per year.","checkout.intro.ico-explainer.ccc.cards.two.description":"The GSCP platform is expected to reduce the global CO2 emission by at least 4.6 million tons yearly","checkout.intro.ico-explainer.ccc.cards.three.description":"This ICO is being conduced in collaboration with Denmark’s largest law firm - Kammeradvokaten and a group of renowned experts.","checkout.intro.brd.title":"Powered by BRD Secure Checkout","checkout.intro.brd.description":"Introducing BRD Secure Checkout from BRD. BRD is a leading crypto portfolio management service used by more than a million people with over $6 billion USD under protection. BRD Secure Checkout gives you all the tools you need to participate in exciting new blockchain projects. You’ll be guided through every step of the sale, and, once your purchase is complete, you can rest easy knowing your tokens are stored in the most secure wallet available. Register, purchase, and store your tokens, all with one trusted service. Start backing your favorite projects with confidence using BRD Secure Checkout.","kyc.personal.show-other-countries":"To keep things simple, we assume your country of birth, and your nationality are all the same as the country you wish to be checked in (above), if this is not the case,","kyc.personal.title":"Personal Information","kyc.personal.description":"We just need a little info about you","kyc.address.title":"Verify Address","kyc.address.description":"We need your address for identity verification","kyc.email.title":"Verify Email","kyc.email.description":"Enter your email and verify it with code, that we'll send","kyc.email.already-verified":"Your email is already verified with BRD.","kyc.phone.title":"Verify Phone","kyc.phone.description":"For added security we need to confirm your phone number via SMS","kyc.phone.already-verified":"Your phone is already verified with BRD.","kyc.buy.title":"Confirmation Required","kyc.buy.description":"For your security you must confirm this purchase in your BRD app. You should receive a push notification prompting you to confirm, if not open the app and you should see a notification on the home screen asking you to confirm.","checkout.link-wallet.description.qr":"To securely participate in the {name} ICO please link your BRD wallet by scanning the QR code below. You can find the QR code scanner under menu in the BRD app.","checkout.link-wallet.already-linked.header":"Already Linked","checkout.link-wallet.already-linked.description":"You are already linked with a wallet. If you are having problems with BRD Secure Checkout, you may wish to","checkout.link-wallet.already-linked.description.end":"Otherwise, you can proceed by clicking the button below.","checkout.link-wallet.already-linked.relink-text":"re-try linking","checkout.link-wallet.already-linked.continue-text":"Continue","checkout.link-wallet.already-linked.confirm.header":"Confirm Relink","checkout.link-wallet.already-linked.confirm.description":"Are you sure you want to link your wallet with a new device?","checkout.link-wallet.already-linked.confirm.yes":"Yes","checkout.link-wallet.already-linked.confirm.no":"No","checkout.link-wallet.this-device":"Have BRD installed on this device?","checkout.link-wallet.description.button":"To securely participate in the {name} ICO please link your BRD wallet by tapping the button below.","checkout.link-wallet.description.download":"Don't have the BRD App? Download it then come back to authenticate it.","checkout.link-wallet.description.other-device":"Have BRD installed on another device?","checkout.link-address.title":"Linking Device Address","checkout.link-address.description":"We have requested the ethereum address of your wallet.  You may need to open BRD to ensure that it can securely communicate with this page.  This page will disappear as soon as we receive confirmation of your account details.","checkout.link-address.label.address":"Linking with address: {0}","checkout.link-address.status.account-received":"Account Details Received","checkout.link-address.status.updating":"Updating status","checkout.link-wallet-error.description":"Looks like something went wrong.\u003Cbr\u003EPlease try again.","checkout.link-wallet-error.qr":"If you had tried scanning the QR code with another app, please scan it from the BRD app:","checkout.link-wallet-error.heading.download":"Don't have the BRD App?","checkout.link-wallet-error.description.download":"You can install it from the Apple App Store or Google Play","checkout.link-wallet-error.heading.disabled":"Disabled deep linking?","checkout.link-wallet-error.description.disabled":"Open this link in your default mobile browser and follow the prompt to open the BRD app","checkout.buy.text.minimum":"Minimum {0}{1}","checkout.buy.text.maximum":"Maximum {0}{1}","checkout.buy.text.your-balance":"Your balance: {0}{1}","checkout.countdown.description":"Sale begins in","checkout.status-card.title.whitelisted":"You are Registered!","checkout.status-card.description.whitelisted":"You’ll be able to participate in the {ticker} token sale!  Make sure you have enough Ethereum in BRD before the sale goes live.","checkout.status-card.title.error":"Couldn't verify your identity","checkout.status-card.description.error":"Please review your personal information and correct any mistakes.","checkout.status-card.button.error":"Review & Update","checkout.status-card.title.needs-kyc":"Awaiting KYC Information","checkout.status-card.button.needs-kyc":"Finish KYC","checkout.status-card.title.needs-documents":"Awaiting Documents","checkout.status-card.description.needs-documents":"Please upload your identity documentation to proceed","checkout.status-card.button.needs-documents":"Document Upload","checkout.status-card.title.needs-eth-address":"Link Ethereum Address","checkout.status-card.description.needs-eth-address":"In order to proceed, we need to link with your Ethereum address.","checkout.status-card.button.needs-eth-address":"Link Ethereum Address","checkout.status-card.title.pending":"Application Pending","checkout.status-card.description.pending":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","checkout.status-card.title.none":"No KYC Specified","checkout.status-card.description.none":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","checkout.status-card.button.none":"Start KYC","checkout.status-card.title.rejected":"Couldn't verify your identity","checkout.status-card.description.rejected":"Please check your email to continue.","checkout.status-card.description.unknown":"Unknown KYC status: \"{status}\".  Please contact {email}.","kyc.fields.label.country":"Country","kyc.fields.label.first-name":"First Name","kyc.fields.label.last-name":"Last Name","kyc.fields.label.middle-name":"Middle Name","kyc.fields.label.gender":"Gender","kyc.fields.label.dob":"Date of birth","kyc.fields.label.town-of-birth":"Town of Birth","kyc.fields.label.nationality":"Nationality","kyc.fields.label.cob":"Country of Birth","kyc.fields.label.flat-number":"Flat Number","kyc.fields.label.building-number":"Building Number","kyc.fields.label.building-name":"Building name","kyc.fields.label.street":"Street","kyc.fields.label.sub-street":"Sub-Street","kyc.fields.label.town":"Town","kyc.fields.label.state":"State","kyc.fields.label.postcode":"Postcode","kyc.fields.label.email":"Email","kyc.fields.label.phone":"Phone","kyc.fields.label.confirmation-code":"Confirmation Code","checkout.label.trade":"Trade","checkout.label.receive":"Receive","checkout.label.price":"Price","checkout.label.fiat":"per {0}","checkout.label.remaining":"{0} remaining","checkout.label.sold":"{0} sold","checkout.label.minimum":"Minimum","checkout.label.maximum":"Maximum","checkout.label.phone-number":"Phone Number","kyc.fields.placeholder.town-of-birth":"ex. Jackson, MS","kyc.fields.placeholder.flat-number":"ex. 201","kyc.fields.placeholder.building-number":"ex. 1101","kyc.fields.placeholder.building-name":"ex. McHenry","kyc.fields.placeholder.street":"ex. Sesame St","kyc.fields.placeholder.postcode":"ex. 10010","kyc.fields.placeholder.state":"ex. NY","kyc.fields.placeholder.town":"ex. Rochester","kyc.fields.placeholder.sub-street":"ex. East","kyc.fields.value.mr":"Mr","kyc.fields.value.ms":"Ms","kyc.fields.value.miss":"Miss","kyc.fields.value.mrs":"Mrs","kyc.fields.value.male":"Male","kyc.fields.value.female":"Female","kyc.button.sign-up":"Sign Up","kyc.button.continue":"Continue","kyc.button.click-here":"click here","kyc.button.remove":"Remove","kyc.button.click-to-continue":"Click here to continue","kyc.button.send-code":"Send Code","kyc.button.resend-code":"Resend Code","kyc.button.confirm":"Confirm","kyc.button.try-again":"Try Again","checkout.button.buy":"Buy","checkout.button.buy-ticker":"Buy {0}","checkout.button.authenticate":"Authenticate","checkout.button.openbrd":"Open BRD","checkout.button.reauthenticate":"Re-Authenticate","checkout.button.scan-qr":"Scan the QR code again","checkout.button.open-browser":"Open in default mobile browser","kyc.status.unknown":"Unknown Status","checkout.error.help":"If you are experiencing problems with this step, please contact {0}.","checkout.error.redirecting":"Unknown state - redirecting to new page?","checkout.error.linked-account-not-found":"could not find linked account, try refreshing the page","checkout.error.validation":"validation error","checkout.error.retry-link-wallet":"Retry Link","checkout.status.creating":"Creating Secure Web Wallet","checkout.status.loading-details":"Loading Details","checkout.status.loading-status":"Loading Status","checkout.status.synchronizing":"Synchronizing","generics.payment-method":"Payment Method","generics.delivery":"Delivery","generics.payment-fee":"Payment Fee","generics.transfer-amount":"Transfer Amount","generics.view-details":"View Details","generics.you-received":"You received {amount} {currency}!","generics.funds-added":"Funds have been added to your BRD wallet. Thank you for buying with us!","generics.status":"Status","generics.cancelled":"Cancelled","generics.go-back":"Go back","generics.reference-code":"Reference code","generics.swift-bic":"Swift \u002F BIC","generics.swift":"Swift","generics.recipient.iban":"Recipient IBAN","generics.recipient.name":"Recipient Name","generics.recipient.address":"Recipient Address","generics.bank.name":"Bank Name","generics.bank.address":"Bank Address","generics.order.details":"Order Details","generics.order.cancel":"Cancel Order","generics.order.cancel.confirm":"Are you sure you want to cancel your order?","generics.order.cancel.error":"Your order cannot be cancelled, please contact support.","generics.order.amount":"Order Amount","generics.order.pending":"Order Pending","generics.order.cancelled":"Order Cancelled","generics.payment-method.bank":"Bank Transfer","generics.error.invalid.params":"Invalid Params","generics.error.invalid.network":"Invalid network {network}","generics.error.schema.not-found":"Could not find schema for {schema}","exchange.limits.quote.increased":"Increased quote to minimum amount","exchange.limits.quote.decreased":"Decreased amount to limit.","sepa.instructions.title":"SEPA Instructions","sepa.instructions.transfer":"{total} {send} {recipient}","sepa.instructions.transfer.send-info":"{amount} {currency}","sepa.instructions.transfer.total-text":"Transfer the total amount of","sepa.instructions.transfer.recipient-text":"to the recipient below, then confirm the transfer.","sepa.instructions.reference-code":"Include this reference code in the memo section of your SEPA-transfer. We can't process your transfer without this code.","btc.transaction-fee":"BTC Transaction Fee","btc.estimate-text":"BTC amount is an estimate. Actual amount will be based on exchange rate at the moment of processing the order.","coinify.check-email":"Please check your email with instructions from our partners at coinify","coinify.support":"{label} {email}","coinify.support.text":"Having trouble with your order?","coinify.support.email-text":"Email our partners at Coinify","coinify.delivery.estimate":"It can take up to 3 bank days. Our partners at coinify will send you an email as soon as your order is processed","coinify.kyc.default":"Coinify KYC","coinify.kyc.retry":"Retry Coinify KYC","coinify.kyc.error":"There was a problem with your KYC.  Please contact support.","coinify.kyc.unknown":"Unknown state. contact support@brd.com","coinify.kyc.error.prerequisite":"Missing prerequisite","coinify.kyc.reviewing":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","coinify.kyc.documents.title":"Upload Documents","coinify.kyc.documents.required":"We need some additional information, tap below to continue.","coinify.kyc.normal.message":"To comply with regulations, you will have to provide some personal information.\nDepending on the laws of your country, you will be likely also asked to upload a picture of your ID.\nIt will take only a few minutes. The information you provide will be used to verify your identity and ensure your purchase is secure.\nThank you!","coinify.kyc.retry.message":"Your KYC process has failed. You may retry if you wish, or contact coinify support.\nCommon reasons for failing KYC are attempting it outside of the EU, and taking grainy, poorly-lit, or unfocused pictures of your ID.","coinify.kyc.trade.error.7-days":"You cannot make orders until about 7 days after your first order.","coinify.kyc.trade.error.awaiting-first-trade":"You cannot make orders until you complete your first order.","deeplink.description":"Please make sure you have BRD version 3.7 or later to continue. Download it, then click on Buy to continue your order.","map.error.generic":"Something went wrong when loading the Crypto ATM Map on your device.","map.error.webgl":"The Crypto ATM Map requires WebGL, which is not supported on your device."},"about.jobs.ceo-and-cofounder":"CEO and Co-Founder","about.jobs.president-and-cofounder":"President and Co-Founder","about.jobs.cto":"Chief Technology Officer","about.jobs.cpo":"Chief Product Officer","about.jobs.cmo":"Chief Marketing Officer","about.jobs.cro":"Chief Revenue Officer","about.jobs.cso":"Chief Strategy Officer","about.jobs.vp-of-product":"VP of Product","about.jobs.vp-of-eng":"VP of Engineering","about.jobs.vp-of-marketing":"VP of Marketing","about.jobs.vp-of-hr":"VP of Human Resources","about.jobs.ios":"iOS Development","about.jobs.android":"Android Development","about.jobs.core":"Blockchain\u002FCore","about.jobs.investor-relations":"Investor Relations","about.jobs.business-development":"Business Development","about.jobs.web":"Web Development","about.jobs.infra":"Infrastructure","about.jobs.it-manager":"IT Manager","about.jobs.it":"IT Support","about.jobs.design":"Design","about.jobs.social-media":"Social Media","about.jobs.support":"Support","about.jobs.office-manager":"Office Manager","about.jobs.community-manager":"Community Manager","about.jobs.senior-product-manager":"Sr. Product Manager","about.jobs.product-manager":"Product Manager","about.jobs.director-of-brand":"Director of Brand","about.jobs.director-of-engineering":"Director of Engineering","about.jobs.chief-of-staff":"Chief of Staff","about.jobs.quality-manager":"Quality Manager","about.jobs.quality-engineer":"Quality Engineer","about.jobs.null":"New!","in-app.simplex.complete-header":"Purchase Complete","in-app.simplex.complete-body":"Your order has been submitted. Please keep an eye on your email for updates about your order. Close this window to return to the breadwallet app.","in-app.partner.sign-in-success.header":"Success!","in-app.partner.sign-in-success.body":"You have been signed in to our partner. Please continue on your device.","in-app.partner.success.header":"Success!","in-app.partner.success.body":"Your account has successfully been connected with our partner {partner}. Close this window to return to the BRD app.","identity-input.onfido.welcome.title":"Verify Your Identity","identity-input.onfido.welcome.description":"Before we can register you for this ICO, we need to verify your identity. It will only take a couple of minutes.","identity-input.onfido.complete.message":"Verification Completed!","identity-input.onfido.complete.submessage":"You will be automatically advanced to the next step in a couple seconds...","label.time-interval.days":"Days","label.time-interval.hours":"Hours","label.time-interval.minutes":"Minutes","label.time-interval.seconds":"Seconds","general.error.timed-out":"Timed out","general.loader.label.loading":"Loading {noun}","general.loader.label.empty-state":"No items found","general.label.error":"Error","general.label.unknown-error":"Unknown Error","kyc.index.country-intro":"In order to participate in the Blockshipping.io token sale, your identity must be verified.  To get started, please select your country below.","kyc.index.country-unavailable":"Unfortunately participation in this ICO isn’t available in your country.","checkout.intro.welcome.ccc.title":"Welcome to the Blockshipping GSCP ICO","checkout.intro.welcome.description":"Before you get started, you’ll need to go through identity verification. We are legally required to ask these questions as a security measure to prevent money laundering. Please note that BRD does not store or use any of the information given during this process.","checkout.intro.welcome.button-text":"Get Started","checkout.intro.ico-explainer.ccc.title":"What is Blockshipping?","checkout.intro.ico-explainer.ccc.button-text":"Watch the Video","checkout.intro.ico-explainer.ccc.description":"The Danish company Blockshipping is creating the blockchain-based Global Shared Container Platform (GSCP), which is the first real-time registry of the world's approximately 27 million shipping containers as well as a joint transaction platform for all players in the global container shipping industry.","checkout.intro.ico-explainer.ccc.cards.one.description":"The GSCP platform will enable a savings potential for the global container industry of at least USD 5.7bn per year.","checkout.intro.ico-explainer.ccc.cards.two.description":"The GSCP platform is expected to reduce the global CO2 emission by at least 4.6 million tons yearly","checkout.intro.ico-explainer.ccc.cards.three.description":"This ICO is being conduced in collaboration with Denmark’s largest law firm - Kammeradvokaten and a group of renowned experts.","checkout.intro.brd.title":"Powered by BRD Secure Checkout","checkout.intro.brd.description":"Introducing BRD Secure Checkout from BRD. BRD is a leading crypto portfolio management service used by more than a million people with over $6 billion USD under protection. BRD Secure Checkout gives you all the tools you need to participate in exciting new blockchain projects. You’ll be guided through every step of the sale, and, once your purchase is complete, you can rest easy knowing your tokens are stored in the most secure wallet available. Register, purchase, and store your tokens, all with one trusted service. Start backing your favorite projects with confidence using BRD Secure Checkout.","kyc.personal.show-other-countries":"To keep things simple, we assume your country of birth, and your nationality are all the same as the country you wish to be checked in (above), if this is not the case,","kyc.personal.title":"Personal Information","kyc.personal.description":"We just need a little info about you","kyc.address.title":"Verify Address","kyc.address.description":"We need your address for identity verification","kyc.email.title":"Verify Email","kyc.email.description":"Enter your email and verify it with code, that we'll send","kyc.email.already-verified":"Your email is already verified with BRD.","kyc.phone.title":"Verify Phone","kyc.phone.description":"For added security we need to confirm your phone number via SMS","kyc.phone.already-verified":"Your phone is already verified with BRD.","kyc.buy.title":"Confirmation Required","kyc.buy.description":"For your security you must confirm this purchase in your BRD app. You should receive a push notification prompting you to confirm, if not open the app and you should see a notification on the home screen asking you to confirm.","checkout.link-wallet.description.qr":"To securely participate in the {name} ICO please link your BRD wallet by scanning the QR code below. You can find the QR code scanner under menu in the BRD app.","checkout.link-wallet.already-linked.header":"Already Linked","checkout.link-wallet.already-linked.description":"You are already linked with a wallet. If you are having problems with BRD Secure Checkout, you may wish to","checkout.link-wallet.already-linked.description.end":"Otherwise, you can proceed by clicking the button below.","checkout.link-wallet.already-linked.relink-text":"re-try linking","checkout.link-wallet.already-linked.continue-text":"Continue","checkout.link-wallet.already-linked.confirm.header":"Confirm Relink","checkout.link-wallet.already-linked.confirm.description":"Are you sure you want to link your wallet with a new device?","checkout.link-wallet.already-linked.confirm.yes":"Yes","checkout.link-wallet.already-linked.confirm.no":"No","checkout.link-wallet.this-device":"Have BRD installed on this device?","checkout.link-wallet.description.button":"To securely participate in the {name} ICO please link your BRD wallet by tapping the button below.","checkout.link-wallet.description.download":"Don't have the BRD App? Download it then come back to authenticate it.","checkout.link-wallet.description.other-device":"Have BRD installed on another device?","checkout.link-address.title":"Linking Device Address","checkout.link-address.description":"We have requested the ethereum address of your wallet.  You may need to open BRD to ensure that it can securely communicate with this page.  This page will disappear as soon as we receive confirmation of your account details.","checkout.link-address.label.address":"Linking with address: {0}","checkout.link-address.status.account-received":"Account Details Received","checkout.link-address.status.updating":"Updating status","checkout.link-wallet-error.description":"Looks like something went wrong.\u003Cbr\u003EPlease try again.","checkout.link-wallet-error.qr":"If you had tried scanning the QR code with another app, please scan it from the BRD app:","checkout.link-wallet-error.heading.download":"Don't have the BRD App?","checkout.link-wallet-error.description.download":"You can install it from the Apple App Store or Google Play","checkout.link-wallet-error.heading.disabled":"Disabled deep linking?","checkout.link-wallet-error.description.disabled":"Open this link in your default mobile browser and follow the prompt to open the BRD app","checkout.buy.text.minimum":"Minimum {0}{1}","checkout.buy.text.maximum":"Maximum {0}{1}","checkout.buy.text.your-balance":"Your balance: {0}{1}","checkout.countdown.description":"Sale begins in","checkout.status-card.title.whitelisted":"You are Registered!","checkout.status-card.description.whitelisted":"You’ll be able to participate in the {ticker} token sale!  Make sure you have enough Ethereum in BRD before the sale goes live.","checkout.status-card.title.error":"Couldn't verify your identity","checkout.status-card.description.error":"Please review your personal information and correct any mistakes.","checkout.status-card.button.error":"Review & Update","checkout.status-card.title.needs-kyc":"Awaiting KYC Information","checkout.status-card.button.needs-kyc":"Finish KYC","checkout.status-card.title.needs-documents":"Awaiting Documents","checkout.status-card.description.needs-documents":"Please upload your identity documentation to proceed","checkout.status-card.button.needs-documents":"Document Upload","checkout.status-card.title.needs-eth-address":"Link Ethereum Address","checkout.status-card.description.needs-eth-address":"In order to proceed, we need to link with your Ethereum address.","checkout.status-card.button.needs-eth-address":"Link Ethereum Address","checkout.status-card.title.pending":"Application Pending","checkout.status-card.description.pending":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","checkout.status-card.title.none":"No KYC Specified","checkout.status-card.description.none":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","checkout.status-card.button.none":"Start KYC","checkout.status-card.title.rejected":"Couldn't verify your identity","checkout.status-card.description.rejected":"Please check your email to continue.","checkout.status-card.description.unknown":"Unknown KYC status: \"{status}\".  Please contact {email}.","kyc.fields.label.country":"Country","kyc.fields.label.first-name":"First Name","kyc.fields.label.last-name":"Last Name","kyc.fields.label.middle-name":"Middle Name","kyc.fields.label.gender":"Gender","kyc.fields.label.dob":"Date of birth","kyc.fields.label.town-of-birth":"Town of Birth","kyc.fields.label.nationality":"Nationality","kyc.fields.label.cob":"Country of Birth","kyc.fields.label.flat-number":"Flat Number","kyc.fields.label.building-number":"Building Number","kyc.fields.label.building-name":"Building name","kyc.fields.label.street":"Street","kyc.fields.label.sub-street":"Sub-Street","kyc.fields.label.town":"Town","kyc.fields.label.state":"State","kyc.fields.label.postcode":"Postcode","kyc.fields.label.email":"Email","kyc.fields.label.phone":"Phone","kyc.fields.label.confirmation-code":"Confirmation Code","checkout.label.trade":"Trade","checkout.label.receive":"Receive","checkout.label.price":"Price","checkout.label.fiat":"per {0}","checkout.label.remaining":"{0} remaining","checkout.label.sold":"{0} sold","checkout.label.minimum":"Minimum","checkout.label.maximum":"Maximum","checkout.label.phone-number":"Phone Number","kyc.fields.placeholder.town-of-birth":"ex. Jackson, MS","kyc.fields.placeholder.flat-number":"ex. 201","kyc.fields.placeholder.building-number":"ex. 1101","kyc.fields.placeholder.building-name":"ex. McHenry","kyc.fields.placeholder.street":"ex. Sesame St","kyc.fields.placeholder.postcode":"ex. 10010","kyc.fields.placeholder.state":"ex. NY","kyc.fields.placeholder.town":"ex. Rochester","kyc.fields.placeholder.sub-street":"ex. East","kyc.fields.value.mr":"Mr","kyc.fields.value.ms":"Ms","kyc.fields.value.miss":"Miss","kyc.fields.value.mrs":"Mrs","kyc.fields.value.male":"Male","kyc.fields.value.female":"Female","kyc.button.sign-up":"Sign Up","kyc.button.continue":"Continue","kyc.button.click-here":"click here","kyc.button.remove":"Remove","kyc.button.click-to-continue":"Click here to continue","kyc.button.send-code":"Send Code","kyc.button.resend-code":"Resend Code","kyc.button.confirm":"Confirm","kyc.button.try-again":"Try Again","checkout.button.buy":"Buy","checkout.button.buy-ticker":"Buy {0}","checkout.button.authenticate":"Authenticate","checkout.button.openbrd":"Open BRD","checkout.button.reauthenticate":"Re-Authenticate","checkout.button.scan-qr":"Scan the QR code again","checkout.button.open-browser":"Open in default mobile browser","kyc.status.unknown":"Unknown Status","checkout.error.help":"If you are experiencing problems with this step, please contact {0}.","checkout.error.redirecting":"Unknown state - redirecting to new page?","checkout.error.linked-account-not-found":"could not find linked account, try refreshing the page","checkout.error.validation":"validation error","checkout.error.retry-link-wallet":"Retry Link","checkout.status.creating":"Creating Secure Web Wallet","checkout.status.loading-details":"Loading Details","checkout.status.loading-status":"Loading Status","checkout.status.synchronizing":"Synchronizing","generics.payment-method":"Payment Method","generics.delivery":"Delivery","generics.payment-fee":"Payment Fee","generics.transfer-amount":"Transfer Amount","generics.view-details":"View Details","generics.you-received":"You received {amount} {currency}!","generics.funds-added":"Funds have been added to your BRD wallet. Thank you for buying with us!","generics.status":"Status","generics.cancelled":"Cancelled","generics.go-back":"Go back","generics.reference-code":"Reference code","generics.swift-bic":"Swift \u002F BIC","generics.swift":"Swift","generics.recipient.iban":"Recipient IBAN","generics.recipient.name":"Recipient Name","generics.recipient.address":"Recipient Address","generics.bank.name":"Bank Name","generics.bank.address":"Bank Address","generics.order.details":"Order Details","generics.order.cancel":"Cancel Order","generics.order.cancel.confirm":"Are you sure you want to cancel your order?","generics.order.cancel.error":"Your order cannot be cancelled, please contact support.","generics.order.amount":"Order Amount","generics.order.pending":"Order Pending","generics.order.cancelled":"Order Cancelled","generics.payment-method.bank":"Bank Transfer","generics.error.invalid.params":"Invalid Params","generics.error.invalid.network":"Invalid network {network}","generics.error.schema.not-found":"Could not find schema for {schema}","exchange.limits.quote.increased":"Increased quote to minimum amount","exchange.limits.quote.decreased":"Decreased amount to limit.","sepa.instructions.title":"SEPA Instructions","sepa.instructions.transfer":"{total} {send} {recipient}","sepa.instructions.transfer.send-info":"{amount} {currency}","sepa.instructions.transfer.total-text":"Transfer the total amount of","sepa.instructions.transfer.recipient-text":"to the recipient below, then confirm the transfer.","sepa.instructions.reference-code":"Include this reference code in the memo section of your SEPA-transfer. We can't process your transfer without this code.","btc.transaction-fee":"BTC Transaction Fee","btc.estimate-text":"BTC amount is an estimate. Actual amount will be based on exchange rate at the moment of processing the order.","coinify.check-email":"Please check your email with instructions from our partners at coinify","coinify.support":"{label} {email}","coinify.support.text":"Having trouble with your order?","coinify.support.email-text":"Email our partners at Coinify","coinify.delivery.estimate":"It can take up to 3 bank days. Our partners at coinify will send you an email as soon as your order is processed","coinify.kyc.default":"Coinify KYC","coinify.kyc.retry":"Retry Coinify KYC","coinify.kyc.error":"There was a problem with your KYC.  Please contact support.","coinify.kyc.unknown":"Unknown state. contact support@brd.com","coinify.kyc.error.prerequisite":"Missing prerequisite","coinify.kyc.reviewing":"The verification process usually takes between 1 and 24 hours to complete. We’ll send you an email when it’s done.","coinify.kyc.documents.title":"Upload Documents","coinify.kyc.documents.required":"We need some additional information, tap below to continue.","coinify.kyc.normal.message":"To comply with regulations, you will have to provide some personal information.\nDepending on the laws of your country, you will be likely also asked to upload a picture of your ID.\nIt will take only a few minutes. The information you provide will be used to verify your identity and ensure your purchase is secure.\nThank you!","coinify.kyc.retry.message":"Your KYC process has failed. You may retry if you wish, or contact coinify support.\nCommon reasons for failing KYC are attempting it outside of the EU, and taking grainy, poorly-lit, or unfocused pictures of your ID.","coinify.kyc.trade.error.7-days":"You cannot make orders until about 7 days after your first order.","coinify.kyc.trade.error.awaiting-first-trade":"You cannot make orders until you complete your first order.","deeplink.description":"Please make sure you have BRD version 3.7 or later to continue. Download it, then click on Buy to continue your order.","map.error.generic":"Something went wrong when loading the Crypto ATM Map on your device.","map.error.webgl":"The Crypto ATM Map requires WebGL, which is not supported on your device."})}}},serverRendered:true}}(null,"BCH","BRD","spike","DAI","en"));
+  </script>
+  <script defer="" src="/_nuxt/8077233adf7c90dd386f.js">
+  </script>
+  <script defer="" src="/_nuxt/e9f2d6f01d54062b3541.js">
+  </script>
+  <script defer="" src="/_nuxt/02fb52cb200d69730d54.js">
+  </script>
+  <script defer="" src="/_nuxt/a4c914db30c8bcd43304.js">
+  </script>
+  <script defer="" src="/_nuxt/57c9b01db6d0c03ed651.js">
+  </script>
+ </body>
+</html>

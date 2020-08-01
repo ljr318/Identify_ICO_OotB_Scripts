@@ -1,0 +1,9 @@
+<html>
+ <body>
+  <script src="/cupid.js" type="text/javascript">
+  </script>
+  <script>
+   function toNumbers(d){var e=[];d.replace(/(..)/g,function(d){e.push(parseInt(d,16))});return e}function toHex(){for(var d=[],d=1==arguments.length&&arguments[0].constructor==Array?arguments[0]:arguments,e="",f=0;f<d.length;f++)e+=(16>d[f]?"0":"")+d[f].toString(16);return e.toLowerCase()}var a=toNumbers("7c521daa65f6c0aaa018a06d468cb2dd"),b=toNumbers("e57d4cb4c679341e6be8f2bf6bdf5804"),c=toNumbers("e8e3879c1b3ec2ea495261348b2870c3");var now=new Date(),time=now.getTime();time+=3600*1000*24;now.setTime(time);document.cookie="CUPID="+toHex(slowAES.decrypt(c,2,a,b))+"; expires="+now.toUTCString()+"; path=/";location.href="http://www.charsproject.com/?utm_source=icobench&ckattempt=1";
+  </script>
+ </body>
+</html>

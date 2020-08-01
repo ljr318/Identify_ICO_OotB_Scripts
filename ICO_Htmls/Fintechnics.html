@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html class="no-js">
+ <head>
+  <meta charset="utf-8"/>
+  <!-- 
+	********************************************
+	
+	 Support and development by www.webwerk.at
+	
+	********************************************
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+  <base href="http://www.fundermax.at/"/>
+  <title>
+   FunderMax - for people who create.
+  </title>
+  <meta content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR"/>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon; charset=binary"/>
+  <link href="favicon.ico" rel="icon" type="image/x-icon; charset=binary"/>
+  <link href="https://fast.fonts.net/cssapi/369fb6d2-926a-4e69-837a-125dbc9b9f65.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.fundermax.at/" rel="canonical"/>
+  <meta content="TYPO3 CMS" name="generator"/>
+  <meta content="7 days" name="revisit-after"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="FunderMax - for people who create - Egal ob Möbel, Fassade oder Innenausbau: An der Schnittstelle zwischen Idee und Material steht FunderMax. Wir verstehen unsere Kunden!" name="description"/>
+  <meta content="kompaktplatte hpl, hpl fassade, melaminharzbeschichtete platten, hpl platten, vollkernplatte, kunstharzplatten, bodenplatten balkon, laminat platte" name="keywords"/>
+  <script src="typo3temp/compressor/RsaLibrary-43fc21cbd4ec49a58f58037999828fcc.js?1572409542" type="text/javascript">
+  </script>
+  <script src="typo3temp/compressor/RsaEncryption-46b04687a72441e46ea4dcbf5b8b14c8.js?1572409542" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   /*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,-2);
+		}
+		
+
+/*TYPO3RsaEncryptionPublicKeyUrl*/
+var TYPO3RsaEncryptionPublicKeyUrl = 'http:\/\/fintechnics.com\/index.php?eID=RsaPublicKeyGenerationController';
+
+/*]]>*/
+  </script>
+  <link href="https://www.fundermax.at/de.html" hreflang="de-DE" rel="alternate"/>
+  <link href="https://www.fundermax.at/en.html" hreflang="en-GB" rel="alternate"/>
+  <link href="https://www.fundermax.at/fr.html" hreflang="fr-FR" rel="alternate"/>
+  <link href="https://www.fundermax.at/es.html" hreflang="es-ES" rel="alternate"/>
+  <link href="https://www.fundermax.at/it.html" hreflang="it-IT" rel="alternate"/>
+  <link href="https://www.fundermax.at/ru.html" hreflang="ru-RU" rel="alternate"/>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56244915-1', 'auto');
+  ga('send', 'pageview');
+  
+  ga('create', 'UA-99753168-1', 'auto', 'india');
+  ga('india.send', 'pageview');
+  </script>
+  <!-- aslocations.js is included in /Extensions/as_locations/Template/Default.html -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
+  </script>
+  <script src="https://www.nationalbimlibrary.com/Frontend/scripts/syndication2.min.js">
+  </script>
+  <link href="https://www.nationalbimlibrary.com/Frontend/styles/syndication2.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://www.nationalbimlibrary.com/content/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <!--<script>
+        jQuery(function ($) {
+               $("#scroll").nbl('27580', {
+                                grouping: '',
+                                ranges: ''
+                                }    );    })
+                                
+        </script>-->
+  <meta content="webdesign by www.asoluto.com" name="web_author"/>
+  <meta content="7 days" name="revisit-after"/>
+  <meta content="www.fundermax.at" name="copyright"/>
+  <meta content="noodp" name="googlebot"/>
+  <meta content="german" name="language"/>
+  <meta content="office@fundermax.at" name="reply-to"/>
+  <meta content="no-cache" http-equiv="pragma"/>
+  <meta content="AT-2" name="geo.region"/>
+  <meta content="Sankt Veit an der Glan" name="geo.placename"/>
+  <meta content="46.758333;14.376532" name="geo.position"/>
+  <meta content="46.758333, 14.376532" name="ICBM"/>
+  <meta content="business.business" property="og:type"/>
+  <meta content="FunderMax GmbH" property="og:title"/>
+  <meta content="www.fundermax.at" property="og:url"/>
+  <meta content="46.758333" property="og:latitude"/>
+  <meta content="14.376532" property="og:longitude"/>
+  <meta content="Klagenfurter Stra?e 87-89" property="business:contact_data:street_address"/>
+  <meta content="St. Veit/Glan" property="business:contact_data:locality"/>
+  <meta content="Carinthia" property="business:contact_data:region"/>
+  <meta content="9300" property="business:contact_data:postal_code"/>
+  <meta content="Austria" property="business:contact_data:country_name"/>
+  <meta content="office@fundermax.at" property="og:email"/>
+  <meta content="+43-5-94940" property="og:phone_number"/>
+  <meta content="+43-5-9494-4200" property="og:fax_number"/>
+  <!-- Hotjar Tracking Code for www.fundermax.at -->
+  <script>
+   (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1490852,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KP3N9NZ');
+  </script>
+  <!-- End Google Tag Manager -->
+  <link href="typo3temp/vhs-assets-1c0997ba12c63f76078e7a8b778b055f.css?1595122669" rel="stylesheet"/>
+ </head>
+ <body class="startpage hideCookieInfo" id="as_page_1">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KP3N9NZ" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="print_only">
+   <img alt="fundermax logo" class="logo" src="/typo3conf/ext/as_framework/Resources/Public/img/logo.svg"/>
+  </div>
+  <header class="navbar navbar-default navbar-fixed-top" id="pageheader">
+   <div id="cookieInfo">
+    <div class="container">
+     <div class="row">
+      <div class="col-sm-9 col-md-10">
+       <p class="infotext">
+        <a id="c5766">
+        </a>
+       </p>
+       <p>
+        Um Ihnen optimalen Service auf dieser Webseite zu gewährleisten, nutzen wir zur Erhebung des Nutzerverhaltens Cookies. Durch Ihren Klick und die Benutzung der Webseite sind Sie mit der Verwendung von Cookies, Social-Media Buttons und dem Einsatz von Webtracking-Tools (z.B. Google Analytics, Besucheraktions-Pixel von Facebook) einverstanden.
+        <br/>
+        Weitere Informationen finden Sie unter
+        <a class="link_external" href="http://www.fundermax.at/de/datenschutz.html" target="_blank" title="(Link öffnet ein neues Fenster)">
+         Datenschutz
+        </a>
+        .
+       </p>
+       <p>
+        <a class="link_internal" href="agb.html">
+         Für AGBs hier klicken!
+        </a>
+       </p>
+      </div>
+      <div class="col-sm-3 col-md-1 infoButtons" href="javascript:void(0);">
+       <a class="closeCookieInfo" href="javascript:void(0);">
+        OK
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <style>
+    #cookieInfo .infoButtons {
+    text-align: center;
+    color: white;
+    background: #e30513;
+    margin-top: 2.5%;
+    float:right;
+}
+#cookieInfo .infoButtons a {
+    color: white;
+    text-decoration: none;
+}
+   </style>
+   <div class="topnav clearfix">
+    <div class="container">
+     <ul id="top-nav">
+      <li class="p_68 dropdown">
+       <a class="dropdown-toggle" href="ueber-fundermax.html">
+        <span class="menu-title">
+         Über FunderMax
+        </span>
+        <i>
+        </i>
+       </a>
+       <div class="dropdown-menu">
+        <ul class="sub">
+         <li class="p_2073601">
+          <a href="ueber-fundermax/philosophie.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Philosophie
+           </span>
+          </a>
+         </li>
+         <li class="p_2073541">
+          <a href="ueber-fundermax/standorte.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Standorte
+           </span>
+          </a>
+         </li>
+         <li class="p_2073602">
+          <a href="ueber-fundermax/member-of-constantia-industries.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Member of Constantia Industries
+           </span>
+          </a>
+         </li>
+         <li class="p_2073852">
+          <a href="ueber-fundermax/zertifikate.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Zertifikate
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="p_2073836 dropdown">
+       <a class="dropdown-toggle" href="umweltmanagement.html">
+        <span class="menu-title">
+         Umweltmanagement
+        </span>
+        <i>
+        </i>
+       </a>
+       <div class="dropdown-menu">
+        <ul class="sub">
+         <li class="p_2073837">
+          <a href="umweltmanagement/ein-unternehmen-mit-verantwortung.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Ein Unternehmen mit Verantwortung
+           </span>
+          </a>
+         </li>
+         <li class="p_2073838">
+          <a href="umweltmanagement/produkte-im-einklang-mit-der-umwelt.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Produkte im Einklang mit der Umwelt
+           </span>
+          </a>
+         </li>
+         <li class="p_2073839 dropdown">
+          <a href="umweltmanagement/sichere-produktionsstandorte.html">
+           <i>
+           </i>
+           Sichere Produktionsstandorte
+          </a>
+          <div class="dropdown-menu">
+           <ul class="sub">
+            <li class="p_2073843">
+             <a href="umweltmanagement/sichere-produktionsstandorte/st-veit-an-der-glan-biofaser-star-favorit-premium-star.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               St. Veit an der Glan - Biofaser, Star Favorit, Premium Star
+              </span>
+             </a>
+            </li>
+            <li class="p_2073844">
+             <a href="umweltmanagement/sichere-produktionsstandorte/wiener-neudorf-schichtstoffplatten-compact-interior-exterior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Wiener Neudorf - Schichtstoffplatten, Compact Interior &amp; Exterior
+              </span>
+             </a>
+            </li>
+            <li class="p_2073845">
+             <a href="umweltmanagement/sichere-produktionsstandorte/neudoerfl-spanplatten.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Neudörfl - Spanplatten
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li class="p_2073840">
+          <a href="umweltmanagement/erfolg-kommt-immer-von-menschen.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Erfolg kommt immer von Menschen
+           </span>
+          </a>
+         </li>
+         <li class="p_2073841">
+          <a href="umweltmanagement/unser-engagement-seit-generationen.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Unser Engagement seit Generationen
+           </span>
+          </a>
+         </li>
+         <li class="p_2073842">
+          <a href="umweltmanagement/download-faq.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Download &amp; FAQ
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="p_69 dropdown">
+       <a class="dropdown-toggle" href="karriere.html">
+        <span class="menu-title">
+         Karriere
+        </span>
+        <i>
+        </i>
+       </a>
+       <div class="dropdown-menu">
+        <ul class="sub">
+         <li class="p_2073525 dropdown">
+          <a href="karriere/arbeiten-bei-fundermax.html">
+           <i>
+           </i>
+           Arbeiten bei FunderMax
+          </a>
+          <div class="dropdown-menu">
+           <ul class="sub">
+            <li class="p_2073703">
+             <a href="karriere/arbeiten-bei-fundermax/unsere-werte.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Unsere Werte
+              </span>
+             </a>
+            </li>
+            <li class="p_2073809">
+             <a href="karriere/arbeiten-bei-fundermax/benefits.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Benefits
+              </span>
+             </a>
+            </li>
+            <li class="p_2073528">
+             <a href="karriere/arbeiten-bei-fundermax/unsere-mitarbeiter.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Unsere Mitarbeiter
+              </span>
+             </a>
+            </li>
+            <li class="p_2073527">
+             <a href="karriere/arbeiten-bei-fundermax/bewerbungstipps.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Bewerbungstipps
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li class="p_2073705 dropdown">
+          <a href="karriere/lehrlinge.html">
+           <i>
+           </i>
+           Lehrlinge
+          </a>
+          <div class="dropdown-menu">
+           <ul class="sub">
+            <li class="p_2073709">
+             <a href="karriere/lehrlinge/lehrberufe.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Lehrberufe
+              </span>
+             </a>
+            </li>
+            <li class="p_2073522">
+             <a href="karriere/lehrlinge/bewerbung.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Bewerbung
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li class="p_2073524">
+          <a href="karriere/diplomarbeitenpraktika.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Diplomarbeiten/Praktika
+           </span>
+          </a>
+         </li>
+         <li class="p_2073523">
+          <a href="karriere/berufseinsteigerinnen-hochschulabsolventinnen.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            BerufseinsteigerInnen / HochschulabsolventInnen
+           </span>
+          </a>
+         </li>
+         <li class="p_2073489">
+          <a href="karriere/mit-berufserfahrung.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Mit Berufserfahrung
+           </span>
+          </a>
+         </li>
+         <li class="p_2073530">
+          <a href="karriere/alle-offenen-stellen.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            Alle offenen Stellen
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="p_67 dropdown">
+       <a class="dropdown-toggle" href="newsroom.html">
+        <span class="menu-title">
+         news:room
+        </span>
+        <i>
+        </i>
+       </a>
+       <div class="dropdown-menu">
+        <ul class="sub">
+         <li class="p_2073554">
+          <a href="newsroom/news.html">
+           <i>
+           </i>
+           <span class="menu-title">
+            News
+           </span>
+          </a>
+         </li>
+         <li class="p_2073555 dropdown">
+          <a href="newsroom/events.html">
+           <i>
+           </i>
+           Events
+          </a>
+          <div class="dropdown-menu">
+           <ul class="sub">
+            <li class="p_2073833">
+             <a href="newsroom/events/archiv-2017.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Archiv 2017
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </li>
+      <li class="p_2073750">
+       <a href="http://showroom.fundermax.at" target="_blank">
+        <span class="menu-title">
+         show:room
+        </span>
+       </a>
+      </li>
+     </ul>
+     <div class="search-wrapper closed">
+      <div id="search-icon">
+      </div>
+      <form action="suche.html" class="clearfix" id="searchform" method="get" name="searchform">
+       <div class="form-group pull-left">
+        <input class="form-control input-sm" name="tx_kesearch_pi1[sword]" placeholder="Suchbegriff(e)" required="required" type="search"/>
+       </div>
+       <button class="headersearchbutton" title="suchen" type="submit">
+       </button>
+      </form>
+     </div>
+     <nav class="langSwitch pull-right">
+      <a class="basketlink hidden" href="nc/warenkorb.html">
+       Warenkorb
+      </a>
+      <div class="langSwitchContainer">
+       <a class="link cart" data-toggle="dropdown" href="javascript:void(0)" id="toggleCartBox">
+        (
+        <span id="itemsCount">
+         0
+        </span>
+        )
+       </a>
+       <div class="dropdown-menu cartBox">
+       </div>
+      </div>
+      <div class="langSwitchContainer">
+       <a class="link langbtn language active" data-toggle="dropdown" href="javascript:void(0)" id="toggleLangBox">
+        <span>
+         Deutsch
+        </span>
+       </a>
+       <div class="dropdown-menu langBox">
+        <span>
+         <a class="langbtn" href="en.html" title="English">
+          English
+         </a>
+         <a class="langbtn" href="fr.html" title="Français">
+          Français
+         </a>
+         <a class="langbtn" href="es.html" title="Español">
+          Español
+         </a>
+         <a class="langbtn" href="it.html" title="Italiano">
+          Italiano
+         </a>
+         <a class="langbtn" href="ru.html" title="русский язык">
+          русский язык
+         </a>
+         <!--<a href="http://www.fundermax.fr" target="_blank" class="langbtn">Français</a>-->
+         <!--<a href="http://www.fundermax.it" target="_blank" class="langbtn">Italiano</a>-->
+         <!--<a href="http://www.fundermax.es" target="_blank" class="langbtn">Español</a>-->
+         <!--<a href="http://www.fundermax.ru" target="_blank" class="langbtn">русский язык</a>-->
+        </span>
+       </div>
+      </div>
+      <div class="langSwitchContainer">
+       <a class="link clientlogin" data-toggle="dropdown" href="javascript:void(0)" id="toggleLoginBox">
+        Kunden-Login
+       </a>
+       <div class="dropdown-menu loginBox">
+        <a id="c967">
+        </a>
+        <a id="vc_anchor_login">
+        </a>
+        <noscript>
+         <div class="vc_message vc_message_info">
+          <p>
+           {$asLL.felogin.message.nojs}
+          </p>
+         </div>
+        </noscript>
+        <!-- ###LOGIN_FORM### -->
+        <form action="/?utm_source=icobench" method="post" onsubmit="; return true;" target="_top">
+         <fieldset>
+          <div class="form-group">
+           <input class="form-control input-sm" id="tx-felogin-pi1-user" name="user" placeholder="Benutzername:" type="text"/>
+          </div>
+          <div class="form-group">
+           <input class="form-control input-sm" data-rsa-encryption="" id="tx-felogin-pi1-pass" name="pass" placeholder="Passwort:" type="password"/>
+          </div>
+          <div class="row">
+           <div class="col-md-6">
+            <!--<a href="de/kundenbereich/passwort-vergessen.html">Passwort vergessen?</a>-->
+           </div>
+           <div class="col-md-6">
+            <button class="btn btnBlack pull-right" name="submit" title="Anmelden" type="submit">
+             Anmelden
+            </button>
+           </div>
+          </div>
+          <div class="felogin-hidden">
+           <input name="logintype" type="hidden" value="login"/>
+           <input name="pid" type="hidden" value="3"/>
+           <input name="redirect_url" type="hidden" value="service-kontakt/musterservice.html"/>
+           <input name="tx_felogin_pi1[noredirect]" type="hidden" value="0"/>
+          </div>
+         </fieldset>
+        </form>
+        <!-- ###LOGIN_FORM### -->
+        <hr/>
+        <a class="link_forgotPW" href="passwort-vergessen.html">
+         Passwort vergessen?
+        </a>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </div>
+   <nav class="mainnav" role="navigation">
+    <div class="container clearfix">
+     <div class="collapse navbar-collapse navbar-main-collapse container">
+      <ul class="nav navbar-nav">
+       <li class="home active">
+        <a href="/">
+         <span>
+          Home
+         </span>
+        </a>
+       </li>
+       <li class="p_2073364 dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="interior.html">
+         <span class="menu-title">
+          Interior
+         </span>
+         <i>
+         </i>
+        </a>
+        <div class="dropdown-menu">
+         <div class="container">
+          <div class="row">
+           <ul class="col-md-4 sub">
+            <li class="p_2073370">
+             <a href="interior/star-favorit.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Star Favorit
+              </span>
+             </a>
+            </li>
+            <li class="p_2073865">
+             <a href="interior/star-favorit-superfront.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Star Favorit Superfront
+              </span>
+             </a>
+            </li>
+            <li class="p_2073397">
+             <a href="interior/max-schichtstoffplatten.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Max Schichtstoffplatten - HPL
+              </span>
+             </a>
+            </li>
+            <li class="p_2073369">
+             <a href="interior/max-compactplatten.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Max Compactplatten
+              </span>
+             </a>
+            </li>
+            <li class="p_2073797">
+             <a href="interior/mlook-interior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               m.look Interior
+              </span>
+             </a>
+            </li>
+            <li class="p_2073777">
+             <a href="interior/abs-kanten.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               ABS-Kanten
+              </span>
+             </a>
+            </li>
+            <li class="p_2073398">
+             <a href="interior/homogen.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Spanplatten
+              </span>
+             </a>
+            </li>
+            <li class="p_2073399">
+             <a href="interior/biofaser.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Biofaser
+              </span>
+             </a>
+            </li>
+            <li class="p_2073436">
+             <a href="interior/dekore.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Dekore
+              </span>
+             </a>
+            </li>
+            <li class="p_2073430">
+             <a href="interior/oberflaechen.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Oberflächen
+              </span>
+             </a>
+            </li>
+           </ul>
+           <div class="col-md-8 boxes">
+            <a id="c1674">
+            </a>
+            <div class="row fixedcol" id="uid-1674">
+             <div class="col-sm-4">
+              <a id="c1678">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/c/a/csm_Dekore_Kollektion_2017_771d1a5511.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Interior Kollektion
+                  </h2>
+                  <span class="subtitle">
+                   Alle Dekore im Überblick
+                  </span>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="interior/dekore.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+              <a id="c2148">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/7/4/csm_Oberflachen_Interior_WEB_ce4d33b70f.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Oberflächen
+                  </h2>
+                  <span class="subtitle">
+                   Im Überblick
+                  </span>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="interior/oberflaechen.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <li class="p_2073365 dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="exterior.html">
+         <span class="menu-title">
+          Exterior
+         </span>
+         <i>
+         </i>
+        </a>
+        <div class="dropdown-menu">
+         <div class="container">
+          <div class="row">
+           <ul class="col-md-4 sub">
+            <li class="p_2073407">
+             <a href="exterior/max-compact-exterior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Max Compact Exterior
+              </span>
+             </a>
+            </li>
+            <li class="p_2073538">
+             <a href="exterior/balkon.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Balkon
+              </span>
+             </a>
+            </li>
+            <li class="p_2073793">
+             <a href="exterior/mlook-exterior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               m.look Exterior
+              </span>
+             </a>
+            </li>
+            <li class="p_2073408">
+             <a href="exterior/max-compact-exterior-balkonbodenplatte.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Max Compact Exterior Balkonbodenplatte
+              </span>
+             </a>
+            </li>
+            <li class="p_2073402">
+             <a href="exterior/dekore.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Dekore
+              </span>
+             </a>
+            </li>
+            <li class="p_2073403">
+             <a href="exterior/oberflaechen.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Oberflächen
+              </span>
+             </a>
+            </li>
+           </ul>
+           <div class="col-md-8 boxes">
+            <a id="c1682">
+            </a>
+            <div class="row fixedcol" id="uid-1682">
+             <div class="col-sm-4">
+              <a id="c2308">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/a/2/csm_Exterior_Kollektion_0afa6af91a.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Exterior Kollektion
+                  </h2>
+                  <span class="subtitle">
+                   Alle Dekore im Überblick
+                  </span>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="exterior/dekore.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+              <a id="c1679">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/f/5/csm_Ausschnitt_Oberflaechen_Exterior_WEB_d606ff516d.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Exterior Oberflächen
+                  </h2>
+                  <span class="subtitle">
+                   Im Überblick
+                  </span>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="exterior/oberflaechen.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <li class="p_2073372 dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="referenzen.html">
+         <span class="menu-title">
+          Referenzen
+         </span>
+         <i>
+         </i>
+        </a>
+        <div class="dropdown-menu">
+         <div class="container">
+          <div class="row">
+           <ul class="col-md-4 sub">
+            <li class="p_2073687">
+             <a href="referenzen/interior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Interior
+              </span>
+              <span class="menu-description hidden-xs">
+               Erstklassiges Handling, höchste Beständigkeit und Dekorvielfalt: Entdecken Sie, wie einzigartig Innenräume sein können!
+              </span>
+             </a>
+            </li>
+            <li class="p_2073688">
+             <a href="referenzen/exterior.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Exterior
+              </span>
+              <span class="menu-description hidden-xs">
+               Pulsierende Unifarben, raue Urbanität oder noble Naturmaterialien: Verleihen Sie Ihren Gebäuden Charakter!
+              </span>
+             </a>
+            </li>
+            <li class="p_2073492">
+             <a href="referenzen/individualdekor.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Individualdekor
+              </span>
+              <span class="menu-description hidden-xs">
+               Sie denken es, wir drucken es: Verwandeln Sie Ihre Vorstellung in einzigartige, großformatige Dekorkonzepte!
+              </span>
+             </a>
+            </li>
+           </ul>
+           <div class="col-md-8 boxes">
+            <a id="c1687">
+            </a>
+            <div class="row fixedcol" id="uid-1687">
+             <div class="col-sm-4">
+              <a id="c6928">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/2/3/csm_Wohnzimmer_Teaser_0043442778.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Interior
+                  </h2>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="referenzen/interior.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+              <a id="c6929">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/6/2/csm_Referenzen_Bild_Exterior_1231b095bf.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Exterior
+                  </h2>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="referenzen/exterior.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+             <div class="col-sm-4">
+              <a id="c6930">
+              </a>
+              <section class="singleTeaser">
+               <article>
+                <img alt="" class="bgimage" height="450" src="fileadmin/redakteure/_processed_/8/e/csm_Inhaltsbild_ID_f0c7c50a14.jpg" width="450"/>
+                <span class="hoverOverlay">
+                 <footer>
+                  <h2>
+                   Individualdekor
+                  </h2>
+                 </footer>
+                </span>
+                <a class="overlayLink" href="referenzen/individualdekor.html?tx_asframework_content%5Bcontroller%5D=Content&amp;cHash=1cb6c025f6e904c58446f7eab56c396f">
+                </a>
+               </article>
+              </section>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <li class="p_2073745 dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="download.html">
+         <span class="menu-title">
+          Download
+         </span>
+         <i>
+         </i>
+        </a>
+        <div class="dropdown-menu">
+         <div class="container">
+          <div class="row">
+           <ul class="col-md-4 sub">
+            <li class="p_2073565">
+             <a href="download/kollektionen-prospekte.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Kollektionen &amp; Prospekte
+              </span>
+             </a>
+            </li>
+            <li class="p_2073566">
+             <a href="download/technische-informationen-und-datenblaetter.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Technische Informationen und Datenblätter
+              </span>
+             </a>
+            </li>
+            <li class="p_2073570">
+             <a href="download/cad-details.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               CAD Details
+              </span>
+             </a>
+            </li>
+            <li class="p_2073866">
+             <a href="download/building-information-modeling.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               BIM - Building Information Modeling
+              </span>
+             </a>
+            </li>
+            <li class="p_2073568">
+             <a href="download/ausschreibungstexte.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Ausschreibungstexte
+              </span>
+             </a>
+            </li>
+            <li class="p_2073627">
+             <a href="download/bestellhilfen.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Bestellhilfen
+              </span>
+             </a>
+            </li>
+            <li class="p_2073569">
+             <a href="download/zulassungen-pruefzeugnisse.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Zulassungen &amp; Prüfzeugnisse
+              </span>
+             </a>
+            </li>
+            <li class="p_2073376">
+             <a href="download/zertifikate.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Zertifikate
+              </span>
+             </a>
+            </li>
+           </ul>
+           <div class="col-md-8 boxes">
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <li class="p_2073746 dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="service-kontakt.html">
+         <span class="menu-title">
+          Service &amp; Kontakt
+         </span>
+         <i>
+         </i>
+        </a>
+        <div class="dropdown-menu">
+         <div class="container">
+          <div class="row">
+           <ul class="col-md-4 sub">
+            <li class="p_2073374">
+             <a href="service-kontakt/musterservice.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Musterservice
+              </span>
+             </a>
+            </li>
+            <li class="p_2073790">
+             <a href="service-kontakt/download-dekorbilder.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Download Dekorbilder
+              </span>
+             </a>
+            </li>
+            <li class="p_2073380">
+             <a href="service-kontakt/vertrieb.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Vertrieb
+              </span>
+             </a>
+            </li>
+            <li class="p_2073383">
+             <a href="service-kontakt/support-team.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Support-Team
+              </span>
+             </a>
+            </li>
+            <li class="p_2073379">
+             <a href="service-kontakt/faqs.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               FAQs
+              </span>
+             </a>
+            </li>
+            <li class="p_2073563">
+             <a href="service-kontakt/newsletter-anmeldung.html">
+              <i>
+              </i>
+              <span class="menu-title">
+               Newsletter
+              </span>
+             </a>
+            </li>
+           </ul>
+           <div class="col-md-8 boxes">
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+       <li class="p_2073813">
+        <a href="industrie.html">
+         <span class="menu-title">
+          Industrie
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="navbar-header">
+      <button class="navbar-toggle" type="button">
+       <span>
+       </span>
+      </button>
+      <a class="navbar-brand" href="/">
+       <img alt="fundermax logo" class="logo" src="/typo3conf/ext/as_framework/Resources/Public/img/logo.svg"/>
+      </a>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="slidebar-wrapper">
+   <aside class="slidebar" id="mobilesidebar">
+    <div class="inner">
+     <nav class="langSwitch pull-right">
+      <div class="langSwitchContainer">
+       <a class="link cart" href="nc/warenkorb.html">
+        <span id="itemsCount">
+        </span>
+       </a>
+      </div>
+      <div class="langSwitchContainer">
+       <div class="search-wrapper closed">
+        <div id="mobile-search-icon">
+        </div>
+        <form action="suche.html" class="clearfix" id="mobile-searchform" method="get" name="searchform">
+         <div class="form-group pull-left">
+          <input class="form-control input-sm" name="tx_kesearch_pi1[sword]" placeholder="Suchbegriff(e)" required="required" type="search"/>
+         </div>
+         <button class="headersearchbutton" title="suchen" type="submit">
+         </button>
+        </form>
+       </div>
+      </div>
+      <div class="langSwitchContainer">
+       <a href="javascript:void(0)" id="toggleLangBoxMobile">
+        <div class="link langbtn language">
+        </div>
+       </a>
+      </div>
+      <div class="langSwitchContainer">
+       <a class="link clientlogin" href="nc/kundenbereich.html">
+        <span>
+        </span>
+       </a>
+      </div>
+      <div class="langSwitchContainer langBox">
+       <div class="dropdown-menu">
+        <a class="langbtn" href="en.html" title="English">
+         English
+        </a>
+        <a class="langbtn" href="fr.html" title="Français">
+         Français
+        </a>
+        <a class="langbtn" href="es.html" title="Español">
+         Español
+        </a>
+        <a class="langbtn" href="it.html" title="Italiano">
+         Italiano
+        </a>
+        <a class="langbtn" href="ru.html" title="русский язык">
+         русский язык
+        </a>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </aside>
+   <section class="headercontent sp1" id="slideshow">
+    <a id="top">
+    </a>
+    <a id="c812">
+    </a>
+    <!-- asSlideshow !-->
+    <div class="tx-as-slideshow">
+     <section class="headslide slider" data-slides="2">
+      <div class="flexslider">
+       <div class="slides">
+        <article>
+         <img alt="Das Original hält, was es verspricht." height="478" src="fileadmin/redakteure/_processed_/8/2/csm_Torre_Europa_Pan_526_29_korr_658ca7edf3.jpg" width="1600"/>
+         <div class="flex-caption position-0">
+          <div class="container">
+           <div class="caption">
+            <h2>
+             Das Original hält, was es verspricht.
+            </h2>
+            <p>
+            </p>
+            <p>
+            </p>
+           </div>
+          </div>
+         </div>
+        </article>
+        <article>
+         <a href="http://www.mlook.at">
+          <img alt="Entdecken Sie m.look!" height="478" src="fileadmin/redakteure/_processed_/1/b/csm_The_Tides_Website_b533c8af3b.jpg" width="1600"/>
+         </a>
+         <div class="flex-caption position-1">
+          <div class="container">
+           <div class="caption">
+            <h2>
+             Entdecken Sie m.look!
+            </h2>
+            <p>
+            </p>
+           </div>
+          </div>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+    </div>
+    <!-- asSlideshow !-->
+   </section>
+   <main class="container frontpage sp1">
+    <!--TYPO3SEARCH_begin-->
+    <div class="row">
+     <div class="col-md-12 mainContentCol">
+      <a id="c2011">
+      </a>
+      <div class="row fixedcol" id="uid-2011">
+       <div class="col-sm-6 col-md-3">
+        <a id="c10499">
+        </a>
+        <section>
+         <article class="referenceHeavy">
+          <img alt="" class="lazy" data-original="fileadmin/redakteure/_processed_/a/2/csm_Exterior_Kollektion_0afa6af91a.jpg" height="450" src="typo3temp/_processed_/2/0/csm_placeholder_1baf091796.gif" width="450"/>
+          <noscript>
+           <img class="" src="fileadmin/redakteure/_processed_/a/2/csm_Exterior_Kollektion_0afa6af91a.jpg"/>
+          </noscript>
+          <footer>
+           <h2>
+            Exterior Dekore im Überblick
+           </h2>
+           <a class="readMore" href="exterior/dekore.html">
+            mehr darüber
+           </a>
+          </footer>
+          <a class="overlayLink" href="exterior/dekore.html">
+          </a>
+         </article>
+        </section>
+        <a id="c12269">
+        </a>
+        <section>
+         <article class="referenceHeavy">
+          <img alt="" class="lazy" data-original="fileadmin/redakteure/_processed_/2/3/csm_Premium_Star_Luxos_Lotos_DE_neu_96b2f6fbf5.jpg" height="450" src="typo3temp/_processed_/2/0/csm_placeholder_1baf091796.gif" width="450"/>
+          <noscript>
+           <img class="" src="fileadmin/redakteure/_processed_/2/3/csm_Premium_Star_Luxos_Lotos_DE_neu_96b2f6fbf5.jpg"/>
+          </noscript>
+          <footer>
+           <h2>
+            Premium Star: Denken in neuen Dimensionen
+           </h2>
+           <a class="readMore" href="http://www.fundermax.at/inpulse">
+            mehr darüber
+           </a>
+          </footer>
+          <a class="overlayLink" href="http://www.fundermax.at/inpulse">
+          </a>
+         </article>
+        </section>
+       </div>
+       <div class="col-sm-6 col-md-3">
+        <a id="c11397">
+        </a>
+        <section>
+         <article class="referenceHeavy">
+          <img alt="" class="lazy" data-original="fileadmin/redakteure/_processed_/6/9/csm_Teaserbild_Interior_Kollektion_Website_c5a53b24bf.jpg" height="450" src="typo3temp/_processed_/2/0/csm_placeholder_1baf091796.gif" width="450"/>
+          <noscript>
+           <img class="" src="fileadmin/redakteure/_processed_/6/9/csm_Teaserbild_Interior_Kollektion_Website_c5a53b24bf.jpg"/>
+          </noscript>
+          <footer>
+           <h2>
+            Interior Dekore im Überblick
+           </h2>
+           <a class="readMore" href="interior/dekore.html">
+            mehr darüber
+           </a>
+          </footer>
+          <a class="overlayLink" href="interior/dekore.html">
+          </a>
+         </article>
+        </section>
+        <a id="c11483">
+        </a>
+        <section>
+         <article class="referenceHeavy">
+          <img alt="" class="lazy" data-original="fileadmin/redakteure/_processed_/1/b/csm_showroom_teaser_neu_a3936a2ac9.jpg" height="450" src="typo3temp/_processed_/2/0/csm_placeholder_1baf091796.gif" width="450"/>
+          <noscript>
+           <img class="" src="fileadmin/redakteure/_processed_/1/b/csm_showroom_teaser_neu_a3936a2ac9.jpg"/>
+          </noscript>
+          <footer>
+           <h2>
+            Lassen Sie sich inspirieren!
+           </h2>
+           <a class="readMore" href="http://showroom.fundermax.at/de">
+            mehr darüber
+           </a>
+          </footer>
+          <a class="overlayLink" href="http://showroom.fundermax.at/de">
+          </a>
+         </article>
+        </section>
+       </div>
+       <div class="special-col-sm-12 col-md-6">
+        <a id="c14010">
+        </a>
+        <h1>
+         FunderMax News
+        </h1>
+        <a id="c3172">
+        </a>
+        <div class="news">
+         <div class="infoboxes microsite">
+          <article class="doublesquare textNewsList content">
+           <h3>
+           </h3>
+           <ul>
+            <li>
+             <span class="newsListDate">
+              20.03.2020
+             </span>
+             <span>
+              <a href="newsroom/news/detail/fundermax-information-covid-19.html?tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail&amp;cHash=35f49b6b188951617d2701af2a7de0c1">
+               FunderMax Information COVID-19
+              </a>
+             </span>
+            </li>
+            <li>
+             <span class="newsListDate">
+              27.01.2020
+             </span>
+             <span>
+              <a href="newsroom/news/detail/fundermax-vorreiter-bei-effizienter-energienutzung.html?tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail&amp;cHash=ff277ad21c4dfa2c76d1e427a452c22a">
+               FunderMax – Vorreiter bei effizienter Energienutzung
+              </a>
+             </span>
+            </li>
+            <li>
+             <span class="newsListDate">
+              13.01.2020
+             </span>
+             <span>
+              <a href="newsroom/news/detail/veraenderung-in-der-geschaeftsfuehrung-von-fundermax-zur-jahresmitte-2020.html?tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail&amp;cHash=2be67fcfc47c743b766fb906fc99b60b">
+               Veränderung in der Geschäftsführung von FunderMax zur Jahresmitte 2020
+              </a>
+             </span>
+            </li>
+           </ul>
+          </article>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-md-12">
+     </div>
+    </div>
+    <!--TYPO3SEARCH_end-->
+   </main>
+   <footer id="pagefooter">
+    <section class="footer-top">
+     <section class="container logos s">
+      <a id="c807">
+      </a>
+      <h5>
+       Zertifikate &amp; Auszeichnungen
+      </h5>
+      <div class="csc-textpic csc-textpic-left csc-textpic-above csc-textpic-equalheight">
+       <div class="csc-textpic-imagewrap" style="width:190px;">
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/4/2/csm_pefc-logo-2016-website_de_60513304d6.png" width="99"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <a href="fileadmin/redakteure/Downloads_DEUTSCH/Zertifikate/Richtline_nachhaltige_Holznutzung_DE-EN.pdf">
+           <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/a/4/csm_FSC_Logo_DE_ee3c1e17c6.png" width="190"/>
+          </a>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/c/e/csm_Logo-natureplus_03df3fc5ad.png" width="70"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/d/d/csm_Kennzeichen-StP-Unternehmensqualitaet-2018_61933959f5.jpg" width="35"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/5/7/csm_Siegel_D-A-CH_Top20_2017_18_v_317b22706b.png" width="83"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/d/1/csm_Siegel_AUT_Gold_2019_20_WEB_a565cd6570.png" width="70"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/c/3/csm_R4E_5star_-_2018_outlined_c32164c5da.png" width="92"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/4/8/csm_Innovationspreis_NOE_2015_2ffd77beb5.png" width="149"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/9/3/csm_Innovations_und_Forschungspreis_des_Landes_Kaernten_2011_df72aee517.png" width="126"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/4/4/csm_Kaernten_Innovations_und_Forschungspreis_2008_8806068d74.png" width="126"/>
+         </figure>
+        </figure>
+        <figure class="csc-image">
+         <figure class="csc-image">
+          <img alt="" class="img-thumbnail" height="70" src="fileadmin/redakteure/_processed_/e/2/csm_Trigos_neu_efa9ecefdf.png" width="52"/>
+         </figure>
+        </figure>
+       </div>
+      </div>
+     </section>
+    </section>
+    <section class="footer-main container">
+     <div class="newsletter">
+      <h4>
+       FunderMax - for people who create.
+            Newsletter
+      </h4>
+      <a href="service-kontakt/newsletter-anmeldung.html">
+       Sie wollen immer über FunderMax Neuigkeiten informiert werden? Melden Sie sich gleich hier zum FunderMax Newsletter an.
+      </a>
+     </div>
+     <div class="combinav">
+      <ul class="doormat-nav row">
+       <li class="sub col-sm-2">
+        <strong>
+         Interior
+        </strong>
+        <ul>
+         <li>
+          <a class="" href="interior/star-favorit.html">
+           Star Favorit
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/star-favorit-superfront.html">
+           Star Favorit Superfront
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/max-schichtstoffplatten.html">
+           Max Schichtstoffplatten - HPL
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/max-compactplatten.html">
+           Max Compactplatten
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/mlook-interior.html">
+           m.look Interior
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/abs-kanten.html">
+           ABS-Kanten
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/homogen.html">
+           Spanplatten
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/biofaser.html">
+           Biofaser
+          </a>
+         </li>
+         <li>
+          <a class="sub" href="interior/dekore.html">
+           Dekore
+          </a>
+         </li>
+         <li>
+          <a class="" href="interior/oberflaechen.html">
+           Oberflächen
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="sub col-sm-2">
+        <strong>
+         Exterior
+        </strong>
+        <ul>
+         <li>
+          <a class="" href="exterior/max-compact-exterior.html">
+           Max Compact Exterior
+          </a>
+         </li>
+         <li>
+          <a class="" href="exterior/balkon.html">
+           Balkon
+          </a>
+         </li>
+         <li>
+          <a class="" href="http://www.mlook.at">
+           m.look Exterior
+          </a>
+         </li>
+         <li>
+          <a class="" href="exterior/max-compact-exterior-balkonbodenplatte.html">
+           Max Compact Exterior Balkonbodenplatte
+          </a>
+         </li>
+         <li>
+          <a class="sub" href="exterior/dekore.html">
+           Dekore
+          </a>
+         </li>
+         <li>
+          <a class="" href="exterior/oberflaechen.html">
+           Oberflächen
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="sub col-sm-2">
+        <strong>
+         Referenzen
+        </strong>
+        <ul>
+         <li>
+          <a class="sub" href="referenzen/interior.html">
+           Interior
+          </a>
+         </li>
+         <li>
+          <a class="sub" href="referenzen/exterior.html">
+           Exterior
+          </a>
+         </li>
+         <li>
+          <a class="" href="referenzen/individualdekor.html">
+           Individualdekor
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="smallTabletClearFix">
+       </li>
+       <li class="sub col-sm-2 smallTabletNoPaddingLeft">
+        <strong>
+         Download
+        </strong>
+        <ul>
+         <li>
+          <a class="sub" href="download/kollektionen-prospekte.html">
+           Kollektionen &amp; Prospekte
+          </a>
+         </li>
+         <li>
+          <a class="" href="download/technische-informationen-und-datenblaetter.html">
+           Technische Informationen und Datenblätter
+          </a>
+         </li>
+         <li>
+          <a class="sub" href="download/cad-details.html">
+           CAD Details
+          </a>
+         </li>
+         <li>
+          <a class="" href="download/building-information-modeling.html">
+           BIM - Building Information Modeling
+          </a>
+         </li>
+         <li>
+          <a class="" href="download/ausschreibungstexte.html">
+           Ausschreibungstexte
+          </a>
+         </li>
+         <li>
+          <a class="" href="download/bestellhilfen.html">
+           Bestellhilfen
+          </a>
+         </li>
+         <li>
+          <a class="sub" href="download/zulassungen-pruefzeugnisse.html">
+           Zulassungen &amp; Prüfzeugnisse
+          </a>
+         </li>
+         <li>
+          <a class="" href="download/zertifikate.html">
+           Zertifikate
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="sub col-sm-2">
+        <strong>
+         Service &amp; Kontakt
+        </strong>
+        <ul>
+         <li>
+          <a class="" href="service-kontakt/musterservice.html">
+           Musterservice
+          </a>
+         </li>
+         <li>
+          <a class="" href="service-kontakt/download-dekorbilder.html">
+           Download Dekorbilder
+          </a>
+         </li>
+         <li>
+          <a class="" href="service-kontakt/vertrieb.html">
+           Vertrieb
+          </a>
+         </li>
+         <li>
+          <a class="" href="service-kontakt/support-team.html">
+           Support-Team
+          </a>
+         </li>
+         <li>
+          <a class="" href="service-kontakt/faqs.html">
+           FAQs
+          </a>
+         </li>
+         <li>
+          <a class="" href="service-kontakt/newsletter-anmeldung.html">
+           Newsletter
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="col-sm-2">
+        <strong>
+         Industrie
+        </strong>
+       </li>
+      </ul>
+      <nav class="socialmedia-icons">
+       <ul>
+        <li>
+         <a class="xing" href="https://www.xing.com/companies/fundermaxgmbh" target="_blank">
+          <span>
+           Xing
+          </span>
+         </a>
+        </li>
+        <li>
+         <a class="facebook" href="https://de-de.facebook.com/FunderMax" target="_blank">
+          <span>
+           Facebook
+          </span>
+         </a>
+        </li>
+        <li>
+         <a class="youtube" href="http://www.youtube.com/user/FunderMaxGmbH" target="_blank">
+          <span>
+           YouTube
+          </span>
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </section>
+    <section class="container footer-bottom">
+     <div class="row">
+      <div class="col-md-6">
+       <p class="copyright">
+        ©
+                FunderMax - for people who create.
+                2020
+        <a href="https://ciag.at/" target="_blank">
+         Ein Unternehmen der
+         <img alt="Constantia Industries AG" src="typo3conf/ext/as_framework/Resources/Public/img/CIAG_fundermax.png" style="width: 150px"/>
+        </a>
+       </p>
+      </div>
+      <div class="col-md-4" style="padding-top: 18px">
+       <ul id="meta-nav">
+        <li class="p_2073849">
+         <a href="datenschutz.html">
+          Datenschutz
+         </a>
+        </li>
+        <li class="p_23">
+         <a href="impressum.html">
+          Impressum
+         </a>
+        </li>
+        <li class="p_62">
+         <a href="agb.html">
+          AGB
+         </a>
+        </li>
+        <li class="p_2073692">
+         <a href="disclaimer.html">
+          Disclaimer
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-md-2">
+      </div>
+     </div>
+    </section>
+   </footer>
+   <div class="toTopBtn">
+    <a href="javascript:void(0)">
+    </a>
+   </div>
+  </div>
+  <div class="modal fade sp1" id="modal" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body" id="modalbody">
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="typo3temp/vhs-assets-0cd00c55d319b9394bd73e02026ae5ac.js?1595122669" type="text/javascript">
+  </script>
+ </body>
+</html>
+<!-- Cached page generated 27-07-20 14:50. Expires 28-07-20 14:50 -->

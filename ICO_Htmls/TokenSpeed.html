@@ -1,0 +1,83 @@
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Google Domains Hosted Site
+  </title>
+  <!-- CSS -->
+  <style>
+   body {
+        background-color: #F2F2F2;
+        color: #222;
+        font: 13px/1.54 arial, sans-serif;
+        margin: 0 auto;
+      }
+
+      #wrap {
+        bottom: 50%;
+        margin-bottom: -0.5em;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      a {
+        color: #1155CC;
+        text-decoration: none;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      #footer {
+        bottom: 0px;
+        position: fixed;
+        width: 100%;
+      }
+
+      ul {
+        background-color: #FFF;
+        border-top: 1px solid #E4E4E4;
+        color: #777;
+        list-style-type: none;
+        line-height: 3.077em;
+        margin: 0 -30px;
+        padding: 0 15px;
+        position: relative;
+      }
+
+      li {
+        padding-left: 45px;
+      }
+  </style>
+  <script>
+   var hostName = window.location.search.substring(1);
+      var hostNamePieces = hostName.split('.');
+
+      // Add the TLD
+      var j = hostNamePieces.length - 1;
+      domainName = hostNamePieces[j];
+
+      // Add SLD (and 2 character TLDs, e.g. foo.co.uk)
+      do {
+        domainName = hostNamePieces[--j] + "." + domainName;
+      } while (hostNamePieces[j] <= 2 && j > 0);
+  </script>
+ </head>
+ <body>
+  <script>
+   if (domainName) {
+        // User visited page via CNAME redirect
+        document.write('<div id="wrap"><h1><span>' + domainName + '</span> has expired</h1></div>');
+        var url = "https://domains.google.com/registrar?d=" + domainName + "&renew";
+        document.write('<div id="footer"><ul><li>Are you the owner? <a href="' + url + '">Renew your domain</a>.</li></ul></div>');
+      }
+  </script>
+ </body>
+</html>

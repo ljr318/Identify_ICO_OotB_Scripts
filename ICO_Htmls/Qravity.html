@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://qravity.com/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://qravity.com/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="https://qravity.com/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="https://qravity.com/favicon/site.webmanifest" rel="manifest"/>
+  <link color="#5bbad5" href="https://qravity.com/favicon/safari-pinned-tab.svg" rel="mask-icon"/>
+  <link href="https://qravity.com/favicon/favicon.ico" rel="shortcut icon"/>
+  <meta content="Qravity" name="apple-mobile-web-app-title"/>
+  <meta content="Qravity" name="application-name"/>
+  <meta content="#da532c" name="msapplication-TileColor"/>
+  <meta content="https://qravity.com/favicon/mstile-144x144.png" name="msapplication-TileImage"/>
+  <meta content="https://qravity.com/favicon/browserconfig.xml" name="msapplication-config"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <title>
+   Qravity
+  </title>
+  <!--  critical css-->
+  <style>
+   body  {
+      background-color:#001c31;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      color: #e6e9ec;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      -webkit-text-size-adjust: none;
+      overflow-x: visible !important;
+    }
+    svg {
+      display: none;
+    }
+  </style>
+  <link href="https://qravity.com/static/css/main.932220f0.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="root">
+  </div>
+  <script>
+   const adminToken = localStorage.getItem('adminToken')
+
+    const isHttps = 'true' === 'true'
+
+    const checkToken = function (token, cb) {
+      const url = 'http' + isHttps ? 's' : '' + ':' + '//api.qravity.com' + '/api' + '/misc/configs/'
+      fetch(url, {
+        method: "GET",
+        mode: 'cors',
+        headers: {
+          "demo-access-token": token,
+        }
+      })
+        .then(res => cb(null, res))
+        .catch(err => cb(err, null))
+    }
+
+    const authorize = function () {
+      const adminToken = prompt('Authorization')
+      checkToken(adminToken, function (err, res) {
+        if (err) {
+          setTimeout(authorize, 400)
+        } else {
+          localStorage.setItem('adminToken', adminToken)
+          window.location.href = '/'
+        }
+      })
+    }
+    
+
+    if (!adminToken && 'false' === 'true') {
+      document.getElementById('root').style.display = "none"
+      authorize()
+    }
+  </script>
+  <script src="https://qravity.com/static/js/main.5df60b97.js" type="text/javascript">
+  </script>
+ </body>
+</html>

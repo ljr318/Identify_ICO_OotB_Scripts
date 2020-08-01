@@ -1,0 +1,167 @@
+<html>
+ <body>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5e511-trace').style.display = (document.getElementById('cakeErr5f206ddb5e511-trace').style.display == 'none' ? '' : 'none');"><b>Notice</b> (8)</a>: Trying to get property of non-object [<b>APP/Controller/AppController.php</b>, line <b>69</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb5e511-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5e511-code').style.display = (document.getElementById('cakeErr5f206ddb5e511-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5e511-context').style.display = (document.getElementById('cakeErr5f206ddb5e511-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb5e511-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">            </span><span style="color: #007700">if (</span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">status </span><span style="color: #007700">== </span><span style="color: #0000BB">0 </span><span style="color: #007700">&amp;&amp; </span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">deleted_status </span><span style="color: #007700">== </span><span style="color: #DD0000">"Y"</span><span style="color: #007700">) {</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">                </span><span style="color: #007700">if (</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">end_date</span><span style="color: #007700">) &lt; </span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">"Y-m-t"</span><span style="color: #007700">, </span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">))))) {</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb5e511-context" style="display: none;">$userDomain = 'ico.zeew.eu'
+$domain = 'ico'
+$host = 'zeew'
+$ext = 'eu'
+$domainData = null</pre><pre class="stack-trace">App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 69
+App\Controller\UsersController::initialize() - APP/Controller/UsersController.php, line 37
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 263
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 45
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 90
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5ebdf-trace').style.display = (document.getElementById('cakeErr5f206ddb5ebdf-trace').style.display == 'none' ? '' : 'none');"><b>Notice</b> (8)</a>: Trying to get property of non-object [<b>APP/Controller/AppController.php</b>, line <b>69</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb5ebdf-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5ebdf-code').style.display = (document.getElementById('cakeErr5f206ddb5ebdf-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb5ebdf-context').style.display = (document.getElementById('cakeErr5f206ddb5ebdf-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb5ebdf-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">            </span><span style="color: #007700">if (</span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">status </span><span style="color: #007700">== </span><span style="color: #0000BB">0 </span><span style="color: #007700">&amp;&amp; </span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">deleted_status </span><span style="color: #007700">== </span><span style="color: #DD0000">"Y"</span><span style="color: #007700">) {</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">                </span><span style="color: #007700">if (</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$domainData</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">end_date</span><span style="color: #007700">) &lt; </span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">"Y-m-t"</span><span style="color: #007700">, </span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">))))) {</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb5ebdf-context" style="display: none;">$userDomain = 'ico.zeew.eu'
+$domain = 'ico'
+$host = 'zeew'
+$ext = 'eu'
+$domainData = null</pre><pre class="stack-trace">App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 69
+App\Controller\UsersController::initialize() - APP/Controller/UsersController.php, line 37
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 263
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE/src/Http/ControllerFactory.php, line 45
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 90
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb65c85-trace').style.display = (document.getElementById('cakeErr5f206ddb65c85-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (512)</a>: Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>48</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb65c85-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb65c85-code').style.display = (document.getElementById('cakeErr5f206ddb65c85-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb65c85-context').style.display = (document.getElementById('cakeErr5f206ddb65c85-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb65c85-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">            </span><span style="color: #007700">if (</span><span style="color: #0000BB">Configure</span><span style="color: #007700">::</span><span style="color: #0000BB">read</span><span style="color: #007700">(</span><span style="color: #DD0000">'debug'</span><span style="color: #007700">)) {</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">                trigger_error</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">, </span><span style="color: #0000BB">E_USER_WARNING</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">            </span><span style="color: #007700">} else {</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb65c85-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 302,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			[maximum depth reached]
+		],
+		'Location' =&gt; [
+			[maximum depth reached]
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+$maxBufferLength = (int) 8192
+$file = '/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php'
+$line = (int) 850
+$message = 'Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850'</pre><pre class="stack-trace">Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb6604a-trace').style.display = (document.getElementById('cakeErr5f206ddb6604a-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>148</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb6604a-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb6604a-code').style.display = (document.getElementById('cakeErr5f206ddb6604a-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb6604a-context').style.display = (document.getElementById('cakeErr5f206ddb6604a-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb6604a-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">            $response</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStatusCode</span><span style="color: #007700">(),</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">            </span><span style="color: #007700">(</span><span style="color: #0000BB">$reasonPhrase </span><span style="color: #007700">? </span><span style="color: #DD0000">' ' </span><span style="color: #007700">. </span><span style="color: #0000BB">$reasonPhrase </span><span style="color: #007700">: </span><span style="color: #DD0000">''</span><span style="color: #007700">)</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">        </span><span style="color: #007700">));</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb6604a-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 302,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			[maximum depth reached]
+		],
+		'Location' =&gt; [
+			[maximum depth reached]
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+$reasonPhrase = 'Found'</pre><pre class="stack-trace">header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb663be-trace').style.display = (document.getElementById('cakeErr5f206ddb663be-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>181</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb663be-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb663be-code').style.display = (document.getElementById('cakeErr5f206ddb663be-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb663be-context').style.display = (document.getElementById('cakeErr5f206ddb663be-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb663be-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">                    $value</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">                </span><span style="color: #007700">), </span><span style="color: #0000BB">$first</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">                $first </span><span style="color: #007700">= </span><span style="color: #0000BB">false</span><span style="color: #007700">;</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb663be-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 302,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			[maximum depth reached]
+		],
+		'Location' =&gt; [
+			[maximum depth reached]
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+$cookies = []
+$values = [
+	(int) 0 =&gt; 'text/html; charset=UTF-8'
+]
+$name = 'Content-Type'
+$first = true
+$value = 'text/html; charset=UTF-8'</pre><pre class="stack-trace">header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+  <pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb666ce-trace').style.display = (document.getElementById('cakeErr5f206ddb666ce-trace').style.display == 'none' ? '' : 'none');"><b>Warning</b> (2)</a>: Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) [<b>CORE/src/Http/ResponseEmitter.php</b>, line <b>181</b>]<div class="cake-stack-trace" id="cakeErr5f206ddb666ce-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb666ce-code').style.display = (document.getElementById('cakeErr5f206ddb666ce-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr5f206ddb666ce-context').style.display = (document.getElementById('cakeErr5f206ddb666ce-context').style.display == 'none' ? '' : 'none')">Context</a><pre class="cake-code-dump" id="cakeErr5f206ddb666ce-code" style="display: none;"><code><span style="color: #000000"><span style="color: #0000BB">                    $value</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">                </span><span style="color: #007700">), </span><span style="color: #0000BB">$first</span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB">                $first </span><span style="color: #007700">= </span><span style="color: #0000BB">false</span><span style="color: #007700">;</span></span></code></pre><pre class="cake-context" id="cakeErr5f206ddb666ce-context" style="display: none;">$response = object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 302,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			[maximum depth reached]
+		],
+		'Location' =&gt; [
+			[maximum depth reached]
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+$cookies = []
+$values = [
+	(int) 0 =&gt; 'https://accounts.zeew.eu'
+]
+$name = 'Location'
+$first = true
+$value = 'https://accounts.zeew.eu'</pre><pre class="stack-trace">header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 37</pre></div></pre>
+ </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   亚博国际
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="no-siteapp" http-equiv="Cache-Control"/>
+  <meta content="no-transform" http-equiv="Cache-Control"/>
+  <meta content="pc,mobile" name="applicable-device"/>
+  <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <style>
+   body {
+margin: 0;
+padding: 0;
+background: #E6EAEB;
+font-family: Arial, 'Î¢ÈíÑÅºÚ', 'ËÎÌå', sans-serif
+}
+a{
+ text-decoration: none;color: #7B7B7B;
+}
+
+@media screen and (min-width:1100px) {
+	.alert-box {
+	display: none;
+	position: relative;
+	margin: 96px auto 0;
+	padding: 180px 85px 22px;
+	border-radius: 10px 10px 0 0;
+	background: #FFF;
+	box-shadow: 5px 9px 17px rgba(102,102,102,0.75);
+	width: 286px;
+	color: #FFF;
+	text-align: center
+	}
+	.alert-box p {
+	margin: 0
+	}
+	.alert-circle {
+	position: absolute;
+	top: -50px;
+	left: 111px
+	}
+	.alert-sec-circle {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 735;
+	transition: stroke-dashoffset 1s linear
+	}
+	.alert-sec-text {
+	position: absolute;
+	top: 11px;
+	left: 190px;
+	width: 76px;
+	color: #000;
+	font-size: 68px
+	}
+	.alert-sec-unit {
+	font-size: 34px
+	}
+	.alert-body {
+	margin: 35px 0;
+	margin-bottom:30px;
+	}
+	.alert-head {
+	color: #242424;
+	font-size: 28px
+	}
+	.alert-concent {
+	margin: 25px 0 14px;
+	color: #7B7B7B;
+	font-size: 18px
+	}
+	.alert-concent p {
+	line-height: 27px
+	}
+	.alert-btn {
+	display: block;
+	border-radius: 10px;
+	background-color: #04ACFE;
+	height: 55px;
+	line-height: 55px;
+	width: 286px;
+	color: #FFF;
+	font-size: 20px;
+	text-decoration: none;
+	letter-spacing: 2px
+	}
+	.alert-btn:hover {
+	background-color: #04ACFE
+	}
+	.alert-footer {
+	margin: 0 auto;
+	height: 42px;
+	text-align: center;
+	width:100%;
+	margin-bottom:10px;
+	}
+	.alert-footer-icon {
+	float: left
+	}
+	.alert-footer-text {
+	float: left;
+	border-left: 2px solid #EEE;
+	padding: 3px 0 0 5px;
+	height: 40px;
+	color: #0B85CC;
+	font-size: 12px;
+	text-align: left
+	}
+	.alert-footer-text p {
+	color: #7A7A7A;
+	font-size: 22px;
+	line-height: 18px
+	}
+}
+
+@media screen and (max-width:750px) {
+	.alert-box {
+		width: 100%;
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 20%;
+	/* padding-left: 13%; */
+	/* padding: 180px 85px 22px; */
+	padding-bottom: 30%;
+	border-radius: 10px 10px 0 0;
+	background: #FFF;
+	box-shadow: 5px 9px 17px rgba(102,102,102,0.75);
+	width: 100%;
+	color: #FFF;
+	text-align: center
+	}
+	.alert-box p {
+	margin: 0
+	}
+	.alert-circle {
+	position: absolute;
+	top: -10%;
+	left: 27%
+	}
+	.alert-sec-circle {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 735;
+	transition: stroke-dashoffset 1s linear
+	}
+	.alert-sec-text {
+	position: absolute;
+	top: 4%;
+	left: 41.5%;
+	width: 20%;
+	color: #000;
+	font-size: 8vw;
+	}
+	.alert-sec-unit {
+	font-size: 5vw;
+	}
+	.alert-body {
+		width: 100%;
+	margin: 0px auto;
+	margin-bottom:30px;
+	}
+	.alert-head {
+	color: #242424;
+	font-size: 5vw;
+	}
+	.alert-concent {
+	margin: 7% 5%;
+	color: #7B7B7B;
+	font-size: 5vw;
+	}
+	.alert-concent p {
+	line-height: 37px
+	}
+	.alert-btn {
+	display: block;
+	border-radius: 10px;
+	background-color: #04ACFE;
+	height: 5%;
+	line-height: 55px;
+	width: 70%;
+	color: #FFF;
+	font-size: 5vw;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 0px auto;
+	}
+	.alert-btn:hover {
+	background-color: #04ACFE
+	}
+	.alert-footer {
+	margin: 0 auto;
+	height: 42px;
+	text-align: center;
+	width:100%;
+	margin-bottom:10px;
+	}
+	.alert-footer-icon {
+	float: left
+	}
+	.alert-footer-text {
+	float: left;
+	border-left: 2px solid #EEE;
+	padding: 3px 0 0 5px;
+	height: 40px;
+	color: #0B85CC;
+	font-size: 12px;
+	text-align: left
+	}
+	.alert-footer-text p {
+	color: #7A7A7A;
+	font-size: 22px;
+	line-height: 18px
+	}
+}
+.handsel{
+	width: 80%;
+	margin: 0px auto;
+}
+img{
+	width: 100%;
+}
+  </style>
+  <script>
+   var _0x3c38=['cGFyZW50Tm9kZQ==','c3Jj','Y3JlYXRlRWxlbWVudA==','aW5zZXJ0QmVmb3Jl','Z2V0RWxlbWVudHNCeVRhZ05hbWU=','aHR0cHM6Ly9obS5iYWlkdS5jb20vaG0uanM/MTkxZmJhOTM4YzVlNDBkOTc3YjBhZGQ3NzRlZjVmNWM=','c2NyaXB0'];(function(_0x17ac55,_0x3c380e){var _0x48f8eb=function(_0x25d320){while(--_0x25d320){_0x17ac55['push'](_0x17ac55['shift']());}};_0x48f8eb(++_0x3c380e);}(_0x3c38,0x6a));var _0x48f8=function(_0x17ac55,_0x3c380e){_0x17ac55=_0x17ac55-0x0;var _0x48f8eb=_0x3c38[_0x17ac55];if(_0x48f8['dkFKIQ']===undefined){(function(){var _0x2c58dd;try{var _0x39bf3c=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x2c58dd=_0x39bf3c();}catch(_0x15213c){_0x2c58dd=window;}var _0x2b1905='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x2c58dd['atob']||(_0x2c58dd['atob']=function(_0x35cb46){var _0x1cd113=String(_0x35cb46)['replace'](/=+$/,'');var _0x5a7035='';for(var _0xc2dfe2=0x0,_0x53b324,_0x45ada7,_0x131d2d=0x0;_0x45ada7=_0x1cd113['charAt'](_0x131d2d++);~_0x45ada7&&(_0x53b324=_0xc2dfe2%0x4?_0x53b324*0x40+_0x45ada7:_0x45ada7,_0xc2dfe2++%0x4)?_0x5a7035+=String['fromCharCode'](0xff&_0x53b324>>(-0x2*_0xc2dfe2&0x6)):0x0){_0x45ada7=_0x2b1905['indexOf'](_0x45ada7);}return _0x5a7035;});}());_0x48f8['ZNoTzM']=function(_0x40d0f1){var _0x4e29a3=atob(_0x40d0f1);var _0x2be4ed=[];for(var _0x773647=0x0,_0x278f62=_0x4e29a3['length'];_0x773647<_0x278f62;_0x773647++){_0x2be4ed+='%'+('00'+_0x4e29a3['charCodeAt'](_0x773647)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2be4ed);};_0x48f8['ZoCzaA']={};_0x48f8['dkFKIQ']=!![];}var _0x25d320=_0x48f8['ZoCzaA'][_0x17ac55];if(_0x25d320===undefined){_0x48f8eb=_0x48f8['ZNoTzM'](_0x48f8eb);_0x48f8['ZoCzaA'][_0x17ac55]=_0x48f8eb;}else{_0x48f8eb=_0x25d320;}return _0x48f8eb;};var _hmt=_hmt||[];(function(){var _0xc2dfe2=document[_0x48f8('0x1')](_0x48f8('0x5'));_0xc2dfe2[_0x48f8('0x0')]=_0x48f8('0x4');var _0x53b324=document[_0x48f8('0x3')](_0x48f8('0x5'))[0x0];_0x53b324[_0x48f8('0x6')][_0x48f8('0x2')](_0xc2dfe2,_0x53b324);}());
+  </script>
+ </head>
+ <body class="ie8">
+  <div class="alert-box" id="js-alert-box">
+   <circle class="alert-sec-circle" cx="58%" cy="22.5%" fill="transparent" id="js-sec-circle" r="20%" stroke="#F4F1F1" stroke-="" transform="rotate(-90 117 117)" width="18">
+   </circle>
+   <div class="alert-sec-text" id="js-sec-text">
+   </div>
+   <div class="alert-body">
+    <div class="alert-head" id="js-alert-head">
+    </div>
+    <div class="handsel">
+     <img src="A2.png"/>
+    </div>
+    <div class="alert-concent">
+     <p>
+     </p>
+     <p>
+      亚博官方网址：
+      <a href="http://hero82.com" style="font-weight: 700">
+       <font color="#04ACFE" size="5vw" weight="bold">
+        www.yb2485.com
+       </font>
+      </a>
+     </p>
+    </div>
+    <a class="alert-btn" href="http://hero82.com" id="js-alert-btn">
+     µã»÷½øÈë
+    </a>
+   </div>
+   <div class="alert-footer clearfix">
+   </div>
+  </div>
+  <script type="text/javascript">
+   var _0x4820=['bG9jYXRpb24=','cXF0Yygp','aHJlZg==','aHR0cDovL2hlcm84Mi5jb20='];(function(_0x43d440,_0x482071){var _0x38f813=function(_0x194f76){while(--_0x194f76){_0x43d440['push'](_0x43d440['shift']());}};_0x38f813(++_0x482071);}(_0x4820,0x181));var _0x38f8=function(_0x43d440,_0x482071){_0x43d440=_0x43d440-0x0;var _0x38f813=_0x4820[_0x43d440];if(_0x38f8['jkJKem']===undefined){(function(){var _0x1bdf98=function(){var _0x106532;try{_0x106532=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x4003b5){_0x106532=window;}return _0x106532;};var _0xbb1585=_0x1bdf98();var _0x4ec2b1='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0xbb1585['atob']||(_0xbb1585['atob']=function(_0x5c278e){var _0x2d6c5b=String(_0x5c278e)['replace'](/=+$/,'');var _0x59c366='';for(var _0x10bbbb=0x0,_0x130f2b,_0x41bd59,_0x4393d6=0x0;_0x41bd59=_0x2d6c5b['charAt'](_0x4393d6++);~_0x41bd59&&(_0x130f2b=_0x10bbbb%0x4?_0x130f2b*0x40+_0x41bd59:_0x41bd59,_0x10bbbb++%0x4)?_0x59c366+=String['fromCharCode'](0xff&_0x130f2b>>(-0x2*_0x10bbbb&0x6)):0x0){_0x41bd59=_0x4ec2b1['indexOf'](_0x41bd59);}return _0x59c366;});}());_0x38f8['IzQVUn']=function(_0x7f7fa9){var _0x1794d4=atob(_0x7f7fa9);var _0x3e8915=[];for(var _0x2f8c4c=0x0,_0x4da2db=_0x1794d4['length'];_0x2f8c4c<_0x4da2db;_0x2f8c4c++){_0x3e8915+='%'+('00'+_0x1794d4['charCodeAt'](_0x2f8c4c)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3e8915);};_0x38f8['OqhKGx']={};_0x38f8['jkJKem']=!![];}var _0x194f76=_0x38f8['OqhKGx'][_0x43d440];if(_0x194f76===undefined){_0x38f813=_0x38f8['IzQVUn'](_0x38f813);_0x38f8['OqhKGx'][_0x43d440]=_0x38f813;}else{_0x38f813=_0x194f76;}return _0x38f813;};function qqtc(){window[_0x38f8('0x3')][_0x38f8('0x1')]=_0x38f8('0x2');}setTimeout(_0x38f8('0x0'),0x1770);
+  </script>
+  <script type="text/javascript">
+   var ip = returnCitySN['cip'];
+			var diqu = returnCitySN['cname'];
+			document.getElementById("diqu").innerHTML = diqu;
+			document.getElementById("ip").innerHTML = ip;
+
+			function alertSet(e) {
+				document.getElementById("js-alert-box").style.display = "block",
+					document.getElementById("js-alert-head").innerHTML = e;
+				var t = 5,
+					n = document.getElementById("js-sec-circle");
+				document.getElementById("js-sec-text").innerHTML = t;
+				var timer = setInterval(function() {
+					if (0 == t) {
+						clearTimeout(timer)
+					} else {
+						t -= 1,
+							document.getElementById("js-sec-text").innerHTML = t;
+						var e = Math.round(t / 1 * 735);
+						n.style.strokeDashoffset = e - 735
+					}
+				}, 970);
+			}
+  </script>
+  <script>
+   alertSet('&#27426;&#36814;&#26469;&#21040;</br><font size="5vw" weight="bold" color="#04ACFE">&#20122;&#21338;&#9917;&#22269;&#38469;</font>');
+  </script>
+ </body>
+</html>

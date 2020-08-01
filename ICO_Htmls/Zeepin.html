@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <script>
+   ! function (a, b) {
+      function c() {
+        var b = f.getBoundingClientRect().width;
+        b / i > 640 && (b = 640 * i);
+        var c = b / 25;
+        f.style.fontSize = c + "px", k.rem = a.rem = c
+      }
+      var d, e = a.document,
+        f = e.documentElement,
+        g = e.querySelector('meta[name="viewport"]'),
+        h = e.querySelector('meta[name="flexible"]'),
+        i = 0,
+        j = 0,
+        k = b.flexible || (b.flexible = {});
+      if (g) {
+        console.warn("将根据已有的meta标签来设置缩放比例");
+        var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+        l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+      } else if (h) {
+        var m = h.getAttribute("content");
+        if (m) {
+          var n = m.match(/initial\-dpr=([\d\.]+)/),
+            o = m.match(/maximum\-dpr=([\d\.]+)/);
+          n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((
+            1 / i).toFixed(2)))
+        }
+      }
+      if (!i && !j) {
+        var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone|ipad/gi)),
+          q = a.devicePixelRatio;
+        i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+      }
+      if (f.setAttribute("data-dpr", i), !g)
+        if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" +
+          j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild
+            .appendChild(g);
+        else {
+          var r = e.createElement("div");
+          r.appendChild(g), e.write(r.innerHTML)
+        } a.addEventListener("resize", function () {
+          clearTimeout(d), d = setTimeout(c, 300)
+        }, !1), a.addEventListener("pageshow", function (a) {
+          a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+        }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener(
+          "DOMContentLoaded",
+          function (a) {
+            e.body.style.fontSize = 12 * i + "px"
+          }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+            var b = parseFloat(a) * this.rem;
+            return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+          }, k.px2rem = function (a) {
+            var b = parseFloat(a) / this.rem;
+            return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+          }
+    }(window, window.lib || (window.lib = {}));
+  </script>
+  <link href="/favicon.png" rel="icon" type="image/png"/>
+  <title>
+   zeepin
+  </title>
+  <meta content="" name="description"/>
+  <link href="/css/community.66f79005.css" rel="prefetch"/>
+  <link href="/css/community~foundation.44cfd6a2.css" rel="prefetch"/>
+  <link href="/css/dapps.a48cf767.css" rel="prefetch"/>
+  <link href="/css/foundation.3426be6d.css" rel="prefetch"/>
+  <link href="/css/mission.169a3cb9.css" rel="prefetch"/>
+  <link href="/css/page.3a3ed69c.css" rel="prefetch"/>
+  <link href="/css/protocol.fd53baca.css" rel="prefetch"/>
+  <link href="/css/solution.32f6c034.css" rel="prefetch"/>
+  <link href="/js/community.6404cadb.js" rel="prefetch"/>
+  <link href="/js/community~dapps~solution.98f4686f.js" rel="prefetch"/>
+  <link href="/js/community~foundation.2ca37182.js" rel="prefetch"/>
+  <link href="/js/dapps.47e4cf11.js" rel="prefetch"/>
+  <link href="/js/foundation.c8ffb5bd.js" rel="prefetch"/>
+  <link href="/js/mission.65a5fe3a.js" rel="prefetch"/>
+  <link href="/js/page.1fd48efb.js" rel="prefetch"/>
+  <link href="/js/protocol.a3907093.js" rel="prefetch"/>
+  <link href="/js/solution.0bab1866.js" rel="prefetch"/>
+  <link as="style" href="/css/app.d61e22a6.css" rel="preload"/>
+  <link as="style" href="/css/chunk-vendors.087d2fd7.css" rel="preload"/>
+  <link as="script" href="/js/app.0b02836b.js" rel="preload"/>
+  <link as="script" href="/js/chunk-vendors.39edc1d8.js" rel="preload"/>
+  <link href="/css/chunk-vendors.087d2fd7.css" rel="stylesheet"/>
+  <link href="/css/app.d61e22a6.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <noscript>
+   <strong>
+    We're sorry but www.zeepin.io doesn't work properly without JavaScript enabled. Please enable it to continue.
+   </strong>
+  </noscript>
+  <div id="app">
+  </div>
+  <script src="/js/chunk-vendors.39edc1d8.js">
+  </script>
+  <script src="/js/app.0b02836b.js">
+  </script>
+ </body>
+</html>

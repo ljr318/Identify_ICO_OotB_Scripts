@@ -1,0 +1,9 @@
+<html>
+ <body>
+  <script src="/cupid.js" type="text/javascript">
+  </script>
+  <script>
+   function toNumbers(d){var e=[];d.replace(/(..)/g,function(d){e.push(parseInt(d,16))});return e}function toHex(){for(var d=[],d=1==arguments.length&&arguments[0].constructor==Array?arguments[0]:arguments,e="",f=0;f<d.length;f++)e+=(16>d[f]?"0":"")+d[f].toString(16);return e.toLowerCase()}var a=toNumbers("db1dfb9088ac1666b85806fafcebeeca"),b=toNumbers("815da310f7d53504c725fd3f342b9a4e"),c=toNumbers("28c72fb42e54074955bbd423e644f1ea");var now=new Date(),time=now.getTime();time+=3600*1000*24;now.setTime(time);document.cookie="CUPID="+toHex(slowAES.decrypt(c,2,a,b))+"; expires="+now.toUTCString()+"; path=/";location.href="http://storichain.io/?utm_source=icobench&ckattempt=1";
+  </script>
+ </body>
+</html>

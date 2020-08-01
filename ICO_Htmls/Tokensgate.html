@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sign In | TokensGate
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet"/>
+  <link href="/asset/6c9047c.css?133" rel="stylesheet"/>
+  <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/favicon/manifest.json" rel="manifest"/>
+  <link color="#5bbad5" href="/favicon/safari-pinned-tab.svg" rel="mask-icon"/>
+  <meta content="#ffffff" name="theme-color"/>
+ </head>
+ <body class="gray-bg" data-date-format="DD/MM/YYYY" data-date-time-format="DD/MM/YYYY HH:mm" data-date-time-minutes-format="DD/MM/YYYY HH:mm" data-date-time-seconds-format="DD/MM/YYYY HH:mm:ss">
+  <div class="middle-box text-center loginscreen animated fadeIn">
+   <div>
+    <div>
+     <img alt="TokensGate" class="login-base-logo portal-logo-1" src="/img/logo12.png"/>
+    </div>
+    <h3>
+     Sign In
+    </h3>
+    <form action="/login_check" class="m-t" method="POST" role="form">
+     <div class="text-left">
+     </div>
+     <div class="form-group">
+      <input class="form-control" name="_username" placeholder="Email" type="text"/>
+     </div>
+     <div class="form-group">
+      <input class="form-control" name="_password" placeholder="Password" type="password"/>
+     </div>
+     <div class="form-group text-left wrapper-label-checkbox">
+      <label>
+       <input name="_remember_me" type="checkbox"/>
+       Keep me logged in
+      </label>
+     </div>
+     <button class="btn btn-primary block full-width m-b" type="submit">
+      Sign In
+     </button>
+     <div class="auth-social">
+      or
+      <div class="auth-social-buttons">
+       <a class="btn btn-block btn-social btn-gplus" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=739323995218-gk7p43vfq0mun0h6vrkafrskb49g33lf.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fcloud.tokensgate.com%2Fgmail-auth&amp;state&amp;scope=email&amp;approval_prompt=auto">
+        <i aria-hidden="true" class="fa fa-google-plus">
+        </i>
+        Sign in using Google+
+       </a>
+      </div>
+     </div>
+     <a href="/reset-password">
+      <small>
+       Forgot password?
+      </small>
+     </a>
+     <p class="text-muted text-center">
+      <small>
+       Do not have an account?
+      </small>
+     </p>
+     <a class="btn btn-sm btn-white btn-block" href="/apply">
+      Register
+     </a>
+     <a class="btn btn-sm btn-white btn-block" href="/register-shareholder">
+      Register as shareholder
+     </a>
+    </form>
+   </div>
+  </div>
+  <script type="text/javascript">
+   locales = {};
+        locales.filesUploadWrongFormat = 'You\x20need\x20to\x20choose\x20one\x20of\x20the\x20following\x20formats\x20';
+    locales.confirmYes = 'Yes';
+    locales.confirmCancel = 'Cancel';
+    locales.confirmRemove = 'removeConfirm';
+    locales.attachmentNotFinished = 'attachmentNotFinished';
+    locales.copied = 'Copied\x21';
+    locales.filesUploadMinSize = 'Min\x20size\x2032KB';
+    locales.filesUploadMaxSize = 'Max\x20size\x3A\x2030MB';
+  </script>
+  <script src="/asset/71bcad5.js?133">
+  </script>
+ </body>
+</html>

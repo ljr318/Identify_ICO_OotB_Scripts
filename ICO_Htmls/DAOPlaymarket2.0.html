@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html data-n-head="" data-n-head-ssr="">
+ <head>
+  <title data-n-head="true">
+   DAO PlayMarket 2.0
+  </title>
+  <meta charset="utf-8" data-n-head="true"/>
+  <meta content="width=device-width, initial-scale=1" data-n-head="true" name="viewport"/>
+  <meta content="DAO PlayMarket 2.0 is a decentralized Android App Store that accepts payments in cryptocurrency and is combined with an ICO platform for developers" data-hid="description" data-n-head="true" name="description"/>
+  <meta content="DAO Playmarket2.0, ico, CryptoCurrency, Mobile Application, Smart Contracts, android, app, blockchain, etherium, Token" data-hid="keywords" data-n-head="true" name="keywords"/>
+  <link data-n-head="true" href="/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link as="script" href="/7db9be5d94e637055128.js" rel="preload"/>
+  <link as="script" href="/d909485859cc68b3287a.js" rel="preload"/>
+  <link as="script" href="/9da73f87245bb768ca21.js" rel="preload"/>
+  <link as="script" href="/7efebcd0f04456d6fdf9.js" rel="preload"/>
+  <link as="script" href="/c34104e4ec7ebb683f3d.js" rel="preload"/>
+  <style data-vue-ssr-id="fd547dac:0 798c3abc:0 c83d6c64:0 40f8d486:0">
+   .nuxt-progress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 2px;
+  width: 0%;
+  -webkit-transition: width 0.2s, opacity 0.4s;
+  -o-transition: width 0.2s, opacity 0.4s;
+  transition: width 0.2s, opacity 0.4s;
+  opacity: 1;
+  background-color: #efc14e;
+  z-index: 999999;
+}
+
+
+.banner--clone.header-wrap {
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+.banner--clone.header-wrap {
+      display: none;
+}
+}
+.banner--clone.header-wrap .header.row {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (max-width: 1600px) {
+.banner--clone.header-wrap .header.row {
+        max-width: 968px;
+}
+}
+@media (max-width: 1024px) {
+.banner--clone.header-wrap .header.row {
+        max-width: 768px;
+}
+}
+.banner--clone.header-wrap .header__logo span {
+    color: #131c2b;
+}
+.banner--clone.header-wrap .header__nav__item {
+    color: #131c2b;
+}
+.header {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-wrap {
+    height: 94px;
+    margin-bottom: 100px;
+}
+@media (max-width: 1024px) {
+.header-wrap {
+        height: 70px;
+        margin-bottom: 70px;
+}
+}
+@media (max-width: 768px) {
+.header-wrap {
+        background: #ffffff;
+        position: fixed;
+        width: 100vw;
+        z-index: 10;
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+}
+@media (max-width: 768px) {
+.header {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+}
+}
+.header__mobile-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20px;
+    cursor: pointer;
+}
+.header__mobile-menu span {
+      width: 100%;
+      height: 3px;
+      background-color: #131c2b;
+      margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+.header__mobile-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+}
+.header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+@media (max-width: 768px) {
+.header__logo {
+        margin-left: 30px;
+}
+}
+@media (max-width: 425px) {
+.header__logo {
+        margin-left: 16px;
+}
+}
+.header__logo img {
+      width: 70px;
+      margin-right: 15px;
+}
+@media (max-width: 1024px) {
+.header__logo img {
+          width: 30px;
+}
+}
+.header__logo span {
+      font-size: 25px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #ffffff;
+}
+@media (max-width: 1024px) {
+.header__logo span {
+          font-size: 20px;
+}
+}
+@media (max-width: 768px) {
+.header__logo span {
+          color: #131c2b;
+}
+}
+.header__nav {
+    display: none;
+}
+@media (max-width: 768px) {
+.header__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ffffff;
+        padding: 51px;
+}
+}
+@media (min-width: 769px) {
+.header__nav {
+        display: block !important;
+}
+}
+.header__nav__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+@media (max-width: 768px) {
+.header__nav__list {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+}
+}
+.header__nav__item {
+      cursor: pointer;
+      color: #ffffff;
+}
+@media (max-width: 1024px) {
+.header__nav__item {
+          font-size: 14px;
+}
+}
+@media (max-width: 768px) {
+.header__nav__item {
+          color: #131c2b;
+          margin-bottom: 48px;
+          font-size: 16px;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+}
+}
+.header__nav__item:not(:first-child) {
+        margin-left: 40px;
+}
+@media (max-width: 1024px) {
+.header__nav__item:not(:first-child) {
+            margin-left: 20px;
+}
+}
+@media (max-width: 768px) {
+.header__nav__item:not(:first-child) {
+            margin-left: 0;
+}
+}
+.header__nav__item:hover {
+        margin-top: 5px;
+}
+.header__nav__item:hover .active-line {
+          display: block;
+}
+.header__nav .active-line {
+      display: none;
+      width: 30%;
+      height: 3px;
+      background: #0093ee;
+      margin-top: 3px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+}
+.header__nav--active {
+      margin-top: 5px;
+}
+.header__nav--active .active-line {
+        display: block;
+        width: 100%;
+}
+.header__nav__lang {
+      margin-left: 36px;
+}
+@media (max-width: 768px) {
+.header__nav__lang {
+          margin-left: 0;
+}
+}
+.header__nav__lang--open .header__nav__other-lang {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+.header__nav__lang--open .header__nav__current-lang, .header__nav__lang--open .header__nav__other-lang {
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header__nav__current-lang {
+      text-align: center;
+      width: 58px;
+      height: 32px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      padding: 5px 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      background: #f2f2f2;
+      color: #131c2b;
+}
+.header__nav__current-lang img {
+        margin-left: 2px;
+}
+.header__nav__other-lang {
+      text-align: center;
+      display: none;
+      width: 58px;
+      height: 32px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      padding: 5px 10px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      background: #f2f2f2;
+      color: #131c2b;
+      position: absolute;
+}
+.home {
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  /* globals */
+}
+.home .main {
+    height: 100vh;
+    background: url(/img/3de5c58.png) no-repeat 100% 100%, -o-linear-gradient(304.18deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+    background: url(/img/3de5c58.png) no-repeat 100% 100%, linear-gradient(145.82deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+    color: #ffffff;
+}
+@media (max-width: 1600px) {
+.home .main {
+        background: url(/img/3de5c58.png) no-repeat 100% 100%/30%, -o-linear-gradient(304.18deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+        background: url(/img/3de5c58.png) no-repeat 100% 100%/30%, linear-gradient(145.82deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+}
+}
+@media (max-width: 767px) {
+.home .main {
+        background: -o-linear-gradient(304.18deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+        background: linear-gradient(145.82deg, #131c2b 27.5%, #06546b 94.43%) no-repeat;
+}
+}
+@media (max-width: 768px) {
+.home .main .row {
+        height: 100%;
+}
+}
+@media (max-width: 768px) {
+.home .main-wrap {
+        padding-top: 100px;
+        height: calc(100% - 100px);
+}
+}
+.home .main__left {
+      max-width: 712px;
+      height: 100%;
+}
+@media (max-width: 768px) {
+.home .main__left {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+}
+}
+.home .main__exchange {
+      margin-bottom: 60px;
+}
+@media (max-width: 425px) {
+.home .main__exchange {
+          display: none;
+}
+}
+.home .main__exchange__title {
+        font-size: 18px;
+        margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+.home .main__exchange__title {
+            font-size: 16px;
+}
+}
+.home .main__exchange__items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 18px;
+}
+@media (max-width: 768px) {
+.home .main__exchange__items {
+            font-size: 16px;
+}
+.home .main__exchange__items span.exchange-value {
+              margin-top: 10px;
+              display: block;
+}
+}
+.home .main__exchange__items li:not(:first-child) {
+          margin-left: 30px;
+}
+@media (max-width: 768px) {
+.home .main__exchange__items li:not(:first-child) {
+              margin-left: 30px;
+}
+}
+.home .main__exchange__items a {
+          text-decoration: underline !important;
+}
+.home .main h1 {
+      font-size: 75px;
+      letter-spacing: 0.02em;
+      line-height: 110%;
+      font-weight: bold;
+      margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+.home .main h1 {
+          font-size: 35px;
+}
+}
+.home .main p {
+      font-size: 20px;
+      line-height: 154.19%;
+      letter-spacing: 0.055em;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+.home .main p {
+          font-size: 14px;
+          margin-bottom: 20px;
+}
+}
+.home .main__buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+}
+@media (max-width: 768px) {
+.home .main__buttons {
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+}
+}
+@media (max-width: 600px) {
+.home .main__buttons {
+          margin: 0 auto;
+          width: 200px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+}
+}
+.home .main__buttons a:last-child {
+        margin-left: 30px;
+}
+@media (max-width: 600px) {
+.home .main__buttons a:last-child {
+            margin-left: 0;
+            margin-top: 24px;
+}
+}
+.home .about {
+    padding-top: 90px;
+    background: url(/img/2f276ff.png) no-repeat 100% -60px, url(/img/6da00c7.png) no-repeat 0 444px;
+}
+@media (max-width: 1600px) {
+.home .about {
+        padding-top: 60px;
+        background: url(/img/2f276ff.png) no-repeat 100% 80px/400px, url(/img/6da00c7.png) no-repeat -120px 444px/480px;
+}
+}
+@media (max-width: 1024px) {
+.home .about {
+        background: #ffffff;
+        padding-top: 60px;
+}
+}
+@media (max-width: 768px) {
+.home .about {
+        padding-top: 30px;
+}
+}
+.home .about__text-block {
+      max-width: 600px;
+      font-size: 20px;
+      line-height: 154.19%;
+      letter-spacing: 0.055em;
+      color: #131c2b;
+      opacity: 0.8;
+}
+@media (max-width: 1600px) {
+.home .about__text-block {
+          font-size: 18px;
+}
+}
+@media (max-width: 768px) {
+.home .about__text-block {
+          font-size: 14px;
+}
+}
+.home .about__text-block span.attention {
+        font-weight: bold;
+}
+.home .about__block1 {
+      width: 100%;
+      padding: 240px 0 340px 55px;
+}
+@media (max-width: 1600px) {
+.home .about__block1 {
+          padding: 100px 0 340px 0;
+}
+}
+@media (max-width: 1024px) {
+.home .about__block1 {
+          padding: 0;
+          max-width: 600px;
+          margin: 0 auto;
+          margin-bottom: 60px;
+}
+}
+@media (max-width: 768px) {
+.home .about__block1 {
+          margin-bottom: 30px;
+}
+}
+.home .about__block2 {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding: 0 55px 800px 0;
+}
+@media (max-width: 1600px) {
+.home .about__block2 {
+          padding: 0 0 800px 0;
+}
+}
+@media (max-width: 1024px) {
+.home .about__block2 {
+          padding: 0;
+          max-width: 600px;
+          margin: 0 auto;
+}
+}
+.home .advantages {
+    background: url(/img/83789f7.png) no-repeat 100% 50%/40%;
+}
+.home .advantages-wrap {
+      margin-top: -625px;
+      padding-top: 90px;
+      background: url(/img/f4ede8a.png) no-repeat 50% -40%;
+}
+@media (max-width: 1600px) {
+.home .advantages-wrap {
+          background: url(/img/f4ede8a.png) no-repeat 50% -27%;
+}
+}
+@media (max-width: 1024px) {
+.home .advantages-wrap {
+          margin-top: 0;
+          background: #ffffff;
+          padding-top: 60px;
+}
+}
+@media (max-width: 768px) {
+.home .advantages-wrap {
+          padding-top: 52px;
+}
+}
+@media (max-width: 1024px) {
+.home .advantages {
+        background: #ffffff;
+}
+}
+.home .advantages__list {
+      max-width: 565px;
+      padding-left: 55px;
+}
+@media (max-width: 1600px) {
+.home .advantages__list {
+          padding-left: 55px;
+}
+}
+@media (max-width: 1024px) {
+.home .advantages__list {
+          padding-left: 0;
+          margin: 0 auto;
+          max-width: 600px;
+}
+}
+.home .advantages__list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 90px;
+}
+@media (max-width: 1024px) {
+.home .advantages__list li:last-child {
+            margin-bottom: 0;
+}
+}
+@media (max-width: 768px) {
+.home .advantages__list li {
+            margin-bottom: 23px;
+}
+}
+@media (max-width: 768px) {
+.home .advantages__list li {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+}
+}
+.home .advantages__list li img {
+          margin-right: 40px;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+}
+@media (max-width: 768px) {
+.home .advantages__list li img {
+              margin-right: 0;
+              width: 50px;
+              height: 50px;
+}
+}
+.home .advantages__list li p {
+          margin-top: 30px;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: 0.055em;
+          color: #131c2b;
+          opacity: 0.8;
+}
+@media (max-width: 1600px) {
+.home .advantages__list li p {
+              font-size: 16px;
+}
+}
+@media (max-width: 768px) {
+.home .advantages__list li p {
+              margin-top: 18px;
+              font-size: 14px;
+}
+}
+.home .download {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+@media (max-width: 1024px) {
+.home .download {
+        padding-top: 60px;
+}
+}
+@media (max-width: 768px) {
+.home .download {
+        padding-bottom: 30px;
+}
+}
+.home .download ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: #0093ee;
+      font-weight: bold;
+      font-size: 30px;
+      max-width: 1230px;
+      margin: 0 auto;
+      width: 100%;
+}
+@media (max-width: 1600px) {
+.home .download ul {
+          font-size: 20px;
+          width: 768px;
+}
+}
+@media (max-width: 768px) {
+.home .download ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+}
+.home .download ul li {
+            text-align: center;
+}
+.home .download ul li:not(:last-child) {
+            margin-bottom: 8px;
+}
+}
+.home .download a.btn {
+      margin: 60px auto;
+      margin-bottom: 0;
+}
+@media (max-width: 768px) {
+.home .download a.btn {
+          margin: 30px auto;
+}
+}
+.home .footer {
+    min-height: 188px;
+    background: #131c2b;
+    color: #ffffff;
+    padding: 80px 0;
+}
+@media (max-width: 768px) {
+.home .footer {
+        padding: 40px 0;
+}
+}
+.home .footer .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.home .footer__left {
+      margin-right: 140px;
+}
+@media (max-width: 768px) {
+.home .footer__left {
+          margin-right: 0;
+          width: 100%;
+}
+}
+@media (max-width: 425px) {
+.home .footer__left {
+          width: 100%;
+}
+}
+@media (max-width: 1600px) {
+.home .footer__right {
+        width: 100%;
+}
+}
+.home .footer__logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+.home .footer__logo {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+}
+}
+.home .footer__logo span {
+        margin-left: 25px;
+        font-weight: 500;
+        font-size: 20px;
+}
+@media (max-width: 768px) {
+.home .footer__logo span {
+            font-size: 14px;
+            margin-left: 10px;
+}
+}
+@media (max-width: 768px) {
+.home .footer__logo img {
+          width: 30px;
+}
+}
+.home .footer__socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+@media (max-width: 600px) {
+.home .footer__socials {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          width: 200px;
+}
+}
+.home .footer__socials__title {
+        margin-right: 30px;
+}
+@media (max-width: 600px) {
+.home .footer__socials__title {
+            font-size: 14px;
+            margin-bottom: 7px;
+            line-height: 200%;
+            width: 100%;
+}
+}
+.home .footer__socials ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+@media (max-width: 600px) {
+.home .footer__socials ul {
+            width: 100%;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+}
+}
+.home .footer__socials ul li {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #232b38;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+}
+.home .footer__socials ul li img {
+            height: 18px;
+}
+.home .footer__socials ul li:not(:first-child) {
+            margin-left: 32px;
+}
+@media (max-width: 600px) {
+.home .footer__socials ul li:not(:first-child) {
+                margin-left: 24px;
+                margin-bottom: 21px;
+}
+}
+@media (max-width: 600px) {
+.home .footer__socials ul li:nth-child(4) {
+              margin-left: 0;
+}
+}
+@media (max-width: 600px) {
+.home .footer__socials ul li:nth-child(7) {
+              margin-left: 0;
+}
+}
+.home .footer__socials ul li:first-child {
+            background: #0093ee;
+}
+.home .footer__socials ul li a {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+}
+.home .footer__links {
+      margin-top: 95px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 100px;
+}
+@media (max-width: 768px) {
+.home .footer__links {
+          margin-top: 30px;
+}
+}
+@media (max-width: 600px) {
+.home .footer__links {
+          margin-top: 17px;
+          width: 100%;
+          height: auto;
+}
+}
+.home .footer__links li {
+        line-height: 30px;
+        margin-right: 60px;
+}
+@media (max-width: 768px) {
+.home .footer__links li {
+            font-size: 14px;
+}
+}
+.home .footer__links li:nth-child(2n) {
+          margin-bottom: 17px;
+}
+.home .footer__links li a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+}
+.home .footer__links li img {
+          margin-top: -1px;
+          margin-right: 20px;
+}
+.home .recommended {
+    background: #f7f7f7;
+    padding: 50px;
+}
+@media (max-width: 768px) {
+.home .recommended {
+        padding: 35px 15px;
+}
+}
+.home .recommended .subtitle.steel-gray {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: 300;
+}
+@media (max-width: 768px) {
+.home .recommended .subtitle.steel-gray {
+          font-size: 14px;
+}
+}
+@media (max-width: 768px) {
+.home .recommended .app-list__link.app-list__link--category {
+        top: -24px;
+}
+}
+.home .btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+@media (max-width: 1024px) {
+.home .btn {
+        width: 200px;
+        height: 50px;
+}
+}
+.home .btn.blue {
+    background: #0093ee;
+    color: #ffffff;
+    border: none;
+}
+.home .btn.transparent {
+    color: #0093ee;
+    border: 2px solid #0093ee;
+}
+@media (max-width: 600px) {
+.home .btn.transparent {
+        background: #0093ee;
+        color: #ffffff;
+        border: none;
+}
+}
+.home .row {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 1600px) {
+.home .row {
+        max-width: 968px;
+}
+}
+@media (max-width: 1024px) {
+.home .row {
+        max-width: 768px;
+}
+}
+.home h2.title {
+    color: #131c2b;
+    font-size: 55px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 768px) {
+.home h2.title {
+        font-size: 20px;
+        margin-bottom: 40px;
+}
+}
+.home h3.title {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 130%;
+    color: #131c2b;
+    text-align: center;
+    font-weight: bold;
+    max-width: 800px;
+}
+@media (max-width: 768px) {
+.home h3.title {
+        font-size: 20px;
+        margin-bottom: 30px;
+}
+}
+.banner--clone {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.banner--stick {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+
+.subtitle[data-v-16d1e348] {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  /*&:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background-color: transparent */
+}
+.subtitle[data-v-16d1e348]::first-letter {
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 991px) {
+.subtitle[data-v-16d1e348] {
+      color: red;
+}
+}
+.subtitle.steel-gray[data-v-16d1e348] {
+    color: #131E2B;
+}
+@media only screen and (max-width: 991px) {
+.subtitle.steel-gray[data-v-16d1e348] {
+        color: #A2AEC0;
+}
+}
+
+
+.swiper-container[data-v-3dd22c4a] {
+  overflow: visible;
+}
+.swiper-container .swiper-slide[data-v-3dd22c4a] {
+    width: 150px;
+}
+@media only screen and (max-width: 991px) {
+.swiper-container .swiper-slide[data-v-3dd22c4a] {
+        width: 110px !important;
+}
+}
+.app-list__box[data-v-3dd22c4a] {
+  position: relative;
+}
+.app-list__box .app-list__link[data-v-3dd22c4a] {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+    color: #059FFA;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    right: 16px;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app-list__link[data-v-3dd22c4a] {
+        right: 0;
+}
+}
+.app-list__box .app-list__link--category[data-v-3dd22c4a] {
+      top: -31px;
+}
+.app-list__box .app-list__link--subcategory[data-v-3dd22c4a] {
+      top: 4px;
+}
+.app-list__box .app__list[data-v-3dd22c4a] {
+    border-radius: 2px;
+}
+.app-list__box .app__list .app__item[data-v-3dd22c4a] {
+      position: relative;
+      width: 130px;
+      height: 220px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 0 25px rgba(19, 28, 43, 0.05);
+              box-shadow: 0 0 25px rgba(19, 28, 43, 0.05);
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      cursor: pointer;
+      /*.app__name:before
+        content: ''
+        float: left
+        width: 5px
+        height: 35px */
+      /*.app__name > *:first-child
+        float: right
+        width: 100%
+        margin-left: -5px */
+      /*.app__name:after
+        content: "\02026"
+        box-sizing: content-box
+        -webkit-box-sizing: content-box
+        -moz-box-sizing: content-box
+        float: right
+        position: relative
+        top: -23px
+        left: 100%
+        width: 3em
+        margin-left: -3em
+        padding-right: 1px
+        text-align: center
+        background-size: 100% 100%
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAMAAACfZeZEAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5TgsRjMZXhS30YrvDUP3Emow1YibnM9+ggOZxrBtpRRo94gxItwLOoX/vsHdA2yGgL8+TdKUK8VFufmHSGgAQWJNc9tk+rb5KMCA8aM0iwpWV6dwP9+fXuFerm3yMs0jDOysY8wr5FTldeoWKabgEJ8RATG+IeIdsn2NUqLjQ3OgBDumC3SbRMsVKsValZplydZpZpbJOQco2KdYeEe36BDAL8/vgHBfr2CvTyDu8R7esU6RcZ5ecc4+Af3iLcJSjZ1ivT0S/PMs3LNck4x8U7wz7Bv0G9RLtHuEq1TbJQr1OtVqqnWqRdoqBhnmSbZ5mXapRtcJGOc4t2eYiFfH9AS7qYlgAAARlJREFUKM9jqK9fEGS7VNrDI2+F/nyB1Z4Fa5UKN4TbbeLY7FW0Tatkp3jp7mj7vXzl+4yrDsYoVx+JYz7mXXNSp/a0RN25JMcLPP8umzRcTZW77tNyk63tdprzXdmO+2ZdD9MFe56Y9z3LUG96mcX02n/CW71JH6Qmf8px/cw77ZvVzB+BCj8D5vxhn/vXZh6D4uzf1rN+Cc347j79q/zUL25TPrJMfG/5LvuNZP8rixeZz/mf+vU+Vut+5NL5gPOeb/sd1dZbTs03hBuvmV5JuaRyMfk849nEM7qnEk6IHI8/qn049hB35QGHiv0yZXuMdkXtYC3ebrglcqvYxoj1muvC1nDlrzJYGbpcdHHIMo2FwYv+j3QAAOBSfkZYITwUAAAAAElFTkSuQmCC)
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(27%, white))
+        background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 27%, white)
+        background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 27%, white)
+        background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 27%, white)
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white 27%, white)
+        @media only screen and (max-width: 991px)
+          top: -15px */
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .no-display-mobile[data-v-3dd22c4a] {
+          display: none !important;
+}
+}
+.app-list__box .app__list .app__item[data-v-3dd22c4a]:hover {
+        z-index: 5;
+        -webkit-box-shadow: 0 0 25px rgba(19, 28, 43, 0.2);
+                box-shadow: 0 0 25px rgba(19, 28, 43, 0.2);
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item[data-v-3dd22c4a] {
+          width: 100px !important;
+          height: 150px;
+          padding: 5px;
+          border-radius: 3px;
+}
+}
+.app-list__box .app__list .app__item .app__img-link[data-v-3dd22c4a] {
+        width: 100%;
+        height: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .app__img-link[data-v-3dd22c4a] {
+            height: 90px;
+}
+}
+.app-list__box .app__list .app__item .app__img-link .app__img[data-v-3dd22c4a] {
+          max-width: 100%;
+          max-height: 100%;
+}
+.app-list__box .app__list .app__item .app__name[data-v-3dd22c4a] {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #131C2B;
+        max-height: 24px;
+        overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .app__name[data-v-3dd22c4a] {
+            margin-top: 5px;
+            font-size: 10px;
+            font-weight: 400;
+            max-height: 30px;
+}
+}
+.app-list__box .app__list .app__item .app__name p[data-v-3dd22c4a] {
+          margin: 0;
+          padding: 0;
+}
+.app-list__box .app__list .app__item .app__category[data-v-3dd22c4a] {
+        font-weight: 300;
+        font-size: 10px;
+        color: #0f1914;
+        text-transform: uppercase;
+        margin-top: 3px;
+        max-width: 90px;
+}
+.app-list__box .app__list .app__item .app__bottom[data-v-3dd22c4a] {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .app__bottom[data-v-3dd22c4a] {
+            bottom: 21px;
+            right: 7px;
+}
+}
+.app-list__box .app__list .app__item .app__bottom .app__rate[data-v-3dd22c4a] {
+          height: 14px;
+          padding-left: 15px;
+          -webkit-mask: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuOTg1NTcgMEw5LjQ5NjkxIDMuODM1MTRMMTQgNC45NjMxMkwxMS4wMjY4IDguNDU5ODdMMTEuMzE1NSAxM0w2Ljk4NTU3IDExLjMwOEwyLjY4NDU0IDEzTDIuOTczMiA4LjQ1OTg3TDAgNC45NjMxMkw0LjUwMzA5IDMuODM1MTRMNi45ODU1NyAwWiIgZmlsbD0iIzQzQjZGMSIvPgo8L3N2Zz4K) no-repeat 100% 100%;
+          mask: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuOTg1NTcgMEw5LjQ5NjkxIDMuODM1MTRMMTQgNC45NjMxMkwxMS4wMjY4IDguNDU5ODdMMTEuMzE1NSAxM0w2Ljk4NTU3IDExLjMwOEwyLjY4NDU0IDEzTDIuOTczMiA4LjQ1OTg3TDAgNC45NjMxMkw0LjUwMzA5IDMuODM1MTRMNi45ODU1NyAwWiIgZmlsbD0iIzQzQjZGMSIvPgo8L3N2Zz4K) no-repeat 100% 100%;
+          -webkit-mask-size: cover;
+          mask-size: cover;
+          background-color: #D1D1D1;
+          font-weight: 900;
+          font-size: 10px;
+}
+.app-list__box .app__list .app__item .app__bottom .style_star[data-v-3dd22c4a] {
+          background-color: #43B6F1;
+}
+.app-list__box .app__list .app__item .app__bottom .count__rate[data-v-3dd22c4a] {
+          margin-left: 3px;
+          font-weight: 900;
+          font-size: 16px;
+}
+.app-list__box .app__list .app__item .app__bottom .app__price[data-v-3dd22c4a] {
+          position: absolute;
+          right: 0;
+}
+.app-list__box .app__list .app__item .app__bottom .app__price .app__price--not-free-count[data-v-3dd22c4a] {
+            display: inline-block;
+            font-weight: 900;
+            font-size: 14px;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .app__bottom .app__price .app__price--not-free-count[data-v-3dd22c4a] {
+                font-weight: 500;
+                font-size: 10px;
+}
+}
+.app-list__box .app__list .app__item .app__bottom .app__price .app__price--not-free[data-v-3dd22c4a] {
+            display: inline-block;
+            width: 7px;
+            height: 12px;
+            -webkit-mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIzOSI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNEMUQxRDEiIGQ9Ik0xMS40OTEgMjcuMTk3TC0uMDEgMjAuMzA2IDExLjQ5MS45NjRsMTEuNSAxOS4zNDItMTEuNSA2Ljg5MXptMTEuNTA3LTQuNjhsLTExLjUwNyA2Ljg4N0wtLjAxIDIyLjUxN2wxMS41MDEgMTYuNDI3di4wMDFsMTEuNTA3LTE2LjQyOHoiLz4KPC9zdmc+Cgo=) no-repeat 100% 100%;
+            mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIzOSI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNEMUQxRDEiIGQ9Ik0xMS40OTEgMjcuMTk3TC0uMDEgMjAuMzA2IDExLjQ5MS45NjRsMTEuNSAxOS4zNDItMTEuNSA2Ljg5MXptMTEuNTA3LTQuNjhsLTExLjUwNyA2Ljg4N0wtLjAxIDIyLjUxN2wxMS41MDEgMTYuNDI3di4wMDFsMTEuNTA3LTE2LjQyOHoiLz4KPC9zdmc+Cgo=) no-repeat 100% 100%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color: #D1D1D1;
+            font-weight: 900;
+}
+.app-list__box .app__list .app__item .app__bottom .app__price .app__price--free[data-v-3dd22c4a] {
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+}
+@media only screen and (max-width: 991px) {
+.app-list__box .app__list .app__item .app__bottom .app__price .app__price--free[data-v-3dd22c4a] {
+                font-weight: 500;
+                font-size: 10px;
+}
+}
+  </style>
+ </head>
+ <body data-n-head="">
+  <div data-server-rendered="true" id="__nuxt">
+   <div class="nuxt-progress" style="width:0%;height:2px;background-color:#3B8070;opacity:0;">
+   </div>
+   <div id="__layout">
+    <div class="home-wrap">
+     <div class="home">
+      <section class="main" id="main">
+       <header class="header-wrap">
+        <div class="header row">
+         <div class="header__mobile-menu">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+         </div>
+         <div class="header__logo">
+          <img alt="DAO PLAYMARKET 2.0" src="/img/b275aee.svg"/>
+          <span>
+           DAO PLAYMARKET 2.0
+          </span>
+         </div>
+         <nav class="header__nav" style="display:none;">
+          <ul class="header__nav__list">
+           <li class="header__nav__item header__nav__main header__nav--active">
+            <a href="#main">
+             Home
+            </a>
+            <div class="active-line">
+            </div>
+           </li>
+           <li class="header__nav__item header__nav__about">
+            <a href="#about">
+             About
+            </a>
+            <div class="active-line">
+            </div>
+           </li>
+           <li class="header__nav__item header__nav__advantages">
+            <a href="#advantages">
+             Advantages
+            </a>
+            <div class="active-line">
+            </div>
+           </li>
+           <li class="header__nav__item header__nav__download">
+            <a href="#download">
+             Download
+            </a>
+            <div class="active-line">
+            </div>
+           </li>
+           <li class="header__nav__lang">
+            <div class="header__nav__current-lang">
+             <span class="lang-txt">
+              EN
+             </span>
+             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSIzIiB2aWV3Qm94PSIwIDAgNSAzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMi41IDNMNC42NjUwNiAwSDAuMzM0OTM2TDIuNSAzWiIgZmlsbD0iIzE5MzU0MCIvPgo8L3N2Zz4K"/>
+            </div>
+            <div class="header__nav__other-lang">
+             RU
+            </div>
+           </li>
+          </ul>
+         </nav>
+        </div>
+       </header>
+       <div class="main-wrap">
+        <div class="row">
+         <div class="main__left">
+          <div class="main__exchange">
+           <div class="main__exchange__title">
+            PMT / ETH
+           </div>
+           <ul class="main__exchange__items">
+            <li>
+             Last:
+             <span class="exchange-value">
+              0
+             </span>
+            </li>
+            <li>
+             24High:
+             <span class="exchange-value">
+              0
+             </span>
+            </li>
+            <li>
+             24Low:
+             <span class="exchange-value">
+              0
+             </span>
+            </li>
+            <li>
+             24V:
+             <span class="exchange-value">
+              0
+             </span>
+            </li>
+            <li>
+             <a href="https://dex.playmarket.io/PMT/ETH" target="_blank">
+              Exchange
+             </a>
+            </li>
+           </ul>
+          </div>
+          <h1>
+           A new era in the world of mobile applications
+          </h1>
+          <p>
+           A decentralized Android app store that accepts payments in cryptocurrency and is combined with an ICO platform for developers.
+          </p>
+          <div class="main__buttons">
+           <a class="btn blue" href="/category/1">
+            Apps
+           </a>
+           <a class="btn transparent" href="/category/2">
+            Games
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <section class="about" id="about">
+       <div class="row">
+        <h2 class="title">
+         About the application
+        </h2>
+        <div class="about__block1">
+         <p class="about__text-block">
+          <span class="attention">
+           DAO PlayMarket 2.0
+          </span>
+          is the first decentralized, censorship and block resistant Android app store with distributed IPFS data storage, working on the Ethereum blockchain network and accepting payment in ETH. Uninterrupted access is now guaranteed.
+         </p>
+        </div>
+        <div class="about__block2">
+         <p class="about__text-block">
+          <span class="attention">
+           Download, upload and promote
+          </span>
+          Android apps in the most reliable DAO Playmarket 2.0 app store. Distribution through our decentralized platform removes many barriers and adapts interaction scenarios between developers and end users to modern realities.
+         </p>
+        </div>
+       </div>
+      </section>
+      <div class="advantages-wrap" id="advantages">
+       <section class="advantages">
+        <div class="row">
+         <h2 class="title">
+          Advantages
+         </h2>
+         <ul class="advantages__list">
+          <li>
+           <img src="/img/dbd8d45.png"/>
+           <p class="advantages__text-block">
+            The best payout rate for monetizing apps through paid subscriptions and in-app purchases.
+           </p>
+          </li>
+          <li>
+           <img src="/img/791bd1a.png"/>
+           <p class="advantages__text-block">
+            Earn up to 99% of the income from your applications paid in cryptocurrency. Such payments remove the restrictions on the size of transactions, increase the speed of payment and increase transparency, providing developers  honest analytics. In the absence of an intermediary in the form of bank processing, this becomes a reality.
+           </p>
+          </li>
+          <li>
+           <img src="/img/fd77525.png"/>
+           <p class="advantages__text-block">
+            Earn up to 99% of the income from your applications paid in cryptocurrency. Such payments remove the restrictions on the size of transactions, increase the speed of payment and increase transparency, providing developers  honest analytics. In the absence of an intermediary in the form of bank processing, this becomes a reality.
+           </p>
+          </li>
+         </ul>
+        </div>
+       </section>
+       <section class="download row" id="download">
+        <h3 class="title">
+         All your favorite applications are in a safe place and available anytime from anywhere in the world.
+        </h3>
+        <ul>
+         <li>
+          &gt; 300 000 apps
+         </li>
+         <li>
+          &gt; 10 000 000 users
+         </li>
+         <li>
+          &gt; 2 years on the market
+         </li>
+        </ul>
+        <a class="btn blue" download="" href="https://m000001.playmarket.io/data/1/QmdnkVVgiG5sBiZSE59DD1dZG843xSMtgLFroW59PBePpm/apk/DAOPlayMarket2.0-v.1.4.24.apk">
+         Download
+        </a>
+       </section>
+      </div>
+      <section class="recommended">
+       <div class="subtitle steel-gray" data-v-16d1e348="">
+        recommended apps
+       </div>
+       <!-- -->
+      </section>
+      <footer class="footer">
+       <div class="row">
+        <div class="footer__left">
+         <div class="footer__logo">
+          <img alt="DAO PLAYMARKET 2.0" src="/img/b275aee.svg"/>
+          <span>
+           DAO PLAYMARKET 2.0
+          </span>
+         </div>
+         <div class="footer__socials">
+          <div class="footer__socials__title">
+           Social network:
+          </div>
+          <ul>
+           <li>
+            <a href="https://twitter.com/en_playmarket2" target="_blank">
+             <img src="/img/7ad4b6e.svg"/>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.youtube.com/channel/UCErfyOgXb_3UQh9i7LZAYwA/" target="_blank">
+             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxOSAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjAyNiAyLjc4ODEyQzE4LjAyNiAyLjc4ODEyIDE3Ljg1MiAxLjU3MDEyIDE3LjMzIDEuMDQ4MTJDMTYuNjkyIDAuMzUyMTE3IDE1LjkzOCAwLjM1MjExNyAxNS41OSAwLjI5NDExN0MxMy4xNTQgMC4xMjAxMTcgOS40OTk5OSAwLjEyMDExNyA5LjQ5OTk5IDAuMTIwMTE3QzkuNDk5OTkgMC4xMjAxMTcgNS44NDU5OSAwLjEyMDExNyAzLjQwOTk5IDAuMjk0MTE3QzMuMDYxOTkgMC4zNTIxMTcgMi4zMDc5OSAwLjM1MjExNyAxLjY2OTk5IDEuMDQ4MTJDMS4xNDc5OSAxLjU3MDEyIDAuOTczOTg4IDIuNzg4MTIgMC45NzM5ODggMi43ODgxMkMwLjk3Mzk4OCAyLjc4ODEyIDAuNzk5OTg4IDQuMTgwMTIgMC43OTk5ODggNS41NzIxMlY2Ljg0ODEyQzAuNzk5OTg4IDguMjQwMTIgMC45NzM5ODggOS42OTAxMiAwLjk3Mzk4OCA5LjY5MDEyQzAuOTczOTg4IDkuNjkwMTIgMS4xNDc5OSAxMC45MDgxIDEuNjY5OTkgMTEuNDMwMUMyLjMwNzk5IDEyLjEyNjEgMy4xNzc5OSAxMi4xMjYxIDMuNTgzOTkgMTIuMTg0MUM0Ljk3NTk5IDEyLjI0MjEgOS40OTk5OSAxMi4zMDAxIDkuNDk5OTkgMTIuMzAwMUM5LjQ5OTk5IDEyLjMwMDEgMTMuMTU0IDEyLjMwMDEgMTUuNTkgMTIuMTI2MUMxNS45MzggMTIuMDY4MSAxNi42OTIgMTIuMDY4MSAxNy4zMyAxMS4zNzIxQzE3Ljg1MiAxMC44NTAxIDE4LjAyNiA5LjYzMjEyIDE4LjAyNiA5LjYzMjEyQzE4LjAyNiA5LjYzMjEyIDE4LjIgOC4yNDAxMiAxOC4yIDYuODQ4MTJWNS41NzIxMkMxOC4yIDQuMTgwMTIgMTguMDI2IDIuNzg4MTIgMTguMDI2IDIuNzg4MTJaTTcuNzAxOTkgOC40NzIxMlYzLjYwMDEyTDEyLjQgNi4wMzYxMkw3LjcwMTk5IDguNDcyMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"/>
+            </a>
+           </li>
+           <li>
+            <a href="https://github.com/CryptonStudio" target="_blank">
+             <img src="/img/bcd66c2.svg"/>
+            </a>
+           </li>
+           <li>
+            <a href="https://t.me/playmarket_2" target="_blank">
+             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjAwMiAxLjA1OTkzTDAuODI3OTk4IDcuODc5OTNDMC4yNjk5OTggOC4wNjU5MyAwLjMzMTk5OCA4Ljg3MTkzIDAuODg5OTk4IDkuMDU3OTNMNS4yMyAxMC40MjE5TDYuOTY2IDE1Ljg3NzlDNy4wOSAxNi4zMTE5IDcuNjQ4IDE2LjQzNTkgNy45NTggMTYuMTI1OUwxMC41IDEzLjc2OTlMMTUuMzM2IDE3LjMwMzlDMTUuNzA4IDE3LjU1MTkgMTYuMjA0IDE3LjM2NTkgMTYuMzI4IDE2LjkzMTlMMTkuNjc2IDIuNTQ3OTNDMTkuODYyIDEuNDkzOTMgMTguOTMyIDAuNjg3OTMyIDE4LjAwMiAxLjA1OTkzWk03Ljk1OCAxMS40NzU5TDcuNCAxNC42OTk5TDYuMTYgMTAuMjM1OUwxOC4yNSAyLjI5OTkzTDcuOTU4IDExLjQ3NTlaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"/>
+            </a>
+           </li>
+           <li>
+            <a href="https://medium.com/@playmarket2.0" target="_blank">
+             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjE5MzYgMi4xMDQzTDE5Ljc1IDAuNjA4Nzg5VjAuMjgxMjVIMTQuMzU5NkwxMC41MTggOS44ODkwNkw2LjE0ODI0IDAuMjgxMjVIMC40OTYyODlWMC42MDg3ODlMMi4zMTQyNiAyLjgwNzYyQzIuNDkxOTkgMi45NzAxMiAyLjU4MzQgMy4yMDg3OSAyLjU2MDU1IDMuNDQ3NDZWMTIuMDg3OUMyLjYxNjQxIDEyLjQwMDIgMi41MTczOCAxMi43MTc2IDIuMjk5MDIgMTIuOTQzNkwwLjI1IDE1LjQzOTVWMTUuNzYxOUg2LjA1NDNWMTUuNDM0NEw0LjAwNzgxIDEyLjk0NjFDMy44OTgxNiAxMi44MzQ4IDMuODE1NjkgMTIuNjk5NiAzLjc2NjggMTIuNTUxMkMzLjcxNzkyIDEyLjQwMjggMy43MDM5NSAxMi4yNDUxIDMuNzI1OTggMTIuMDkwNFY0LjYxNTQzTDguODIxODggMTUuNzY3SDkuNDEzNDhMMTMuNzk1OSA0LjYxNTQzVjEzLjQ5OTZDMTMuNzk1OSAxMy43MzMyIDEzLjc5NTkgMTMuNzgxNCAxMy42NDM2IDEzLjkzNjNMMTIuMDY2OCAxNS40Njc0VjE1Ljc5NDlIMTkuNzE0NVYxNS40Njc0TDE4LjE5MzYgMTMuOTcxOUMxOC4wNjE1IDEzLjg3MDMgMTcuOTkzIDEzLjcwMDIgMTguMDIwOSAxMy41MzUyVjIuNTQxMDJDMTguMDA3OCAyLjQ1OTQyIDE4LjAxNjggMi4zNzU4IDE4LjA0NzIgMi4yOTg5NEMxOC4wNzc2IDIuMjIyMDggMTguMTI4MiAyLjE1NDg0IDE4LjE5MzYgMi4xMDQzWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="/>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.facebook.com/playmarket2.0/" target="_blank">
+             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAxMSAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuODA4MDUgMjJWMTEuNjc3SDBWNy45NjAxN0gyLjgwODA1VjQuNzg1NTVDMi44MDgwNSAyLjI5MDkgNC40NjY3NyAwIDguMjg4ODIgMEM5LjgzNjMxIDAgMTAuOTgwNiAwLjE0NDIxIDEwLjk4MDYgMC4xNDQyMUwxMC44OTA0IDMuNjE1MDZDMTAuODkwNCAzLjYxNTA2IDkuNzIzNDQgMy42MDQwMiA4LjQ0OTk2IDMuNjA0MDJDNy4wNzE2NyAzLjYwNDAyIDYuODUwODUgNC4yMjE0NSA2Ljg1MDg1IDUuMjQ2MjNWNy45NjAxN0gxMUwxMC44MTk1IDExLjY3N0g2Ljg1MDg1VjIySDIuODA4MDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"/>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.linkedin.com/company/daoplaymarket2-0/" target="_blank">
+             <img src="/img/4e04ea3.svg"/>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="footer__right">
+         <ul class="footer__links">
+          <li>
+           © 2019 DAO PlayMarket 2.0
+          </li>
+          <li>
+           <a href="/docs/privacy-policy/">
+            Privacy Policy
+           </a>
+          </li>
+          <li>
+           <a href="/docs/terms-and-conditions/">
+            Terms and Conditions
+           </a>
+          </li>
+          <li>
+           <a href="/docs/cookie-policy/">
+            Cookie Policy
+           </a>
+          </li>
+          <li>
+          </li>
+          <li>
+          </li>
+          <li>
+           <a download="" href="https://m000001.playmarket.io/data/1/QmdnkVVgiG5sBiZSE59DD1dZG843xSMtgLFroW59PBePpm/apk/DAOPlayMarket2.0-v.1.4.24.apk">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxNSAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjYyNyAwSDIuMzcyOTRDMS41MTg2NiAwIDAuODE5NDU4IDAuNjk4NTQzIDAuODE5NDU4IDEuNTUzNDlWMjEuNDQ1OUMwLjgxOTQ1OCAyMi4zMDA4IDEuNTE4NjYgMjMgMi4zNzI5NCAyM0gxMi42MjdDMTMuNDgxMyAyMyAxNC4xODA1IDIyLjMwMjEgMTQuMTgwNSAyMS40NDY1VjEuNTUzNDlDMTQuMTgwNSAwLjY5ODU0MyAxMy40ODEzIDAgMTIuNjI3IDBaTTUuODU5NzQgMS4xMTk3N0g5LjE0MDJDOS4yNDQwMyAxLjExOTc3IDkuMzI4MTQgMS4yMDM4OSA5LjMyODE0IDEuMzA4MzdDOS4zMjgxNCAxLjQxMjIgOS4yNDQwMyAxLjQ5NjMxIDkuMTQwMiAxLjQ5NjMxSDUuODU5NzRDNS43NTU5MSAxLjQ5NjMxIDUuNjcxOCAxLjQxMjIgNS42NzE4IDEuMzA4MzdDNS42NzE4IDEuMjAzODkgNS43NTU5MSAxLjExOTc3IDUuODU5NzQgMS4xMTk3N1pNNy40OTk5NyAyMi4yMjMzQzcuMDcwODYgMjIuMjIzMyA2LjcyMzIzIDIxLjg3NTYgNi43MjMyMyAyMS40NDU5QzYuNzIzMjMgMjEuMDE2MSA3LjA3MDg2IDIwLjY2OTEgNy40OTk5NyAyMC42NjkxQzcuOTI5MDkgMjAuNjY5MSA4LjI3NjcxIDIxLjAxNjEgOC4yNzY3MSAyMS40NDU5QzguMjc2NzEgMjEuODc1NiA3LjkyOTA5IDIyLjIyMzMgNy40OTk5NyAyMi4yMjMzWk0xMy4wOTk1IDIwLjEyNUgxLjkwMDQ2VjIuNDYzNjNIMTMuMDk5NVYyMC4xMjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"/>
+            Android app
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </footer>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,_,$,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,an,ao,ap,aq,ar,as,at,au,av,aw,ax,ay,az,aA,aB,aC,aD,aE,aF,aG,aH,aI,aJ,aK,aL,aM,aN,aO,aP,aQ,aR,aS,aT,aU,aV,aW,aX,aY,aZ,a_,a$,ba,bb,bc,bd,be,bf,bg,bh,bi,bj,bk,bl,bm,bn,bo,bp,bq,br,bs,bt,bu,bv,bw,bx,by,bz,bA,bB,bC,bD,bE,bF,bG,bH,bI,bJ,bK,bL,bM,bN,bO,bP,bQ,bR,bS,bT,bU,bV,bW,bX,bY,bZ,b_,b$,ca,cb,cc,cd,ce,cf,cg,ch,ci,cj,ck,cl,cm,cn,co,cp,cq,cr,cs,ct,cu,cv,cw,cx,cy,cz,cA,cB,cC,cD,cE,cF,cG,cH,cI,cJ,cK,cL,cM,cN,cO,cP,cQ,cR,cS,cT,cU,cV,cW,cX,cY,cZ,c_,c$,da,db,dc,dd,de,df,dg,dh,di,dj,dk,dl,dm,dn,do_,dp,dq,dr,ds,dt,du){return {layout:"home",data:[{}],error:w,state:{server:"https:\u002F\u002Fm000001.playmarket.io",linkDev:"https:\u002F\u002Fdev.playmarket.io\u002F",linkPex:"https:\u002F\u002Fdex.playmarket.io\u002F",ipNode:f,chainId:_,linkHash:"https:\u002F\u002Fetherscan.io\u002Ftx\u002F",linkBlockChain:"https:\u002F\u002Fetherscan.io\u002Faddress\u002F",contracts:{contractRepository:"0xe789578025fC8DFEa42C6Cecb4D42C65fa5B4826",contractDAO:"0x550cbf0d9c62dbb7ff0ac8be1ad9fba4cb2ce49d",contractFund:"0xb04A05905Dc94345DCAD4846664001d4818E16D2",contractPMT:"0xC1322D8aE3B0e2E437e0AE36388D0CFD2C02f1c9",contractCDLT:do_,ABI_Repository:[{constant:e,inputs:[],name:"WithdrawIsBlockedByFund",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:q,type:c}],name:bj,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:aa,type:c},{name:ar,type:c}],name:"changeProposal",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:q,type:c}],name:di,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:aa,type:c},{name:aH,type:b}],name:dh,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:B,type:j}],name:"changeStateByFund",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:aa,type:c},{name:aH,type:b},{name:"_numberOfVotes",type:c}],name:bd,outputs:[{name:f,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:c},{name:f,type:b}],name:dg,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:R,outputs:[{name:f,type:n}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b}],name:aw,outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:"cleanProposal",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:L,type:b}],name:"getNotLockedBalance",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:aL,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:aF,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:aa,type:c},{name:ar,type:c}],name:df,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:aa,type:c}],name:"delProposal",outputs:[{name:f,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:b}],name:"repository",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:c}],name:de,outputs:[{name:dd,type:c},{name:Y,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:t,type:b}],name:"setPMTContract",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:L,type:b}],name:"getBalance",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:U,type:b},{name:aU,type:j}],name:am,outputs:[],payable:a,stateMutability:g,type:d},{inputs:[{name:t,type:b}],payable:a,stateMutability:g,type:ao},{payable:e,stateMutability:z,type:aI},{anonymous:a,inputs:[{indexed:a,name:"_sender",type:b},{indexed:a,name:q,type:c}],name:"AcceptedEtherEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],ABI_DAO:[{constant:e,inputs:[],name:dc,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:db,type:b},{name:bc,type:c},{name:av,type:k},{name:"_fullDescHash",type:k},{name:bi,type:aq}],name:df,outputs:[{name:f,type:c}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"debatingPeriodDuration",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:bm,type:c},{name:bi,type:aq}],name:"executeProposal",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:t,type:b}],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"requisiteMajority",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b},{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:da,type:c},{name:c$,type:c},{name:c_,type:c}],name:"changeVotingRules",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"minimumQuorum",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:"_minBalance",type:c}],name:"setMinBalance",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:t,type:b},{name:U,type:b},{name:B,type:j}],name:am,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:c}],name:de,outputs:[{name:"endTimeOfVoting",type:c},{name:"executed",type:j},{name:"proposalPassed",type:j},{name:"numberOfVotes",type:c},{name:cZ,type:c},{name:cY,type:c},{name:cX,type:b},{name:ay,type:c},{name:"transactionHash",type:n},{name:aX,type:k},{name:cW,type:k}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:bm,type:c},{name:"_supportsProposal",type:j},{name:"_justificationText",type:k}],name:bd,outputs:[{name:f,type:c}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b},{name:U,type:b},{name:cV,type:i},{name:B,type:j}],name:cU,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:bm,type:c},{name:db,type:b},{name:bc,type:c},{name:bi,type:aq}],name:"checkProposalCode",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:q,type:c}],name:cT,outputs:[],payable:a,stateMutability:g,type:d},{inputs:[{name:cS,type:b},{name:da,type:c},{name:c$,type:c},{name:c_,type:c}],payable:a,stateMutability:g,type:ao},{payable:e,stateMutability:z,type:aI},{anonymous:a,inputs:[{indexed:a,name:be,type:c},{indexed:a,name:cX,type:b},{indexed:a,name:ay,type:c},{indexed:a,name:cR,type:k},{indexed:a,name:cW,type:k}],name:"ProposalAdded",type:l},{anonymous:a,inputs:[{indexed:a,name:be,type:c},{indexed:a,name:"position",type:j},{indexed:a,name:cQ,type:b},{indexed:a,name:"justification",type:k}],name:"Voted",type:l},{anonymous:a,inputs:[{indexed:a,name:be,type:c},{indexed:a,name:cZ,type:c},{indexed:a,name:cY,type:c},{indexed:a,name:"quorum",type:c},{indexed:a,name:"active",type:j}],name:"ProposalTallied",type:l},{anonymous:a,inputs:[{indexed:a,name:"newMinimumQuorum",type:c},{indexed:a,name:"newdebatingPeriodDuration",type:c},{indexed:a,name:"newRequisiteMajority",type:c}],name:"ChangeOfRules",type:l},{anonymous:a,inputs:[{indexed:e,name:cP,type:b},{indexed:a,name:ay,type:c}],name:cO,type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],ABI_FUND:[{constant:a,inputs:[],name:"startFunding",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:dc,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:cN,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:"stopFunding",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:bw,type:c},{name:bx,type:c}],name:"getTokens",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:R,outputs:[{name:f,type:n}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:Q,type:b},{name:ab,type:b},{name:q,type:c}],name:"withdrawPMfund",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:q,type:c}],name:cI,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:b}],name:aw,outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:c}],name:"Tokens",outputs:[{name:a$,type:b},{name:cl,type:c},{name:"total",type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:aL,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"WithdrawIsBlocked",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:Q,type:b},{name:L,type:b}],name:"getFund",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:Q,type:b},{name:L,type:b}],name:"getWithdrawn",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:Q,type:b},{name:ab,type:b},{name:q,type:c}],name:aP,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:Q,type:b}],name:bj,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:Q,type:b},{name:q,type:c}],name:aP,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:U,type:b},{name:aU,type:j}],name:am,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:q,type:c}],name:cT,outputs:[],payable:a,stateMutability:g,type:d},{inputs:[{name:cS,type:b}],payable:a,stateMutability:g,type:ao},{payable:e,stateMutability:z,type:aI},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],ABI_PMT:[{constant:a,inputs:[{name:aN,type:b},{name:I,type:c}],name:bf,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:bh,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:ad,type:b},{name:at,type:b},{name:I,type:c}],name:bk,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:at,type:b},{name:I,type:c}],name:"mint",outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:C,type:b}],name:aK,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:at,type:b},{name:I,type:c}],name:bo,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:C,type:b},{name:aN,type:b}],name:bp,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{anonymous:a,inputs:[{indexed:e,name:ad,type:b},{indexed:e,name:at,type:b},{indexed:a,name:I,type:c}],name:cj,type:l},{anonymous:a,inputs:[{indexed:e,name:C,type:b},{indexed:e,name:aN,type:b},{indexed:a,name:I,type:c}],name:cc,type:l}],ABI_CDLT:[{constant:a,inputs:[{name:q,type:c},{name:"_receiver",type:b}],name:aP,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:L,type:b},{name:"_date",type:c}],name:aK,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:c}],name:"owners",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b},{name:"_code",type:aq}],name:"Link",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"getCurrentPeriod",outputs:[{name:"N",type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:ab,type:b},{name:q,type:c}],name:bf,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:bh,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"multiplier",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:x,type:b},{name:G,type:b},{name:q,type:c}],name:bk,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"code",outputs:[{name:f,type:aq}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:q,type:c}],name:aP,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:aa,type:c},{name:aH,type:b}],name:dh,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:cN,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b},{name:f,type:c}],name:"ChangeOverPeriod",outputs:[{name:f,type:S}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:c},{name:f,type:b}],name:dg,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b}],name:"ownersIndex",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:q,type:c}],name:cI,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"source",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:c}],name:"ActiveProposals",outputs:[{name:dd,type:c},{name:Y,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b}],name:"ownersbal",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:L,type:b}],name:aK,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"getOwnersCount",outputs:[{name:"count",type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:c}],name:"dividends",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:bw,type:c},{name:bx,type:c}],name:"trim",outputs:[{name:f,type:j}],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:G,type:b},{name:q,type:c}],name:bo,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:c},{name:f,type:b}],name:"AlreadyReceived",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:"TakeProfit",outputs:[{name:f,type:c}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"start",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:cb,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:bw,type:c},{name:bx,type:c}],name:cb,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:L,type:b},{name:ab,type:b}],name:bp,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"period",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{payable:e,stateMutability:z,type:aI},{anonymous:a,inputs:[{indexed:e,name:cP,type:b},{indexed:a,name:ay,type:c}],name:cO,type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l},{anonymous:a,inputs:[{indexed:e,name:ad,type:b},{indexed:e,name:at,type:b},{indexed:a,name:I,type:c}],name:cj,type:l},{anonymous:a,inputs:[{indexed:e,name:C,type:b},{indexed:e,name:aN,type:b},{indexed:a,name:I,type:c}],name:cc,type:l}],web3provider:"wss:\u002F\u002Fmainnet.infura.io\u002Fws\u002Fv3\u002F8cf14dfad982452f9d10127d2a371ee8"},pingNode:f,searchKey:f,sidebarIsOpen:a,subcategoriesIsOpen:a,showSubdirectory:_,language:f,user:{isUserAuthenticated:a,address:f,unlockType:f},web3:{isInjected:a,web3Instance:w,networkId:w,coinbase:w,balance:w,error:w},metaMask:a,ledger:a,pathLedger:"44'\u002F60'\u002F0'\u002F0\u002F0",addGasPrice:"1000000000",screenIsLocked:a,showSpinner:a,showSpinnerTransfer:a,contractProxy:"0x3A7075f150162d83EB2422735dfE6326b745c25B",abiProxy:[{constant:e,inputs:[],name:"getLastVersion",outputs:[{name:ax,type:b},{name:aA,type:b},{name:R,type:n},{name:Y,type:c},{name:ca,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b}],name:aw,outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:bD,type:b},{name:bE,type:b},{name:aB,type:n},{name:ar,type:c}],name:"addVersion",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:c}],name:"versions",outputs:[{name:ax,type:b},{name:aA,type:b},{name:R,type:n},{name:Y,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:aB,type:n}],name:"getVersion",outputs:[{name:ax,type:b},{name:aA,type:b},{name:R,type:n},{name:Y,type:c},{name:ca,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:aL,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:bD,type:b},{name:bE,type:b},{name:aB,type:n},{name:ar,type:c},{name:"_i",type:c}],name:"changeVersion",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:U,type:b},{name:aU,type:j}],name:am,outputs:[],payable:a,stateMutability:g,type:d},{inputs:[{name:bD,type:b},{name:bE,type:b},{name:aB,type:n},{name:ar,type:c}],payable:a,stateMutability:g,type:ao},{anonymous:a,inputs:[{indexed:a,name:ax,type:b},{indexed:a,name:aA,type:b},{indexed:a,name:R,type:n},{indexed:a,name:Y,type:c},{indexed:a,name:aZ,type:c}],name:"addVersionLog",type:l},{anonymous:a,inputs:[{indexed:a,name:ax,type:b},{indexed:a,name:aA,type:b},{indexed:a,name:R,type:n},{indexed:a,name:Y,type:c},{indexed:a,name:aZ,type:c}],name:"changeVersionLog",type:l},{anonymous:a,inputs:[{indexed:a,name:R,type:n},{indexed:a,name:aZ,type:c}],name:"lastVersionLog",type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],abi:[{constant:a,inputs:[{name:af,type:n},{name:av,type:n}],name:"changeNameDev",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:"_requestETH",type:c},{name:"_requestPMT",type:c}],name:"requestRefund",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:s,type:b}],name:"getRatingDev",outputs:[{name:f,type:S}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"NodeStorage",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:u,type:i},{name:bZ,type:i},{name:K,type:c},{name:aE,type:j},{name:v,type:k}],name:"addApp",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:"requestCollectNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:B,type:j},{name:u,type:i},{name:v,type:k}],name:"setAppConfirmation",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:p,type:b},{name:F,type:c}],name:"buy",outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[{name:m,type:c},{name:aJ,type:ae},{name:K,type:c}],name:bt,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:p,type:b},{name:F,type:c},{name:K,type:c}],name:bY,outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[{name:af,type:n},{name:av,type:n}],name:"addDev",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:m,type:c}],name:"getInfoApp",outputs:[{name:E,type:i},{name:bX,type:i},{name:bW,type:j},{name:"confirmation",type:j},{name:aO,type:c},{name:D,type:k}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:s,type:b}],name:"getRevenueDev",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b}],name:"setNodeStorageContract",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:"collectNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b}],name:"makeDepositETH",outputs:[],payable:e,stateMutability:z,type:d},{constant:e,inputs:[],name:"percNode",outputs:[{name:f,type:i}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:F,type:c},{name:"_duration",type:c}],name:bt,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:v,type:k},{name:u,type:i}],name:"changeHashApp",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:di,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:m,type:c},{name:br,type:b},{name:F,type:c}],name:"getBuyObject",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:v,type:k},{name:u,type:i},{name:aQ,type:k},{name:aR,type:k}],name:"changeInfoNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"AppStorage",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:f,type:b}],name:aw,outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:"_defRating",type:S}],name:"changeDefRating",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:bu,type:c},{name:bv,type:c}],name:"setDepositLimitsNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:m,type:c}],name:"getDeveloper",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:p,type:b}],name:"getRevenueNode",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b}],name:"setAppStorageContract",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:bV,type:S}],name:"setRatingDev",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:u,type:i},{name:v,type:k},{name:aQ,type:k},{name:aR,type:k}],name:"addNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"DevStorage",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:"_proc",type:i}],name:"setPercNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:aL,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:p,type:b},{name:F,type:c}],name:bT,outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[{name:m,type:c},{name:aJ,type:ae},{name:bR,type:ae}],name:bz,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:p,type:b}],name:"getConfirmationNode",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:p,type:b},{name:F,type:c},{name:K,type:c}],name:bT,outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[{name:m,type:c},{name:F,type:c},{name:K,type:c}],name:bz,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:p,type:b}],name:"getDepositNode",outputs:[{name:bA,type:c},{name:aF,type:c},{name:"minETH",type:c},{name:"minPMT",type:c},{name:bQ,type:c},{name:"refundState",type:j}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:aE,type:j}],name:"changePublish",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:B,type:j}],name:"setConfirmationNode",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:aJ,type:ae},{name:K,type:c}],name:bz,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:"defRating",outputs:[{name:f,type:S}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:aJ,type:ae},{name:bR,type:ae}],name:bt,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:t,type:b}],name:"setLogStorageContract",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:q,type:c}],name:bj,outputs:[],payable:e,stateMutability:z,type:d},{constant:e,inputs:[{name:s,type:b}],name:"getInfoDev",outputs:[{name:$,type:n},{name:aX,type:n},{name:T,type:j},{name:o,type:i}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:t,type:b}],name:"setDevStorageContract",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:p,type:b},{name:q,type:c}],name:"makeDepositPMT",outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[],name:"collectDev",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:B,type:j}],name:"setStoreBlockedDev",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:s,type:b}],name:"getNameDev",outputs:[{name:f,type:n}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:m,type:c},{name:br,type:b},{name:F,type:c}],name:"getTimeSubscription",outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:"LogStorage",outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:bP,type:c},{name:bM,type:k},{name:bL,type:n}],name:"feedbackRating",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:s,type:b}],name:"getStoreBlockedDev",outputs:[{name:f,type:j}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:p,type:b}],name:"getInfoNode",outputs:[{name:E,type:i},{name:"collectState",type:j},{name:"collectTime",type:c},{name:D,type:k},{name:bI,type:k},{name:bJ,type:k}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:m,type:c},{name:p,type:b},{name:F,type:c}],name:bY,outputs:[],payable:e,stateMutability:z,type:d},{constant:a,inputs:[{name:U,type:b},{name:aU,type:j}],name:am,outputs:[],payable:a,stateMutability:g,type:d},{inputs:[{name:"_appStorage",type:b},{name:"_devStorage",type:b},{name:"_nodeStorage",type:b},{name:"_logStorage",type:b}],payable:a,stateMutability:g,type:ao},{anonymous:a,inputs:[{indexed:a,name:t,type:b}],name:"setStorageContractEvent",type:l},{anonymous:a,inputs:[{indexed:a,name:t,type:b}],name:"setDevStorageContractEvent",type:l},{anonymous:a,inputs:[{indexed:a,name:t,type:b}],name:"setAppStorageContractEvent",type:l},{anonymous:a,inputs:[{indexed:a,name:t,type:b}],name:"setLogStorageContractEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],abiERC20:[{constant:e,inputs:[],name:$,outputs:[{name:f,type:k}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:ab,type:b},{name:q,type:c}],name:bf,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:bh,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:x,type:b},{name:G,type:b},{name:q,type:c}],name:bk,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:cl,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[{name:L,type:b}],name:aK,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d},{constant:e,inputs:[],name:bH,outputs:[{name:f,type:k}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:G,type:b},{name:q,type:c}],name:bo,outputs:[{name:H,type:j}],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:L,type:b},{name:ab,type:b}],name:bp,outputs:[{name:f,type:c}],payable:a,stateMutability:h,type:d}],contractAddress:cC,abiLogStorage:[{constant:a,inputs:[{name:s,type:b},{name:af,type:n},{name:av,type:n}],name:"addDevEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b}],name:"refundNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:bc,type:c}],name:"collectNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:bV,type:S}],name:"setRatingDevEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:u,type:i},{name:bZ,type:i},{name:K,type:c},{name:aE,type:j},{name:s,type:b},{name:v,type:k}],name:"addAppEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:U,type:b},{name:cV,type:i},{name:B,type:j}],name:cU,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:B,type:j},{name:bG,type:b},{name:u,type:i},{name:v,type:k}],name:"setConfirmationAppEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:v,type:k},{name:u,type:i}],name:"addAppICOEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:m,type:c},{name:af,type:k},{name:bN,type:k},{name:bO,type:b},{name:Q,type:b},{name:v,type:k},{name:u,type:i}],name:"icoDeleteEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:x,type:b},{name:p,type:b},{name:q,type:c}],name:"makeDepositPMTNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:u,type:i},{name:v,type:k},{name:aQ,type:k},{name:aR,type:k}],name:"addNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:af,type:n},{name:av,type:n}],name:"changeNameDevEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:s,type:b},{name:B,type:j}],name:"setStoreBlockedDevEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[{name:f,type:b}],name:aw,outputs:[{name:T,type:j},{name:o,type:i}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:s,type:b},{name:m,type:c},{name:af,type:k},{name:bN,type:k},{name:bO,type:b},{name:Q,type:b},{name:v,type:k},{name:u,type:i}],name:"icoCreateEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[],name:M,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:"_refundTime",type:c}],name:"requestRefundNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:aE,type:j}],name:"changePublishEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:x,type:b},{name:p,type:b},{name:bu,type:c},{name:bv,type:c}],name:"makeDepositNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:F,type:c},{name:K,type:c}],name:"setPriceEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:C,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:s,type:b},{name:m,type:c},{name:B,type:j}],name:"icoConfirmationEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:br,type:b},{name:s,type:b},{name:m,type:c},{name:F,type:c},{name:p,type:b},{name:K,type:c}],name:"buyAppEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b}],name:"requestCollectNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:x,type:b},{name:p,type:b},{name:q,type:c}],name:"makeDepositETHNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:v,type:k},{name:u,type:i},{name:aQ,type:k},{name:aR,type:k}],name:"changeInfoNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:bu,type:c},{name:bv,type:c},{name:bG,type:b}],name:"setDepositLimitsNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:v,type:k},{name:u,type:i}],name:"changeHashAppICOEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:p,type:b},{name:B,type:j},{name:bG,type:b}],name:"setConfirmationNodeEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:e,inputs:[],name:V,outputs:[{name:f,type:b}],payable:a,stateMutability:h,type:d},{constant:a,inputs:[{name:aH,type:b},{name:m,type:c},{name:bP,type:c},{name:bM,type:k},{name:bL,type:n},{name:"_blocktimestamp",type:c}],name:"feedbackRatingEvent",outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:N,type:b}],name:O,outputs:[],payable:a,stateMutability:g,type:d},{constant:a,inputs:[{name:m,type:c},{name:v,type:k},{name:u,type:i}],name:"changeHashAppEvent",outputs:[],payable:a,stateMutability:g,type:d},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:E,type:i},{indexed:e,name:bX,type:i},{indexed:a,name:aO,type:c},{indexed:a,name:bW,type:j},{indexed:a,name:J,type:b},{indexed:a,name:D,type:k}],name:"AddAppEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:T,type:j},{indexed:a,name:by,type:b},{indexed:a,name:E,type:i},{indexed:a,name:D,type:k}],name:"SetConfirmationAppEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i}],name:"ChangeHashAppEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:T,type:j}],name:"ChangePublishEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:bS,type:c},{indexed:a,name:aO,type:c}],name:"SetPriceEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:"user",type:b},{indexed:e,name:J,type:b},{indexed:a,name:A,type:c},{indexed:a,name:bS,type:c},{indexed:a,name:y,type:b},{indexed:a,name:aO,type:c}],name:"BuyAppEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:A,type:c},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i}],name:"AddAppICOEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:A,type:c},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i}],name:"ChangeHashAppICOEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:J,type:b},{indexed:a,name:A,type:c},{indexed:a,name:$,type:k},{indexed:a,name:bH,type:k},{indexed:a,name:bU,type:b},{indexed:a,name:a$,type:b},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i}],name:"ICOCreateEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:J,type:b},{indexed:a,name:A,type:c},{indexed:a,name:$,type:k},{indexed:a,name:bH,type:k},{indexed:a,name:bU,type:b},{indexed:a,name:a$,type:b},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i}],name:"ICODeleteEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:J,type:b},{indexed:a,name:A,type:c},{indexed:a,name:T,type:j}],name:"ICOConfirmationEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:J,type:b},{indexed:a,name:$,type:n},{indexed:a,name:aX,type:n}],name:"AddDevEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:J,type:b},{indexed:a,name:$,type:n},{indexed:a,name:aX,type:n}],name:"ChangeNameDevEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:J,type:b},{indexed:a,name:T,type:j}],name:"SetStoreBlockedDevEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:J,type:b},{indexed:a,name:"rating",type:S}],name:"SetRatingDevEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:y,type:b},{indexed:a,name:E,type:i},{indexed:a,name:D,type:k},{indexed:a,name:bI,type:k},{indexed:a,name:bJ,type:k}],name:"AddNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b},{indexed:a,name:D,type:k},{indexed:a,name:E,type:i},{indexed:a,name:bI,type:k},{indexed:a,name:bJ,type:k}],name:"ChangeInfoNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b}],name:"RequestCollectNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b},{indexed:a,name:ay,type:c}],name:"CollectNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:ad,type:b},{indexed:a,name:y,type:b},{indexed:a,name:bA,type:c},{indexed:a,name:aF,type:c}],name:"MakeDepositNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:ad,type:b},{indexed:a,name:y,type:b},{indexed:a,name:I,type:c}],name:"MakeDepositETHNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:ad,type:b},{indexed:a,name:y,type:b},{indexed:a,name:I,type:c}],name:"MakeDepositPMTNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b},{indexed:a,name:bQ,type:c}],name:"RequestRefundNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b}],name:"RefundNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:e,name:y,type:b},{indexed:a,name:T,type:j},{indexed:a,name:by,type:b}],name:"SetConfirmationNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:y,type:b},{indexed:a,name:bA,type:c},{indexed:a,name:aF,type:c},{indexed:a,name:by,type:b}],name:"SetDepositLimitsNodeEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:o,type:i},{indexed:a,name:cQ,type:b},{indexed:e,name:A,type:c},{indexed:a,name:bd,type:c},{indexed:a,name:cR,type:k},{indexed:a,name:"txIndex",type:n},{indexed:a,name:"blocktimestamp",type:c}],name:"FeedbackRatingEvent",type:l},{anonymous:a,inputs:[{indexed:e,name:x,type:b},{indexed:e,name:G,type:b}],name:W,type:l}],distance:[],myCoords:[],lastConnectTime:Z,myWallet:f,bufferReviewText:f,selectedTokens:[],categories:{categories:[{id:_,name:"apps",subcategories:[{id:_,name:"crypto: wallets & exchanges",sort:ac},{id:34,name:"crypto: news, rate & signals",sort:bn},{id:bl,name:"auto and vehicles",sort:bb},{id:b_,name:"business",sort:b$},{id:bC,name:"video players",sort:aC},{id:bs,name:"food and drink",sort:cd},{id:ce,name:"house and home",sort:cf},{id:cg,name:"health and fitness",sort:ch},{id:ci,name:"dating",sort:bq},{id:ck,name:"tools",sort:ba},{id:ac,name:"art and design",sort:cm},{id:cn,name:"maps and navigation",sort:co},{id:cp,name:"books and reference",sort:cq},{id:cr,name:"comics",sort:cs},{id:ct,name:"beauty",sort:cu},{id:cv,name:"parenting",sort:cw},{id:cx,name:"medical",sort:cy},{id:cz,name:"events",sort:180},{id:18,name:"music and audio",sort:190},{id:19,name:"news and magazines",sort:200},{id:bn,name:cA,sort:210},{id:21,name:"personalization",sort:220},{id:22,name:cB,sort:230},{id:23,name:"shopping",sort:240},{id:bK,name:"travel and local",sort:250},{id:cD,name:"productivity",sort:260},{id:cE,name:"entertainment",sort:270},{id:cF,name:"communication",sort:280},{id:28,name:"social",sort:290},{id:29,name:cG,sort:300},{id:bb,name:"lifestyle",sort:310},{id:31,name:"finance",sort:320},{id:32,name:"photography",sort:330},{id:33,name:"libraries and demo",sort:340}]},{id:bl,name:cH,subcategories:[{id:_,name:"arcade",sort:ac},{id:bl,name:"trivia",sort:bn},{id:b_,name:"puzzle",sort:bb},{id:bC,name:"racing",sort:b$},{id:bs,name:a_,sort:aC},{id:ce,name:"casual",sort:cd},{id:cg,name:"card",sort:cf},{id:ci,name:"music",sort:ch},{id:ck,name:"board",sort:bq},{id:ac,name:"educational",sort:ba},{id:cn,name:"adventure",sort:cm},{id:cp,name:"role playing",sort:co},{id:cr,name:"simulation",sort:cq},{id:ct,name:"word",sort:cs},{id:cv,name:cG,sort:cu},{id:cx,name:"strategy",sort:cw},{id:cz,name:"action",sort:cy}]}],icoInfo:f,icoAddressInfo:f,currency:{currency:{name:f,number3:f,decimals:f},rate:f},currencyETH:{currency:{name:f,number3:f,decimals:f},rate:f},apps:[],app:{temp:{hashType:f,hash:f},rating:{details:{count_5:ac},count:ac,sum:aC},files:{images:{gallery:["images\u002Fgallery\u002F0.png",cJ,cK,cL,cM],banner:"images\u002Fbanner\u002Fbanner.png",logo:"images\u002Flogo\u002Flogo.png"},apk:"apk\u002FDAOPlayMarket2.0-v.1.4.24.apk"},changelog:[{version:48,description:"Added ico tab. Small improvements."},{version:aC,description:"More stable."},{version:52,description:"More stable. Added test ICO item."},{version:66,description:"New design. Added STO"},{version:67,description:"Bug fix"},{version:69,description:aT},{version:81,description:"Added new Dao interface."},{version:84,description:"bug fix. New add token screen."},{version:88,description:"Added multi-account functionality"},{version:bq,description:aT},{version:91,description:"Bug fixes. Icons scaleType changed"},{version:ba,description:"Russian locale."},{version:101,description:aT},{version:108,description:"What's new: \n\n1. Updated Settings screen\":\n   - you can choose which notifications the application will show.\n   - change application settings.\n   - change the language of the interface.\n2. Updated My apps screen.\n3. Added support for Android 9 Pie (SDK 28).\n4. Interface\u002Flocalization adjustments."},{version:109,description:"Added currency change to settings"},{version:119,description:"1. Added ability to download files directly via IPFS:\n   - this functionality is still marked as experimental.\n   - to use it, slightly activate it in the app settings.\n   - upon activation, will be downloaded and installed the IPFS module for your architecture, will be added to the initialization of the repository.\n   - in order to save energy, it is recommended not to turn off the setting: \"Stop IPFS when the application is closed\".\n\n2. Interface\u002Flocalization adjustments."},{version:123,description:"New Dapp browser. Bug fixes. New IPFS version. Minor design changes"},{version:124,description:"Added new progress bar to webview. Small webview fixes."},{version:125,description:"Bug fixes."},{version:126,description:"Added sign message functionality to Dapp browser."},{version:127,description:f}],keywords:["cryptocurrency","market"],icoRelease:a,idApp:P,adrDev:"0x238c89e8d9ae7dcbaffbb2cd31ce5678b252f620",descDev:"DApps Development Company",moderator:X,nameDev:"Crypton Studio LLC",store:r,advertising:e,ageRestrictions:"18",email:"info@crypton.studio",forChildren:a,hash:"QmdnkVVgiG5sBiZSE59DD1dZG843xSMtgLFroW59PBePpm",hashType:r,idCTG:r,longDescr:"DAO PlayMarket 2.0 is a decentralized Android app store, combined with an STO developer platform, crypto exchange, that accepts payment in crypto currency. The main goals and objectives of DAO PlayMarket 2.0 are to create a sustainable economic model for developers, investors and users, and introduce a unified standard for tokenizing the mobile applications market. Holders of PMT automatically become members of the PlayMarket Fund. The primary purpose of the fund includes open management of the fund's resources in conjunction with other members of DAO PlayMarket 2.0. Developers of applications on DAO PlayMarket 2.0 can release independant tokens for their application. The PlayMarket Fund retains 5% of the tokens from each application hosted on the DAO PlayMarket 2.0 platform.",nameApp:"DAO PlayMarket 2.0",packageName:"com.blockchain.store.playmarket",price:P,privacyPolicy:f,shortDescr:"DAO PlayMarket 2.0 is a decentralized Android App Store that accepts payments in cryptocurrency and is combined with an STO platform for developers.",size:"56197312",slogan:"DAO PLAYMARKET 2.0 is a new era of mobile applications",subCategory:r,urlApp:"https:\u002F\u002Fplaymarket.io",version:"127",versionName:"1.4.24",youtubeID:"QYjyfCt6gWc"},appOfDay:{idApp:"261",adrDev:ah,confirmation:e,descDev:ag,moderator:X,nameDev:az,reject:a,store:r,temp:{hashType:f,hash:f},advertising:e,ageRestrictions:au,changelog:[],email:"support@enjoy-global.com",files:{apk:"apk\u002Fcom.xvideostudio.videoeditor.apk",images:{banner:ap,gallery:[an,ak,as,ai,aj,aV,aS,aM,aD,aW,aY,aG,bg,bB,bF,dj,dk,dl,dm,dn],logo:al}},forChildren:e,hash:"QmeVLYC3ZchxMK3fbCz3eUM7Z3qZgX8Vizbx92afQx3mxE",hashType:r,icoRelease:a,idCTG:r,keywords:["видео","видеоплэйер","видеоредактор","фоторедактор","галерея","фото","video","video player","video editor","photo editor","gallery","photo"],longDescr:"\u003Cb\u003E★VideoShow - Top Rated Video Editor and Movie Maker\u003C\u002Fb\u003E\u003Cbr\u003EVideoShow is ranked as the No.1 video editor &amp; video maker in many countries. It’s the choice of 400 million users! We have received numerous honors in app markets and has gained more than 3,000,000 five-star ratings. It&#39;s also included in the list of Best Video Editors!\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003E★Treasure Special Moments &amp; Share Your Life Story\u003C\u002Fb\u003E\u003Cbr\u003EVideoShow offers excellent video editing features. With this movie maker, creating a video or slideshow with photos, pictures, music, stickers, sound effects is easy and fun. Young film makers can even beautify your videos or music clips with texts, FX, effects, GIFs, stickers, multi-music, trendy filters, transitions, sound effects or live dubbing, almost anything you want in a creative and personalized way. Make your own vlog or funny videos. Record your precious moments like wedding\u002Fbirthday\u002FValentine&#39;s Day\u002FThanksgiving Day\u002FChristmas Eve\u002FChristmas. \u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003E★Why VideoShow Online Video Editor?\u003C\u002Fb\u003E\u003Cbr\u003E* It’s an easy and practical video editing app &amp; movie scene maker for both film directors and beginners.\u003Cbr\u003E* HD export, no quality loss\u003Cbr\u003E* Easy-to-use photo editor, with a wide variety of functions\u003Cbr\u003E* Hundreds of pieces of free music all fully licensed\u003Cbr\u003E* There&#39;s no watermark\u002Fno ads after updating to vip\u003Cbr\u003E* Special lenses to make original video clip or funny videos\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003E★All-in-one editor：\u003C\u002Fb\u003E \u003Cbr\u003E* Over 50 elaborate themes available to create an awesome music video\u002Fgif maker\u002F slideshow\u002Fvlog\u002Ffunny videos instantly.\u003Cbr\u003E* Various background music available. You can add local songs from your device too. Ez to shoot video or cut movies.\u003Cbr\u003E* Variety of text styles and fonts to create artistic subtitles are available in this movie maker app\u002Fvideo editor app\u002Fvideo cutter\u002Fgif maker\u002Fphoto video maker with music.\u003Cbr\u003E* Add stunning filters to make videos different. Now 30+ filters are supported!\u003Cbr\u003E* Blurred background, voice enhancement and audio speed adjustment features available.\u003Cbr\u003E* Multiple music can be added after pre-defined intervals. \u003Cbr\u003E* Gif making: make your own funny gifs with pictures from your album, make your video leap.\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003E★Professional video editing tools：\u003C\u002Fb\u003E\u003Cbr\u003E* You can edit\u002Fmerge\u002Ftrim\u002Fsplit\u002Freverse\u002Fduplicate\u002Frotate\u002Fblur\u002Fcollage clips or videos in this video cutter.\u003Cbr\u003E* Zoom in and out. Let your audience focus on the region you want!\u003Cbr\u003E* Fast motion\u002Fslow motion to adjust and control the speed of every video clip.\u003Cbr\u003E* Video dubbing. Add your own voice or sound effects we provide to make the video even cooler.\u003Cbr\u003E* Doodle on video. Bored of the monotonous fonts? Just doodle it! \u003Cbr\u003E* Video reverse, video playback to make a funny and creative original video\u002Fvlog.\u003Cbr\u003E* Fantastic Materials Center: Themes\u002Feffects\u002Fstickers\u002Fgif images\u002Fmemes\u002Femojis\u002Ffonts\u002Fsound effects\u002FFX and more. It keeps updating all the time!\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003E★Best video maker for youtube and social networks：\u003C\u002Fb\u003E\u003Cbr\u003E* Square themes and no crop mode are customized for Instagram, FILMIGO users.\u003Cbr\u003E* Easy sharing of your videos on Facebook, YouTube, Instagram, Vine, FILMIGO,  Flipagram,Vigo video,Tik Tok,cute cut, etc.\u003Cbr\u003E* Compress Video: You can reduce the size of your video by compressing it.\u003Cbr\u003E* Video to Mp3: turn the soundtrack of your video into mp3 file.\u003Cbr\u003E* Support more than 30 languages and almost all devices.\u003Cbr\u003E\u003Cbr\u003EIf you would like to know what people are saying about the VideoShow app:\u003Cbr\u003ELike us on Facebook: http:\u002F\u002Fwww.facebook.com\u002Fvideoshowapp\u003Cbr\u003EFollow us on Instagram: http:\u002F\u002Finstagram.com\u002Fvideoshowapp\u003Cbr\u003ESubscribe us on YouTube: https:\u002F\u002Fwww.youtube.com\u002Fchannel\u002FUCDn_IwV1FHYhfim4ZNTUneA\u003Cbr\u003EFollow us on Twitter: https:\u002F\u002Ftwitter.com\u002Fvideoshowapp\u003Cbr\u003EFor more details about our app and privacy policy, visit our website: www.videoshowapp.com\u003Cbr\u003E\u003Cbr\u003EWe listen to everyone and try to make our video cutter\u002Fphoto editor\u002Fgif maker as unique as possible. If you have any questions or suggestions related to VideoShow: Online Video Editor and Movie Maker App feel free to contact us at support@enjoy-mobi.com. Let’s Create and Spread Some Awesomeness!",nameApp:"VideoShow Video Editor, Video Maker, Photo Editor",packageName:"com.xvideostudio.videoeditor",price:P,privacyPolicy:"http:\u002F\u002Fwww.enjoy-global.com\u002Fprivacy.html",publish:e,rejectICO:a,shortDescr:"Powerful Video Editor with Music, Free Vlog Maker and Intro Maker, Beauty Camera",size:"22587907",slogan:f,subCategory:"4",urlApp:"http:\u002F\u002Fwww.enjoy-global.com",version:"1622",versionName:"8.4.6rc",youtubeID:"uoiO4ZjozZQ"},icoHighlight:[{idApp:"434",adrDev:"0x6c680f3b13eb887fb95d3731d1d7d7392927ef61",confirmation:e,descDev:dp,moderator:X,nameDev:dp,reject:a,store:r,temp:{hashType:f,hash:f},rating:{count:bs,details:{count_4:_,count_5:bC},sum:bK},icoConfirmation:e,icoCrowdsaleAddress:"0x2ab54369795266fc84e12270A0219d2e7d21F70f",icoCrowdsaleVersion:"2.0.0",icoHardCapUsd:dq,icoName:"CryptoDuel Token",icoPeriodDuration:"2592000",icoRelease:e,icoSoftCap:dq,icoStartDate:"1545721200",icoStore:r,icoSymbol:"CDLT",icoTokenAddress:do_,icoTotalForSale:"4500000000000",icoTotalSupply:"10000000000000",rejectICO:a,advertising:a,ageRestrictions:"21",changelog:[{version:cD,description:aT},{version:cE,description:"bug fix."},{version:cF,description:"bug fix"}],email:dr,files:{apk:"apk\u002Fcryptoduel.apk",images:{banner:"images\u002Fbanner\u002F1.png",gallery:[cJ,cK,cL,cM,"images\u002Fgallery\u002F5.png","images\u002Fgallery\u002F6.png"],logo:"images\u002Flogo\u002F1.png"}},forChildren:a,hash:"QmUD1JZG6hvRb3ThccCC5GGj5oTg1keJiAJ3tnFdtwBxo2",hashType:r,idCTG:"2",keywords:["игры","казино","игровые автоматы","слоты","азартные игры",cH,a_,"slot machines","slots","gambling"],longDescr:ds,nameApp:"CryptoDuel",packageName:"com.blockchain.cryptoduel",price:P,privacyPolicy:f,publish:e,shortDescr:ds,slogan:"Play is the fair casino!",subCategory:"5",urlApp:dt,version:"27",youtubeID:f,infoICO:{members:{team:[],advisors:[]},files:{docs:{whitepaper:w,onepage:w},images:{description:[],advantages:[],gallery:[],logo:w,banner:w}},youtubeID:f,email:dr,urlICO:dt,privacyPolicy:f,description:du,advantages:du,social:{googlePlus:f,facebook:f,linkedin:f,instagram:f,vk:f,youtube:f,telegram:f,gitHub:f,twitter:f},keywords:["cryptoduel","crypto","duel","game",a_]}}],trending:[{idApp:"247",adrDev:ah,confirmation:e,descDev:ag,moderator:X,nameDev:az,reject:a,store:r,temp:{hashType:f,hash:f},advertising:e,ageRestrictions:au,changelog:[],email:"app-navigator@support.yandex.ru",files:{apk:"apk\u002Fru.yandex.yandexnavi.apk",images:{banner:ap,gallery:[an,ak,as,ai,aj,aV,aS,aM,aD,aW,aY,aG,bg,bB,bF],logo:al}},forChildren:e,hash:"QmRwtShY7ZqwPRJUiYrGWLDfypSEV548YRcDsnCUbBHazQ",hashType:r,icoRelease:a,idCTG:r,keywords:["путешествие","карта","билеты","тур","поиск тура","путёвка","travel","map","tickets","tour","tour search","voucher"],longDescr:"Yandex.Navigator helps drivers plot the optimal route to their destination. The app takes traffic jams, accidents, road works, and other road events into account when plotting your route. Yandex.Navigator will present you with up to three variants of your journey, starting with the fastest. If your selected journey takes you over toll roads, the app will warn you about this in advance.\u003Cbr\u003E\u003Cbr\u003EYandex. Navigator uses voice prompts to guide you along your way, and displays your route on your device’s screen. Additionally, you can always see how many minutes and kilometers you have to go.\u003Cbr\u003EYou can use your voice to interact with Yandex.Navigator so that you don&#39;t have to take your hands off the wheel. Just say &quot;Hey, Yandex&quot; and the app will start listening for your commands. For example, &quot;Hey, Yandex, let&#39;s go to 1 Lesnaya Street&quot; or &quot;Hey, Yandex, take me to Domodedovo Airport&quot;. You can also let Navigator know about road events you encounter (such as &quot;Hey, Yandex, there is an accident in the right lane&quot;) or search for locations on the map (by simply saying &quot;Hey, Yandex, Red Square&quot;).\u003Cbr\u003ESave time by choosing recent destinations from your history. Look through your recent destinations and favorites from any of your devices—they are saved in the cloud and available when and where you need them.\u003Cbr\u003EYandex.Navigator will guide you to your destinations in Russia, Belarus, Kazakhstan, Ukraine, and Turkey.\u003Cbr\u003E\u003Cbr\u003EThe app suggests enabling the Yandex search widget for the notification panel.",nameApp:"Yandex.Navigator",packageName:"ru.yandex.yandexnavi",price:P,privacyPolicy:"https:\u002F\u002Fyandex.ru\u002Flegal\u002Fconfidential\u002F",publish:e,rejectICO:a,shortDescr:"Yandex.Navigator helps you find the best routes through traffic.",size:"104633691",slogan:f,subCategory:"24",urlApp:"https:\u002F\u002Fmobile.yandex.ru\u002Fapps\u002Fandroid\u002Fnavi#main",version:"3914751",versionName:"3.91",youtubeID:f},{idApp:"268",adrDev:ah,confirmation:e,descDev:ag,moderator:X,nameDev:az,reject:a,store:r,temp:{hashType:f,hash:f},advertising:e,ageRestrictions:au,changelog:[],email:"support@ito-technologies.com",files:{apk:"apk\u002Fcom.tayu.tau.pedometer.apk",images:{banner:ap,gallery:[an,ak,as,ai,aj,aV,aS,aM,aD,aW,aY,aG,bg,bB,bF,dj,dk,dl,dm,dn,"images\u002Fgallery\u002F21.jpg","images\u002Fgallery\u002F22.jpg","images\u002Fgallery\u002F23.jpg","images\u002Fgallery\u002F24.jpg"],logo:al}},forChildren:e,hash:"QmQw2CBAXHppv9jJaqpWCJ4TKP4Q5o9XHSrfgeokfTnjrm",hashType:r,icoRelease:a,idCTG:r,keywords:["тренировка","здоровье","фитнес","похудение","калории","шагомер","пульс","training, health, fitness, slimming, calories, pedometer, pulse,"],longDescr:"&quot;Pedometer&quot; records the number of steps you have walked and displays them again along with the number of calories that you have burned, distance, walking time and speed per hour.\u003Cbr\u003E\u003Cbr\u003EIt is easy to use. Once you push the Start button, all you have to do is hold your smartphone as you always do and walk.\u003Cbr\u003EOf course, it will continue to automatically record your steps even if you put it in your pocket or bag.\u003Cbr\u003E\u003Cbr\u003EYou can view a graph with the number of steps you have walked and all other information anytime.\u003Cbr\u003ELet&#39;s enjoy walking with this app!\u003Cbr\u003E\u003Cbr\u003EHow to use\u003Cbr\u003E- Touch on the number of steps, burned calories, distance, walking time, or speed to display the graph with that information.\u003Cbr\u003E- Touch the graph to highlight information data for a specific time or date.\u003Cbr\u003E- Swipe to the left to see the data recorded until the previous day.\u003Cbr\u003E- If you want to change the look of the app, change the theme.\u003Cbr\u003E- In order to display the correct number of burned calories, please enter your age, gender, weight and step length accurately.\u003Cbr\u003E- In order to display the correct distance and speed, please enter your step length accurately.\u003Cbr\u003E\u003Cbr\u003E\u003Cbr\u003EImportant\u003Cbr\u003E- Some devices will not record the number of steps when they are locked. This depends exclusively on the specifications of each device and it is not a bug of the app.\u003Cbr\u003E- If you find errors in the number of steps recorded, please adjust the sensitivity.",nameApp:"Pedometer",packageName:"com.tayu.tau.pedometer",price:P,privacyPolicy:w,publish:e,rejectICO:a,shortDescr:"A free, easy-to-use Pedometer app! \nPerfect for walking and dieting!",slogan:f,subCategory:"7",urlApp:w,version:"47",youtubeID:"9TKRyyUqFzg"},{idApp:"297",adrDev:ah,confirmation:e,descDev:ag,moderator:X,nameDev:az,reject:a,store:r,temp:{hashType:f,hash:f},advertising:a,ageRestrictions:au,changelog:[],email:"info@photomath.net",files:{apk:"apk\u002Fcom.microblink.photomath.apk",images:{banner:ap,gallery:[an,ak,as,ai,aj,aV,aS,aM,aD,aW,aY,aG],logo:al}},forChildren:e,hash:"Qmd8EJNQJsgL37FRek4tUGiHss2vxvhCRtMsxVggbNUFXx",hashType:r,icoRelease:a,idCTG:r,keywords:["образование","обучение","чтение","тест",cA,"learning","reading","test"],longDescr:"Photomath is the #1 app for math learning; it can read and solve problems ranging from arithmetic to calculus instantly by using the camera on your mobile device. With Photomath, learn how to approach math problems through animated steps and detailed instructions or check your homework for any printed or handwritten problem. \u003Cbr\u003E\u003Cbr\u003EMath Superpowers for Every Student – Whether you are struggling to wrap your head around this week’s math homework, simply want to improve your understanding, or are looking to ace an upcoming test, start your journey with Photomath, the pocket tutor that’s trusted and used by millions every day.\u003Cbr\u003E\u003Cbr\u003EPhotomath for Parents – Be the expert your child can depend on    \u003Cbr\u003EPhotomath can help review math concepts and fend off math anxiety that can take a big bite out of students’ performance. Use Photomath to help your kids learn and get better grades.\u003Cbr\u003E\u003Cbr\u003EPhotomath for Teachers – Amplify your math teaching \u003Cbr\u003EPhotomath has improved student performance in a wide range of classrooms and schools worldwide. Implement Photomath to elevate your teaching and accelerate student learning inside the classroom and at home.\u003Cbr\u003E\u003Cbr\u003EPhotomath provides\u003Cbr\u003E• Instant help\u003Cbr\u003E• Smart camera calculator\u003Cbr\u003E• Handwriting recognition\u003Cbr\u003E• Step-by-step explanation\u003Cbr\u003E• Animated instructions\u003Cbr\u003E• Multiple explanation methods\u003Cbr\u003E• Beautiful graphs\u003Cbr\u003E\u003Cbr\u003EPhotomath supports arithmetic, integers, fractions, decimal numbers, roots, algebraic expressions, linear equations\u002Finequalities, quadratic equations\u002Finequalities, absolute equations\u002Finequalities, systems of equations, logarithms, trigonometry, exponential and logarithmic functions, derivatives and integrals, graphs and many more.\u003Cbr\u003E\u003Cbr\u003EWhat else would you like for us to cover? Let us know at support@photomath.net.",nameApp:"Photomath",packageName:"com.microblink.photomath",price:P,privacyPolicy:"https:\u002F\u002Fphotomath.net\u002Fprivacypolicy",publish:e,rejectICO:a,shortDescr:"Scan. Solve. Learn.",slogan:f,subCategory:"20",urlApp:"https:\u002F\u002Fphotomath.net",version:"4000307",youtubeID:"T41t8zfjVng"},{idApp:"304",adrDev:ah,confirmation:e,descDev:ag,moderator:X,nameDev:az,reject:a,store:r,temp:{hashType:f,hash:f},advertising:e,ageRestrictions:au,changelog:[],email:"support@accuweather.com",files:{apk:"apk\u002Fcom.accuweather.android.apk",images:{banner:ap,gallery:[an,ak,as,ai,aj],logo:al}},forChildren:e,hash:"QmTsrDpQBwRtcuychZJS8zn1mCdzEbsXfGeoZuiq5CGcqD",hashType:r,icoRelease:a,idCTG:r,keywords:["погода","прогноз погоды","температура",cB,"weather forecast","temperature"],longDescr:"Get live weather forecasts and accurate storm alerts with AccuWeather - superior accuracy™ you can rely on. \u003Cbr\u003E\u003Cbr\u003EAccurate weather forecasts, real-time alerts, and severe weather warnings are available on- demand. Get today’s weather forecast, hurricane updates and more! \u003Cbr\u003E\u003Cbr\u003EStorm season is coming but weather alerts from AccuWeather are superior in their accuracy. Be prepared for the daily forecast or sudden severe changes in weather with live alerts and accurate weather forecasts. So whether there’s wind, a heatwave, or even a tornado - you can stay one step ahead with AccuWeather’s weather radar. \u003Cbr\u003E\u003Cbr\u003EAccurate weather forecasts - 5 reasons why you’ll love using AccuWeather:\u003Cbr\u003E\u003Cbr\u003E1. Accurate weather forecasts whenever and wherever you need them - AccuWeather’s superior accuracy™ won’t let you down. \u003Cbr\u003E2. Severe weather warnings that keep you safe - From a hurricane to a tornado, be prepared for any severe weather event on the horizon with real-time weather warnings and storm alerts.\u003Cbr\u003E3. Today’s temperature in detail - RealFeel Temperature® technology tells you the difference between how the weather looks and how it actually feels. \u003Cbr\u003E4. Weather updates wherever you are - Get local forecasts when you’re at home or worldwide weather updates when you’re away.\u003Cbr\u003E5. Live weather 24\u002F7 - Check up to 15 days in advance or check out our weather radar for accurate weather forecasts every minute! \u003Cbr\u003E\u003Cbr\u003ELocal forecasts, today’s temperature and more! Live weather stats give you real-time weather updates. From storm alerts, hurricane reports or even tracking a tornado - get all the severe weather warnings you need.\u003Cbr\u003E\u003Cbr\u003EGo beyond today&#39;s weather forecast. From the daily forecast to hurricane or tornado weather warnings, you control what type of information you get. Whether you want today’s weather or today’s temperature, AccuWeather is weather forecasting with a difference! \u003Cbr\u003E\u003Cbr\u003EThe daily forecast, severe weather warnings, storm alerts and more! Features that will help the AccuWeather app work for you:\u003Cbr\u003E\u003Cbr\u003E• Local forecasts that you can personalize, depending on where you are in the world. \u003Cbr\u003E• Today&#39;s weather forecast and beyond. Look 15 days ahead to ensure that you’re prepared for any spring weather alerts with AccuWeather’s weather radar technology. \u003Cbr\u003E• Live weather, minute by minute! Try the MinuteCast® weather tracker for the most up to date weather alerts.\u003Cbr\u003E• Weather forecasting is brought to life with trending videos from AccuWeather’s news team. \u003Cbr\u003E• Daily forecast updates filtered according to your preferences. Hide any weather alerts that aren’t appropriate for you. \u003Cbr\u003E\u003Cbr\u003EWeather updates you can rely on. AccuWeather’s weather tracker makes it easy to plan a weekend outdoors without battling the wind or getting burnt in the sun. \u003Cbr\u003E\u003Cbr\u003EWith AccuWeather’s superior accuracy™ for local forecasts, you’ll never miss a memorable moment. Wherever you are or wherever you’re going, get reliable weather forecasting with AccuWeather - your personal weather radar.\u003Cbr\u003E\u003Cbr\u003EToday’s weather forecast is in the palm of your hand. AccuWeather helps you prepare for today’s temperature with its state of art weather tracker technology. Get ready for wind or sun with the most accurate source of weather forecast.\u003Cbr\u003E\u003Cbr\u003EDownload AccuWeather today for free and enjoy award-winning superior accuracy™ in weather forecasting on your Android device.",nameApp:"AccuWeather: Weather Alerts & Live Storm Radar",packageName:"com.accuweather.android",price:P,privacyPolicy:"http:\u002F\u002Fm.accuweather.com\u002Fen\u002Fprivacy",publish:e,rejectICO:a,shortDescr:"Check your local weather or weekend forecast with live maps & accurate updates",size:"41649651",slogan:f,subCategory:"22",urlApp:"http:\u002F\u002Fwww.accuweather.com",version:"289",versionName:"6.0.8-free",youtubeID:"oU2mk6hHUnk"}],nodes:[],contractAddress:cC,searchNumber:{getCategories:Z,getCurrency:Z,getCurrencyETH:Z,getApps:Z,getHighlight:Z,getApp:Z}},i18n:{routeParams:{}}},serverRendered:e}}(false,"address","uint256","function",true,"","nonpayable","view","uint32","bool","string","event","_app","bytes32","store","_node","_value","1","_dev","_contract","_hashType","_hash",null,"_from","node","payable","app","_state","owner","hash","hashType","_obj","_to","success","value","dev","_price","_owner","acceptOwnership","_newOwner","transferOwnership","0","_token","version","int256","state","_agent","newOwner","OwnershipTransferred","0x32306f127a0b7640414ca0df3d9b12ffbf94a08a","endTime",0,1,"name","_propID","_spender",10,"from","uint256[]","_name","Lexcorp ","0x60709f837423abc0f6ca5bb756841eede9d31964","images\u002Fgallery\u002F4.jpg","images\u002Fgallery\u002F5.jpg","images\u002Fgallery\u002F2.jpg","images\u002Flogo\u002F1.jpg","updateAgent","images\u002Fgallery\u002F1.jpg","constructor","images\u002Fbanner\u002F1.jpg","bytes","_endTime","images\u002Fgallery\u002F3.jpg","to","3","_desc","Agents","PlayMarket","amount","Lex Luthor","ICO","_version",50,"images\u002Fgallery\u002F9.jpg","_publish","PMT","images\u002Fgallery\u002F12.jpg","_voter","fallback","_arrObj","balanceOf","defAgent","images\u002Fgallery\u002F8.jpg","spender","price","withdraw","_ip","_coordinates","images\u002Fgallery\u002F7.jpg","Bug fix.","_status","images\u002Fgallery\u002F6.jpg","images\u002Fgallery\u002F10.jpg","desc","images\u002Fgallery\u002F11.jpg","i","casino","token",100,30,"_amount","vote","proposalID","approve","images\u002Fgallery\u002F13.jpg","totalSupply","_transactionByteCode","makeDeposit","transferFrom",2,"_proposalID",20,"transfer","allowance",90,"_user",5,"setDuration","_ETH","_PMT","offset","limit","moderator","setPrice","ETH","images\u002Fgallery\u002F14.jpg",4,"_PlayMarket","_ICO","images\u002Fgallery\u002F15.jpg","_moderator","symbol","ip","coordinates",24,"_txIndex","_description","_symbol","_crowdsale","_vote","refundTime","_arrPrice","obj","buyAppObj","crowdsale","_rating","publish","appType","buyAppSub","_appType",3,40,"number","PayDividends","Approval",60,6,70,7,80,8,"Transfer",9,"decimals",110,11,120,12,130,13,140,14,150,15,160,16,170,17,"education","weather","0x839ea7b29be3075a463cab3b065a828d8c37cfaf",25,26,27,"sports","games","setMultiplier","images\u002Fgallery\u002F1.png","images\u002Fgallery\u002F2.png","images\u002Fgallery\u002F3.png","images\u002Fgallery\u002F4.png","getMultiplier","Payment","sender","voter","description","_DAORepository","setTotalPMT","updateAgentStorage","_store","fullDescHash","recipient","votesAgainst","votesSupport","_requisiteMajority","_debatingPeriodDuration","_minimumQuorum","_recipient","DAORepository","propID","Proposals","addProposal","voted","getVoted","refund","images\u002Fgallery\u002F16.jpg","images\u002Fgallery\u002F17.jpg","images\u002Fgallery\u002F18.jpg","images\u002Fgallery\u002F19.jpg","images\u002Fgallery\u002F20.jpg","0xA265ac4A788Dc44d3C5CE94B8A8450A45d65be5d","CryptoDuel N.V.","100000000000","info@cryptoduel.casino","CryptoDuel is a fair game based on Ethereum smart contract, the source code of which is open and the logic of operation is transparent and unchanged! Monetization: 1% commission fee from each game. Ethereum smart contracts ensure the gameplay, investing and dividends payment. All financial indicators of the game are open. Available Interfaces: Android, Web, Telegram","https:\u002F\u002Fcryptoduel.casino","CryptoDuel is a fair game based on Ethereum smart contract, the source code of which is open and the logic of operation is transparent and unchanged!\n\nMonetization: 1% commission fee from each game.\n\nEthereum smart contracts ensure the gameplay, investing and dividends payment. \n\nAll financial indicators of the game are open.\n\nAvailable Interfaces:\nAndroid, Web, Telegram"));
+  </script>
+  <script defer="" src="/7db9be5d94e637055128.js">
+  </script>
+  <script defer="" src="/c34104e4ec7ebb683f3d.js">
+  </script>
+  <script defer="" src="/d909485859cc68b3287a.js">
+  </script>
+  <script defer="" src="/9da73f87245bb768ca21.js">
+  </script>
+  <script defer="" src="/7efebcd0f04456d6fdf9.js">
+  </script>
+ </body>
+</html>

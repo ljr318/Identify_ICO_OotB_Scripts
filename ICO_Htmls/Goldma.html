@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <!-- Title of Website -->
+  <title>
+   Goldma
+  </title>
+  <meta content="Coming Soon Landing Page" name="description"/>
+  <meta content="Kounter, html theme, Coming Soon Landing Page, Coming Soon Landing Page template, html landing page, one page, responsive landing page" name="keywords"/>
+  <meta content="Egotype" name="author"/>
+  <!-- Favicon -->
+  <link href="favicon.png" rel="icon" type="image/png"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <!-- Bootstrap CSS -->
+  <link href="css/plugins/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Icons -->
+  <link href="css/icons/font-awesome.css" rel="stylesheet"/>
+  <link href="css/icons/linea.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css"/>
+  <!-- Plugins CSS -->
+  <link href="css/plugins/loaders.min.css" rel="stylesheet"/>
+  <link href="css/plugins/photoswipe.css" rel="stylesheet"/>
+  <link href="css/icons/photoswipe/icons.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- Responsive CSS -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body class="bg-dark" data-spy="scroll" data-target=".scrollspy">
+  <!-- Preloader  -->
+  <div class="loader bg-dark">
+   <div class="loader-inner ball-scale-ripple-multiple ball-scale-ripple-multiple-color">
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+   </div>
+  </div>
+  <!-- /End Preloader  -->
+  <div id="page">
+   <!-- ============================
+       BG & Overlays
+  ================================= -->
+   <!-- Waterpipe BG -->
+   <div class="section-overlay" id="waterpipe">
+    <canvas>
+    </canvas>
+   </div>
+   <!-- /End Waterpipe BG -->
+   <!-- Overlay BG -->
+   <div class="section-overlay bg-black overlay-opacity">
+   </div>
+   <!-- /End Overlay BG -->
+   <!-- Modal -->
+   <div aria-labelledby="meinModalLabel" class="modal fade modal-scale" id="modal-notify" role="dialog" tabindex="-1">
+    <!-- .modal-dialog -->
+    <div class="modal-dialog" role="document">
+     <div>
+      <!-- .modal-content -->
+      <div class="modal-content text-center bg-dark text-light">
+       <button aria-label="Close" class="button-close" data-dismiss="modal">
+        <i class="icon icon-lg icon-arrows-remove">
+        </i>
+       </button>
+       <!-- Headline -->
+       <div class="wrap-line border-dark">
+        <h3>
+         <span class="font-weight-200">
+          Stay
+         </span>
+         Tuned
+        </h3>
+       </div>
+       <!-- /End Headline -->
+       <!-- Description -->
+       <div class="p-t-b-15">
+        <p>
+         We launch our new website soon.
+         <br/>
+         Please stay updated and follow.
+        </p>
+       </div>
+       <!-- /End Description -->
+       <div class="p-t-b-30">
+        <!-- Newsletter Form:
+             alternative newsletter form via email;
+             write your email in newsletter-process.php and use:
+             <form action="php/newsletter-process.php" id="newsletter-form" method="post"> insted of
+             <form id="mc-form"> -->
+        <form id="mc-form">
+         <!-- Input Group -->
+         <div class="input-group">
+          <input class="form-control form-control-light" id="email" name="email" placeholder="Enter your Email here..." type="email"/>
+          <span class="input-group-btn">
+           <button class="btn btn-color" type="submit">
+            <i class="icon icon-sm icon-arrows-slim-right-dashed">
+            </i>
+           </button>
+          </span>
+         </div>
+         <!-- /End Input Group -->
+         <!-- Message Alert -->
+         <div class="message-wrapper text-white message" id="message-newsletter">
+          <span>
+           <i class="icon icon-sm icon-arrows-slim-right-dashed">
+           </i>
+           <label class="message-text" for="email">
+           </label>
+          </span>
+         </div>
+         <!-- /End Message Alert -->
+        </form>
+        <!-- /End Newsletter Form -->
+       </div>
+      </div>
+     </div>
+     <!-- /End .modal-content -->
+    </div>
+    <!-- /End .modal-dialog -->
+   </div>
+   <!-- /End Modal -->
+   <!-- ============================
+       Header Navigation
+  ================================= -->
+   <!-- <header>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-white col-transform">
+            <div class="navbar-wrapper">
+              <button class="navbar-button show-info" data-href="#content">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="navbar-links scrollspy">
+                <ul class="nav">
+                  <li><a class="smooth-scroll link-white" href="#about">About</a></li>
+                  <li><a class="smooth-scroll link-white" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+   <div class="container-fluid">
+    <div class="row">
+     <!-- ============================
+           Info
+      ================================= -->
+     <div class="col-md-12 text-white text-center page-info col-transform" id="info">
+      <div class="vert-middle">
+       <div class="reveal scale-out">
+        <!-- Count Down -->
+        <div class="count-down p-t-b-15" data-end-date="Oct 27, 2020 00:00:00">
+        </div>
+        <!-- /End Count Down -->
+        <!-- Logo -->
+        <div class="p-t-b-15">
+         <img alt="GOLDMA" src="images/logo.png"/>
+        </div>
+        <!-- /End Logo -->
+        <div class="p-t-b-15">
+         <!-- Headline & Description -->
+         <h2>
+          <span class="font-weight-200">
+           Before launching our
+          </span>
+          <br/>
+          new Website
+         </h2>
+         <p>
+          We're coming soon!
+          <br/>
+          We're
+                working hard to give you the best experience!
+          <br/>
+         </p>
+         <!-- /End Headline & Description -->
+        </div>
+        <!-- Arrow -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- /#page -->
+  <div id="photoswipe">
+  </div>
+  <!-- Scripts -->
+  <script src="js/plugins/jquery1.11.2.min.js">
+  </script>
+  <script src="js/plugins/bootstrap.min.js">
+  </script>
+  <script src="js/plugins/scrollreveal.min.js">
+  </script>
+  <script src="js/plugins/contact-form.js">
+  </script>
+  <script src="js/plugins/newsletter-form.js">
+  </script>
+  <script src="js/plugins/jquery.ajaxchimp.min.js">
+  </script>
+  <script src="js/plugins/photoswipe/photoswipe.min.js">
+  </script>
+  <script src="js/plugins/photoswipe/photoswipe-ui-default.min.js">
+  </script>
+  <script src="js/plugins/jquery.countdown.min.js">
+  </script>
+  <script src="js/plugins/waterpipe.js">
+  </script>
+  <script src="js/plugins/prefixfree.min.js">
+  </script>
+  <!-- Custom Script -->
+  <script src="js/custom.js">
+  </script>
+ </body>
+</html>

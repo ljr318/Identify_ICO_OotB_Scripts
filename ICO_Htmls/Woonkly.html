@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Woonkly Tube
+  </title>
+  <base href="/"/>
+  <meta content="#15143f" name="theme-color"/>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+  <meta content="no-cache" http-equiv="Cache-Control"/>
+  <meta content="0" http-equiv="Expires"/>
+  <meta content="no-cache" http-equiv="Pragma"/>
+  <meta content="width=device-width, initial-scale=1 , user-scalable=no" name="viewport"/>
+  <link href="assets/fav.png" rel="icon" type="image/x-icon"/>
+  <meta content="Woonkly Tube" property="og:title"/>
+  <meta content="Woonkly Tube." property="og:description"/>
+  <meta content="fav.png" property="og:image"/>
+  <meta content="https://beta.woonkly.com/" property="og:url"/>
+  <style>
+   iframe {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        /* iframe a {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    .ytp-title-channel-logo {
+      display: none !important;
+    }
+
+    .ytp-show-watch-later-title {
+      display: none !important;
+    } */
+  </style>
+ </head>
+ <body onload="initialize()" style="margin: 0;background: rgba(16, 16, 16, 1.0);">
+  <app-root>
+  </app-root>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165851988-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165851988-1');
+  </script>
+  <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js">
+  </script>
+  <script>
+   localStorage.removeItem('google_logged_in');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <script src="assets/vendor/owl-carousel/owl.carousel.js">
+  </script>
+  <script async="" defer="" src="https://apis.google.com/js/api.js">
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122662087-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122662087-1');
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;key=AIzaSyC9HW9F4QCgDXhRcHAIAmY6tqz0uSmr9GQ">
+  </script>
+  <script type="text/javascript">
+   var geocoder = new google.maps.Geocoder();
+
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+        }
+        //Get the latitude and the longitude;
+        function successFunction(position) {
+            console.log("position", position)
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            codeLatLng(lat, lng)
+        }
+
+        function errorFunction() {
+            console.info("Geocoder failed");
+        }
+
+        function initialize() {
+            geocoder = new google.maps.Geocoder();
+        }
+
+        function codeLatLng(lat, lng) {
+            var latlng = new google.maps.LatLng(lat, lng);
+            geocoder.geocode({
+                'latLng': latlng
+            }, function(results, status) {
+                console.log("results", results)
+                console.log("status", status)
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[1]) {
+                        for (var i = 0; i < results[0].address_components.length; i++) {
+                            for (var b = 0; b < results[0].address_components[i].types.length; b++) {
+                                if (results[0].address_components[i].types[b] == "administrative_area_level_1") {
+                                    city = results[0].address_components[i];
+                                    break;
+                                }
+                            }
+                        }
+                        //city data
+                        localStorage.setItem('location', JSON.stringify(city.long_name));
+                        console.log(city.short_name + " " + city.long_name)
+                    } else {
+                        console.info("No results found");
+                    }
+                } else {
+                    console.error("Geocoder failed due to: " + status);
+                }
+            });
+        }
+  </script>
+  <script src="runtime.js" type="text/javascript">
+  </script>
+  <script src="polyfills.js" type="text/javascript">
+  </script>
+  <script src="styles.js" type="text/javascript">
+  </script>
+  <script src="scripts.js" type="text/javascript">
+  </script>
+  <script src="vendor.js" type="text/javascript">
+  </script>
+  <script src="main.js" type="text/javascript">
+  </script>
+ </body>
+</html>

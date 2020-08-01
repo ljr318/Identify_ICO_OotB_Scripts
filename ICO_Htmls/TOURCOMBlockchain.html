@@ -1,0 +1,28 @@
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style type="text/css">
+   body { width:100%; height:100%; } .wrap { position:fixed; top:50%; left:50%; margin:-185px 0 0 -315px; width:630px; height:370px; } h1 {margin: 0 0 20px; font-size: 15pt;}
+  </style>
+ </head>
+ <body>
+  <script src="/cupid.js" type="text/javascript">
+  </script>
+  <script>
+   function toNumbers(t){var e=[];return t.replace(/(..)/g,function(t){e.push(parseInt(t,16))}),e}function toHex(){for(var t=[],t=1==arguments.length&&arguments[0].constructor==Array?arguments[0]:arguments,e="",o=0;o<t.length;o++)e+=(16>t[o]?"0":"")+t[o].toString(16);return e.toLowerCase()}function getUrlParams(){var t={};return window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(e,o,r){t[o]=r}),t}var a=toNumbers("b2e79ca387d636fefd130e0e81220990"),b=toNumbers("1bcc2798b9a9953d617c8d4dca912cea"),c=toNumbers("06c7f03874faa4282e8ec19e243dfd26"),now=new Date,time=now.getTime();time+=864e5,now.setTime(time),document.cookie="CUPID="+toHex(slowAES.decrypt(c,2,a,b))+"; expires="+now.toUTCString()+"; path=/",oParams=getUrlParams(),nCkattempt=0,oParams.ckattempt&&(nCkattempt=parseInt(oParams.ckattempt)),nCkattempt<3&&(location.href="http://tourcom.io/en/?utm_source=icobench&ckattempt=1");
+  </script>
+  <div class="wrap">
+   <div align="center">
+    <h1>
+     ìëë±ë¡ë°©ì§ë¥¼ ìí´ ë³´ìì ì°¨ë¥¼ ê±°ì¹ê³  ììµëë¤.
+    </h1>
+    <p>
+     Please prove that you are human.
+    </p>
+    <form action="/___verify" method="POST">
+     <input type="submit" value="  OK  "/>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
